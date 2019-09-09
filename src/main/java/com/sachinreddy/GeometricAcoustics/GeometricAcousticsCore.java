@@ -34,6 +34,7 @@ public class GeometricAcousticsCore implements IClassTransformer
 	public static final String modid = "ga";
 	public static final String version = "1.0";
 	
+	// ------------------------------------------------- //
 	
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event)
@@ -47,17 +48,44 @@ public class GeometricAcousticsCore implements IClassTransformer
 		FMLCommonHandler.instance().bus().register(instance);
 	}
 	
+	// ------------------------------------------------- //
+	
 	private void log(String message)
 	{		
 		System.out.println(message);
 	}
 	
-	//arg0: class name, arg1: new name of the class, arg2: chuck of bytecode that's about to be loaded into JVM
-	@Override public byte[] transform(String arg0, String arg1, byte[] arg2)
+	// ------------------------------------------------- //
+	
+	//arg0: class name, arg1: new name of the class, arg2: chunk of bytecode that's about to be loaded into JVM
+	@Override 
+	public byte[] transform(String arg0, String arg1, byte[] arg2)
 	{		
 		//Patching SoundManager
 		
-		//setLastSoundCategory(var6) and setLastSoundName() in SoundManager.playSound()
+		//SetupReverb() in SoundManager.SoundSystemStarterThread
+		{
+			InsnList toInject = new InsnList();
+			toInject.add(new MethodInsnNode(Opcodes.INVOKESTATIC, "com/sachinreddy/GeometricAcoustics/GeometricAcoustics", "setupReverb", "()V"));
+			
+			arg2 = patchMethodInClass(arg0, arg2, 
+					new String[]{"net.minecraft.client.audio.SoundManager$SoundSystemStarterThread", "ccn$a"}, 						//Target Class name
+					new String[]{"<init>", "<init>"}, 																				//Target method name
+					new String[]{"(Lnet/minecraft/client/audio/SoundManager;)V", "(Lccn;)V"},	//Target method signature
+					Opcodes.INVOKESPECIAL,						//Target opcode
+					AbstractInsnNode.METHOD_INSN, 				//Target node type
+					new String[]{"<init>", "<init>"},			//Target node method invocation name
+					null,
+					new InsnList[]{toInject, toInject}, 		//Instructions to inject
+					false, 										//Insert before the target node?
+					0,
+					0,
+					false,
+					0
+					);
+		}
+		
+		//setLastSoundCategory() and setLastSoundName() in SoundManager.playSound()
 		{
 			InsnList toInject = new InsnList();
 			toInject.add(new VarInsnNode(Opcodes.ALOAD, 7));
@@ -66,7 +94,6 @@ public class GeometricAcousticsCore implements IClassTransformer
 			InsnList toInjectObf = new InsnList();
 			toInjectObf.add(new VarInsnNode(Opcodes.ALOAD, 7));
 			toInjectObf.add(new MethodInsnNode(Opcodes.INVOKESTATIC, "com/sachinreddy/GeometricAcoustics/GeometricAcoustics", "setLastSoundCategory", "(Lno;)V"));
-			
 			
 			arg2 = patchMethodInClass(arg0, arg2, 
 					new String[]{"net.minecraft.client.audio.SoundManager", "ccn"}, 	//Target Class name
@@ -85,7 +112,7 @@ public class GeometricAcousticsCore implements IClassTransformer
 					);
 		}
 		
-		//setLastSoundName(name) in SoundManager.playSound()
+		//setLastSoundName() in SoundManager.playSound()
 		{
 			InsnList toInject = new InsnList();
 			toInject.add(new VarInsnNode(Opcodes.ALOAD, 1));
@@ -116,21 +143,25 @@ public class GeometricAcousticsCore implements IClassTransformer
 					);
 		}
 		
-		//onPlaySound(var6) in paulscode.libraries.SourceLWJGLOpenAL.play()
+		//onPlaySound() in paulscode.libraries.SourceLWJGLOpenAL.play()
 		{
 			InsnList toInject = new InsnList();
 			toInject.add(new VarInsnNode(Opcodes.ALOAD, 0));
 			toInject.add(new FieldInsnNode(Opcodes.GETFIELD, "paulscode/sound/libraries/SourceLWJGLOpenAL", "position", "Lpaulscode/sound/Vector3D;"));
 			toInject.add(new FieldInsnNode(Opcodes.GETFIELD, "paulscode/sound/Vector3D", "x", "F"));
+			
 			toInject.add(new VarInsnNode(Opcodes.ALOAD, 0));
 			toInject.add(new FieldInsnNode(Opcodes.GETFIELD, "paulscode/sound/libraries/SourceLWJGLOpenAL", "position", "Lpaulscode/sound/Vector3D;"));
 			toInject.add(new FieldInsnNode(Opcodes.GETFIELD, "paulscode/sound/Vector3D", "y", "F"));
+			
 			toInject.add(new VarInsnNode(Opcodes.ALOAD, 0));
 			toInject.add(new FieldInsnNode(Opcodes.GETFIELD, "paulscode/sound/libraries/SourceLWJGLOpenAL", "position", "Lpaulscode/sound/Vector3D;"));
 			toInject.add(new FieldInsnNode(Opcodes.GETFIELD, "paulscode/sound/Vector3D", "z", "F"));
+			
 			toInject.add(new VarInsnNode(Opcodes.ALOAD, 0));
 			toInject.add(new FieldInsnNode(Opcodes.GETFIELD, "paulscode/sound/libraries/SourceLWJGLOpenAL", "channelOpenAL", "Lpaulscode/sound/libraries/ChannelLWJGLOpenAL;"));
 			toInject.add(new FieldInsnNode(Opcodes.GETFIELD, "paulscode/sound/libraries/ChannelLWJGLOpenAL", "ALSource", "Ljava/nio/IntBuffer;"));
+			
 			toInject.add(new InsnNode(Opcodes.ICONST_0));
 			toInject.add(new MethodInsnNode(Opcodes.INVOKEVIRTUAL, "java/nio/IntBuffer", "get", "(I)I", false));
 			toInject.add(new MethodInsnNode(Opcodes.INVOKESTATIC, "com/sachinreddy/GeometricAcoustics/GeometricAcoustics", "onPlaySound", "(FFFI)V", false));
@@ -145,8 +176,8 @@ public class GeometricAcousticsCore implements IClassTransformer
 					null,
 					new InsnList[]{toInject}, 									//Instructions to inject
 					false, 										//Insert before the target node?
-					0,			//Nodes to delete before the target node (done before injection)
-					0,			//Nodes to delete after the target node (done before injection)
+					0,			
+					0,			
 					false,
 					0
 					);
