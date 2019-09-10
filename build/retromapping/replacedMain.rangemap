@@ -1,0 +1,985 @@
+Symbol range map extraction starting
+Processing 7 files
+startProcessing "com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java" md5: a4f824add5da1f494aa4a8c3ce0582c5
+Cache Hit!
+@|com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java|8|42|com.sachinreddy.GeometricAcoustics|package|com.sachinreddy.GeometricAcoustics|(file)
+Class Start: com.sachinreddy.GeometricAcoustics.GAFMLLoadingPlugin
+   @|com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java|255|264|MCVersion|class|net.minecraftforge.fml.relauncher.IFMLLoadingPlugin.MCVersion
+   @|com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java|265|270|value|method|net.minecraftforge.fml.relauncher.IFMLLoadingPlugin.MCVersion|value|()Ljava/lang/String;
+   @|com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java|292|310|GAFMLLoadingPlugin|class|com.sachinreddy.GeometricAcoustics.GAFMLLoadingPlugin
+   @|com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java|322|339|IFMLLoadingPlugin|class|net.minecraftforge.fml.relauncher.IFMLLoadingPlugin
+   @|com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java|341|353|IFMLCallHook|class|net.minecraftforge.fml.relauncher.IFMLCallHook
+   Method Start: getASMTransformerClass()[Ljava/lang/String;
+      @|com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java|359|367|Override|class|java.lang.Override
+      @|com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java|376|382|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java|385|407|getASMTransformerClass|method|net.minecraftforge.fml.relauncher.IFMLLoadingPlugin|getASMTransformerClass|()[Ljava/lang/String;
+      @|com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java|427|433|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java|436|458|GeometricAcousticsCore|class|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore
+      @|com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java|465|472|getName|method|java.lang.Class|getName|()Ljava/lang/String;
+   Method End: getASMTransformerClass()[Ljava/lang/String;
+   Method Start: getModContainerClass()Ljava/lang/String;
+      @|com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java|483|491|Override|class|java.lang.Override
+      @|com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java|500|506|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java|507|527|getModContainerClass|method|net.minecraftforge.fml.relauncher.IFMLLoadingPlugin|getModContainerClass|()Ljava/lang/String;
+   Method End: getModContainerClass()Ljava/lang/String;
+   Method Start: getSetupClass()Ljava/lang/String;
+      @|com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java|598|606|Override|class|java.lang.Override
+      @|com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java|615|621|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java|622|635|getSetupClass|method|net.minecraftforge.fml.relauncher.IFMLLoadingPlugin|getSetupClass|()Ljava/lang/String;
+      @|com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java|654|662|getClass|method|java.lang.Object|getClass|()Ljava/lang/Class;
+      @|com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java|665|672|getName|method|java.lang.Class|getName|()Ljava/lang/String;
+   Method End: getSetupClass()Ljava/lang/String;
+   Method Start: injectData(Ljava/util/Map;)V
+      @|com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java|735|739|data|param|com.sachinreddy.GeometricAcoustics.GAFMLLoadingPlugin|injectData|(Ljava/util/Map;)V|data|0
+      @|com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java|682|690|Override|class|java.lang.Override
+      @|com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java|704|714|injectData|method|net.minecraftforge.fml.relauncher.IFMLLoadingPlugin|injectData|(Ljava/util/Map;)V
+      @|com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java|715|718|Map|class|java.util.Map
+      @|com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java|719|725|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java|727|733|Object|class|java.lang.Object
+   Method End: injectData(Ljava/util/Map;)V
+   Method Start: getAccessTransformerClass()Ljava/lang/String;
+      @|com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java|789|797|Override|class|java.lang.Override
+      @|com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java|806|812|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java|813|838|getAccessTransformerClass|method|net.minecraftforge.fml.relauncher.IFMLLoadingPlugin|getAccessTransformerClass|()Ljava/lang/String;
+   Method End: getAccessTransformerClass()Ljava/lang/String;
+   Method Start: call()Ljava/lang/Void;
+      @|com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java|996|1004|Override|class|java.lang.Override
+      @|com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java|1013|1017|Void|class|java.lang.Void
+      @|com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java|1018|1022|call|method|java.util.concurrent.Callable|call|()Ljava/lang/Object;
+      @|com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java|1032|1041|Exception|class|java.lang.Exception
+   Method End: call()Ljava/lang/Void;
+Class End  : com.sachinreddy.GeometricAcoustics.GAFMLLoadingPlugin
+endProcessing "com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java"
+
+startProcessing "com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java" md5: 02400a7b9cfba783e33787a9254e7ea7
+@|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|8|42|com.sachinreddy.GeometricAcoustics|package|com.sachinreddy.GeometricAcoustics|(file)
+Class Start: com.sachinreddy.GeometricAcoustics.GeometricAcoustics
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|898|916|GeometricAcoustics|class|com.sachinreddy.GeometricAcoustics.GeometricAcoustics
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|944|950|String|class|java.lang.String
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|944|950|String|class|java.lang.String
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|951|960|logPrefix|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|logPrefix|
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|1012|1022|auxFXSlot0|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|auxFXSlot0|
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|1044|1054|auxFXSlot1|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|auxFXSlot1|
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|1076|1086|auxFXSlot2|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|auxFXSlot2|
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|1108|1118|auxFXSlot3|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|auxFXSlot3|
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|1144|1151|reverb0|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|reverb0|
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|1173|1180|reverb1|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|reverb1|
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|1202|1209|reverb2|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|reverb2|
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|1231|1238|reverb3|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|reverb3|
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|1265|1276|sendFilter0|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|sendFilter0|
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|1298|1309|sendFilter1|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|sendFilter1|
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|1331|1342|sendFilter2|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|sendFilter2|
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|1364|1375|sendFilter3|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|sendFilter3|
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|1401|1414|directFilter0|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|directFilter0|
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|1436|1449|SoundCategory|class|net.minecraft.util.SoundCategory
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|1436|1449|SoundCategory|class|net.minecraft.util.SoundCategory
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|1450|1467|lastSoundCategory|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|lastSoundCategory|
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|1485|1491|String|class|java.lang.String
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|1485|1491|String|class|java.lang.String
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|1492|1505|lastSoundName|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|lastSoundName|
+   Method Start: init()V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|1589|1593|init|method|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|init|()V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|1601|1604|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|log|(Ljava/lang/String;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|1647|1655|setupEFX|method|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setupEFX|()V
+   Method End: init()V
+   Method Start: setupEFX()V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|1685|1693|setupEFX|method|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setupEFX|()V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|1702|1712|ALCcontext|class|org.lwjgl.openal.ALCcontext
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|1730|1735|ALC10|class|org.lwjgl.openal.ALC10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|1736|1756|alcGetCurrentContext|method|org.lwjgl.openal.ALC10|alcGetCurrentContext|()Lorg/lwjgl/openal/ALCcontext;
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|1762|1771|ALCdevice|class|org.lwjgl.openal.ALCdevice
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|1788|1793|ALC10|class|org.lwjgl.openal.ALC10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|1794|1814|alcGetContextsDevice|method|org.lwjgl.openal.ALC10|alcGetContextsDevice|(Lorg/lwjgl/openal/ALCcontext;)Lorg/lwjgl/openal/ALCdevice;
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|1841|1846|ALC10|class|org.lwjgl.openal.ALC10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|1847|1868|alcIsExtensionPresent|method|org.lwjgl.openal.ALC10|alcIsExtensionPresent|(Lorg/lwjgl/openal/ALCdevice;Ljava/lang/String;)Z
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|1903|1906|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|log|(Ljava/lang/String;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|1995|2005|auxFXSlot0|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|auxFXSlot0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2008|2013|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2014|2039|alGenAuxiliaryEffectSlots|method|org.lwjgl.openal.EFX10|alGenAuxiliaryEffectSlots|()I
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2045|2048|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|log|(Ljava/lang/String;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2063|2073|auxFXSlot0|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|auxFXSlot0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2091|2096|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2097|2119|alAuxiliaryEffectSloti|method|org.lwjgl.openal.EFX10|alAuxiliaryEffectSloti|(III)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2120|2130|auxFXSlot0|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|auxFXSlot0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2132|2137|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2138|2171|AL_EFFECTSLOT_AUXILIARY_SEND_AUTO|field|org.lwjgl.openal.EFX10|AL_EFFECTSLOT_AUXILIARY_SEND_AUTO
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2173|2177|AL10|class|org.lwjgl.openal.AL10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2178|2185|AL_TRUE|field|org.lwjgl.openal.AL10|AL_TRUE
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2193|2203|auxFXSlot1|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|auxFXSlot1
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2206|2211|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2212|2237|alGenAuxiliaryEffectSlots|method|org.lwjgl.openal.EFX10|alGenAuxiliaryEffectSlots|()I
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2243|2246|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|log|(Ljava/lang/String;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2261|2271|auxFXSlot1|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|auxFXSlot1
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2289|2294|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2295|2317|alAuxiliaryEffectSloti|method|org.lwjgl.openal.EFX10|alAuxiliaryEffectSloti|(III)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2318|2328|auxFXSlot1|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|auxFXSlot1
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2330|2335|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2336|2369|AL_EFFECTSLOT_AUXILIARY_SEND_AUTO|field|org.lwjgl.openal.EFX10|AL_EFFECTSLOT_AUXILIARY_SEND_AUTO
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2371|2375|AL10|class|org.lwjgl.openal.AL10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2376|2383|AL_TRUE|field|org.lwjgl.openal.AL10|AL_TRUE
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2391|2401|auxFXSlot2|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|auxFXSlot2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2404|2409|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2410|2435|alGenAuxiliaryEffectSlots|method|org.lwjgl.openal.EFX10|alGenAuxiliaryEffectSlots|()I
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2441|2444|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|log|(Ljava/lang/String;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2459|2469|auxFXSlot2|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|auxFXSlot2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2487|2492|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2493|2515|alAuxiliaryEffectSloti|method|org.lwjgl.openal.EFX10|alAuxiliaryEffectSloti|(III)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2516|2526|auxFXSlot2|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|auxFXSlot2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2528|2533|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2534|2567|AL_EFFECTSLOT_AUXILIARY_SEND_AUTO|field|org.lwjgl.openal.EFX10|AL_EFFECTSLOT_AUXILIARY_SEND_AUTO
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2569|2573|AL10|class|org.lwjgl.openal.AL10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2574|2581|AL_TRUE|field|org.lwjgl.openal.AL10|AL_TRUE
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2589|2599|auxFXSlot3|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|auxFXSlot3
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2602|2607|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2608|2633|alGenAuxiliaryEffectSlots|method|org.lwjgl.openal.EFX10|alGenAuxiliaryEffectSlots|()I
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2639|2642|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|log|(Ljava/lang/String;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2657|2667|auxFXSlot3|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|auxFXSlot3
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2685|2690|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2691|2713|alAuxiliaryEffectSloti|method|org.lwjgl.openal.EFX10|alAuxiliaryEffectSloti|(III)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2714|2724|auxFXSlot3|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|auxFXSlot3
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2726|2731|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2732|2765|AL_EFFECTSLOT_AUXILIARY_SEND_AUTO|field|org.lwjgl.openal.EFX10|AL_EFFECTSLOT_AUXILIARY_SEND_AUTO
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2767|2771|AL10|class|org.lwjgl.openal.AL10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2772|2779|AL_TRUE|field|org.lwjgl.openal.AL10|AL_TRUE
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2815|2822|reverb0|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|reverb0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2825|2830|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2831|2843|alGenEffects|method|org.lwjgl.openal.EFX10|alGenEffects|()I
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2849|2854|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2855|2864|alEffecti|method|org.lwjgl.openal.EFX10|alEffecti|(III)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2865|2872|reverb0|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|reverb0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2874|2879|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2880|2894|AL_EFFECT_TYPE|field|org.lwjgl.openal.EFX10|AL_EFFECT_TYPE
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2896|2901|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2902|2921|AL_EFFECT_EAXREVERB|field|org.lwjgl.openal.EFX10|AL_EFFECT_EAXREVERB
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2929|2936|reverb1|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|reverb1
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2939|2944|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2945|2957|alGenEffects|method|org.lwjgl.openal.EFX10|alGenEffects|()I
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2963|2968|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2969|2978|alEffecti|method|org.lwjgl.openal.EFX10|alEffecti|(III)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2979|2986|reverb1|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|reverb1
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2988|2993|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|2994|3008|AL_EFFECT_TYPE|field|org.lwjgl.openal.EFX10|AL_EFFECT_TYPE
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3010|3015|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3016|3035|AL_EFFECT_EAXREVERB|field|org.lwjgl.openal.EFX10|AL_EFFECT_EAXREVERB
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3043|3050|reverb2|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|reverb2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3053|3058|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3059|3071|alGenEffects|method|org.lwjgl.openal.EFX10|alGenEffects|()I
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3077|3082|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3083|3092|alEffecti|method|org.lwjgl.openal.EFX10|alEffecti|(III)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3093|3100|reverb2|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|reverb2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3102|3107|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3108|3122|AL_EFFECT_TYPE|field|org.lwjgl.openal.EFX10|AL_EFFECT_TYPE
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3124|3129|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3130|3149|AL_EFFECT_EAXREVERB|field|org.lwjgl.openal.EFX10|AL_EFFECT_EAXREVERB
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3157|3164|reverb3|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|reverb3
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3167|3172|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3173|3185|alGenEffects|method|org.lwjgl.openal.EFX10|alGenEffects|()I
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3191|3196|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3197|3206|alEffecti|method|org.lwjgl.openal.EFX10|alEffecti|(III)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3207|3214|reverb3|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|reverb3
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3216|3221|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3222|3236|AL_EFFECT_TYPE|field|org.lwjgl.openal.EFX10|AL_EFFECT_TYPE
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3238|3243|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3244|3263|AL_EFFECT_EAXREVERB|field|org.lwjgl.openal.EFX10|AL_EFFECT_EAXREVERB
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3291|3304|directFilter0|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|directFilter0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3307|3312|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3313|3325|alGenFilters|method|org.lwjgl.openal.EFX10|alGenFilters|()I
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3331|3336|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3337|3346|alFilteri|method|org.lwjgl.openal.EFX10|alFilteri|(III)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3347|3360|directFilter0|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|directFilter0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3362|3367|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3368|3382|AL_FILTER_TYPE|field|org.lwjgl.openal.EFX10|AL_FILTER_TYPE
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3384|3389|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3390|3407|AL_FILTER_LOWPASS|field|org.lwjgl.openal.EFX10|AL_FILTER_LOWPASS
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3415|3426|sendFilter0|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|sendFilter0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3429|3434|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3435|3447|alGenFilters|method|org.lwjgl.openal.EFX10|alGenFilters|()I
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3453|3458|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3459|3468|alFilteri|method|org.lwjgl.openal.EFX10|alFilteri|(III)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3469|3480|sendFilter0|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|sendFilter0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3482|3487|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3488|3502|AL_FILTER_TYPE|field|org.lwjgl.openal.EFX10|AL_FILTER_TYPE
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3504|3509|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3510|3527|AL_FILTER_LOWPASS|field|org.lwjgl.openal.EFX10|AL_FILTER_LOWPASS
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3535|3546|sendFilter1|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|sendFilter1
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3549|3554|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3555|3567|alGenFilters|method|org.lwjgl.openal.EFX10|alGenFilters|()I
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3573|3578|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3579|3588|alFilteri|method|org.lwjgl.openal.EFX10|alFilteri|(III)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3589|3600|sendFilter1|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|sendFilter1
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3602|3607|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3608|3622|AL_FILTER_TYPE|field|org.lwjgl.openal.EFX10|AL_FILTER_TYPE
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3624|3629|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3630|3647|AL_FILTER_LOWPASS|field|org.lwjgl.openal.EFX10|AL_FILTER_LOWPASS
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3655|3666|sendFilter2|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|sendFilter2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3669|3674|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3675|3687|alGenFilters|method|org.lwjgl.openal.EFX10|alGenFilters|()I
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3693|3698|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3699|3708|alFilteri|method|org.lwjgl.openal.EFX10|alFilteri|(III)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3709|3720|sendFilter2|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|sendFilter2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3722|3727|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3728|3742|AL_FILTER_TYPE|field|org.lwjgl.openal.EFX10|AL_FILTER_TYPE
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3744|3749|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3750|3767|AL_FILTER_LOWPASS|field|org.lwjgl.openal.EFX10|AL_FILTER_LOWPASS
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3775|3786|sendFilter3|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|sendFilter3
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3789|3794|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3795|3807|alGenFilters|method|org.lwjgl.openal.EFX10|alGenFilters|()I
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3813|3818|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3819|3828|alFilteri|method|org.lwjgl.openal.EFX10|alFilteri|(III)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3829|3840|sendFilter3|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|sendFilter3
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3842|3847|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3848|3862|AL_FILTER_TYPE|field|org.lwjgl.openal.EFX10|AL_FILTER_TYPE
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3864|3869|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3870|3887|AL_FILTER_LOWPASS|field|org.lwjgl.openal.EFX10|AL_FILTER_LOWPASS
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3977|3996|setReverbParameters|method|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|3997|4013|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4014|4024|getReverb0|method|com.sachinreddy.GeometricAcoustics.ReverbParameters|getReverb0|()Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4028|4038|auxFXSlot0|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|auxFXSlot0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4040|4047|reverb0|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|reverb0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4053|4072|setReverbParameters|method|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4073|4089|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4090|4100|getReverb1|method|com.sachinreddy.GeometricAcoustics.ReverbParameters|getReverb1|()Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4104|4114|auxFXSlot1|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|auxFXSlot1
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4116|4123|reverb1|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|reverb1
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4130|4149|setReverbParameters|method|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4150|4166|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4167|4177|getReverb2|method|com.sachinreddy.GeometricAcoustics.ReverbParameters|getReverb2|()Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4181|4191|auxFXSlot2|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|auxFXSlot2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4193|4200|reverb2|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|reverb2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4206|4225|setReverbParameters|method|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4226|4242|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4243|4253|getReverb3|method|com.sachinreddy.GeometricAcoustics.ReverbParameters|getReverb3|()Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4257|4267|auxFXSlot3|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|auxFXSlot3
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4269|4276|reverb3|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|reverb3
+   Method End: setupEFX()V
+   Method Start: setLastSoundCategory(Lnet/minecraft/util/SoundCategory;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4398|4400|sc|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setLastSoundCategory|(Lnet/minecraft/util/SoundCategory;)V|sc|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4363|4383|setLastSoundCategory|method|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setLastSoundCategory|(Lnet/minecraft/util/SoundCategory;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4384|4397|SoundCategory|class|net.minecraft.util.SoundCategory
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4407|4424|lastSoundCategory|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|lastSoundCategory
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4427|4429|sc|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setLastSoundCategory|(Lnet/minecraft/util/SoundCategory;)V|sc|0
+   Method End: setLastSoundCategory(Lnet/minecraft/util/SoundCategory;)V
+   Method Start: setLastSoundName(Ljava/lang/String;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4480|4484|name|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setLastSoundName|(Ljava/lang/String;)V|name|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4456|4472|setLastSoundName|method|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setLastSoundName|(Ljava/lang/String;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4473|4479|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4491|4504|lastSoundName|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|lastSoundName
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4507|4511|name|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setLastSoundName|(Ljava/lang/String;)V|name|0
+   Method End: setLastSoundName(Ljava/lang/String;)V
+   Method Start: onPlaySound(FFFI)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4615|4619|posX|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|onPlaySound|(FFFI)V|posX|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4627|4631|posY|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|onPlaySound|(FFFI)V|posY|1
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4639|4643|posZ|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|onPlaySound|(FFFI)V|posZ|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4649|4657|sourceID|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|onPlaySound|(FFFI)V|sourceID|3
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4597|4608|onPlaySound|method|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|onPlaySound|(FFFI)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4664|4667|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|log|(Ljava/lang/String;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4700|4708|sourceID|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|onPlaySound|(FFFI)V|sourceID|3
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4720|4724|posX|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|onPlaySound|(FFFI)V|posX|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4734|4738|posY|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|onPlaySound|(FFFI)V|posY|1
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4748|4752|posZ|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|onPlaySound|(FFFI)V|posZ|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4780|4797|lastSoundCategory|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|lastSoundCategory
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4798|4806|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4831|4844|lastSoundName|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|lastSoundName
+   Method End: onPlaySound(FFFI)V
+   Method Start: setReverbParameters(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4971|4972|r|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|r|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4978|4987|auxFXSlot|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|auxFXSlot|1
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4993|5003|reverbSlot|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|reverbSlot|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4934|4953|setReverbParameters|method|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|4954|4970|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5037|5042|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5043|5052|alEffectf|method|org.lwjgl.openal.EFX10|alEffectf|(IIF)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5053|5063|reverbSlot|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|reverbSlot|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5065|5070|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5071|5091|AL_REVERB_DECAY_TIME|field|org.lwjgl.openal.EFX10|AL_REVERB_DECAY_TIME
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5093|5094|r|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|r|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5095|5104|decayTime|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|decayTime
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5109|5114|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5115|5124|alEffectf|method|org.lwjgl.openal.EFX10|alEffectf|(IIF)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5125|5135|reverbSlot|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|reverbSlot|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5137|5142|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5143|5160|AL_REVERB_DENSITY|field|org.lwjgl.openal.EFX10|AL_REVERB_DENSITY
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5162|5163|r|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|r|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5164|5171|density|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|density
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5176|5181|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5182|5191|alEffectf|method|org.lwjgl.openal.EFX10|alEffectf|(IIF)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5192|5202|reverbSlot|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|reverbSlot|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5204|5209|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5210|5229|AL_REVERB_DIFFUSION|field|org.lwjgl.openal.EFX10|AL_REVERB_DIFFUSION
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5231|5232|r|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|r|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5233|5242|diffusion|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|diffusion
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5247|5252|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5253|5262|alEffectf|method|org.lwjgl.openal.EFX10|alEffectf|(IIF)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5263|5273|reverbSlot|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|reverbSlot|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5275|5280|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5281|5295|AL_REVERB_GAIN|field|org.lwjgl.openal.EFX10|AL_REVERB_GAIN
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5297|5298|r|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|r|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5299|5303|gain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|gain
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5308|5313|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5314|5323|alEffectf|method|org.lwjgl.openal.EFX10|alEffectf|(IIF)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5324|5334|reverbSlot|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|reverbSlot|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5336|5341|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5342|5358|AL_REVERB_GAINHF|field|org.lwjgl.openal.EFX10|AL_REVERB_GAINHF
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5360|5361|r|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|r|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5362|5368|gainHF|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|gainHF
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5373|5378|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5379|5388|alEffectf|method|org.lwjgl.openal.EFX10|alEffectf|(IIF)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5389|5399|reverbSlot|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|reverbSlot|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5401|5406|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5407|5430|AL_REVERB_DECAY_HFRATIO|field|org.lwjgl.openal.EFX10|AL_REVERB_DECAY_HFRATIO
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5432|5433|r|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|r|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5434|5446|decayHFRatio|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|decayHFRatio
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5451|5456|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5457|5466|alEffectf|method|org.lwjgl.openal.EFX10|alEffectf|(IIF)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5467|5477|reverbSlot|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|reverbSlot|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5479|5484|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5485|5511|AL_REVERB_REFLECTIONS_GAIN|field|org.lwjgl.openal.EFX10|AL_REVERB_REFLECTIONS_GAIN
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5513|5514|r|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|r|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5515|5530|reflectionsGain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionsGain
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5535|5540|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5541|5550|alEffectf|method|org.lwjgl.openal.EFX10|alEffectf|(IIF)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5551|5561|reverbSlot|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|reverbSlot|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5563|5568|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5569|5596|AL_REVERB_REFLECTIONS_DELAY|field|org.lwjgl.openal.EFX10|AL_REVERB_REFLECTIONS_DELAY
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5598|5599|r|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|r|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5600|5616|reflectionsDelay|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionsDelay
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5621|5626|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5627|5636|alEffectf|method|org.lwjgl.openal.EFX10|alEffectf|(IIF)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5637|5647|reverbSlot|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|reverbSlot|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5649|5654|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5655|5681|AL_REVERB_LATE_REVERB_GAIN|field|org.lwjgl.openal.EFX10|AL_REVERB_LATE_REVERB_GAIN
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5683|5684|r|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|r|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5685|5699|lateReverbGain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbGain
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5704|5709|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5710|5719|alEffectf|method|org.lwjgl.openal.EFX10|alEffectf|(IIF)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5720|5730|reverbSlot|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|reverbSlot|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5732|5737|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5738|5765|AL_REVERB_LATE_REVERB_DELAY|field|org.lwjgl.openal.EFX10|AL_REVERB_LATE_REVERB_DELAY
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5767|5768|r|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|r|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5769|5784|lateReverbDelay|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbDelay
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5789|5794|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5795|5804|alEffectf|method|org.lwjgl.openal.EFX10|alEffectf|(IIF)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5805|5815|reverbSlot|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|reverbSlot|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5817|5822|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5823|5854|AL_REVERB_AIR_ABSORPTION_GAINHF|field|org.lwjgl.openal.EFX10|AL_REVERB_AIR_ABSORPTION_GAINHF
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5856|5857|r|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|r|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5858|5877|airAbsorptionGainHF|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|airAbsorptionGainHF
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5882|5887|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5888|5897|alEffectf|method|org.lwjgl.openal.EFX10|alEffectf|(IIF)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5898|5908|reverbSlot|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|reverbSlot|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5910|5915|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5916|5945|AL_REVERB_ROOM_ROLLOFF_FACTOR|field|org.lwjgl.openal.EFX10|AL_REVERB_ROOM_ROLLOFF_FACTOR
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5947|5948|r|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|r|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5949|5966|roomRolloffFactor|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|roomRolloffFactor
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5971|5976|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5977|5986|alEffecti|method|org.lwjgl.openal.EFX10|alEffecti|(III)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5987|5997|reverbSlot|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|reverbSlot|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|5999|6004|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|6005|6028|AL_REVERB_DECAY_HFLIMIT|field|org.lwjgl.openal.EFX10|AL_REVERB_DECAY_HFLIMIT
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|6030|6034|AL10|class|org.lwjgl.openal.AL10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|6035|6042|AL_TRUE|field|org.lwjgl.openal.AL10|AL_TRUE
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|6083|6088|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|6089|6111|alAuxiliaryEffectSloti|method|org.lwjgl.openal.EFX10|alAuxiliaryEffectSloti|(III)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|6112|6121|auxFXSlot|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|auxFXSlot|1
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|6123|6128|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|6129|6149|AL_EFFECTSLOT_EFFECT|field|org.lwjgl.openal.EFX10|AL_EFFECTSLOT_EFFECT
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|6151|6161|reverbSlot|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|reverbSlot|2
+   Method End: setReverbParameters(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V
+   Method Start: log(Ljava/lang/String;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|6262|6269|message|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|log|(Ljava/lang/String;)V|message|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|6251|6254|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|log|(Ljava/lang/String;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|6255|6261|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|6276|6282|System|class|java.lang.System
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|6283|6286|out|field|java.lang.System|out
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|6287|6294|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|6295|6304|logPrefix|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|logPrefix
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|6314|6321|message|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|log|(Ljava/lang/String;)V|message|0
+   Method End: log(Ljava/lang/String;)V
+Class End  : com.sachinreddy.GeometricAcoustics.GeometricAcoustics
+endProcessing "com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java"
+
+startProcessing "com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java" md5: ed8eb39156a506123849c3a6d393b110
+Cache Hit!
+@|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8|42|com.sachinreddy.GeometricAcoustics|package|com.sachinreddy.GeometricAcoustics|(file)
+Class Start: com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1003|1006|Mod|class|net.minecraftforge.fml.common.Mod
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1007|1012|modid|method|net.minecraftforge.fml.common.Mod|modid|()Ljava/lang/String;
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1015|1037|GeometricAcousticsCore|class|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1038|1043|modid|field|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|modid
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1045|1052|version|method|net.minecraftforge.fml.common.Mod|version|()Ljava/lang/String;
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1055|1077|GeometricAcousticsCore|class|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1078|1085|version|field|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|version
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1100|1122|GeometricAcousticsCore|class|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1134|1151|IClassTransformer|class|net.minecraft.launchwrapper.IClassTransformer
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1169|1182|Configuration|class|net.minecraftforge.common.config.Configuration
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1169|1182|Configuration|class|net.minecraftforge.common.config.Configuration
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1183|1193|configFile|field|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|configFile|
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1233|1255|GeometricAcousticsCore|class|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1199|1211|Mod.Instance|class|net.minecraftforge.fml.common.Mod.Instance
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1233|1255|GeometricAcousticsCore|class|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1256|1264|instance|field|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|instance|
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1289|1295|String|class|java.lang.String
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1289|1295|String|class|java.lang.String
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1296|1301|modid|field|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|modid|
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1331|1337|String|class|java.lang.String
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1331|1337|String|class|java.lang.String
+   @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1338|1345|version|field|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|version|
+   Method Start: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1482|1487|event|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1418|1434|Mod.EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1448|1455|preInit|method|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1456|1481|FMLPreInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1494|1504|configFile|field|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|configFile
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1511|1524|Configuration|class|net.minecraftforge.common.config.Configuration
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1525|1530|event|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1531|1560|getSuggestedConfigurationFile|method|net.minecraftforge.fml.common.event.FMLPreInitializationEvent|getSuggestedConfigurationFile|()Ljava/io/File;
+   Method End: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+   Method Start: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1630|1635|event|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1572|1588|Mod.EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1602|1606|init|method|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1607|1629|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1642|1658|FMLCommonHandler|class|net.minecraftforge.fml.common.FMLCommonHandler
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1659|1667|instance|method|net.minecraftforge.fml.common.FMLCommonHandler|instance|()Lnet/minecraftforge/fml/common/FMLCommonHandler;
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1670|1673|bus|method|net.minecraftforge.fml.common.FMLCommonHandler|bus|()Lnet/minecraftforge/fml/common/eventhandler/EventBus;
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1676|1684|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1685|1693|instance|field|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|instance
+   Method End: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+   Method Start: log(Ljava/lang/String;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1785|1792|message|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|log|(Ljava/lang/String;)V|message|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1774|1777|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|log|(Ljava/lang/String;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1778|1784|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1801|1807|System|class|java.lang.System
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1808|1811|out|field|java.lang.System|out
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1812|1819|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1820|1827|message|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|log|(Ljava/lang/String;)V|message|0
+   Method End: log(Ljava/lang/String;)V
+   Method Start: transform(Ljava/lang/String;Ljava/lang/String;[B)[B
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|2047|2051|arg0|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|transform|(Ljava/lang/String;Ljava/lang/String;[B)[B|arg0|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|2060|2064|arg1|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|transform|(Ljava/lang/String;Ljava/lang/String;[B)[B|arg1|1
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|2073|2077|arg2|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|transform|(Ljava/lang/String;Ljava/lang/String;[B)[B|arg2|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|2005|2013|Override|class|java.lang.Override
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|2030|2039|transform|method|net.minecraft.launchwrapper.IClassTransformer|transform|(Ljava/lang/String;Ljava/lang/String;[B)[B
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|2040|2046|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|2053|2059|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|2179|2187|InsnList|class|org.objectweb.asm.tree.InsnList
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|2203|2211|InsnList|class|org.objectweb.asm.tree.InsnList
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|2227|2230|add|method|org.objectweb.asm.tree.InsnList|add|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|2235|2249|MethodInsnNode|class|org.objectweb.asm.tree.MethodInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|2250|2257|Opcodes|class|org.objectweb.asm.Opcodes
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|2258|2270|INVOKESTATIC|field|org.objectweb.asm.Opcodes|INVOKESTATIC
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|2353|2357|arg2|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|transform|(Ljava/lang/String;Ljava/lang/String;[B)[B|arg2|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|2360|2378|patchMethodInClass|method|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|2379|2383|arg0|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|transform|(Ljava/lang/String;Ljava/lang/String;[B)[B|arg0|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|2385|2389|arg2|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|transform|(Ljava/lang/String;Ljava/lang/String;[B)[B|arg2|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|2401|2407|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|2523|2529|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|2603|2609|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|2704|2711|Opcodes|class|org.objectweb.asm.Opcodes
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|2712|2725|INVOKESPECIAL|field|org.objectweb.asm.Opcodes|INVOKESPECIAL
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|2753|2769|AbstractInsnNode|class|org.objectweb.asm.tree.AbstractInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|2770|2781|METHOD_INSN|field|org.objectweb.asm.tree.AbstractInsnNode|METHOD_INSN
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|2815|2821|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|2904|2912|InsnList|class|org.objectweb.asm.tree.InsnList
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|3153|3161|InsnList|class|org.objectweb.asm.tree.InsnList
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|3177|3185|InsnList|class|org.objectweb.asm.tree.InsnList
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|3201|3204|add|method|org.objectweb.asm.tree.InsnList|add|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|3209|3220|VarInsnNode|class|org.objectweb.asm.tree.VarInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|3221|3228|Opcodes|class|org.objectweb.asm.Opcodes
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|3229|3234|ALOAD|field|org.objectweb.asm.Opcodes|ALOAD
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|3253|3256|add|method|org.objectweb.asm.tree.InsnList|add|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|3261|3275|MethodInsnNode|class|org.objectweb.asm.tree.MethodInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|3276|3283|Opcodes|class|org.objectweb.asm.Opcodes
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|3284|3296|INVOKESTATIC|field|org.objectweb.asm.Opcodes|INVOKESTATIC
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|3429|3437|InsnList|class|org.objectweb.asm.tree.InsnList
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|3456|3464|InsnList|class|org.objectweb.asm.tree.InsnList
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|3483|3486|add|method|org.objectweb.asm.tree.InsnList|add|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|3491|3502|VarInsnNode|class|org.objectweb.asm.tree.VarInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|3503|3510|Opcodes|class|org.objectweb.asm.Opcodes
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|3511|3516|ALOAD|field|org.objectweb.asm.Opcodes|ALOAD
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|3538|3541|add|method|org.objectweb.asm.tree.InsnList|add|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|3546|3560|MethodInsnNode|class|org.objectweb.asm.tree.MethodInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|3561|3568|Opcodes|class|org.objectweb.asm.Opcodes
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|3569|3581|INVOKESTATIC|field|org.objectweb.asm.Opcodes|INVOKESTATIC
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|3684|3688|arg2|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|transform|(Ljava/lang/String;Ljava/lang/String;[B)[B|arg2|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|3691|3709|patchMethodInClass|method|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|3710|3714|arg0|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|transform|(Ljava/lang/String;Ljava/lang/String;[B)[B|arg0|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|3716|3720|arg2|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|transform|(Ljava/lang/String;Ljava/lang/String;[B)[B|arg2|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|3732|3738|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|3822|3828|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|3888|3894|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|3983|3990|Opcodes|class|org.objectweb.asm.Opcodes
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|3991|4004|INVOKEVIRTUAL|field|org.objectweb.asm.Opcodes|INVOKEVIRTUAL
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|4032|4048|AbstractInsnNode|class|org.objectweb.asm.tree.AbstractInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|4049|4060|METHOD_INSN|field|org.objectweb.asm.tree.AbstractInsnNode|METHOD_INSN
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|4094|4100|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|4188|4196|InsnList|class|org.objectweb.asm.tree.InsnList
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|4413|4421|InsnList|class|org.objectweb.asm.tree.InsnList
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|4437|4445|InsnList|class|org.objectweb.asm.tree.InsnList
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|4461|4464|add|method|org.objectweb.asm.tree.InsnList|add|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|4469|4480|VarInsnNode|class|org.objectweb.asm.tree.VarInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|4481|4488|Opcodes|class|org.objectweb.asm.Opcodes
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|4489|4494|ALOAD|field|org.objectweb.asm.Opcodes|ALOAD
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|4513|4516|add|method|org.objectweb.asm.tree.InsnList|add|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|4521|4535|MethodInsnNode|class|org.objectweb.asm.tree.MethodInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|4536|4543|Opcodes|class|org.objectweb.asm.Opcodes
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|4544|4559|INVOKEINTERFACE|field|org.objectweb.asm.Opcodes|INVOKEINTERFACE
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|4675|4678|add|method|org.objectweb.asm.tree.InsnList|add|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|4683|4697|MethodInsnNode|class|org.objectweb.asm.tree.MethodInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|4698|4705|Opcodes|class|org.objectweb.asm.Opcodes
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|4706|4719|INVOKEVIRTUAL|field|org.objectweb.asm.Opcodes|INVOKEVIRTUAL
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|4810|4813|add|method|org.objectweb.asm.tree.InsnList|add|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|4818|4832|MethodInsnNode|class|org.objectweb.asm.tree.MethodInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|4833|4840|Opcodes|class|org.objectweb.asm.Opcodes
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|4841|4853|INVOKESTATIC|field|org.objectweb.asm.Opcodes|INVOKESTATIC
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|4966|4974|InsnList|class|org.objectweb.asm.tree.InsnList
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|4993|5001|InsnList|class|org.objectweb.asm.tree.InsnList
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|5020|5023|add|method|org.objectweb.asm.tree.InsnList|add|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|5028|5039|VarInsnNode|class|org.objectweb.asm.tree.VarInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|5040|5047|Opcodes|class|org.objectweb.asm.Opcodes
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|5048|5053|ALOAD|field|org.objectweb.asm.Opcodes|ALOAD
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|5075|5078|add|method|org.objectweb.asm.tree.InsnList|add|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|5083|5097|MethodInsnNode|class|org.objectweb.asm.tree.MethodInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|5098|5105|Opcodes|class|org.objectweb.asm.Opcodes
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|5106|5121|INVOKEINTERFACE|field|org.objectweb.asm.Opcodes|INVOKEINTERFACE
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|5162|5165|add|method|org.objectweb.asm.tree.InsnList|add|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|5170|5184|MethodInsnNode|class|org.objectweb.asm.tree.MethodInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|5185|5192|Opcodes|class|org.objectweb.asm.Opcodes
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|5193|5206|INVOKEVIRTUAL|field|org.objectweb.asm.Opcodes|INVOKEVIRTUAL
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|5267|5270|add|method|org.objectweb.asm.tree.InsnList|add|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|5275|5289|MethodInsnNode|class|org.objectweb.asm.tree.MethodInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|5290|5297|Opcodes|class|org.objectweb.asm.Opcodes
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|5298|5310|INVOKESTATIC|field|org.objectweb.asm.Opcodes|INVOKESTATIC
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|5423|5427|arg2|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|transform|(Ljava/lang/String;Ljava/lang/String;[B)[B|arg2|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|5430|5448|patchMethodInClass|method|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|5449|5453|arg0|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|transform|(Ljava/lang/String;Ljava/lang/String;[B)[B|arg0|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|5455|5459|arg2|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|transform|(Ljava/lang/String;Ljava/lang/String;[B)[B|arg2|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|5471|5477|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|5561|5567|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|5627|5633|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|5722|5729|Opcodes|class|org.objectweb.asm.Opcodes
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|5730|5743|INVOKEVIRTUAL|field|org.objectweb.asm.Opcodes|INVOKEVIRTUAL
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|5771|5787|AbstractInsnNode|class|org.objectweb.asm.tree.AbstractInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|5788|5799|METHOD_INSN|field|org.objectweb.asm.tree.AbstractInsnNode|METHOD_INSN
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|5833|5839|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|5927|5935|InsnList|class|org.objectweb.asm.tree.InsnList
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6167|6175|InsnList|class|org.objectweb.asm.tree.InsnList
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6191|6199|InsnList|class|org.objectweb.asm.tree.InsnList
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6215|6218|add|method|org.objectweb.asm.tree.InsnList|add|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6223|6234|VarInsnNode|class|org.objectweb.asm.tree.VarInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6235|6242|Opcodes|class|org.objectweb.asm.Opcodes
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6243|6248|ALOAD|field|org.objectweb.asm.Opcodes|ALOAD
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6267|6270|add|method|org.objectweb.asm.tree.InsnList|add|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6275|6288|FieldInsnNode|class|org.objectweb.asm.tree.FieldInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6289|6296|Opcodes|class|org.objectweb.asm.Opcodes
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6297|6305|GETFIELD|field|org.objectweb.asm.Opcodes|GETFIELD
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6410|6413|add|method|org.objectweb.asm.tree.InsnList|add|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6418|6431|FieldInsnNode|class|org.objectweb.asm.tree.FieldInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6432|6439|Opcodes|class|org.objectweb.asm.Opcodes
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6440|6448|GETFIELD|field|org.objectweb.asm.Opcodes|GETFIELD
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6506|6509|add|method|org.objectweb.asm.tree.InsnList|add|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6514|6525|VarInsnNode|class|org.objectweb.asm.tree.VarInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6526|6533|Opcodes|class|org.objectweb.asm.Opcodes
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6534|6539|ALOAD|field|org.objectweb.asm.Opcodes|ALOAD
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6558|6561|add|method|org.objectweb.asm.tree.InsnList|add|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6566|6579|FieldInsnNode|class|org.objectweb.asm.tree.FieldInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6580|6587|Opcodes|class|org.objectweb.asm.Opcodes
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6588|6596|GETFIELD|field|org.objectweb.asm.Opcodes|GETFIELD
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6701|6704|add|method|org.objectweb.asm.tree.InsnList|add|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6709|6722|FieldInsnNode|class|org.objectweb.asm.tree.FieldInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6723|6730|Opcodes|class|org.objectweb.asm.Opcodes
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6731|6739|GETFIELD|field|org.objectweb.asm.Opcodes|GETFIELD
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6797|6800|add|method|org.objectweb.asm.tree.InsnList|add|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6805|6816|VarInsnNode|class|org.objectweb.asm.tree.VarInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6817|6824|Opcodes|class|org.objectweb.asm.Opcodes
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6825|6830|ALOAD|field|org.objectweb.asm.Opcodes|ALOAD
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6849|6852|add|method|org.objectweb.asm.tree.InsnList|add|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6857|6870|FieldInsnNode|class|org.objectweb.asm.tree.FieldInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6871|6878|Opcodes|class|org.objectweb.asm.Opcodes
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6879|6887|GETFIELD|field|org.objectweb.asm.Opcodes|GETFIELD
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|6992|6995|add|method|org.objectweb.asm.tree.InsnList|add|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7000|7013|FieldInsnNode|class|org.objectweb.asm.tree.FieldInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7014|7021|Opcodes|class|org.objectweb.asm.Opcodes
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7022|7030|GETFIELD|field|org.objectweb.asm.Opcodes|GETFIELD
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7088|7091|add|method|org.objectweb.asm.tree.InsnList|add|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7096|7107|VarInsnNode|class|org.objectweb.asm.tree.VarInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7108|7115|Opcodes|class|org.objectweb.asm.Opcodes
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7116|7121|ALOAD|field|org.objectweb.asm.Opcodes|ALOAD
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7140|7143|add|method|org.objectweb.asm.tree.InsnList|add|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7148|7161|FieldInsnNode|class|org.objectweb.asm.tree.FieldInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7162|7169|Opcodes|class|org.objectweb.asm.Opcodes
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7170|7178|GETFIELD|field|org.objectweb.asm.Opcodes|GETFIELD
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7308|7311|add|method|org.objectweb.asm.tree.InsnList|add|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7316|7329|FieldInsnNode|class|org.objectweb.asm.tree.FieldInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7330|7337|Opcodes|class|org.objectweb.asm.Opcodes
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7338|7346|GETFIELD|field|org.objectweb.asm.Opcodes|GETFIELD
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7450|7453|add|method|org.objectweb.asm.tree.InsnList|add|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7458|7466|InsnNode|class|org.objectweb.asm.tree.InsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7467|7474|Opcodes|class|org.objectweb.asm.Opcodes
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7475|7483|ICONST_0|field|org.objectweb.asm.Opcodes|ICONST_0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7499|7502|add|method|org.objectweb.asm.tree.InsnList|add|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7507|7521|MethodInsnNode|class|org.objectweb.asm.tree.MethodInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7522|7529|Opcodes|class|org.objectweb.asm.Opcodes
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7530|7543|INVOKEVIRTUAL|field|org.objectweb.asm.Opcodes|INVOKEVIRTUAL
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7603|7606|add|method|org.objectweb.asm.tree.InsnList|add|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7611|7625|MethodInsnNode|class|org.objectweb.asm.tree.MethodInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7626|7633|Opcodes|class|org.objectweb.asm.Opcodes
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7634|7646|INVOKESTATIC|field|org.objectweb.asm.Opcodes|INVOKESTATIC
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7747|7751|arg2|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|transform|(Ljava/lang/String;Ljava/lang/String;[B)[B|arg2|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7754|7772|patchMethodInClass|method|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7773|7777|arg0|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|transform|(Ljava/lang/String;Ljava/lang/String;[B)[B|arg0|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7779|7783|arg2|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|transform|(Ljava/lang/String;Ljava/lang/String;[B)[B|arg2|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7795|7801|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7882|7888|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|7938|7944|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8011|8018|Opcodes|class|org.objectweb.asm.Opcodes
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8019|8032|INVOKEVIRTUAL|field|org.objectweb.asm.Opcodes|INVOKEVIRTUAL
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8060|8076|AbstractInsnNode|class|org.objectweb.asm.tree.AbstractInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8077|8088|METHOD_INSN|field|org.objectweb.asm.tree.AbstractInsnNode|METHOD_INSN
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8122|8128|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8206|8214|InsnList|class|org.objectweb.asm.tree.InsnList
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8382|8386|arg2|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|transform|(Ljava/lang/String;Ljava/lang/String;[B)[B|arg2|2
+   Method End: transform(Ljava/lang/String;Ljava/lang/String;[B)[B
+   Method Start: patchMethodInClass(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8435|8451|currentClassName|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|currentClassName|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8460|8465|bytes|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|bytes|1
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8476|8492|targetClassNames|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetClassNames|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8503|8520|targetMethodNames|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetMethodNames|3
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8531|8553|targetMethodSignatures|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetMethodSignatures|4
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8563|8579|targetNodeOpcode|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetNodeOpcode|5
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8585|8599|targetNodeType|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetNodeType|6
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8610|8637|targetInvocationMethodNames|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetInvocationMethodNames|7
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8648|8680|targetInvocationMethodSignatures|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetInvocationMethodSignatures|8
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8693|8714|instructionsToInjects|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|instructionsToInjects|9
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8728|8740|insertBefore|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|insertBefore|10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8746|8765|nodesToDeleteBefore|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|nodesToDeleteBefore|11
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8771|8789|nodesToDeleteAfter|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|nodesToDeleteAfter|12
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8799|8815|deleteTargetNode|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|deleteTargetNode|13
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8821|8837|targetNodeOffset|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetNodeOffset|14
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8409|8427|patchMethodInClass|method|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8428|8434|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8467|8473|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8494|8500|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8522|8528|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8601|8607|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8639|8645|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8682|8690|InsnList|class|org.objectweb.asm.tree.InsnList
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8844|8850|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8869|8885|targetClassNames|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetClassNames|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8892|8898|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8918|8935|targetMethodNames|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetMethodNames|3
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8942|8948|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8978|9005|targetInvocationMethodNames|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetInvocationMethodNames|7
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|9015|9021|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|9046|9068|targetMethodSignatures|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetMethodSignatures|4
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|9075|9083|InsnList|class|org.objectweb.asm.tree.InsnList
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|9107|9128|instructionsToInjects|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|instructionsToInjects|9
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|9172|9188|targetClassNames|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetClassNames|2
+      Field: Array Length, skipping
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|9213|9229|currentClassName|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|currentClassName|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|9230|9236|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|9237|9253|targetClassNames|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetClassNames|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|9286|9302|targetClassNames|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetClassNames|2
+      Field: Array Length, skipping
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|9317|9333|targetClassNames|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetClassNames|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|9339|9355|targetClassNames|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetClassNames|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|9383|9400|targetMethodNames|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetMethodNames|3
+      Field: Array Length, skipping
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|9415|9432|targetMethodNames|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetMethodNames|3
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|9438|9454|targetClassNames|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetClassNames|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|9492|9519|targetInvocationMethodNames|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetInvocationMethodNames|7
+      Field: Array Length, skipping
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|9534|9561|targetInvocationMethodNames|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetInvocationMethodNames|7
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|9567|9594|targetInvocationMethodNames|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetInvocationMethodNames|7
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|9627|9649|targetMethodSignatures|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetMethodSignatures|4
+      Field: Array Length, skipping
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|9664|9686|targetMethodSignatures|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetMethodSignatures|4
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|9692|9714|targetMethodSignatures|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetMethodSignatures|4
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|9746|9767|instructionsToInjects|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|instructionsToInjects|9
+      Field: Array Length, skipping
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|9782|9803|instructionsToInjects|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|instructionsToInjects|9
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|9809|9830|instructionsToInjects|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|instructionsToInjects|9
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|9872|9878|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|9925|9957|targetInvocationMethodSignatures|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetInvocationMethodSignatures|8
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|10008|10040|targetInvocationMethodSignatures|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetInvocationMethodSignatures|8
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|10107|10139|targetInvocationMethodSignatures|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetInvocationMethodSignatures|8
+      Field: Array Length, skipping
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|10154|10186|targetInvocationMethodSignatures|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetInvocationMethodSignatures|8
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|10192|10224|targetInvocationMethodSignatures|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetInvocationMethodSignatures|8
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|10294|10310|currentClassName|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|currentClassName|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|10311|10317|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|10346|10351|bytes|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|bytes|1
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|10358|10361|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|log|(Ljava/lang/String;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|10513|10522|ClassNode|class|org.objectweb.asm.tree.ClassNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|10539|10548|ClassNode|class|org.objectweb.asm.tree.ClassNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|10554|10565|ClassReader|class|org.objectweb.asm.ClassReader
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|10584|10595|ClassReader|class|org.objectweb.asm.ClassReader
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|10596|10601|bytes|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|bytes|1
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|10618|10624|accept|method|org.objectweb.asm.ClassReader|accept|(Lorg/objectweb/asm/ClassVisitor;I)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|10754|10770|SuppressWarnings|class|java.lang.SuppressWarnings
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|10786|10794|Iterator|class|java.util.Iterator
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|10795|10805|MethodNode|class|org.objectweb.asm.tree.MethodNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|10827|10834|methods|field|org.objectweb.asm.tree.ClassNode|methods
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|10835|10843|iterator|method|java.lang.Iterable|iterator|()Ljava/util/Iterator;
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|10863|10870|hasNext|method|java.util.Iterator|hasNext|()Z
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|10881|10891|MethodNode|class|org.objectweb.asm.tree.MethodNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|10904|10908|next|method|java.util.Iterator|next|()Ljava/lang/Object;
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|10915|10918|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|log|(Ljava/lang/String;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|10949|10953|name|field|org.objectweb.asm.tree.MethodNode|name
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|10970|10974|desc|field|org.objectweb.asm.tree.MethodNode|desc
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|11079|11083|name|field|org.objectweb.asm.tree.MethodNode|name
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|11084|11090|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|11114|11118|desc|field|org.objectweb.asm.tree.MethodNode|desc
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|11119|11125|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|11159|11162|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|log|(Ljava/lang/String;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|11258|11274|AbstractInsnNode|class|org.objectweb.asm.tree.AbstractInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|11299|11315|AbstractInsnNode|class|org.objectweb.asm.tree.AbstractInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|11345|11361|SuppressWarnings|class|java.lang.SuppressWarnings
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|11379|11387|Iterator|class|java.util.Iterator
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|11388|11404|AbstractInsnNode|class|org.objectweb.asm.tree.AbstractInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|11415|11427|instructions|field|org.objectweb.asm.tree.MethodNode|instructions
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|11428|11436|iterator|method|org.objectweb.asm.tree.InsnList|iterator|()Ljava/util/ListIterator;
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|11522|11529|hasNext|method|java.util.Iterator|hasNext|()Z
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|11577|11581|next|method|java.util.Iterator|next|()Ljava/lang/Object;
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|11612|11621|getOpcode|method|org.objectweb.asm.tree.AbstractInsnNode|getOpcode|()I
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|11627|11643|targetNodeOpcode|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetNodeOpcode|5
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|11662|11676|targetNodeType|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetNodeType|6
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|11680|11696|AbstractInsnNode|class|org.objectweb.asm.tree.AbstractInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|11697|11708|METHOD_INSN|field|org.objectweb.asm.tree.AbstractInsnNode|METHOD_INSN
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|11780|11787|getType|method|org.objectweb.asm.tree.AbstractInsnNode|getType|()I
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|11793|11809|AbstractInsnNode|class|org.objectweb.asm.tree.AbstractInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|11810|11821|METHOD_INSN|field|org.objectweb.asm.tree.AbstractInsnNode|METHOD_INSN
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|11840|11854|MethodInsnNode|class|org.objectweb.asm.tree.MethodInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|11865|11879|MethodInsnNode|class|org.objectweb.asm.tree.MethodInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|11959|11963|name|field|org.objectweb.asm.tree.MethodInsnNode|name
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|11964|11970|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|12030|12034|desc|field|org.objectweb.asm.tree.MethodInsnNode|desc
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|12035|12041|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|12140|12143|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|log|(Ljava/lang/String;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|12381|12388|getType|method|org.objectweb.asm.tree.AbstractInsnNode|getType|()I
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|12394|12408|targetNodeType|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetNodeType|6
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|12427|12430|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|log|(Ljava/lang/String;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|12469|12485|targetNodeOpcode|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetNodeOpcode|5
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|12659|12675|targetNodeOffset|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetNodeOffset|14
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|12712|12728|targetNodeOffset|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetNodeOffset|14
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|12772|12779|getNext|method|org.objectweb.asm.tree.AbstractInsnNode|getNext|()Lorg/objectweb/asm/tree/AbstractInsnNode;
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|12809|12825|targetNodeOffset|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetNodeOffset|14
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|12863|12879|targetNodeOffset|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetNodeOffset|14
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|12923|12934|getPrevious|method|org.objectweb.asm.tree.AbstractInsnNode|getPrevious|()Lorg/objectweb/asm/tree/AbstractInsnNode;
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|13069|13088|nodesToDeleteBefore|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|nodesToDeleteBefore|11
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|13108|13124|AbstractInsnNode|class|org.objectweb.asm.tree.AbstractInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|13151|13162|getPrevious|method|org.objectweb.asm.tree.AbstractInsnNode|getPrevious|()Lorg/objectweb/asm/tree/AbstractInsnNode;
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|13172|13175|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|log|(Ljava/lang/String;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|13208|13217|getOpcode|method|org.objectweb.asm.tree.AbstractInsnNode|getOpcode|()I
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|13230|13242|instructions|field|org.objectweb.asm.tree.MethodNode|instructions
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|13243|13249|remove|method|org.objectweb.asm.tree.InsnList|remove|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|13303|13321|nodesToDeleteAfter|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|nodesToDeleteAfter|12
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|13341|13357|AbstractInsnNode|class|org.objectweb.asm.tree.AbstractInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|13380|13387|getNext|method|org.objectweb.asm.tree.AbstractInsnNode|getNext|()Lorg/objectweb/asm/tree/AbstractInsnNode;
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|13397|13400|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|log|(Ljava/lang/String;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|13429|13438|getOpcode|method|org.objectweb.asm.tree.AbstractInsnNode|getOpcode|()I
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|13451|13463|instructions|field|org.objectweb.asm.tree.MethodNode|instructions
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|13464|13470|remove|method|org.objectweb.asm.tree.InsnList|remove|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|13516|13528|insertBefore|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|insertBefore|10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|13538|13550|instructions|field|org.objectweb.asm.tree.MethodNode|instructions
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|13551|13563|insertBefore|method|org.objectweb.asm.tree.InsnList|insertBefore|(Lorg/objectweb/asm/tree/AbstractInsnNode;Lorg/objectweb/asm/tree/InsnList;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|13617|13629|instructions|field|org.objectweb.asm.tree.MethodNode|instructions
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|13630|13636|insert|method|org.objectweb.asm.tree.InsnList|insert|(Lorg/objectweb/asm/tree/AbstractInsnNode;Lorg/objectweb/asm/tree/InsnList;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|13687|13703|deleteTargetNode|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|deleteTargetNode|13
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|13720|13732|instructions|field|org.objectweb.asm.tree.MethodNode|instructions
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|13733|13739|remove|method|org.objectweb.asm.tree.InsnList|remove|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|13771|13774|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|log|(Ljava/lang/String;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|13917|13928|ClassWriter|class|org.objectweb.asm.ClassWriter
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|13942|13953|ClassWriter|class|org.objectweb.asm.ClassWriter
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|13954|13965|ClassWriter|class|org.objectweb.asm.ClassWriter
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|13966|13978|COMPUTE_MAXS|field|org.objectweb.asm.ClassWriter|COMPUTE_MAXS
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|13993|13999|accept|method|org.objectweb.asm.tree.ClassNode|accept|(Lorg/objectweb/asm/ClassVisitor;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|14025|14036|toByteArray|method|org.objectweb.asm.ClassWriter|toByteArray|()[B
+   Method End: patchMethodInClass(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B
+Class End  : com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore
+endProcessing "com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java"
+
+startProcessing "com/sachinreddy/GeometricAcoustics/ReverbParameters.java" md5: 631ee0ab9819256e80bfe6c4f837d793
+Cache Hit!
+@|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|8|42|com.sachinreddy.GeometricAcoustics|package|com.sachinreddy.GeometricAcoustics|(file)
+Class Start: com.sachinreddy.GeometricAcoustics.ReverbParameters
+   @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|90|106|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
+   @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|150|159|decayTime|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|decayTime|
+   @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|179|186|density|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|density|
+   @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|202|211|diffusion|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|diffusion|
+   @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|227|231|gain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|gain|
+   @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|247|253|gainHF|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|gainHF|
+   @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|269|281|decayHFRatio|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|decayHFRatio|
+   @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|297|312|reflectionsGain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionsGain|
+   @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|328|344|reflectionsDelay|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionsDelay|
+   @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|360|374|lateReverbGain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbGain|
+   @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|390|405|lateReverbDelay|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbDelay|
+   @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|421|440|airAbsorptionGainHF|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|airAbsorptionGainHF|
+   @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|456|473|roomRolloffFactor|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|roomRolloffFactor|
+   Method Start: getReverb0()Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|492|508|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|509|519|getReverb0|method|com.sachinreddy.GeometricAcoustics.ReverbParameters|getReverb0|()Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|527|543|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|552|568|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|576|585|decayTime|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|decayTime
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|599|606|density|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|density
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|619|628|diffusion|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|diffusion
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|641|645|gain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|gain
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|658|664|gainHF|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|gainHF
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|678|690|decayHFRatio|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|decayHFRatio
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|703|718|reflectionsGain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionsGain
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|731|747|reflectionsDelay|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionsDelay
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|762|776|lateReverbGain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbGain
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|790|805|lateReverbDelay|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbDelay
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|820|839|airAbsorptionGainHF|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|airAbsorptionGainHF
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|854|871|roomRolloffFactor|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|roomRolloffFactor
+   Method End: getReverb0()Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;
+   Method Start: getReverb1()Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|916|932|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|933|943|getReverb1|method|com.sachinreddy.GeometricAcoustics.ReverbParameters|getReverb1|()Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|951|967|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|976|992|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1000|1009|decayTime|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|decayTime
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1023|1030|density|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|density
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1043|1052|diffusion|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|diffusion
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1065|1069|gain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|gain
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1082|1088|gainHF|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|gainHF
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1102|1114|decayHFRatio|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|decayHFRatio
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1127|1142|reflectionsGain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionsGain
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1155|1171|reflectionsDelay|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionsDelay
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1186|1200|lateReverbGain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbGain
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1214|1229|lateReverbDelay|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbDelay
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1244|1263|airAbsorptionGainHF|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|airAbsorptionGainHF
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1278|1295|roomRolloffFactor|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|roomRolloffFactor
+   Method End: getReverb1()Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;
+   Method Start: getReverb2()Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1340|1356|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1357|1367|getReverb2|method|com.sachinreddy.GeometricAcoustics.ReverbParameters|getReverb2|()Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1375|1391|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1400|1416|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1424|1433|decayTime|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|decayTime
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1447|1454|density|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|density
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1467|1476|diffusion|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|diffusion
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1489|1493|gain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|gain
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1506|1512|gainHF|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|gainHF
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1526|1538|decayHFRatio|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|decayHFRatio
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1551|1566|reflectionsGain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionsGain
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1579|1595|reflectionsDelay|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionsDelay
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1610|1624|lateReverbGain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbGain
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1638|1653|lateReverbDelay|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbDelay
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1668|1687|airAbsorptionGainHF|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|airAbsorptionGainHF
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1702|1719|roomRolloffFactor|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|roomRolloffFactor
+   Method End: getReverb2()Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;
+   Method Start: getReverb3()Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1764|1780|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1781|1791|getReverb3|method|com.sachinreddy.GeometricAcoustics.ReverbParameters|getReverb3|()Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1799|1815|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1824|1840|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1848|1857|decayTime|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|decayTime
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1872|1879|density|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|density
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1892|1901|diffusion|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|diffusion
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1914|1918|gain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|gain
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1931|1937|gainHF|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|gainHF
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1951|1963|decayHFRatio|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|decayHFRatio
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1976|1991|reflectionsGain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionsGain
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2004|2020|reflectionsDelay|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionsDelay
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2035|2049|lateReverbGain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbGain
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2063|2078|lateReverbDelay|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbDelay
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2093|2112|airAbsorptionGainHF|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|airAbsorptionGainHF
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2127|2144|roomRolloffFactor|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|roomRolloffFactor
+   Method End: getReverb3()Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;
+   Method Start: ReverbParameters()V
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2175|2191|ReverbParameters|method|com.sachinreddy.GeometricAcoustics.ReverbParameters|ReverbParameters|()V
+   Method End: ReverbParameters()V
+Class End  : com.sachinreddy.GeometricAcoustics.ReverbParameters
+endProcessing "com/sachinreddy/GeometricAcoustics/ReverbParameters.java"
+
+startProcessing "com/sachinreddy/proxy/ClientProxy.java" md5: 4cba42e944ca9318197b7e8a7e0a4bab
+Cache Hit!
+@|com/sachinreddy/proxy/ClientProxy.java|8|29|com.sachinreddy.proxy|package|com.sachinreddy.proxy|(file)
+Class Start: com.sachinreddy.proxy.ClientProxy
+   @|com/sachinreddy/proxy/ClientProxy.java|254|265|ClientProxy|class|com.sachinreddy.proxy.ClientProxy
+   @|com/sachinreddy/proxy/ClientProxy.java|274|285|CommonProxy|class|com.sachinreddy.proxy.CommonProxy
+   Method Start: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com/sachinreddy/proxy/ClientProxy.java|346|351|event|param|com.sachinreddy.proxy.ClientProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+      @|com/sachinreddy/proxy/ClientProxy.java|290|298|Override|class|java.lang.Override
+      @|com/sachinreddy/proxy/ClientProxy.java|312|319|preInit|method|com.sachinreddy.proxy.CommonProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com/sachinreddy/proxy/ClientProxy.java|320|345|FMLPreInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+      @|com/sachinreddy/proxy/ClientProxy.java|364|371|preInit|method|com.sachinreddy.proxy.CommonProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com/sachinreddy/proxy/ClientProxy.java|372|377|event|param|com.sachinreddy.proxy.ClientProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+   Method End: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+   Method Start: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com/sachinreddy/proxy/ClientProxy.java|437|442|event|param|com.sachinreddy.proxy.ClientProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+      @|com/sachinreddy/proxy/ClientProxy.java|387|395|Override|class|java.lang.Override
+      @|com/sachinreddy/proxy/ClientProxy.java|409|413|init|method|com.sachinreddy.proxy.CommonProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com/sachinreddy/proxy/ClientProxy.java|414|436|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent
+      @|com/sachinreddy/proxy/ClientProxy.java|455|459|init|method|com.sachinreddy.proxy.CommonProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com/sachinreddy/proxy/ClientProxy.java|460|465|event|param|com.sachinreddy.proxy.ClientProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+   Method End: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+   Method Start: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com/sachinreddy/proxy/ClientProxy.java|533|538|event|param|com.sachinreddy.proxy.ClientProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
+      @|com/sachinreddy/proxy/ClientProxy.java|475|483|Override|class|java.lang.Override
+      @|com/sachinreddy/proxy/ClientProxy.java|497|505|postInit|method|com.sachinreddy.proxy.CommonProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com/sachinreddy/proxy/ClientProxy.java|506|532|FMLPostInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPostInitializationEvent
+      @|com/sachinreddy/proxy/ClientProxy.java|551|559|postInit|method|com.sachinreddy.proxy.CommonProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com/sachinreddy/proxy/ClientProxy.java|560|565|event|param|com.sachinreddy.proxy.ClientProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
+   Method End: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+Class End  : com.sachinreddy.proxy.ClientProxy
+endProcessing "com/sachinreddy/proxy/ClientProxy.java"
+
+startProcessing "com/sachinreddy/proxy/CommonProxy.java" md5: 95c42996cf90948f034e7f4426ed2e64
+Cache Hit!
+@|com/sachinreddy/proxy/CommonProxy.java|8|29|com.sachinreddy.proxy|package|com.sachinreddy.proxy|(file)
+Class Start: com.sachinreddy.proxy.CommonProxy
+   @|com/sachinreddy/proxy/CommonProxy.java|254|265|CommonProxy|class|com.sachinreddy.proxy.CommonProxy
+   Method Start: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com/sachinreddy/proxy/CommonProxy.java|316|321|event|param|com.sachinreddy.proxy.CommonProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+      @|com/sachinreddy/proxy/CommonProxy.java|282|289|preInit|method|com.sachinreddy.proxy.CommonProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com/sachinreddy/proxy/CommonProxy.java|290|315|FMLPreInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+   Method End: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+   Method Start: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com/sachinreddy/proxy/CommonProxy.java|375|380|event|param|com.sachinreddy.proxy.CommonProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+      @|com/sachinreddy/proxy/CommonProxy.java|347|351|init|method|com.sachinreddy.proxy.CommonProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com/sachinreddy/proxy/CommonProxy.java|352|374|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent
+   Method End: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+   Method Start: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com/sachinreddy/proxy/CommonProxy.java|442|447|event|param|com.sachinreddy.proxy.CommonProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
+      @|com/sachinreddy/proxy/CommonProxy.java|406|414|postInit|method|com.sachinreddy.proxy.CommonProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com/sachinreddy/proxy/CommonProxy.java|415|441|FMLPostInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPostInitializationEvent
+   Method End: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+Class End  : com.sachinreddy.proxy.CommonProxy
+endProcessing "com/sachinreddy/proxy/CommonProxy.java"
+
+startProcessing "com/sachinreddy/proxy/ServerProxy.java" md5: 8d081ce0d8d6ae81e3e974b31f1b7313
+Cache Hit!
+@|com/sachinreddy/proxy/ServerProxy.java|8|29|com.sachinreddy.proxy|package|com.sachinreddy.proxy|(file)
+Class Start: com.sachinreddy.proxy.ServerProxy
+   @|com/sachinreddy/proxy/ServerProxy.java|254|265|ServerProxy|class|com.sachinreddy.proxy.ServerProxy
+   @|com/sachinreddy/proxy/ServerProxy.java|274|285|CommonProxy|class|com.sachinreddy.proxy.CommonProxy
+   Method Start: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com/sachinreddy/proxy/ServerProxy.java|346|351|event|param|com.sachinreddy.proxy.ServerProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+      @|com/sachinreddy/proxy/ServerProxy.java|290|298|Override|class|java.lang.Override
+      @|com/sachinreddy/proxy/ServerProxy.java|312|319|preInit|method|com.sachinreddy.proxy.CommonProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com/sachinreddy/proxy/ServerProxy.java|320|345|FMLPreInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+      @|com/sachinreddy/proxy/ServerProxy.java|363|370|preInit|method|com.sachinreddy.proxy.CommonProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com/sachinreddy/proxy/ServerProxy.java|371|376|event|param|com.sachinreddy.proxy.ServerProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+   Method End: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+   Method Start: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com/sachinreddy/proxy/ServerProxy.java|435|440|event|param|com.sachinreddy.proxy.ServerProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+      @|com/sachinreddy/proxy/ServerProxy.java|385|393|Override|class|java.lang.Override
+      @|com/sachinreddy/proxy/ServerProxy.java|407|411|init|method|com.sachinreddy.proxy.CommonProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com/sachinreddy/proxy/ServerProxy.java|412|434|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent
+      @|com/sachinreddy/proxy/ServerProxy.java|452|456|init|method|com.sachinreddy.proxy.CommonProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com/sachinreddy/proxy/ServerProxy.java|457|462|event|param|com.sachinreddy.proxy.ServerProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+   Method End: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+   Method Start: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com/sachinreddy/proxy/ServerProxy.java|529|534|event|param|com.sachinreddy.proxy.ServerProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
+      @|com/sachinreddy/proxy/ServerProxy.java|471|479|Override|class|java.lang.Override
+      @|com/sachinreddy/proxy/ServerProxy.java|493|501|postInit|method|com.sachinreddy.proxy.CommonProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com/sachinreddy/proxy/ServerProxy.java|502|528|FMLPostInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPostInitializationEvent
+      @|com/sachinreddy/proxy/ServerProxy.java|546|554|postInit|method|com.sachinreddy.proxy.CommonProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com/sachinreddy/proxy/ServerProxy.java|555|560|event|param|com.sachinreddy.proxy.ServerProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
+   Method End: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+Class End  : com.sachinreddy.proxy.ServerProxy
+endProcessing "com/sachinreddy/proxy/ServerProxy.java"
+

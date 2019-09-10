@@ -1,0 +1,16 @@
+[
+{
+  "modid": "ga",
+  "name": "Geometric Acoustics",
+  "description": "A simple Geometric Acoustics test mod.",
+  "version": "1.0",
+  "mcversion": "1.11",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Sachin Reddy"],
+  "credits": "Zoufu Cheng and ECE @ Illinois",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
