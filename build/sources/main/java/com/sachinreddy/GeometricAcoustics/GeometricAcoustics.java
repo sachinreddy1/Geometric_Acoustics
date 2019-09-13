@@ -65,31 +65,21 @@ public class GeometricAcoustics
 		
 		// Create auxiliary effect slots
 		auxFXSlot0 = EFX10.alGenAuxiliaryEffectSlots();
-		log("Aux slot " + auxFXSlot0 + " created");
 		EFX10.alAuxiliaryEffectSloti(auxFXSlot0, EFX10.AL_EFFECTSLOT_AUXILIARY_SEND_AUTO, AL10.AL_TRUE);
-		
 		auxFXSlot1 = EFX10.alGenAuxiliaryEffectSlots();
-		log("Aux slot " + auxFXSlot1 + " created");
 		EFX10.alAuxiliaryEffectSloti(auxFXSlot1, EFX10.AL_EFFECTSLOT_AUXILIARY_SEND_AUTO, AL10.AL_TRUE);
-		
 		auxFXSlot2 = EFX10.alGenAuxiliaryEffectSlots();
-		log("Aux slot " + auxFXSlot2 + " created");
 		EFX10.alAuxiliaryEffectSloti(auxFXSlot2, EFX10.AL_EFFECTSLOT_AUXILIARY_SEND_AUTO, AL10.AL_TRUE);
-		
 		auxFXSlot3 = EFX10.alGenAuxiliaryEffectSlots();
-		log("Aux slot " + auxFXSlot3 + " created");
 		EFX10.alAuxiliaryEffectSloti(auxFXSlot3, EFX10.AL_EFFECTSLOT_AUXILIARY_SEND_AUTO, AL10.AL_TRUE);	
 		
 		// Create effect objects
 		reverb0 = EFX10.alGenEffects();
 		EFX10.alEffecti(reverb0, EFX10.AL_EFFECT_TYPE, EFX10.AL_EFFECT_EAXREVERB);
-		
 		reverb1 = EFX10.alGenEffects();
 		EFX10.alEffecti(reverb1, EFX10.AL_EFFECT_TYPE, EFX10.AL_EFFECT_EAXREVERB);
-		
 		reverb2 = EFX10.alGenEffects();
 		EFX10.alEffecti(reverb2, EFX10.AL_EFFECT_TYPE, EFX10.AL_EFFECT_EAXREVERB);
-		
 		reverb3 = EFX10.alGenEffects();
 		EFX10.alEffecti(reverb3, EFX10.AL_EFFECT_TYPE, EFX10.AL_EFFECT_EAXREVERB);
 		
@@ -98,6 +88,8 @@ public class GeometricAcoustics
 		setReverbParameters(ReverbParameters.getReverb1(), auxFXSlot1, reverb1);		
 		setReverbParameters(ReverbParameters.getReverb2(), auxFXSlot2, reverb2);	
 		setReverbParameters(ReverbParameters.getReverb3(), auxFXSlot3, reverb3);
+		
+		log("Reverb parameters setup.");
 	}
 	
 	// ------------------------------------------------- //
