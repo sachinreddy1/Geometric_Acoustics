@@ -21,81 +21,72 @@ public class ReverbParameters
 	public static ReverbParameters getReverb0()
 	{
 		ReverbParameters r = new ReverbParameters();
-		r.decayTime = 0.15f;
-		r.density = 0.0f;
-		r.diffusion = 1.0f;
-		r.gain = 0.2f;
-		r.gainHF = 0.99f;
-		r.decayHFRatio = 0.6f;
-		r.reflectionsGain = 2.5f;
-		r.reflectionsDelay = 0.001f;
-		r.lateReverbGain = 1.26f;
-		r.lateReverbDelay = 0.011f;
-		r.airAbsorptionGainHF = 0.994f;
-		r.roomRolloffFactor = 0.16f;
-		
+		r.decayTime = 10.0f;
+		r.density = 10.0f;
+		r.diffusion = 10.0f;
+		r.gain = 10.0f;
+		r.gainHF = 10.0f;
+		r.decayHFRatio = 10.0f;
+		r.reflectionsGain = 10.0f;
+		r.reflectionsDelay = 10.0f;
+		r.lateReverbGain = 10.0f;
+		r.lateReverbDelay = 10.0f;
+		r.airAbsorptionGainHF = 10.0f;
+		r.roomRolloffFactor = 10.0f;
 		return r;
 	}
 	
 	public static ReverbParameters getReverb1()
 	{
 		ReverbParameters r = new ReverbParameters();
-		r.decayTime = 0.55f;
-		r.density = 0.0f;
-		r.diffusion = 1.0f;
-		r.gain = 0.3f;
-		r.gainHF = 0.99f;
-		r.decayHFRatio = 0.7f;
-		r.reflectionsGain = 0.2f;
-		r.reflectionsDelay = 0.015f;
-		r.lateReverbGain = 1.26f;
-		r.lateReverbDelay = 0.011f;
-		r.airAbsorptionGainHF = 0.994f;
-		r.roomRolloffFactor = 0.15f;
-		
+		r.decayTime = 10.0f;
+		r.density = 10.0f;
+		r.diffusion = 10.0f;
+		r.gain = 10.0f;
+		r.gainHF = 10.0f;
+		r.decayHFRatio = 10.0f;
+		r.reflectionsGain = 10.0f;
+		r.reflectionsDelay = 10.0f;
+		r.lateReverbGain = 10.0f;
+		r.lateReverbDelay = 10.0f;
+		r.airAbsorptionGainHF = 10.0f;
+		r.roomRolloffFactor = 10.0f;
 		return r;
 	}
 	
 	public static ReverbParameters getReverb2()
 	{
 		ReverbParameters r = new ReverbParameters();
-		r.decayTime = 1.68f;
-		r.density = 0.1f;
-		r.diffusion = 1.0f;
-		r.gain = 0.5f;
-		r.gainHF = 0.99f;
-		r.decayHFRatio = 0.7f;
-		r.reflectionsGain = 0.0f;
-		r.reflectionsDelay = 0.021f;
-		r.lateReverbGain = 1.26f;
-		r.lateReverbDelay = 0.021f;
-		r.airAbsorptionGainHF = 0.994f;
-		r.roomRolloffFactor = 0.13f;
-		
+		r.decayTime = 10.0f;
+		r.density = 10.0f;
+		r.diffusion = 10.0f;
+		r.gain = 10.0f;
+		r.gainHF = 10.0f;
+		r.decayHFRatio = 10.0f;
+		r.reflectionsGain = 10.0f;
+		r.reflectionsDelay = 10.0f;
+		r.lateReverbGain = 10.0f;
+		r.lateReverbDelay = 10.0f;
+		r.airAbsorptionGainHF = 10.0f;
+		r.roomRolloffFactor = 10.0f;
 		return r;
 	}
 	
 	public static ReverbParameters getReverb3()
 	{
 		ReverbParameters r = new ReverbParameters();
-		r.decayTime = 4.142f;
-		r.density = 0.5f;
-		r.diffusion = 1.0f;
-		r.gain = 0.4f;
-		r.gainHF = 0.89f;
-		r.decayHFRatio = 0.7f;
-		r.reflectionsGain = 0.0f;
-		r.reflectionsDelay = 0.025f;
-		r.lateReverbGain = 1.26f;
-		r.lateReverbDelay = 0.021f;
-		r.airAbsorptionGainHF = 0.994f;
-		r.roomRolloffFactor = 0.11f;
-		
+		r.decayTime = 10.0f;
+		r.density = 10.0f;
+		r.diffusion = 10.0f;
+		r.gain = 10.0f;
+		r.gainHF = 10.0f;
+		r.decayHFRatio = 10.0f;
+		r.reflectionsGain = 10.0f;
+		r.reflectionsDelay = 10.0f;
+		r.lateReverbGain = 10.0f;
+		r.lateReverbDelay = 10.0f;
+		r.airAbsorptionGainHF = 10.0f;
+		r.roomRolloffFactor = 10.0f;
 		return r;
-	}
-	
-	ReverbParameters()
-	{
-		
 	}
 }

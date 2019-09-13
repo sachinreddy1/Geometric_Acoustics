@@ -1,0 +1,92 @@
+package com.sachinreddy.GeometricAcoustics;
+
+import org.lwjgl.openal.EFX10;
+
+public class ReverbParameters 
+{
+	// min: 0.1f 	max: 10.0f
+	public float decayTime;				
+	public float density;
+	public float diffusion;
+	public float gain;
+	public float gainHF;
+	public float decayHFRatio;
+	public float reflectionsGain;
+	public float reflectionsDelay;
+	public float lateReverbGain;
+	public float lateReverbDelay;
+	public float airAbsorptionGainHF;
+	public float roomRolloffFactor;
+	
+	public static ReverbParameters getReverb0()
+	{
+		ReverbParameters r = new ReverbParameters();
+		r.decayTime = 1.5f;
+		r.density = 1.5f;
+		r.diffusion = 1.5f;
+		r.gain = 1.5f;
+		r.gainHF = 1.5f;
+		r.decayHFRatio = 1.5f;
+		r.reflectionsGain = 1.5f;
+		r.reflectionsDelay = 1.5f;
+		r.lateReverbGain = 1.5f;
+		r.lateReverbDelay = 1.5f;
+		r.airAbsorptionGainHF = 1.5f;
+		r.roomRolloffFactor = 1.5f;
+		return r;
+	}
+	
+	public static ReverbParameters getReverb1()
+	{
+		ReverbParameters r = new ReverbParameters();
+		r.decayTime = 1.5f;
+		r.density = 1.5f;
+		r.diffusion = 1.5f;
+		r.gain = 1.5f;
+		r.gainHF = 1.5f;
+		r.decayHFRatio = 1.5f;
+		r.reflectionsGain = 1.5f;
+		r.reflectionsDelay = 1.5f;
+		r.lateReverbGain = 1.5f;
+		r.lateReverbDelay = 1.5f;
+		r.airAbsorptionGainHF = 1.5f;
+		r.roomRolloffFactor = 1.5f;
+		return r;
+	}
+	
+	public static ReverbParameters getReverb2()
+	{
+		ReverbParameters r = new ReverbParameters();
+		r.decayTime = 1.5f;
+		r.density = 1.5f;
+		r.diffusion = 1.5f;
+		r.gain = 1.5f;
+		r.gainHF = 1.5f;
+		r.decayHFRatio = 1.5f;
+		r.reflectionsGain = 1.5f;
+		r.reflectionsDelay = 1.5f;
+		r.lateReverbGain = 1.5f;
+		r.lateReverbDelay = 1.5f;
+		r.airAbsorptionGainHF = 1.5f;
+		r.roomRolloffFactor = 1.5f;
+		return r;
+	}
+	
+	public static ReverbParameters getReverb3()
+	{
+		ReverbParameters r = new ReverbParameters();
+		r.decayTime = 1.5f;
+		r.density = 1.5f;
+		r.diffusion = 1.5f;
+		r.gain = 1.5f;
+		r.gainHF = 1.5f;
+		r.decayHFRatio = 1.5f;
+		r.reflectionsGain = 1.5f;
+		r.reflectionsDelay = 1.5f;
+		r.lateReverbGain = 1.5f;
+		r.lateReverbDelay = 1.5f;
+		r.airAbsorptionGainHF = 1.5f;
+		r.roomRolloffFactor = 1.5f;
+		return r;
+	}
+}

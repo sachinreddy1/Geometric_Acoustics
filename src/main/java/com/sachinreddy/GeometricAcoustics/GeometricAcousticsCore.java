@@ -26,7 +26,6 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 @Mod(modid = GeometricAcousticsCore.modid, version = GeometricAcousticsCore.version)
 public class GeometricAcousticsCore implements IClassTransformer
 {
-	public static Configuration configFile;
 	
 	@Mod.Instance("ga")
 	public static GeometricAcousticsCore instance;
@@ -39,7 +38,7 @@ public class GeometricAcousticsCore implements IClassTransformer
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
-		configFile = new Configuration(event.getSuggestedConfigurationFile());
+		
 	}
 	
 	@Mod.EventHandler
@@ -66,7 +65,7 @@ public class GeometricAcousticsCore implements IClassTransformer
 		//SetupReverb() in SoundManager.SoundSystemStarterThread
 		{
 			InsnList toInject = new InsnList();
-			toInject.add(new MethodInsnNode(Opcodes.INVOKESTATIC, "com/sachinreddy/GeometricAcoustics/GeometricAcoustics", "init", "()V"));
+			toInject.add(new MethodInsnNode(Opcodes.INVOKESTATIC, "com/sachinreddy/GeometricAcoustics/GeometricAcoustics", "initialize", "()V"));
 			
 			arg2 = patchMethodInClass(arg0, arg2, 
 					new String[]{"net.minecraft.client.audio.SoundManager$SoundSystemStarterThread", "ccn$a"}, 						//Target Class name
