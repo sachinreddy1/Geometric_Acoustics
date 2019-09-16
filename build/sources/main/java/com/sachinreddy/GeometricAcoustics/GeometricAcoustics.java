@@ -42,8 +42,19 @@ public class GeometricAcoustics
 	private static int reverb2;
 	private static int reverb3;
 	//
+	private static int directFilter0;
+	//
+	private static int sendFilter0;
+	private static int sendFilter1;
+	private static int sendFilter2;
+	private static int sendFilter3;
+	//
 	private static SoundCategory lastSoundCategory;
 	private static String lastSoundName;
+	//
+	public static float globalVolumeMultiplier = 4.0f;
+	public static int attenuationModel = SoundSystemConfig.ATTENUATION_ROLLOFF;
+	public static float globalRolloffFactor = 1.0f;
 		
 	// ------------------------------------------------- //
 	
@@ -83,6 +94,18 @@ public class GeometricAcoustics
 		reverb3 = EFX10.alGenEffects();
 		EFX10.alEffecti(reverb3, EFX10.AL_EFFECT_TYPE, EFX10.AL_EFFECT_EAXREVERB);
 		
+		//Create filters
+		directFilter0 = EFX10.alGenFilters();
+		EFX10.alFilteri(directFilter0, EFX10.AL_FILTER_TYPE, EFX10.AL_FILTER_LOWPASS);
+		sendFilter0 = EFX10.alGenFilters();
+		EFX10.alFilteri(sendFilter0, EFX10.AL_FILTER_TYPE, EFX10.AL_FILTER_LOWPASS);
+		sendFilter1 = EFX10.alGenFilters();
+		EFX10.alFilteri(sendFilter1, EFX10.AL_FILTER_TYPE, EFX10.AL_FILTER_LOWPASS);
+		sendFilter2 = EFX10.alGenFilters();
+		EFX10.alFilteri(sendFilter2, EFX10.AL_FILTER_TYPE, EFX10.AL_FILTER_LOWPASS);
+		sendFilter3 = EFX10.alGenFilters();
+		EFX10.alFilteri(sendFilter3, EFX10.AL_FILTER_TYPE, EFX10.AL_FILTER_LOWPASS);
+		
 		// Set the reverb parameters and apply them to the effect and effectslot
 		setReverbParameters(ReverbParameters.getReverb0(), auxFXSlot0, reverb0);	
 		setReverbParameters(ReverbParameters.getReverb1(), auxFXSlot1, reverb1);		
@@ -108,7 +131,7 @@ public class GeometricAcoustics
 	
 	public static void onPlaySound(float posX, float posY, float posZ, int sourceID)
 	{
-		log("[SOUND PLAYED]: Source ID: " + sourceID + " | (" + posX + ", " + posY + ", " + posZ + ") | Sound category: " + lastSoundCategory.toString() + " | Sound name: " + lastSoundName);
+		//log("[SOUND PLAYED]: Source ID: " + sourceID + " | (" + posX + ", " + posY + ", " + posZ + ") | Sound category: " + lastSoundCategory.toString() + " | Sound name: " + lastSoundName);
 	}
 	
 	// ------------------------------------------------- //
