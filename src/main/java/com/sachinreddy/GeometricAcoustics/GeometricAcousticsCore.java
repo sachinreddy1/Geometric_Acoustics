@@ -171,28 +171,6 @@ public class GeometricAcousticsCore implements IClassTransformer
 					);
 		}
 		
-		//attenuation model and rolloff factor
-		{
-			InsnList toInject = new InsnList();
-			toInject.add(new FieldInsnNode(Opcodes.GETSTATIC, "com/sachinreddy/GeometricAcoustics/GeometricAcoustics", "attenuationModel", "I"));
-			toInject.add(new FieldInsnNode(Opcodes.GETSTATIC, "com/sachinreddy/GeometricAcoustics/GeometricAcoustics", "globalRolloffFactor", "F"));
-			
-			arg2 = patchMethodInClass(arg0, arg2, 
-					new String[]{"paulscode.sound.SoundSystem"}, 	//Target Class name
-					new String[]{"newSource"}, 								//Target method name
-					new String[]{"(ZLjava/lang/String;Ljava/net/URL;Ljava/lang/String;ZFFFIF)V"},	//Target method signature
-					Opcodes.INVOKESPECIAL,						//Target opcode
-					AbstractInsnNode.METHOD_INSN, 				//Target node type
-					new String[]{"<init>"},										//Target node method invocation name
-					null,
-					new InsnList[]{toInject}, 									//Instructions to inject
-					true, 										//Insert before the target node?
-					2,			//Nodes to delete before the target node (done before injection)
-					0,			//Nodes to delete after the target node (done before injection)
-					false,
-					0
-					);
-		}
 		
 		// ------------------------------------------------- //
 		

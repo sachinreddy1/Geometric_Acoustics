@@ -15,9 +15,9 @@ This mapping 'snapshot_20161111' was designed for MC 1.10.2! Use at your own per
 :compileApiJava UP-TO-DATE
 :processApiResources UP-TO-DATE
 :apiClasses UP-TO-DATE
-:sourceMainJava
+:sourceMainJava UP-TO-DATE
 :compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
-Note: /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/build/sources/main/java/com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java uses or overrides a deprecated API.
+Note: Some input files use or override a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
 1 warning
 
@@ -46,4 +46,4 @@ remapping source...
 
 BUILD SUCCESSFUL
 
-Total time: 16.099 secs
+Total time: 13.904 secs
