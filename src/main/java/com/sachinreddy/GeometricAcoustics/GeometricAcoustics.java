@@ -77,10 +77,10 @@ public class GeometricAcoustics
 		
 		if (auxFXSlot0 != 0)
 		{
-			setReverbParams(ReverbParameters.getReverb0(), auxFXSlot0, reverb0);
-			setReverbParams(ReverbParameters.getReverb1(), auxFXSlot1, reverb1);
-			setReverbParams(ReverbParameters.getReverb2(), auxFXSlot2, reverb2);
-			setReverbParams(ReverbParameters.getReverb3(), auxFXSlot3, reverb3);
+			setReverbParameters(ReverbParameters.getReverb0(), auxFXSlot0, reverb0);
+			setReverbParameters(ReverbParameters.getReverb1(), auxFXSlot1, reverb1);
+			setReverbParameters(ReverbParameters.getReverb2(), auxFXSlot2, reverb2);
+			setReverbParameters(ReverbParameters.getReverb3(), auxFXSlot3, reverb3);
 		}
 	}
 	
@@ -156,9 +156,7 @@ public class GeometricAcoustics
 	public static double calculateEntitySoundOffset(Entity entity, SoundEvent sound)
 	{
 		if (!sound.getSoundName().getResourcePath().matches(".*step.*"))
-		{
 			return entity.getEyeHeight();
-		}
 		else
 			return 0.0;
 	}
@@ -569,9 +567,12 @@ public class GeometricAcoustics
 			return 1.0f;
 	}
 	
-	protected static void setReverbParams(ReverbParameters r, int auxFXSlot, int reverbSlot)
-	{	
-		EFX10.alEffectf(reverbSlot, EFX10.AL_EAXREVERB_DENSITY, r.density);
+	// ------------------------------------------------- //
+	
+	protected static void setReverbParameters(ReverbParameters r, int auxFXSlot, int reverbSlot)
+	{
+		//Set default parameters
+		EFX10.alEffectf(reverbSlot, EFX10.AL_EAXREVERB_DENSITY, r.density);		
 		EFX10.alEffectf(reverbSlot, EFX10.AL_EAXREVERB_DIFFUSION, r.diffusion);
 		EFX10.alEffectf(reverbSlot, EFX10.AL_EAXREVERB_GAIN, r.gain);
 		EFX10.alEffectf(reverbSlot, EFX10.AL_EAXREVERB_GAINHF, r.gainHF);
@@ -582,29 +583,6 @@ public class GeometricAcoustics
 		EFX10.alEffectf(reverbSlot, EFX10.AL_EAXREVERB_LATE_REVERB_DELAY, r.lateReverbDelay);
 		EFX10.alEffectf(reverbSlot, EFX10.AL_EAXREVERB_AIR_ABSORPTION_GAINHF, r.airAbsorptionGainHF);
 		EFX10.alEffectf(reverbSlot, EFX10.AL_EAXREVERB_ROOM_ROLLOFF_FACTOR, r.roomRolloffFactor);
-		
-		//Attach updated effect object
-		EFX10.alAuxiliaryEffectSloti(auxFXSlot, EFX10.AL_EFFECTSLOT_EFFECT, reverbSlot);
-	}
-	
-	// ------------------------------------------------- //
-	
-	protected static void setReverbParameters(ReverbParameters r, int auxFXSlot, int reverbSlot)
-	{
-		//Set default parameters
-		EFX10.alEffectf(reverbSlot, EFX10.AL_REVERB_DECAY_TIME, r.decayTime);
-		EFX10.alEffectf(reverbSlot, EFX10.AL_REVERB_DENSITY, r.density);
-		EFX10.alEffectf(reverbSlot, EFX10.AL_REVERB_DIFFUSION, r.diffusion);
-		EFX10.alEffectf(reverbSlot, EFX10.AL_REVERB_GAIN, r.gain);
-		EFX10.alEffectf(reverbSlot, EFX10.AL_REVERB_GAINHF, r.gainHF);
-		EFX10.alEffectf(reverbSlot, EFX10.AL_REVERB_DECAY_HFRATIO, r.decayHFRatio);
-		EFX10.alEffectf(reverbSlot, EFX10.AL_REVERB_REFLECTIONS_GAIN, r.reflectionsGain);
-		EFX10.alEffectf(reverbSlot, EFX10.AL_REVERB_REFLECTIONS_DELAY, r.reflectionsDelay);
-		EFX10.alEffectf(reverbSlot, EFX10.AL_REVERB_LATE_REVERB_GAIN, r.lateReverbGain);
-		EFX10.alEffectf(reverbSlot, EFX10.AL_REVERB_LATE_REVERB_DELAY, r.lateReverbDelay);
-		EFX10.alEffectf(reverbSlot, EFX10.AL_REVERB_AIR_ABSORPTION_GAINHF, r.airAbsorptionGainHF);
-		EFX10.alEffectf(reverbSlot, EFX10.AL_REVERB_ROOM_ROLLOFF_FACTOR, r.roomRolloffFactor);
-		EFX10.alEffecti(reverbSlot, EFX10.AL_REVERB_DECAY_HFLIMIT, AL10.AL_TRUE);
 		
 		//Attach updated effect object
 		EFX10.alAuxiliaryEffectSloti(auxFXSlot, EFX10.AL_EFFECTSLOT_EFFECT, reverbSlot);

@@ -32,9 +32,7 @@ public class GeometricAcousticsCore implements IClassTransformer
 	//
 	public static final String modid = "ga";
 	public static final String version = "1.0";
-	//
-	public static Configuration configFile;
-	
+		
 	public static class Config
 	{
 		//general
@@ -80,64 +78,12 @@ public class GeometricAcousticsCore implements IClassTransformer
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
-		configFile = new Configuration(event.getSuggestedConfigurationFile());
-		syncConfig();
 	}
 	
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event)
 	{
 		FMLCommonHandler.instance().bus().register(instance);
-	}
-	
-	// ------------------------------------------------- //
-	
-	@SubscribeEvent
-	public void onConfigChanged(ConfigChangedEvent.OnConfigChangedEvent eventArgs)
-	{
-		if (eventArgs.getModID().equals(modid))
-			syncConfig();
-	}
-	
-	public static void syncConfig()
-	{
-		//General
-		Config.rolloffFactor = configFile.getFloat("Attenuation Factor", Configuration.CATEGORY_GENERAL, 1.0f, 0.2f, 1.0f, "Affects how quiet a sound gets based on distance. Lower values mean distant sounds are louder. 1.0 is the physically correct value.");
-		Config.globalReverbGain = configFile.getFloat("Global Reverb Gain", Configuration.CATEGORY_GENERAL, 1.0f, 0.1f, 2.0f, "The global volume of simulated reverberations.");
-		Config.globalReverbBrightness = configFile.getFloat("Global Reverb Brightness", Configuration.CATEGORY_GENERAL, 1.0f, 0.1f, 2.0f, "The brightness of reverberation. Higher values result in more high frequencies in reverberation. Lower values give a more muffled sound to the reverb.");
-		Config.globalBlockAbsorption = configFile.getFloat("Global Block Absorption", Configuration.CATEGORY_GENERAL, 1.0f, 0.1f, 4.0f, "The global amount of sound that will be absorbed when traveling through blocks.");
-		Config.globalBlockReflectance = configFile.getFloat("Global Block Reflectance", Configuration.CATEGORY_GENERAL, 1.0f, 0.1f, 4.0f, "The global amount of sound reflectance energy of all blocks. Lower values result in more conservative reverb simulation with shorter reverb tails. Higher values result in more generous reverb simulation with higher reverb tails.");
-		Config.soundDistanceAllowance = configFile.getFloat("Sound Distance Allowance", Configuration.CATEGORY_GENERAL, 4.0f, 1.0f, 6.0f, "Minecraft won't allow sounds to play past a certain distance. This parameter is a multiplier for how far away a sound source is allowed to be in order for it to actually play. Values too high can cause polyphony issues.");
-		Config.airAbsorption = configFile.getFloat("Air Absorption", Configuration.CATEGORY_GENERAL, 1.0f, 0.0f, 5.0f, "A value controlling the amount that air absorbs high frequencies with distance. A value of 1.0 is physically correct for air with normal humidity and temperature. Higher values mean air will absorb more high frequencies with distance. 0 disables this effect.");
-		Config.underwaterFilter = configFile.getFloat("Underwater Filter", Configuration.CATEGORY_GENERAL, 0.8f, 0.0f, 1.0f, "How much sound is filtered when the player is underwater. 0.0 means no filter. 1.0 means fully filtered.");
-		
-		//performance
-		Config.skipRainOcclusionTracing = configFile.getBoolean("Skip Rain Occlusion Tracing", Config.categoryPerformance, true, "If true, rain sound sources won't trace for sound occlusion. This can help performance during rain.");
-		Config.environmentEvaluationRays = configFile.getInt("Environment Evaluation Rays", Config.categoryPerformance, 32, 8, 64, "The number of rays to trace to determine reverberation for each sound source. More rays provides more consistent tracing results but takes more time to calculate. Decrease this value if you experience lag spikes when sounds play." );
-		Config.simplerSharedAirspaceSimulation = configFile.getBoolean("Simpler Shared Airspace Simulation", Config.categoryPerformance, false, "If true, enables a simpler technique for determining when the player and a sound source share airspace. Might sometimes miss recognizing shared airspace, but it's faster to calculate.");
-		
-		//material properties
-		Config.stoneReflectivity = configFile.getFloat("Stone Reflectivity", Config.categoryMaterialProperties, 1.0f, 0.0f, 1.0f, "Sound reflectivity for stone blocks.");
-		Config.woodReflectivity = configFile.getFloat("Wood Reflectivity", Config.categoryMaterialProperties, 0.4f, 0.0f, 1.0f, "Sound reflectivity for wooden blocks.");
-		Config.groundReflectivity = configFile.getFloat("Ground Reflectivity", Config.categoryMaterialProperties, 0.3f, 0.0f, 1.0f, "Sound reflectivity for ground blocks (dirt, gravel, etc).");
-		Config.plantReflectivity = configFile.getFloat("Foliage Reflectivity", Config.categoryMaterialProperties, 0.5f, 0.0f, 1.0f, "Sound reflectivity for foliage blocks (leaves, grass, etc.).");
-		Config.metalReflectivity = configFile.getFloat("Metal Reflectivity", Config.categoryMaterialProperties, 1.0f, 0.0f, 1.0f, "Sound reflectivity for metal blocks.");
-		Config.glassReflectivity = configFile.getFloat("Glass Reflectivity", Config.categoryMaterialProperties, 0.5f, 0.0f, 1.0f, "Sound reflectivity for glass blocks.");
-		Config.clothReflectivity = configFile.getFloat("Cloth Reflectivity", Config.categoryMaterialProperties, 0.05f, 0.0f, 1.0f, "Sound reflectivity for cloth blocks (carpet, wool, etc).");
-		Config.sandReflectivity = configFile.getFloat("Sand Reflectivity", Config.categoryMaterialProperties, 0.2f, 0.0f, 1.0f, "Sound reflectivity for sand blocks.");
-		Config.snowReflectivity = configFile.getFloat("Snow Reflectivity", Config.categoryMaterialProperties, 0.2f, 0.0f, 1.0f, "Sound reflectivity for snow blocks.");
-
-		//misc
-		Config.debugLogging = configFile.getBoolean("Debug Logging", Config.categoryMisc, false, "General debug logging");
-		Config.occlusionLogging = configFile.getBoolean("Occlusion Logging", Config.categoryMisc, false, "Occlusion tracing information logging");
-		Config.environmentLogging = configFile.getBoolean("Environment Logging", Config.categoryMisc, false, "Environment evaluation information logging");
-		Config.performanceLogging = configFile.getBoolean("Performance Logging", Config.categoryMisc, false, "Performance information logging");
-		
-	    if(configFile.hasChanged())
-	    {
-	    	configFile.save();
-	    	GeometricAcoustics.applyConfigChanges(); 
-	    }
 	}
 	
 	// ------------------------------------------------- //
