@@ -54,9 +54,11 @@ public class GeometricAcoustics
 	//
 	private static Minecraft minecraft;
 	//
+	public static int attenuationModel = SoundSystemConfig.ATTENUATION_ROLLOFF;
+	public static float globalRolloffFactor = GeometricAcousticsCore.Config.rolloffFactor;
 	public static float globalVolumeMultiplier = 4.0f;
-	//public static int attenuationModel = SoundSysteminecraftonfig.ATTENUATION_ROLLOFF;
-	//public static float globalRolloffFactor = 1.0f;
+	public static float globalReverbMultiplier = 0.7f * GeometricAcousticsCore.Config.globalReverbGain;
+	public static double soundDistanceAllowance = GeometricAcousticsCore.Config.soundDistanceAllowance;
 		
 	// ------------------------------------------------- //
 	
@@ -65,6 +67,21 @@ public class GeometricAcoustics
 		log("Initializing Geometric Acoustics...");
 		setupReverb();
 		minecraft = Minecraft.getMinecraft();
+	}
+	
+	public static void applyConfigChanges()
+	{
+		globalRolloffFactor = GeometricAcousticsCore.Config.rolloffFactor;
+		globalReverbMultiplier = 0.7f * GeometricAcousticsCore.Config.globalReverbGain;
+		soundDistanceAllowance = GeometricAcousticsCore.Config.soundDistanceAllowance;
+		
+		if (auxFXSlot0 != 0)
+		{
+			setReverbParams(ReverbParameters.getReverb0(), auxFXSlot0, reverb0);
+			setReverbParams(ReverbParameters.getReverb1(), auxFXSlot1, reverb1);
+			setReverbParams(ReverbParameters.getReverb2(), auxFXSlot2, reverb2);
+			setReverbParams(ReverbParameters.getReverb3(), auxFXSlot3, reverb3);
+		}
 	}
 	
 	private static void setupReverb()
@@ -109,11 +126,7 @@ public class GeometricAcoustics
 		sendFilter3 = EFX10.alGenFilters();
 		EFX10.alFilteri(sendFilter3, EFX10.AL_FILTER_TYPE, EFX10.AL_FILTER_LOWPASS);
 		
-		// Set the reverb parameters and apply them to the effect and effectslot
-		setReverbParameters(ReverbParameters.getReverb0(), auxFXSlot0, reverb0);	
-		setReverbParameters(ReverbParameters.getReverb1(), auxFXSlot1, reverb1);		
-		setReverbParameters(ReverbParameters.getReverb2(), auxFXSlot2, reverb2);	
-		setReverbParameters(ReverbParameters.getReverb3(), auxFXSlot3, reverb3);
+		applyConfigChanges();
 		
 		log("Reverb parameters setup.");
 	}
@@ -140,6 +153,103 @@ public class GeometricAcoustics
 	
 	// ------------------------------------------------- //
 	
+	public static double calculateEntitySoundOffset(Entity entity, SoundEvent sound)
+	{
+		if (!sound.getSoundName().getResourcePath().matches(".*step.*"))
+		{
+			return entity.getEyeHeight();
+		}
+		else
+			return 0.0;
+	}
+	
+	private static float getBlockReflectivity(Int3 blockPos)
+	{
+		Block block = minecraft.theWorld.getBlockState(new BlockPos(blockPos.x, blockPos.y, blockPos.z)).getBlock();
+		SoundType soundType = block.getSoundType();
+		
+		float reflectivity = 0.5f;
+		
+		if (soundType == SoundType.STONE)
+			reflectivity = GeometricAcousticsCore.Config.stoneReflectivity;
+		else if (soundType == SoundType.WOOD)
+			reflectivity = GeometricAcousticsCore.Config.woodReflectivity;
+		else if (soundType == SoundType.GROUND)
+			reflectivity = GeometricAcousticsCore.Config.groundReflectivity;
+		else if (soundType == SoundType.PLANT)
+			reflectivity = GeometricAcousticsCore.Config.plantReflectivity;
+		else if (soundType == SoundType.METAL)
+			reflectivity = GeometricAcousticsCore.Config.metalReflectivity;
+		else if (soundType == SoundType.GLASS)
+			reflectivity = GeometricAcousticsCore.Config.glassReflectivity;
+		else if (soundType == SoundType.CLOTH)
+			reflectivity = GeometricAcousticsCore.Config.clothReflectivity;
+		else if (soundType == SoundType.SAND)	
+			reflectivity = GeometricAcousticsCore.Config.sandReflectivity;
+		else if (soundType == SoundType.SNOW)
+			reflectivity = GeometricAcousticsCore.Config.snowReflectivity;
+		else if (soundType == SoundType.LADDER)
+			reflectivity = GeometricAcousticsCore.Config.woodReflectivity;
+		else if (soundType == SoundType.ANVIL)
+			reflectivity = GeometricAcousticsCore.Config.metalReflectivity;
+		
+		reflectivity *= GeometricAcousticsCore.Config.globalBlockReflectance;
+		
+		return reflectivity;
+	}
+	
+	private static Vec3d getNormalFromFacing(EnumFacing sideHit)
+	{
+		Vec3i inormal = sideHit.getDirectionVec();
+		Vec3d normal = new Vec3d(inormal.getX(), inormal.getY(), inormal.getZ());
+		return normal;
+	}
+	
+	private static Vec3d reflect(Vec3d dir, Vec3d normal)
+	{
+		double dot = dir.dotProduct(normal);
+		double x = dir.xCoord - 2.0 * dot * normal.xCoord;
+		double y = dir.yCoord - 2.0 * dot * normal.yCoord;
+		double z = dir.zCoord - 2.0 * dot * normal.zCoord;
+		return new Vec3d(x, y, z);
+	}
+	
+	private static Vec3d offsetSoundByName(Vec3d soundPos, Vec3d playerPos, String name, String soundCategory)
+	{
+		double offsetX = 0.0;
+		double offsetY = 0.0;
+		double offsetZ = 0.0;
+		
+		double offsetTowardsPlayer = 0.0;
+		
+		Vec3d toPlayerVector = playerPos.subtract(soundPos).normalize();
+		
+		//names
+		if (name.matches(".*step.*"))
+		{
+			offsetY = 0.1;
+		}
+		
+		//categories
+		if (soundCategory.matches("block") || soundCategory.matches("record"))
+		{
+			offsetTowardsPlayer = 0.89;
+		}
+		
+		if (soundPos.yCoord % 1.0 < 0.001 && soundPos.yCoord > 0.01)
+		{
+			offsetY = 0.1;
+		}
+		
+		offsetX += toPlayerVector.xCoord * offsetTowardsPlayer;
+		offsetY += toPlayerVector.yCoord * offsetTowardsPlayer;
+		offsetZ += toPlayerVector.zCoord * offsetTowardsPlayer;
+		soundPos = soundPos.addVector(offsetX, offsetY, offsetZ);		
+		return soundPos;
+	}
+	
+	// ------------------------------------------------- //
+	
 	private static void calculateEnvironment(float posX, float posY, float posZ, int sourceID)
 	{
 		if (posX < 0.01f && posY < 0.01f && posZ < 0.01f)
@@ -151,26 +261,30 @@ public class GeometricAcoustics
 		if (minecraft.thePlayer == null || minecraft.theWorld == null)
 			return;
 		
-		float directCutoff = 1.0f;
-		float absorptionCoeff = 3.0f;
+		if (GeometricAcousticsCore.Config.skipRainOcclusionTracing && lastSoundName.matches(".*rain.*"))
+		{
+			setEnvironment(sourceID, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f);
+			return;
+		}
 		
+		float directCutoff = 1.0f;
+		float absorptionCoeff = GeometricAcousticsCore.Config.globalBlockAbsorption * 3.0f;
+		
+		//Direct sound occlusion
 		Vec3d soundPos = new Vec3d(posX, posY, posZ);
 		Vec3d playerPos = minecraft.thePlayer.getPositionVector();
 		playerPos = new Vec3d(playerPos.xCoord, playerPos.yCoord + minecraft.thePlayer.getEyeHeight(), playerPos.zCoord);
-		soundPos = offsetSoundByName(soundPos, playerPos, lastSoundName, lastSoundCategory.getName());
-		
+		soundPos = offsetSoundByName(soundPos, playerPos, lastSoundName, lastSoundCategory.getName());		
 		Vec3d toPlayerVector = playerPos.subtract(soundPos).normalize();
-				
-		//Cast a ray from the source towards the player
+		
 		Vec3d rayOrigin = new Vec3d(soundPos.xCoord, soundPos.yCoord, soundPos.zCoord);
 		if (lastSoundName.matches(".*block.*"))
 		{
-			//Offset the ray start position towards the player by the diagonal half length of a cube
 			rayOrigin = rayOrigin.add(toPlayerVector.scale(0.867));
 		}
 		
-		// ------------------- //
-		
+		// ---------------------- //
+			
 		float occlusionAccumulation = 0.0f;
 		for(int i = 0; i < 10; i++)
 		{
@@ -178,18 +292,14 @@ public class GeometricAcoustics
 			
 			//If we hit a block
 			if (rayHit != null)
-			{
-				//Get the normal of the side hit
+			{	
 				Block blockHit = minecraft.theWorld.getBlockState(rayHit.getBlockPos()).getBlock();
 				float blockOcclusion = 1.0f;
-				
 				if (!blockHit.isOpaqueCube(blockHit.getDefaultState()))
 					blockOcclusion *= 0.15f;
 								
 				//Accumulate density
 				occlusionAccumulation += blockOcclusion;
-				
-				//Set the new ray step position
 				rayOrigin = new Vec3d(rayHit.hitVec.xCoord + toPlayerVector.xCoord * 0.1, rayHit.hitVec.yCoord + toPlayerVector.yCoord * 0.1, rayHit.hitVec.zCoord + toPlayerVector.zCoord * 0.1);
 			}
 			else
@@ -199,46 +309,57 @@ public class GeometricAcoustics
 		directCutoff = (float)Math.exp(-occlusionAccumulation * absorptionCoeff);
 		float directGain = (float)Math.pow(directCutoff, 0.1);
 		
-		// ------------------- //
+		// ---------------------- //
 				
 		//Calculate reverb parameters for this sound
 		float sendGain0 = 0.0f;
 		float sendGain1 = 0.0f;
 		float sendGain2 = 0.0f;
 		float sendGain3 = 0.0f;
-		//
+		
 		float sendCutoff0 = 1.0f;
 		float sendCutoff1 = 1.0f;
 		float sendCutoff2 = 1.0f;
 		float sendCutoff3 = 1.0f;
 		
+		if (minecraft.thePlayer.isInsideOfMaterial(Material.WATER))
+		{
+			directCutoff *= 1.0f - GeometricAcousticsCore.Config.underwaterFilter;
+		}
+		
+		if (lastSoundName.matches(".*rain.*"))
+		{
+			setEnvironment(sourceID, sendGain0, sendGain1, sendGain2, sendGain3, sendCutoff0, sendCutoff1, sendCutoff2, sendCutoff3, directCutoff, directGain);
+			return;
+		}
+		
 		//Shoot rays around sound
 		final float phi = 1.618033988f;
 		final float gAngle = phi * (float)Math.PI * 2.0f;
 		final float maxDistance = 256.0f;
-		//
-		final int numRays = 34;
+		
+		final int numRays = GeometricAcousticsCore.Config.environmentEvaluationRays;
 		final int rayBounces = 4;
 		float reflectionEnergySum = 0.0f;
 		float rayLengthSum = 0.0f;
 		int numRaysHit = 0;
-		//
+		
 		int secondaryRayHits = 0;
 		float secondaryRayLengthSum = 0.0f;
 		float secondaryReflectionEnergySum = 0.0f;
-		//
+		
 		int[] rayHits = new int[rayBounces];
-		//
+		
 		float totalReflectivityRatio = 0.0f;
 		float[] bounceReflectivityRatio = new float[rayBounces];
-		//
+		
 		float sharedAirspace = 0.0f;
-		//
+		
 		float rcpTotalRays = 1.0f / (numRays * rayBounces);
 		float rcpPrimaryRays = 1.0f / (numRays);
-		//
+		
 		final double reflectionEnergyCurve = 1.0;
-		//
+		
 		for (int i = 0; i < numRays; i++)
 		{
 			float fi = (float)i;
@@ -279,8 +400,7 @@ public class GeometricAcoustics
 					float fj = (float)j / rayBounces;
 					Vec3d newRayDir = reflect(lastRayDir, lastHitNormal);
 					Vec3d newRayStart = new Vec3d(lastHitPos.xCoord + lastHitNormal.xCoord * 0.01, lastHitPos.yCoord + lastHitNormal.yCoord * 0.01, lastHitPos.zCoord + lastHitNormal.zCoord * 0.01);
-					Vec3d newRayEnd = new Vec3d(newRayStart.xCoord + newRayDir.xCoord * maxDistance, newRayStart.yCoord + newRayDir.yCoord * maxDistance, newRayStart.zCoord + newRayDir.zCoord * maxDistance);
-										
+					Vec3d newRayEnd = new Vec3d(newRayStart.xCoord + newRayDir.xCoord * maxDistance, newRayStart.yCoord + newRayDir.yCoord * maxDistance, newRayStart.zCoord + newRayDir.zCoord * maxDistance);					
 					RayTraceResult newRayHit = minecraft.theWorld.rayTraceBlocks(newRayStart, newRayEnd, true);
 					
 					float soundDirToPlayerDot = (float)newRayDir.dotProduct(toPlayerVector);
@@ -312,12 +432,10 @@ public class GeometricAcoustics
 						lastRayDir = newRayDir;
 						lastHitBlock = Int3.create(newRayHit.getBlockPos().getX(), newRayHit.getBlockPos().getY(), newRayHit.getBlockPos().getZ());
 						
-						//Cast one final ray towards the player. If it's unobstructed, then the sound source and the player share airspace.
-						if (j == rayBounces-1)
+						if (GeometricAcousticsCore.Config.simplerSharedAirspaceSimulation && j == rayBounces-1 || !GeometricAcousticsCore.Config.simplerSharedAirspaceSimulation)
 						{
 							Vec3d finalHitToPlayer = playerPos.subtract(lastHitPos).normalize();
 							Vec3d finalRayStart = new Vec3d(lastHitPos.xCoord + lastHitNormal.xCoord * 0.01, lastHitPos.yCoord + lastHitNormal.yCoord * 0.01, lastHitPos.zCoord + lastHitNormal.zCoord * 0.01);
-							
 							RayTraceResult finalRayHit = minecraft.theWorld.rayTraceBlocks(finalRayStart, playerPos, true);
 							
 							if (finalRayHit == null)
@@ -325,7 +443,9 @@ public class GeometricAcoustics
 						}
 					}
 					else
+					{
 						totalRayDistance += lastHitPos.distanceTo(playerPos);
+					}
 					
 					float reflectionDelay = (float)Math.pow(Math.max(totalRayDistance, 0.0), 1.0) * 0.12f * blockReflectivity;
 					
@@ -339,9 +459,10 @@ public class GeometricAcoustics
 					sendGain2 += cross2 * energyTowardsPlayer * 12.8f * rcpTotalRays;
 					sendGain3 += cross3 * energyTowardsPlayer * 12.8f * rcpTotalRays;
 					
-					//Nowhere to bounce off of, stop bouncing!
 					if (newRayHit == null)
+					{
 						break;
+					}
 				}
 			}
 		}
@@ -364,7 +485,10 @@ public class GeometricAcoustics
 		bounceReflectivityRatio[3] = (float)Math.pow(bounceReflectivityRatio[3] / (float)numRays, 1.0 / reflectionEnergyCurve);
 		
 		sharedAirspace *= 64.0f;
-		sharedAirspace *= rcpPrimaryRays;
+		if (GeometricAcousticsCore.Config.simplerSharedAirspaceSimulation)
+			sharedAirspace *= rcpPrimaryRays;
+		else
+			sharedAirspace *= rcpTotalRays;
 		
 		float sharedAirspaceWeight0 = MathHelper.clamp_float(sharedAirspace / 20.0f, 0.0f, 1.0f);
 		float sharedAirspaceWeight1 = MathHelper.clamp_float(sharedAirspace / 15.0f, 0.0f, 1.0f);
@@ -381,118 +505,34 @@ public class GeometricAcoustics
 		directCutoff = (float)Math.max((float)Math.pow(averageSharedAirspace, 0.5) * 0.2f, directCutoff);
 		directGain = (float)Math.pow(directCutoff, 0.1);
 		
-		//log("Bounce reflectivity 0: " + bounceReflectivityRatio[0] + " bounce reflectivity 1: " + bounceReflectivityRatio[1] + " bounce reflectivity 2: " + bounceReflectivityRatio[2] + " bounce reflectivity 3: " + bounceReflectivityRatio[3]);
-		
 		sendGain1 *= (float)Math.pow(bounceReflectivityRatio[1], 1.0); 
 		sendGain2 *= (float)Math.pow(bounceReflectivityRatio[2], 3.0);
 		sendGain3 *= (float)Math.pow(bounceReflectivityRatio[3], 4.0);
 		
-		sendGain0 = MathHelper.clamp_float(sendGain0 * 1.00f, 0.0f, 1.0f);
-		sendGain1 = MathHelper.clamp_float(sendGain1 * 1.00f, 0.0f, 1.0f);
-		sendGain2 = MathHelper.clamp_float(sendGain2 * 1.00f, 0.0f, 1.0f);
-		sendGain3 = MathHelper.clamp_float(sendGain3 * 1.00f, 0.0f, 1.0f);
+		sendGain0 = MathHelper.clamp_float(sendGain0 * 1.00f - 0.00f, 0.0f, 1.0f);
+		sendGain1 = MathHelper.clamp_float(sendGain1 * 1.00f - 0.00f, 0.0f, 1.0f);
+		sendGain2 = MathHelper.clamp_float(sendGain2 * 1.05f - 0.05f, 0.0f, 1.0f);
+		sendGain3 = MathHelper.clamp_float(sendGain3 * 1.05f - 0.05f, 0.0f, 1.0f);
 		
 		sendGain0 *= (float)Math.pow(sendCutoff0, 0.1);
 		sendGain1 *= (float)Math.pow(sendCutoff1, 0.1);
 		sendGain2 *= (float)Math.pow(sendCutoff2, 0.1);
 		sendGain3 *= (float)Math.pow(sendCutoff3, 0.1);
 		
-		//log("Final environment settings: " + sendGain0 + ", " + sendGain1 + ", " + sendGain2 + ", " + sendGain3);
+		if (minecraft.thePlayer.isInWater())
+		{
+			sendCutoff0 *= 0.4f;
+			sendCutoff1 *= 0.4f;
+			sendCutoff2 *= 0.4f;
+			sendCutoff3 *= 0.4f;
+		}
+		
 		setEnvironment(sourceID, sendGain0, sendGain1, sendGain2, sendGain3, sendCutoff0, sendCutoff1, sendCutoff2, sendCutoff3, directCutoff, directGain);
-	}
-	
-	private static Vec3d offsetSoundByName(Vec3d soundPos, Vec3d playerPos, String name, String soundCategory)
-	{
-		double offsetX = 0.0;
-		double offsetY = 0.0;
-		double offsetZ = 0.0;
-		
-		double offsetTowardsPlayer = 0.0;
-		
-		Vec3d toPlayerVector = playerPos.subtract(soundPos).normalize();
-		
-		//names
-		if (name.matches(".*step.*"))
-		{
-			offsetY = 0.1;
-		}
-		
-		//categories
-		if (soundCategory.matches("block") || soundCategory.matches("record"))
-		{
-			offsetTowardsPlayer = 0.89;
-		}
-		
-		if (soundPos.yCoord % 1.0 < 0.001 && soundPos.yCoord > 0.01)
-		{
-			offsetY = 0.1;
-		}
-		
-		offsetX += toPlayerVector.xCoord * offsetTowardsPlayer;
-		offsetY += toPlayerVector.yCoord * offsetTowardsPlayer;
-		offsetZ += toPlayerVector.zCoord * offsetTowardsPlayer;
-		
-		soundPos = soundPos.addVector(offsetX, offsetY, offsetZ);
-				
-		return soundPos;
-	}
-	
-	private static Vec3d getNormalFromFacing(EnumFacing sideHit)
-	{
-		Vec3i inormal = sideHit.getDirectionVec();
-		return new Vec3d(inormal.getX(), inormal.getY(), inormal.getZ());
-	}
-	
-	private static float getBlockReflectivity(Int3 blockPos)
-	{
-		Block block = minecraft.theWorld.getBlockState(new BlockPos(blockPos.x, blockPos.y, blockPos.z)).getBlock();
-		SoundType soundType = block.getSoundType();
-		
-		float reflectivity = 0.5f;
-		
-		if (soundType == SoundType.STONE)
-			reflectivity = 1.0f;
-		else if (soundType == SoundType.WOOD)
-			reflectivity = 0.4f;
-		else if (soundType == SoundType.GROUND)
-			reflectivity = 0.3f;
-		else if (soundType == SoundType.PLANT)
-			reflectivity = 0.5f;
-		else if (soundType == SoundType.METAL)
-			reflectivity = 1.0f;
-		else if (soundType == SoundType.GLASS)
-			reflectivity = 0.5f;
-		else if (soundType == SoundType.CLOTH)
-			reflectivity = 0.05f;
-		else if (soundType == SoundType.SAND)	
-			reflectivity = 0.2f;
-		else if (soundType == SoundType.SNOW)
-			reflectivity = 0.2f;
-		else if (soundType == SoundType.LADDER)
-			reflectivity = 0.4f;
-		else if (soundType == SoundType.ANVIL)
-			reflectivity = 1.0f;
-		
-		reflectivity *= 1.0f;
-		
-		return reflectivity;
-	}
-	
-	private static Vec3d reflect(Vec3d dir, Vec3d normal)
-	{
-		double dot = dir.dotProduct(normal);
-		
-		double x = dir.xCoord - 2.0 * dot * normal.xCoord;
-		double y = dir.yCoord - 2.0 * dot * normal.yCoord;
-		double z = dir.zCoord - 2.0 * dot * normal.zCoord;
-		
-		return new Vec3d(x, y, z);
 	}
 	
 	private static void setEnvironment(int sourceID, float sendGain0, float sendGain1, float sendGain2, float sendGain3, float sendCutoff0, float sendCutoff1,
 			float sendCutoff2, float sendCutoff3, float directCutoff, float directGain)
 	{
-		//Set reverb send filter values and set source to send to all reverb fx slots
 		EFX10.alFilterf(sendFilter0, EFX10.AL_LOWPASS_GAIN, sendGain0);
 		EFX10.alFilterf(sendFilter0, EFX10.AL_LOWPASS_GAINHF, sendCutoff0);
 		AL11.alSource3i(sourceID, EFX10.AL_AUXILIARY_SEND_FILTER, auxFXSlot0, 0, sendFilter0);	
@@ -513,7 +553,38 @@ public class GeometricAcoustics
 		EFX10.alFilterf(directFilter0, EFX10.AL_LOWPASS_GAINHF, directCutoff);
 		AL10.alSourcei(sourceID, EFX10.AL_DIRECT_FILTER, directFilter0);
 		
-		AL10.alSourcef(sourceID, EFX10.AL_AIR_ABSORPTION_FACTOR, 1.0f);
+		AL10.alSourcef(sourceID, EFX10.AL_AIR_ABSORPTION_FACTOR, GeometricAcousticsCore.Config.airAbsorption);
+	}
+	
+	private static float calculateAttenuation(double x, double y, double z)
+	{
+		if (GeometricAcoustics.minecraft.thePlayer != null)
+		{
+			Vec3d playerPos = GeometricAcoustics.minecraft.thePlayer.getPositionVector();
+			double soundDistance = playerPos.distanceTo(new Vec3d(x, y, z));	
+			float atten = (float)Math.max(1.0 - soundDistance / 16.0, 0.0f);					
+			return atten;
+		}
+		else
+			return 1.0f;
+	}
+	
+	protected static void setReverbParams(ReverbParameters r, int auxFXSlot, int reverbSlot)
+	{	
+		EFX10.alEffectf(reverbSlot, EFX10.AL_EAXREVERB_DENSITY, r.density);
+		EFX10.alEffectf(reverbSlot, EFX10.AL_EAXREVERB_DIFFUSION, r.diffusion);
+		EFX10.alEffectf(reverbSlot, EFX10.AL_EAXREVERB_GAIN, r.gain);
+		EFX10.alEffectf(reverbSlot, EFX10.AL_EAXREVERB_GAINHF, r.gainHF);
+		EFX10.alEffectf(reverbSlot, EFX10.AL_EAXREVERB_DECAY_TIME, r.decayTime);
+		EFX10.alEffectf(reverbSlot, EFX10.AL_EAXREVERB_DECAY_HFRATIO, r.decayHFRatio);
+		EFX10.alEffectf(reverbSlot, EFX10.AL_EAXREVERB_REFLECTIONS_GAIN, r.reflectionsGain);
+		EFX10.alEffectf(reverbSlot, EFX10.AL_EAXREVERB_LATE_REVERB_GAIN, r.lateReverbGain);
+		EFX10.alEffectf(reverbSlot, EFX10.AL_EAXREVERB_LATE_REVERB_DELAY, r.lateReverbDelay);
+		EFX10.alEffectf(reverbSlot, EFX10.AL_EAXREVERB_AIR_ABSORPTION_GAINHF, r.airAbsorptionGainHF);
+		EFX10.alEffectf(reverbSlot, EFX10.AL_EAXREVERB_ROOM_ROLLOFF_FACTOR, r.roomRolloffFactor);
+		
+		//Attach updated effect object
+		EFX10.alAuxiliaryEffectSloti(auxFXSlot, EFX10.AL_EFFECTSLOT_EFFECT, reverbSlot);
 	}
 	
 	// ------------------------------------------------- //
