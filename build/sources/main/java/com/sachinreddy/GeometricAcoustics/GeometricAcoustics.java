@@ -153,13 +153,13 @@ public class GeometricAcoustics
 	
 	// ------------------------------------------------- //
 	
-	public static double calculateEntitySoundOffset(Entity entity, SoundEvent sound)
-	{
-		if (!sound.getSoundName().getResourcePath().matches(".*step.*"))
-			return entity.getEyeHeight();
-		else
-			return 0.0;
-	}
+//	public static double calculateEntitySoundOffset(Entity entity, SoundEvent sound)
+//	{
+//		if (!sound.getSoundName().getResourcePath().matches(".*step.*"))
+//			return entity.getEyeHeight();
+//		else
+//			return 0.0;
+//	}
 	
 	private static float getBlockReflectivity(Int3 blockPos)
 	{
@@ -554,18 +554,18 @@ public class GeometricAcoustics
 		AL10.alSourcef(sourceID, EFX10.AL_AIR_ABSORPTION_FACTOR, GeometricAcousticsCore.Config.airAbsorption);
 	}
 	
-	private static float calculateAttenuation(double x, double y, double z)
-	{
-		if (GeometricAcoustics.minecraft.thePlayer != null)
-		{
-			Vec3d playerPos = GeometricAcoustics.minecraft.thePlayer.getPositionVector();
-			double soundDistance = playerPos.distanceTo(new Vec3d(x, y, z));	
-			float atten = (float)Math.max(1.0 - soundDistance / 16.0, 0.0f);					
-			return atten;
-		}
-		else
-			return 1.0f;
-	}
+//	private static float calculateAttenuation(double x, double y, double z)
+//	{
+//		if (GeometricAcoustics.minecraft.thePlayer != null)
+//		{
+//			Vec3d playerPos = GeometricAcoustics.minecraft.thePlayer.getPositionVector();
+//			double soundDistance = playerPos.distanceTo(new Vec3d(x, y, z));	
+//			float atten = (float)Math.max(1.0 - soundDistance / 16.0, 0.0f);					
+//			return atten;
+//		}
+//		else
+//			return 1.0f;
+//	}
 	
 	// ------------------------------------------------- //
 	
