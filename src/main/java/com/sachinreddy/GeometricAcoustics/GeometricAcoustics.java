@@ -204,24 +204,11 @@ public class GeometricAcoustics
 		
 		final int numRays = GeometricAcousticsCore.Config.environmentEvaluationRays;
 		final int rayBounces = 4;
-		float reflectionEnergySum = 0.0f;
-		float rayLengthSum = 0.0f;
-		int numRaysHit = 0;
-		
-		int secondaryRayHits = 0;
-		float secondaryRayLengthSum = 0.0f;
-		float secondaryReflectionEnergySum = 0.0f;
-		
-		int[] rayHits = new int[rayBounces];
-		
-		float totalReflectivityRatio = 0.0f;
+
 		float[] bounceReflectivityRatio = new float[rayBounces];
 		
-		float sharedAirspace = 0.0f;
-		
-		float rcpTotalRays = 1.0f / (numRays * rayBounces);
-		float rcpPrimaryRays = 1.0f / (numRays);
-		
+		float sharedAirspace = 0.0f; //
+		float rcpTotalRays = 1.0f / (numRays * rayBounces);;
 		final double reflectionEnergyCurve = 1.0;
 		
 		for (int i = 0; i < numRays; i++)
@@ -246,9 +233,6 @@ public class GeometricAcoustics
 			if (rayHit != null)
 			{
 				double rayLength = soundPos.distanceTo(rayHit.hitVec);
-				rayLengthSum += (float)rayLength;
-				reflectionEnergySum += 1.0f / numRays;
-				numRaysHit++;
 				
 				//Additional bounces
 				Int3 lastHitBlock = Int3.create(rayHit.getBlockPos().getX(), rayHit.getBlockPos().getY(), rayHit.getBlockPos().getZ());
@@ -267,33 +251,21 @@ public class GeometricAcoustics
 					Vec3d newRayEnd = new Vec3d(newRayStart.xCoord + newRayDir.xCoord * maxDistance, newRayStart.yCoord + newRayDir.yCoord * maxDistance, newRayStart.zCoord + newRayDir.zCoord * maxDistance);					
 					RayTraceResult newRayHit = minecraft.theWorld.rayTraceBlocks(newRayStart, newRayEnd, true);
 					
-					float soundDirToPlayerDot = (float)newRayDir.dotProduct(toPlayerVector);
 					float energyTowardsPlayer = 0.25f;
 					float blockReflectivity = getBlockReflectivity(lastHitBlock);
 					energyTowardsPlayer *= blockReflectivity * 0.75f + 0.25f;
-					float bounceToPlayerDistance = (float)lastHitPos.distanceTo(playerPos);
-					
-					totalReflectivityRatio += blockReflectivity;
-					
+										
 					if (newRayHit != null)
 					{	
 						double newRayLength = lastHitPos.distanceTo(newRayHit.hitVec);
-						secondaryRayLengthSum += newRayLength;
-						secondaryReflectionEnergySum = 0.0f;
-						secondaryRayHits++;
-						rayHits[j]++;
 						bounceReflectivityRatio[j] += (float)Math.pow(blockReflectivity, reflectionEnergyCurve);
-						
 						totalRayDistance += newRayLength;
 						
 						lastHitPos = newRayHit.hitVec;
 						lastHitNormal = getNormalFromFacing(newRayHit.sideHit);
-						lastRayDir = newRayDir;
-						lastHitBlock = Int3.create(newRayHit.getBlockPos().getX(), newRayHit.getBlockPos().getY(), newRayHit.getBlockPos().getZ());
 						
 						if (GeometricAcousticsCore.Config.simplerSharedAirspaceSimulation && j == rayBounces-1 || !GeometricAcousticsCore.Config.simplerSharedAirspaceSimulation)
 						{
-							Vec3d finalHitToPlayer = playerPos.subtract(lastHitPos).normalize();
 							Vec3d finalRayStart = new Vec3d(lastHitPos.xCoord + lastHitNormal.xCoord * 0.01, lastHitPos.yCoord + lastHitNormal.yCoord * 0.01, lastHitPos.zCoord + lastHitNormal.zCoord * 0.01);
 							RayTraceResult finalRayHit = minecraft.theWorld.rayTraceBlocks(finalRayStart, playerPos, true);
 							
@@ -302,9 +274,7 @@ public class GeometricAcoustics
 						}
 					}
 					else
-					{
 						totalRayDistance += lastHitPos.distanceTo(playerPos);
-					}
 					
 					float reflectionDelay = (float)Math.pow(Math.max(totalRayDistance, 0.0), 1.0) * 0.12f * blockReflectivity;
 					
@@ -319,54 +289,25 @@ public class GeometricAcoustics
 					sendGain3 += cross3 * energyTowardsPlayer * 12.8f * rcpTotalRays;
 					
 					if (newRayHit == null)
-					{
 						break;
-					}
+					
 				}
 			}
 		}
-		
-		totalReflectivityRatio /= numRays * rayBounces;
-				
-		float rayHitRatio = (float)numRaysHit/(float)numRays;
-		float avgRayLength = rayLengthSum / (float)numRaysHit;
-		float avgSecondaryLength = secondaryRayHits != 0 ? secondaryRayLengthSum / secondaryRayHits : 0.0f;
-		float secondaryHitRatio = (float)secondaryRayHits/(float)(numRays * rayBounces);
-		
-		float hitRatioBounce1 = (float)rayHits[0] / (float)numRays;
-		float hitRatioBounce2 = (float)rayHits[1] / (float)numRays;
-		float hitRatioBounce3 = (float)rayHits[2] / (float)numRays;
-		float hitRatioBounce4 = (float)rayHits[3] / (float)numRays;
 		
 		bounceReflectivityRatio[0] = (float)Math.pow(bounceReflectivityRatio[0] / (float)numRays, 1.0 / reflectionEnergyCurve);
 		bounceReflectivityRatio[1] = (float)Math.pow(bounceReflectivityRatio[1] / (float)numRays, 1.0 / reflectionEnergyCurve);
 		bounceReflectivityRatio[2] = (float)Math.pow(bounceReflectivityRatio[2] / (float)numRays, 1.0 / reflectionEnergyCurve);
 		bounceReflectivityRatio[3] = (float)Math.pow(bounceReflectivityRatio[3] / (float)numRays, 1.0 / reflectionEnergyCurve);
 		
-		sharedAirspace *= 64.0f;
-		if (GeometricAcousticsCore.Config.simplerSharedAirspaceSimulation)
-			sharedAirspace *= rcpPrimaryRays;
-		else
-			sharedAirspace *= rcpTotalRays;
-		
-		float sharedAirspaceWeight0 = MathHelper.clamp_float(sharedAirspace / 20.0f, 0.0f, 1.0f);
-		float sharedAirspaceWeight1 = MathHelper.clamp_float(sharedAirspace / 15.0f, 0.0f, 1.0f);
-		float sharedAirspaceWeight2 = MathHelper.clamp_float(sharedAirspace / 10.0f, 0.0f, 1.0f);
-		float sharedAirspaceWeight3 = MathHelper.clamp_float(sharedAirspace / 10.0f, 0.0f, 1.0f);
-		
-		//attempt to preserve directionality when airspace is shared by allowing some of the dry signal through but filtered
-		float averageSharedAirspace = (sharedAirspaceWeight0 + sharedAirspaceWeight1 + sharedAirspaceWeight2 + sharedAirspaceWeight3) * 0.25f;
-		directCutoff = (float)Math.max((float)Math.pow(averageSharedAirspace, 0.5) * 0.2f, directCutoff);
-		directGain = (float)Math.pow(directCutoff, 0.1);
-		
 		sendGain1 *= (float)Math.pow(bounceReflectivityRatio[1], 1.0); 
 		sendGain2 *= (float)Math.pow(bounceReflectivityRatio[2], 3.0);
 		sendGain3 *= (float)Math.pow(bounceReflectivityRatio[3], 4.0);
 		
-		sendGain0 = MathHelper.clamp_float(sendGain0 * 1.00f - 0.00f, 0.0f, 1.0f);
-		sendGain1 = MathHelper.clamp_float(sendGain1 * 1.00f - 0.00f, 0.0f, 1.0f);
-		sendGain2 = MathHelper.clamp_float(sendGain2 * 1.05f - 0.05f, 0.0f, 1.0f);
-		sendGain3 = MathHelper.clamp_float(sendGain3 * 1.05f - 0.05f, 0.0f, 1.0f);
+		sendGain0 = MathHelper.clamp_float(sendGain0, 0.0f, 1.0f);
+		sendGain1 = MathHelper.clamp_float(sendGain1, 0.0f, 1.0f);
+		sendGain2 = MathHelper.clamp_float(sendGain2, 0.0f, 1.0f);
+		sendGain3 = MathHelper.clamp_float(sendGain3, 0.0f, 1.0f);
 		
 		sendGain0 *= (float)Math.pow(sendCutoff0, 0.1);
 		sendGain1 *= (float)Math.pow(sendCutoff1, 0.1);
