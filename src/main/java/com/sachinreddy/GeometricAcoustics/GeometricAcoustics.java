@@ -143,6 +143,7 @@ public class GeometricAcoustics
 	
 	private static void calculateEnvironment(float posX, float posY, float posZ, int sourceID)
 	{
+		// Main menu
 		if (posX < 0.01f && posY < 0.01f && posZ < 0.01f)
 		{			
 			setEnvironment(sourceID, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f);
@@ -154,30 +155,16 @@ public class GeometricAcoustics
 		
 		// ---------------------- //
 		
-		float directCutoff = 1.0f;
-		float absorptionCoeff = GeometricAcousticsCore.Config.globalBlockAbsorption * 3.0f;
-		
-		//Direct sound occlusion
 		Vec3d soundPos = new Vec3d(posX, posY, posZ);
 		Vec3d playerPos = minecraft.thePlayer.getPositionVector();
 		playerPos = new Vec3d(playerPos.xCoord, playerPos.yCoord + minecraft.thePlayer.getEyeHeight(), playerPos.zCoord);
 		soundPos = offsetSoundByName(soundPos, playerPos, lastSoundName, lastSoundCategory.getName());		
-		Vec3d toPlayerVector = playerPos.subtract(soundPos).normalize();
-		
-		Vec3d rayOrigin = new Vec3d(soundPos.xCoord, soundPos.yCoord, soundPos.zCoord);
-		if (lastSoundName.matches(".*block.*"))
-		{
-			rayOrigin = rayOrigin.add(toPlayerVector.scale(0.867));
-		}
 		
 		// ---------------------- //
 			
-		float occlusionAccumulation = 0.0f;		
-		directCutoff = (float)Math.exp(-occlusionAccumulation * absorptionCoeff);
-		float directGain = (float)Math.pow(directCutoff, 0.1);
-		
-		// ---------------------- //
-				
+		float directCutoff = 1.0f;
+		float directGain = 1.0f;
+						
 		float sendGain0 = 0.0f;
 		float sendGain1 = 0.0f;
 		float sendGain2 = 0.0f;
@@ -187,13 +174,6 @@ public class GeometricAcoustics
 		float sendCutoff1 = 1.0f;
 		float sendCutoff2 = 1.0f;
 		float sendCutoff3 = 1.0f;
-		
-		// ---------------------- //
-		
-		log("directGain: " + directGain);
-		log("directCutoff: " + directCutoff);
-		log("Gain: " + sendGain0 + ", " + sendGain1 + ", " + sendGain2 + ", " + sendGain3);
-		log("SendCutoff: " + sendCutoff0 + ", " + sendCutoff1 + ", " + sendCutoff2 + ", " + sendCutoff3);
 		
 		// ---------------------- //
 		
@@ -207,7 +187,6 @@ public class GeometricAcoustics
 
 		float[] bounceReflectivityRatio = new float[rayBounces];
 		
-		float sharedAirspace = 0.0f; //
 		float rcpTotalRays = 1.0f / (numRays * rayBounces);;
 		final double reflectionEnergyCurve = 1.0;
 		
@@ -268,16 +247,12 @@ public class GeometricAcoustics
 						{
 							Vec3d finalRayStart = new Vec3d(lastHitPos.xCoord + lastHitNormal.xCoord * 0.01, lastHitPos.yCoord + lastHitNormal.yCoord * 0.01, lastHitPos.zCoord + lastHitNormal.zCoord * 0.01);
 							RayTraceResult finalRayHit = minecraft.theWorld.rayTraceBlocks(finalRayStart, playerPos, true);
-							
-							if (finalRayHit == null)
-								sharedAirspace += 1.0f;
 						}
 					}
 					else
 						totalRayDistance += lastHitPos.distanceTo(playerPos);
 					
 					float reflectionDelay = (float)Math.pow(Math.max(totalRayDistance, 0.0), 1.0) * 0.12f * blockReflectivity;
-					
 					float cross0 = 1.0f - MathHelper.clamp_float(Math.abs(reflectionDelay - 0.0f), 0.0f, 1.0f);
 					float cross1 = 1.0f - MathHelper.clamp_float(Math.abs(reflectionDelay - 1.0f), 0.0f, 1.0f);
 					float cross2 = 1.0f - MathHelper.clamp_float(Math.abs(reflectionDelay - 2.0f), 0.0f, 1.0f);
@@ -290,7 +265,6 @@ public class GeometricAcoustics
 					
 					if (newRayHit == null)
 						break;
-					
 				}
 			}
 		}
@@ -309,17 +283,12 @@ public class GeometricAcoustics
 		sendGain2 = MathHelper.clamp_float(sendGain2, 0.0f, 1.0f);
 		sendGain3 = MathHelper.clamp_float(sendGain3, 0.0f, 1.0f);
 		
-		sendGain0 *= (float)Math.pow(sendCutoff0, 0.1);
-		sendGain1 *= (float)Math.pow(sendCutoff1, 0.1);
-		sendGain2 *= (float)Math.pow(sendCutoff2, 0.1);
-		sendGain3 *= (float)Math.pow(sendCutoff3, 0.1);
-		
 		// ---------------------- //
 		
-		log("directGain: " + directGain);
-		log("directCutoff: " + directCutoff);
-		log("Gain: " + sendGain0 + ", " + sendGain1 + ", " + sendGain2 + ", " + sendGain3);
-		log("SendCutoff: " + sendCutoff0 + ", " + sendCutoff1 + ", " + sendCutoff2 + ", " + sendCutoff3);
+//		log("directGain: " + directGain);
+//		log("directCutoff: " + directCutoff);
+//		log("Gain: " + sendGain0 + ", " + sendGain1 + ", " + sendGain2 + ", " + sendGain3);
+//		log("SendCutoff: " + sendCutoff0 + ", " + sendCutoff1 + ", " + sendCutoff2 + ", " + sendCutoff3);
 		
 		// ---------------------- //
 		

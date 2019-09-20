@@ -1,113 +1,118 @@
-[15:15:50] [Client thread/INFO]: Setting user: Player702
-[15:15:56] [Client thread/WARN]: Skipping bad option: lastServer:
-[15:15:56] [Client thread/INFO]: LWJGL Version: 2.9.2
-[15:16:02] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Geometric Acoustics
-[15:16:03] [Client thread/INFO]: [STDOUT]: #################################################################   Patching Class: net.minecraft.client.audio.SoundManager
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Lnet/minecraft/client/audio/SoundHandler;Lnet/minecraft/client/settings/GameSettings;)V
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: reloadSoundSystem Desc: ()V
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: loadSoundSystem Desc: ()V
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: getVolume Desc: (Lnet/minecraft/util/SoundCategory;)F
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: setVolume Desc: (Lnet/minecraft/util/SoundCategory;F)V
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: unloadSoundSystem Desc: ()V
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopAllSounds Desc: ()V
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: addListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: removeListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: updateAllSounds Desc: ()V
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: isSoundPlaying Desc: (Lnet/minecraft/client/audio/ISound;)Z
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopSound Desc: (Lnet/minecraft/client/audio/ISound;)V
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: playSound Desc: (Lnet/minecraft/client/audio/ISound;)V
-[15:16:03] [Client thread/INFO]: [STDOUT]: *************************************** Inside target method: playSound
-[15:16:03] [Client thread/INFO]: [STDOUT]: Found target method invocation for injection: setVolume
-[15:16:03] [Client thread/INFO]: [STDOUT]: Patching complete!----------------------------------------------------------------------------------------
-[15:16:03] [Client thread/INFO]: [STDOUT]: #################################################################   Patching Class: net.minecraft.client.audio.SoundManager
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Lnet/minecraft/client/audio/SoundHandler;Lnet/minecraft/client/settings/GameSettings;)V
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: reloadSoundSystem Desc: ()V
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: loadSoundSystem Desc: ()V
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: getVolume Desc: (Lnet/minecraft/util/SoundCategory;)F
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: setVolume Desc: (Lnet/minecraft/util/SoundCategory;F)V
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: unloadSoundSystem Desc: ()V
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopAllSounds Desc: ()V
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: addListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: removeListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: updateAllSounds Desc: ()V
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: isSoundPlaying Desc: (Lnet/minecraft/client/audio/ISound;)Z
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopSound Desc: (Lnet/minecraft/client/audio/ISound;)V
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: playSound Desc: (Lnet/minecraft/client/audio/ISound;)V
-[15:16:03] [Client thread/INFO]: [STDOUT]: *************************************** Inside target method: playSound
-[15:16:03] [Client thread/INFO]: [STDOUT]: Found target method invocation for injection: setVolume
-[15:16:03] [Client thread/INFO]: [STDOUT]: Patching complete!----------------------------------------------------------------------------------------
-[15:16:03] [Client thread/INFO]: [STDOUT]: #################################################################   Patching Class: net.minecraft.client.audio.SoundManager
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Lnet/minecraft/client/audio/SoundHandler;Lnet/minecraft/client/settings/GameSettings;)V
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: reloadSoundSystem Desc: ()V
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: loadSoundSystem Desc: ()V
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: getVolume Desc: (Lnet/minecraft/util/SoundCategory;)F
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: setVolume Desc: (Lnet/minecraft/util/SoundCategory;F)V
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: unloadSoundSystem Desc: ()V
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopAllSounds Desc: ()V
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: addListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: removeListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: updateAllSounds Desc: ()V
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: isSoundPlaying Desc: (Lnet/minecraft/client/audio/ISound;)Z
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopSound Desc: (Lnet/minecraft/client/audio/ISound;)V
-[15:16:03] [Client thread/INFO]: [STDOUT]: ********* Method Name: playSound Desc: (Lnet/minecraft/client/audio/ISound;)V
-[15:16:03] [Client thread/INFO]: [STDOUT]: *************************************** Inside target method: playSound
-[15:16:03] [Client thread/INFO]: [STDOUT]: Found target method invocation for injection: getClampedVolume
-[15:16:03] [Client thread/INFO]: [STDOUT]: Patching complete!----------------------------------------------------------------------------------------
-[15:16:05] [Sound Library Loader/INFO]: [STDOUT]: #################################################################   Patching Class: net.minecraft.client.audio.SoundManager$SoundSystemStarterThread
-[15:16:05] [Sound Library Loader/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Lnet/minecraft/client/audio/SoundManager;)V
-[15:16:05] [Sound Library Loader/INFO]: [STDOUT]: *************************************** Inside target method: <init>
-[15:16:05] [Sound Library Loader/INFO]: [STDOUT]: Found target method invocation for injection: <init>
-[15:16:05] [Sound Library Loader/INFO]: [STDOUT]: Patching complete!----------------------------------------------------------------------------------------
-[15:16:05] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[15:16:06] [Thread-18/INFO]: [STDOUT]: #################################################################   Patching Class: paulscode.sound.libraries.SourceLWJGLOpenAL
-[15:16:06] [Thread-18/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Ljava/nio/FloatBuffer;Ljava/nio/IntBuffer;ZZZLjava/lang/String;Lpaulscode/sound/FilenameURL;Lpaulscode/sound/SoundBuffer;FFFIFZ)V
-[15:16:06] [Thread-18/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Ljava/nio/FloatBuffer;Ljava/nio/IntBuffer;Lpaulscode/sound/Source;Lpaulscode/sound/SoundBuffer;)V
-[15:16:06] [Thread-18/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Ljava/nio/FloatBuffer;Ljavax/sound/sampled/AudioFormat;ZLjava/lang/String;FFFIF)V
-[15:16:06] [Thread-18/INFO]: [STDOUT]: ********* Method Name: cleanup Desc: ()V
-[15:16:06] [Thread-18/INFO]: [STDOUT]: ********* Method Name: changeSource Desc: (Ljava/nio/FloatBuffer;Ljava/nio/IntBuffer;ZZZLjava/lang/String;Lpaulscode/sound/FilenameURL;Lpaulscode/sound/SoundBuffer;FFFIFZ)V
-[15:16:06] [Thread-18/INFO]: [STDOUT]: ********* Method Name: incrementSoundSequence Desc: ()Z
-[15:16:06] [Thread-18/INFO]: [STDOUT]: ********* Method Name: listenerMoved Desc: ()V
-[15:16:06] [Thread-18/INFO]: [STDOUT]: ********* Method Name: setPosition Desc: (FFF)V
-[15:16:06] [Thread-18/INFO]: [STDOUT]: ********* Method Name: positionChanged Desc: ()V
-[15:16:06] [Thread-18/INFO]: [STDOUT]: ********* Method Name: checkPitch Desc: ()V
-[15:16:06] [Thread-18/INFO]: [STDOUT]: ********* Method Name: setLooping Desc: (Z)V
-[15:16:06] [Thread-18/INFO]: [STDOUT]: ********* Method Name: setAttenuation Desc: (I)V
-[15:16:06] [Thread-18/INFO]: [STDOUT]: ********* Method Name: setDistOrRoll Desc: (F)V
-[15:16:06] [Thread-18/INFO]: [STDOUT]: ********* Method Name: setVelocity Desc: (FFF)V
-[15:16:06] [Thread-18/INFO]: [STDOUT]: ********* Method Name: setPitch Desc: (F)V
-[15:16:06] [Thread-18/INFO]: [STDOUT]: ********* Method Name: play Desc: (Lpaulscode/sound/Channel;)V
-[15:16:06] [Thread-18/INFO]: [STDOUT]: *************************************** Inside target method: play
-[15:16:06] [Thread-18/INFO]: [STDOUT]: Found target method invocation for injection: play
-[15:16:06] [Thread-18/INFO]: [STDOUT]: Patching complete!----------------------------------------------------------------------------------------
-[15:16:06] [Thread-18/INFO]: Initializing LWJGL OpenAL
-[15:16:06] [Thread-18/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[15:16:06] [Thread-18/INFO]: OpenAL initialized.
-[15:16:06] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Initializing Geometric Acoustics...
-[15:16:06] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: EFX Extension recognized.
-[15:16:06] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Reverb parameters setup.
-[15:16:06] [Sound Library Loader/INFO]: Sound engine started
-[15:16:11] [Client thread/INFO]: Created: 16x16 textures-atlas
-[15:16:14] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Geometric Acoustics
-[15:16:16] [Client thread/INFO]: SoundSystem shutting down...
-[15:16:16] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[15:16:16] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[15:16:16] [Thread-23/INFO]: Initializing LWJGL OpenAL
-[15:16:16] [Thread-23/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[15:16:16] [Thread-23/INFO]: OpenAL initialized.
-[15:16:16] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Initializing Geometric Acoustics...
-[15:16:16] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: EFX Extension recognized.
-[15:16:16] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Reverb parameters setup.
-[15:16:16] [Sound Library Loader/INFO]: Sound engine started
-[15:16:20] [Client thread/INFO]: Created: 512x512 textures-atlas
-[15:16:21] [Client thread/WARN]: Skipping bad option: lastServer:
-[15:16:27] [Server thread/INFO]: Starting integrated minecraft server version 1.11
-[15:16:27] [Server thread/INFO]: Generating keypair
-[15:16:28] [Server thread/INFO]: Preparing start region for level 0
-[15:16:29] [Server thread/INFO]: Preparing spawn area: 0%
-[15:16:30] [Server thread/INFO]: Preparing spawn area: 32%
-[15:16:31] [Server thread/INFO]: Preparing spawn area: 78%
-[15:16:32] [Server thread/INFO]: Changing view distance to 12, from 10
-[15:16:33] [Client thread/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@2ca55a48[id=fb4c6c18-26a1-3d95-a13f-9a47871171a2,name=Player702,properties={},legacy=false]
+[16:46:09] [Client thread/INFO]: Setting user: Player417
+[16:46:20] [Client thread/WARN]: Skipping bad option: lastServer:
+[16:46:20] [Client thread/INFO]: LWJGL Version: 2.9.2
+[16:46:27] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Geometric Acoustics
+[16:46:28] [Client thread/INFO]: [STDOUT]: #################################################################   Patching Class: net.minecraft.client.audio.SoundManager
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Lnet/minecraft/client/audio/SoundHandler;Lnet/minecraft/client/settings/GameSettings;)V
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: reloadSoundSystem Desc: ()V
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: loadSoundSystem Desc: ()V
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: getVolume Desc: (Lnet/minecraft/util/SoundCategory;)F
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: setVolume Desc: (Lnet/minecraft/util/SoundCategory;F)V
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: unloadSoundSystem Desc: ()V
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopAllSounds Desc: ()V
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: addListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: removeListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: updateAllSounds Desc: ()V
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: isSoundPlaying Desc: (Lnet/minecraft/client/audio/ISound;)Z
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopSound Desc: (Lnet/minecraft/client/audio/ISound;)V
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: playSound Desc: (Lnet/minecraft/client/audio/ISound;)V
+[16:46:28] [Client thread/INFO]: [STDOUT]: *************************************** Inside target method: playSound
+[16:46:28] [Client thread/INFO]: [STDOUT]: Found target method invocation for injection: setVolume
+[16:46:28] [Client thread/INFO]: [STDOUT]: Patching complete!----------------------------------------------------------------------------------------
+[16:46:28] [Client thread/INFO]: [STDOUT]: #################################################################   Patching Class: net.minecraft.client.audio.SoundManager
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Lnet/minecraft/client/audio/SoundHandler;Lnet/minecraft/client/settings/GameSettings;)V
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: reloadSoundSystem Desc: ()V
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: loadSoundSystem Desc: ()V
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: getVolume Desc: (Lnet/minecraft/util/SoundCategory;)F
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: setVolume Desc: (Lnet/minecraft/util/SoundCategory;F)V
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: unloadSoundSystem Desc: ()V
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopAllSounds Desc: ()V
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: addListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: removeListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: updateAllSounds Desc: ()V
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: isSoundPlaying Desc: (Lnet/minecraft/client/audio/ISound;)Z
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopSound Desc: (Lnet/minecraft/client/audio/ISound;)V
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: playSound Desc: (Lnet/minecraft/client/audio/ISound;)V
+[16:46:28] [Client thread/INFO]: [STDOUT]: *************************************** Inside target method: playSound
+[16:46:28] [Client thread/INFO]: [STDOUT]: Found target method invocation for injection: setVolume
+[16:46:28] [Client thread/INFO]: [STDOUT]: Patching complete!----------------------------------------------------------------------------------------
+[16:46:28] [Client thread/INFO]: [STDOUT]: #################################################################   Patching Class: net.minecraft.client.audio.SoundManager
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Lnet/minecraft/client/audio/SoundHandler;Lnet/minecraft/client/settings/GameSettings;)V
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: reloadSoundSystem Desc: ()V
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: loadSoundSystem Desc: ()V
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: getVolume Desc: (Lnet/minecraft/util/SoundCategory;)F
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: setVolume Desc: (Lnet/minecraft/util/SoundCategory;F)V
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: unloadSoundSystem Desc: ()V
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopAllSounds Desc: ()V
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: addListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: removeListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: updateAllSounds Desc: ()V
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: isSoundPlaying Desc: (Lnet/minecraft/client/audio/ISound;)Z
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopSound Desc: (Lnet/minecraft/client/audio/ISound;)V
+[16:46:28] [Client thread/INFO]: [STDOUT]: ********* Method Name: playSound Desc: (Lnet/minecraft/client/audio/ISound;)V
+[16:46:28] [Client thread/INFO]: [STDOUT]: *************************************** Inside target method: playSound
+[16:46:28] [Client thread/INFO]: [STDOUT]: Found target method invocation for injection: getClampedVolume
+[16:46:28] [Client thread/INFO]: [STDOUT]: Patching complete!----------------------------------------------------------------------------------------
+[16:46:32] [Sound Library Loader/INFO]: [STDOUT]: #################################################################   Patching Class: net.minecraft.client.audio.SoundManager$SoundSystemStarterThread
+[16:46:32] [Sound Library Loader/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Lnet/minecraft/client/audio/SoundManager;)V
+[16:46:32] [Sound Library Loader/INFO]: [STDOUT]: *************************************** Inside target method: <init>
+[16:46:32] [Sound Library Loader/INFO]: [STDOUT]: Found target method invocation for injection: <init>
+[16:46:32] [Sound Library Loader/INFO]: [STDOUT]: Patching complete!----------------------------------------------------------------------------------------
+[16:46:32] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[16:46:32] [Thread-19/INFO]: [STDOUT]: #################################################################   Patching Class: paulscode.sound.libraries.SourceLWJGLOpenAL
+[16:46:32] [Thread-19/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Ljava/nio/FloatBuffer;Ljava/nio/IntBuffer;ZZZLjava/lang/String;Lpaulscode/sound/FilenameURL;Lpaulscode/sound/SoundBuffer;FFFIFZ)V
+[16:46:32] [Thread-19/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Ljava/nio/FloatBuffer;Ljava/nio/IntBuffer;Lpaulscode/sound/Source;Lpaulscode/sound/SoundBuffer;)V
+[16:46:32] [Thread-19/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Ljava/nio/FloatBuffer;Ljavax/sound/sampled/AudioFormat;ZLjava/lang/String;FFFIF)V
+[16:46:32] [Thread-19/INFO]: [STDOUT]: ********* Method Name: cleanup Desc: ()V
+[16:46:32] [Thread-19/INFO]: [STDOUT]: ********* Method Name: changeSource Desc: (Ljava/nio/FloatBuffer;Ljava/nio/IntBuffer;ZZZLjava/lang/String;Lpaulscode/sound/FilenameURL;Lpaulscode/sound/SoundBuffer;FFFIFZ)V
+[16:46:32] [Thread-19/INFO]: [STDOUT]: ********* Method Name: incrementSoundSequence Desc: ()Z
+[16:46:32] [Thread-19/INFO]: [STDOUT]: ********* Method Name: listenerMoved Desc: ()V
+[16:46:32] [Thread-19/INFO]: [STDOUT]: ********* Method Name: setPosition Desc: (FFF)V
+[16:46:32] [Thread-19/INFO]: [STDOUT]: ********* Method Name: positionChanged Desc: ()V
+[16:46:32] [Thread-19/INFO]: [STDOUT]: ********* Method Name: checkPitch Desc: ()V
+[16:46:32] [Thread-19/INFO]: [STDOUT]: ********* Method Name: setLooping Desc: (Z)V
+[16:46:32] [Thread-19/INFO]: [STDOUT]: ********* Method Name: setAttenuation Desc: (I)V
+[16:46:32] [Thread-19/INFO]: [STDOUT]: ********* Method Name: setDistOrRoll Desc: (F)V
+[16:46:32] [Thread-19/INFO]: [STDOUT]: ********* Method Name: setVelocity Desc: (FFF)V
+[16:46:32] [Thread-19/INFO]: [STDOUT]: ********* Method Name: setPitch Desc: (F)V
+[16:46:32] [Thread-19/INFO]: [STDOUT]: ********* Method Name: play Desc: (Lpaulscode/sound/Channel;)V
+[16:46:32] [Thread-19/INFO]: [STDOUT]: *************************************** Inside target method: play
+[16:46:32] [Thread-19/INFO]: [STDOUT]: Found target method invocation for injection: play
+[16:46:32] [Thread-19/INFO]: [STDOUT]: Patching complete!----------------------------------------------------------------------------------------
+[16:46:32] [Thread-19/INFO]: Initializing LWJGL OpenAL
+[16:46:32] [Thread-19/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[16:46:32] [Thread-19/INFO]: OpenAL initialized.
+[16:46:32] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Initializing Geometric Acoustics...
+[16:46:32] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: EFX Extension recognized.
+[16:46:32] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Reverb parameters setup.
+[16:46:32] [Sound Library Loader/INFO]: Sound engine started
+[16:46:39] [Client thread/INFO]: Created: 16x16 textures-atlas
+[16:46:44] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Geometric Acoustics
+[16:46:47] [Client thread/INFO]: SoundSystem shutting down...
+[16:46:52] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[16:46:52] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[16:46:53] [Thread-25/INFO]: Initializing LWJGL OpenAL
+[16:46:53] [Thread-25/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[16:46:53] [Thread-25/INFO]: OpenAL initialized.
+[16:46:53] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Initializing Geometric Acoustics...
+[16:46:53] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: EFX Extension recognized.
+[16:46:53] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Reverb parameters setup.
+[16:46:53] [Sound Library Loader/INFO]: Sound engine started
+[16:46:58] [Client thread/INFO]: Created: 512x512 textures-atlas
+[16:47:00] [Client thread/WARN]: Skipping bad option: lastServer:
+[16:47:07] [Server thread/INFO]: Starting integrated minecraft server version 1.11
+[16:47:07] [Server thread/INFO]: Generating keypair
+[16:47:09] [Server thread/INFO]: Preparing start region for level 0
+[16:47:10] [Server thread/INFO]: Preparing spawn area: 0%
+[16:47:11] [Server thread/INFO]: Preparing spawn area: 4%
+[16:47:13] [Server thread/INFO]: Preparing spawn area: 11%
+[16:47:14] [Server thread/INFO]: Preparing spawn area: 26%
+[16:47:15] [Server thread/INFO]: Preparing spawn area: 41%
+[16:47:16] [Server thread/INFO]: Preparing spawn area: 60%
+[16:47:17] [Server thread/INFO]: Preparing spawn area: 86%
+[16:47:18] [Server thread/INFO]: Changing view distance to 12, from 10
+[16:47:22] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2421ms behind, skipping 48 tick(s)
+[16:47:22] [Client thread/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@9b0800a[id=c97b21a8-25e6-37ce-8a04-8d5bcf6f4c4d,name=Player417,properties={},legacy=false]
 com.mojang.authlib.exceptions.AuthenticationUnavailableException: Cannot contact authentication server
 	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:85) ~[YggdrasilAuthenticationService.class:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:180) [YggdrasilMinecraftSessionService.class:?]
@@ -197,11 +202,11 @@ Caused by: java.security.InvalidAlgorithmParameterException: the trustAnchors pa
 	at com.mojang.authlib.HttpAuthenticationService.performGetRequest(HttpAuthenticationService.java:130) ~[HttpAuthenticationService.class:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:66) ~[YggdrasilAuthenticationService.class:?]
 	... 28 more
-[15:16:33] [Server thread/INFO]: Player702[local:E:f3e9121c] logged in with entity id 282 at (470.9918887178976, 61.0, 517.0926618676789)
-[15:16:33] [Server thread/INFO]: Player702 joined the game
-[15:16:34] [Server thread/INFO]: Saving and pausing game...
-[15:16:34] [Server thread/INFO]: Saving chunks for level 'Test_World'/Overworld
-[15:16:34] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@22a5d71f[id=fb4c6c18-26a1-3d95-a13f-9a47871171a2,name=Player702,properties={},legacy=false]
+[16:47:22] [Server thread/INFO]: Player417[local:E:9a393c27] logged in with entity id 285 at (471.7948979433057, 61.0, 515.908392912593)
+[16:47:22] [Server thread/INFO]: Player417 joined the game
+[16:47:26] [Server thread/INFO]: Saving and pausing game...
+[16:47:26] [Server thread/INFO]: Saving chunks for level 'Test_World'/Overworld
+[16:47:27] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@5a7e3b1d[id=c97b21a8-25e6-37ce-8a04-8d5bcf6f4c4d,name=Player417,properties={},legacy=false]
 com.mojang.authlib.exceptions.AuthenticationUnavailableException: Cannot contact authentication server
 	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:85) ~[YggdrasilAuthenticationService.class:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:180) [YggdrasilMinecraftSessionService.class:?]
@@ -283,807 +288,79 @@ Caused by: java.security.InvalidAlgorithmParameterException: the trustAnchors pa
 	at com.mojang.authlib.HttpAuthenticationService.performGetRequest(HttpAuthenticationService.java:130) ~[HttpAuthenticationService.class:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:66) ~[YggdrasilAuthenticationService.class:?]
 	... 20 more
-[15:16:35] [Server thread/INFO]: Saving chunks for level 'Test_World'/Nether
-[15:16:35] [Server thread/INFO]: Saving chunks for level 'Test_World'/The End
-[15:16:38] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4825ms behind, skipping 96 tick(s)
-[15:16:41] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:41] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:41] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:16:41] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:41] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:41] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:41] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.4006602, 1.0, 0.3296596, 0.48230198
-[15:16:41] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:41] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:41] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:41] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:16:41] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:41] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:41] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:41] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.43710476, 1.0, 0.40063936, 0.38402456
-[15:16:41] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:42] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:42] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:42] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:16:42] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:42] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:42] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:42] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.43732437, 1.0, 0.36981156, 0.44444123
-[15:16:42] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:43] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:43] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:43] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:16:43] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:43] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:43] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:43] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.4240061, 1.0, 0.33137023, 0.48161453
-[15:16:43] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:43] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:43] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:43] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:16:43] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:43] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:43] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:43] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.33179864, 1.0, 0.6263023, 0.5504112
-[15:16:43] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:45] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:45] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:45] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:16:45] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:45] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:45] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:45] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.27719417, 1.0, 0.7385054, 0.4878506
-[15:16:45] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:46] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:46] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:46] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:16:46] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:46] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:46] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:46] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.39065748, 1.0, 0.6491575, 0.20563269
-[15:16:46] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:48] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:48] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:48] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:16:48] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:48] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:48] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:48] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.27719417, 1.0, 0.7385054, 0.4878506
-[15:16:48] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:48] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:48] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:48] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:16:48] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:48] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:48] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:48] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.19088244, 1.0, 1.0, 0.2673106
-[15:16:48] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:49] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:49] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:49] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:16:49] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:49] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:49] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:49] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.20301612, 1.0, 0.7908246, 0.34962562
-[15:16:49] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:50] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:50] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:50] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:16:50] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:50] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:50] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:50] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.5059661, 1.0, 0.49695984, 0.34616613
-[15:16:50] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.23461674, 1.0, 0.68035984, 0.48763594
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.193063, 1.0, 0.99006927, 0.22243431
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.263033, 1.0, 0.83703804, 0.358795
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.24725185, 1.0, 1.0, 0.5012906
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.38629174, 1.0, 0.6920288, 0.24715838
-[15:16:51] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:52] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:52] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:52] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:16:52] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:52] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:52] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:52] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.12776387, 1.0, 0.9592039, 0.2744786
-[15:16:52] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:53] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:53] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:53] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:16:53] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:53] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:53] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:53] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.438473, 1.0, 0.64922315, 0.29416656
-[15:16:53] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:53] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:53] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:53] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:16:53] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:53] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:53] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:53] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.17461225, 1.0, 1.0, 0.39347908
-[15:16:53] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:54] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:54] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:54] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:16:54] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:54] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:54] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:54] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.15370958, 1.0, 1.0, 0.5187745
-[15:16:54] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:54] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:54] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:54] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:16:54] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:54] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:54] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:54] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.22194768, 1.0, 0.79327357, 0.4684003
-[15:16:54] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:55] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:55] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:55] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:16:55] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:55] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:55] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:55] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.38285464, 1.0, 0.80930734, 0.48395386
-[15:16:55] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:55] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:55] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:55] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:16:55] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:55] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:55] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:55] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.1891495, 1.0, 0.987715, 0.37377745
-[15:16:55] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:56] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3157ms behind, skipping 63 tick(s)
-[15:16:56] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:56] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:56] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:16:56] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:56] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:56] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:56] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.3387046, 1.0, 0.6724052, 0.51185787
-[15:16:56] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:56] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:56] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:56] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:16:56] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:56] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:56] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:56] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.44295752, 1.0, 0.71948755, 0.21200171
-[15:16:56] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:57] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:57] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:57] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:16:57] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:57] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:57] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:57] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.47828043, 1.0, 0.65346134, 0.37805042
-[15:16:57] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:57] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:57] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:57] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:16:57] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:57] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:57] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:57] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 1.0, 0.3286959, 0.015999127, 0.0
-[15:16:57] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:59] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:59] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:59] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:16:59] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:16:59] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:16:59] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:16:59] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.574522, 1.0, 0.45849538, 0.5247406
-[15:16:59] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:00] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:00] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:00] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:00] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:00] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:00] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:00] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.29176793, 1.0, 0.42593488, 0.47051784
-[15:17:00] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:00] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:00] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:00] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:00] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:00] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:00] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:00] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.33029604, 1.0, 0.4326947, 0.4433449
-[15:17:00] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:01] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:01] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:01] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:01] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:01] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:01] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:01] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.36575973, 1.0, 0.32139307, 0.41533494
-[15:17:01] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:01] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:01] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:01] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:01] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:01] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:01] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:01] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.36243632, 1.0, 0.47473007, 0.35004392
-[15:17:01] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:01] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:01] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:01] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:01] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:01] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:01] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:01] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.38506126, 1.0, 0.30176303, 0.19846494
-[15:17:01] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:02] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:02] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:02] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:02] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:02] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:02] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:02] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.3835959, 1.0, 0.32351053, 0.116304114
-[15:17:02] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:02] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:02] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:02] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:02] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:02] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:02] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:02] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.43816283, 1.0, 0.2928293, 0.017238146
-[15:17:02] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:02] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:02] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:02] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:02] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:02] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:02] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:02] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.44212568, 1.0, 0.46007457, 0.046275824
-[15:17:02] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:03] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:03] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:03] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:03] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:03] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:03] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:03] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.40271562, 1.0, 0.5524552, 0.060875595
-[15:17:03] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:03] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:03] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:03] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:03] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:03] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:03] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:03] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.40308496, 1.0, 0.37150326, 0.06837473
-[15:17:03] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:03] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:03] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:03] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:03] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:03] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:03] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:03] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.3662943, 1.0, 0.30830097, 0.059838854
-[15:17:03] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:03] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:03] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:03] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:03] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:03] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:03] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:03] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.30913162, 1.0, 0.41463706, 0.08282276
-[15:17:03] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:04] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:04] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:04] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:04] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:04] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:04] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:04] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.39039412, 1.0, 0.22100061, 0.08606977
-[15:17:04] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:04] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:04] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:04] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:04] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:04] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:04] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:04] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.32910454, 1.0, 0.3318606, 0.12836733
-[15:17:04] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:05] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:05] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:05] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:05] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:05] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:05] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:05] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.546376, 1.0, 0.26633084, 0.07422641
-[15:17:05] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:06] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:06] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:06] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:06] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:06] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:06] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:06] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.9604674, 0.93432343, 0.06775835, 0.04841649
-[15:17:06] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:06] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:06] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:06] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:06] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:06] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:06] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:06] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 1.0, 0.8643704, 0.0, 0.0
-[15:17:06] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:07] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:07] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:07] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:07] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:07] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:07] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:07] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.9348389, 0.936174, 0.04510206, 0.0
-[15:17:07] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:07] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:07] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:07] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:07] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:07] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:07] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:07] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.7963902, 0.9195859, 0.13768567, 0.05557223
-[15:17:07] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:08] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:08] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:08] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:08] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:08] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:08] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:08] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.3629436, 1.0, 0.3583689, 0.0897878
-[15:17:08] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:08] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:08] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:08] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:08] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:08] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:08] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:08] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.28661737, 1.0, 0.27936378, 0.076931395
-[15:17:08] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:09] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:09] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:09] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:09] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:09] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:09] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:09] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.30324572, 1.0, 0.389022, 0.04397838
-[15:17:09] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:10] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:10] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:10] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:10] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:10] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:10] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:10] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.4515334, 1.0, 0.28374487, 0.074104175
-[15:17:10] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:11] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:11] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:11] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:11] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:11] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:11] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:11] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.2778565, 1.0, 0.2567124, 0.091106184
-[15:17:11] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:11] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:11] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:11] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:11] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:11] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:11] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:11] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.26242176, 1.0, 0.42396852, 0.08183011
-[15:17:11] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:12] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:12] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:12] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:12] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:12] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:12] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:12] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.3659089, 1.0, 0.3594408, 0.02056681
-[15:17:12] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:12] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:12] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:12] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:12] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:12] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:12] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:12] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.38061422, 1.0, 0.45792934, 0.08529797
-[15:17:12] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:13] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:13] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:13] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:13] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:13] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:13] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:13] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.42878664, 1.0, 0.45702854, 0.066536956
-[15:17:13] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:13] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:13] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:13] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:13] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:13] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:13] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:13] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.45027223, 1.0, 0.44711393, 0.05548641
-[15:17:13] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:13] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:13] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:13] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:13] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:13] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:13] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:13] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.49795228, 1.0, 0.4809635, 0.045033142
-[15:17:13] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.39662772, 1.0, 0.36590448, 0.1105369
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.32969, 1.0, 0.45684683, 0.19416077
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.3502765, 1.0, 0.32759848, 0.3206269
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.8511554, 1.0, 0.015549144, 0.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.36351973, 1.0, 0.42308778, 0.41724733
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:14] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:15] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:15] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:15] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:15] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:15] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:15] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.537374, 1.0, 0.17611656, 0.09624755
-[15:17:15] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:16] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:16] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:16] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:16] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:16] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:16] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:16] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.32560155, 1.0, 0.43158823, 0.3994153
-[15:17:16] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:16] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:16] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:16] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:16] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:16] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:16] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:16] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.32446405, 1.0, 0.41401535, 0.39532226
-[15:17:16] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:16] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:16] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:16] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:16] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:16] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:16] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:16] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.2778561, 1.0, 0.60024697, 0.46587425
-[15:17:16] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:16] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:16] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:16] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:16] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:16] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:16] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:16] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.1429256, 1.0, 1.0, 0.43663323
-[15:17:16] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:18] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:18] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:18] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:18] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:18] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:18] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:18] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.27911726, 1.0, 0.74734116, 0.43957433
-[15:17:18] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:18] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:18] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:18] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:18] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:18] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:18] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:18] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.27937886, 1.0, 0.7423584, 0.49007663
-[15:17:18] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:19] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:19] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:19] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:19] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:19] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:19] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:19] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.1522512, 0.95870656, 0.9321458, 0.38893119
-[15:17:19] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:20] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:20] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:20] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:20] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:20] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:20] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:20] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.27576002, 1.0, 0.743517, 0.49007982
-[15:17:20] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:20] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:20] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:20] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:20] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:20] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:20] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:20] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.118249334, 1.0, 1.0, 0.2605233
-[15:17:20] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:22] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:22] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:22] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:22] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:22] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:22] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:22] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.27576002, 1.0, 0.743517, 0.49007982
-[15:17:22] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:22] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:22] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:22] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:22] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:22] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:22] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:22] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.15417026, 1.0, 1.0, 0.31430882
-[15:17:22] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:23] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:23] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:23] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:23] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:23] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:23] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:23] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.27576002, 1.0, 0.743517, 0.49007982
-[15:17:23] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:24] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:24] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:24] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:24] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:24] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:24] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:24] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.15525222, 1.0, 1.0, 0.4256674
-[15:17:24] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:24] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:24] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:24] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:24] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:24] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:24] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:24] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.19352208, 1.0, 0.7806216, 0.2808434
-[15:17:24] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:25] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:25] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:25] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:25] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:25] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:25] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:25] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.37464038, 1.0, 0.68638253, 0.29172927
-[15:17:25] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:25] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:25] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:25] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:25] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:25] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:25] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:25] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.29117605, 1.0, 0.67512006, 0.62757427
-[15:17:25] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:25] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:25] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:25] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:25] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:25] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:25] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:25] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.2721031, 1.0, 0.981643, 0.24754825
-[15:17:25] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.24610159, 1.0, 1.0, 0.27588302
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.13761711, 1.0, 1.0, 0.3050552
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.15938917, 1.0, 1.0, 0.519706
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.1338745, 1.0, 0.99622226, 0.24624504
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.13534272, 1.0, 1.0, 0.27606
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.13181184, 1.0, 1.0, 0.24680148
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.16078906, 1.0, 1.0, 0.48152235
-[15:17:26] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:28] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:28] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:28] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:28] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:28] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:28] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:28] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.20511292, 1.0, 0.869289, 0.18467343
-[15:17:28] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:29] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:29] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:29] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:29] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:29] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:29] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:29] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.2187956, 1.0, 1.0, 0.34425732
-[15:17:29] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:29] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:29] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:29] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:29] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:29] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:29] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:29] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.26206338, 1.0, 0.80415523, 0.39167026
-[15:17:29] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:30] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:30] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:30] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:30] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:30] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:30] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:30] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.2386846, 1.0, 0.767618, 0.44096127
-[15:17:30] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:30] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:30] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:30] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:30] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:30] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:30] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:30] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.2239562, 1.0, 0.72186124, 0.43761468
-[15:17:30] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:30] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:30] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:30] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:30] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:30] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:30] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:30] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.2660575, 1.0, 0.5638405, 0.48002902
-[15:17:30] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:31] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:31] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:31] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:31] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:31] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:31] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:31] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.25597316, 1.0, 0.5528901, 0.37640238
-[15:17:31] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:31] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:31] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:31] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:31] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:31] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:31] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:31] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.21183409, 1.0, 0.7856287, 0.33985674
-[15:17:31] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:31] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:31] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:31] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:31] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:31] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:31] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:31] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.386773, 1.0, 0.67258716, 0.29088995
-[15:17:31] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:32] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:32] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:32] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0
-[15:17:32] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:32] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directGain: 1.0
-[15:17:32] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: directCutoff: 1.0
-[15:17:32] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.52734286, 1.0, 0.29506204, 0.082058206
-[15:17:32] [Thread-23/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: SendCutoff: 1.0, 1.0, 1.0, 1.0
-[15:17:33] [Server thread/INFO]: Saving and pausing game...
-[15:17:33] [Server thread/INFO]: Saving chunks for level 'Test_World'/Overworld
-[15:17:33] [Server thread/INFO]: Saving chunks for level 'Test_World'/Nether
-[15:17:33] [Server thread/INFO]: Saving chunks for level 'Test_World'/The End
-[15:17:33] [Server thread/INFO]: Stopping server
-[15:17:33] [Server thread/INFO]: Saving players
-[15:17:33] [Server thread/INFO]: Player702 lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}
-[15:17:33] [Server thread/INFO]: Player702 left the game
-[15:17:33] [Server thread/INFO]: Stopping singleplayer server as player logged out
-[15:17:33] [Server thread/INFO]: Saving worlds
-[15:17:33] [Server thread/INFO]: Saving chunks for level 'Test_World'/Overworld
-[15:17:33] [Server thread/INFO]: Saving chunks for level 'Test_World'/Nether
-[15:17:33] [Server thread/INFO]: Saving chunks for level 'Test_World'/The End
-[15:17:36] [Client thread/INFO]: Stopping!
-[15:17:36] [Client thread/INFO]: SoundSystem shutting down...
-[15:17:37] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[16:47:27] [Server thread/INFO]: Saving chunks for level 'Test_World'/Nether
+[16:47:27] [Server thread/INFO]: Saving chunks for level 'Test_World'/The End
+[16:47:52] [Server thread/INFO]: Saving and pausing game...
+[16:47:52] [Server thread/INFO]: Saving chunks for level 'Test_World'/Overworld
+[16:47:56] [Server thread/INFO]: Saving chunks for level 'Test_World'/Nether
+[16:47:56] [Server thread/INFO]: Saving chunks for level 'Test_World'/The End
+[16:47:56] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 10112ms behind, skipping 202 tick(s)
+[16:48:48] [Server thread/INFO]: Player417 has just earned the achievement [Taking Inventory]
+[16:48:49] [Client thread/INFO]: [CHAT] Player417 has just earned the achievement [Taking Inventory]
+[16:51:06] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2922ms behind, skipping 58 tick(s)
+[16:52:16] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2338ms behind, skipping 46 tick(s)
+[16:55:12] [Server thread/INFO]: Saving and pausing game...
+[16:55:12] [Server thread/INFO]: Saving chunks for level 'Test_World'/Overworld
+[16:55:13] [Server thread/INFO]: Saving chunks for level 'Test_World'/Nether
+[16:55:13] [Server thread/INFO]: Saving chunks for level 'Test_World'/The End
+[16:57:27] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2267ms behind, skipping 45 tick(s)
+[16:57:49] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 6222ms behind, skipping 124 tick(s)
+[16:58:18] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3890ms behind, skipping 77 tick(s)
+[16:58:44] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 14620ms behind, skipping 292 tick(s)
+[16:58:52] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5008ms behind, skipping 100 tick(s)
+[16:59:18] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 11023ms behind, skipping 220 tick(s)
+[16:59:32] [Server thread/INFO]: Saving and pausing game...
+[16:59:32] [Server thread/INFO]: Saving chunks for level 'Test_World'/Overworld
+[16:59:33] [Server thread/INFO]: Saving chunks for level 'Test_World'/Nether
+[16:59:33] [Server thread/INFO]: Saving chunks for level 'Test_World'/The End
+[16:59:36] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 9960ms behind, skipping 199 tick(s)
+[17:00:01] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 18576ms behind, skipping 371 tick(s)
+[17:00:06] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5360ms behind, skipping 107 tick(s)
+[17:00:38] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 14705ms behind, skipping 294 tick(s)
+[17:00:47] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5701ms behind, skipping 114 tick(s)
+[17:01:14] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 11678ms behind, skipping 233 tick(s)
+[17:01:26] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5550ms behind, skipping 111 tick(s)
+[17:01:30] [Server thread/INFO]: Saving and pausing game...
+[17:01:30] [Server thread/INFO]: Saving chunks for level 'Test_World'/Overworld
+[17:01:31] [Server thread/INFO]: Saving chunks for level 'Test_World'/Nether
+[17:01:31] [Server thread/INFO]: Saving chunks for level 'Test_World'/The End
+[17:01:46] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 8906ms behind, skipping 178 tick(s)
+[17:02:03] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7982ms behind, skipping 159 tick(s)
+[17:02:32] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 16596ms behind, skipping 331 tick(s)
+[17:02:34] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2833ms behind, skipping 56 tick(s)
+[17:03:15] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 19007ms behind, skipping 380 tick(s)
+[17:03:19] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3650ms behind, skipping 73 tick(s)
+[17:03:44] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 11135ms behind, skipping 222 tick(s)
+[17:03:55] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7108ms behind, skipping 142 tick(s)
+[17:04:14] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 10718ms behind, skipping 214 tick(s)
+[17:04:33] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 9564ms behind, skipping 191 tick(s)
+[17:05:04] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 20084ms behind, skipping 401 tick(s)
+[17:05:08] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3951ms behind, skipping 79 tick(s)
+[17:05:40] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 15288ms behind, skipping 305 tick(s)
+[17:05:44] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4127ms behind, skipping 82 tick(s)
+[17:06:13] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 13709ms behind, skipping 274 tick(s)
+[17:06:22] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5365ms behind, skipping 107 tick(s)
+[17:06:42] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 10375ms behind, skipping 207 tick(s)
+[17:07:11] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 16569ms behind, skipping 331 tick(s)
+[17:07:16] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4780ms behind, skipping 95 tick(s)
+[17:07:38] [Server thread/INFO]: Saving and pausing game...
+[17:07:38] [Server thread/INFO]: Saving chunks for level 'Test_World'/Overworld
+[17:07:39] [Server thread/INFO]: Saving chunks for level 'Test_World'/Nether
+[17:07:39] [Server thread/INFO]: Saving chunks for level 'Test_World'/The End
+[17:07:54] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4130ms behind, skipping 82 tick(s)
+[17:07:57] [Server thread/INFO]: Saving and pausing game...
+[17:07:57] [Server thread/INFO]: Saving chunks for level 'Test_World'/Overworld
+[17:07:58] [Server thread/INFO]: Saving chunks for level 'Test_World'/Nether
+[17:07:58] [Server thread/INFO]: Saving chunks for level 'Test_World'/The End
+[17:07:58] [Server thread/INFO]: Stopping server
+[17:07:58] [Server thread/INFO]: Saving players
+[17:07:58] [Server thread/INFO]: Player417 lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}
+[17:07:58] [Server thread/INFO]: Player417 left the game
+[17:07:58] [Server thread/INFO]: Stopping singleplayer server as player logged out
+[17:07:58] [Server thread/INFO]: Saving worlds
+[17:07:58] [Server thread/INFO]: Saving chunks for level 'Test_World'/Overworld
+[17:07:58] [Server thread/INFO]: Saving chunks for level 'Test_World'/Nether
+[17:07:58] [Server thread/INFO]: Saving chunks for level 'Test_World'/The End
+[17:08:06] [Client thread/INFO]: Stopping!
+[17:08:06] [Client thread/INFO]: SoundSystem shutting down...
+[17:08:06] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
