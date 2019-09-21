@@ -36,19 +36,11 @@ public class GeometricAcousticsCore implements IClassTransformer
 	public static class Config
 	{
 		//general
-		public static float rolloffFactor = 1.0f;
-		public static float globalReverbGain = 1.0f;
-		public static float globalReverbBrightness = 1.0f;
-		public static double soundDistanceAllowance = 4.0f;
-		public static float globalBlockAbsorption = 1.0f;
 		public static float globalBlockReflectance = 1.0f;
 		public static float airAbsorption = 1.0f;
-		public static float underwaterFilter = 0.8f;
 		
 		//performance
-		public static boolean skipRainOcclusionTracing = true;
 		public static int environmentEvaluationRays = 32;
-		public static boolean simplerSharedAirspaceSimulation = false;
 		
 		//block properties
 		public static float stoneReflectivity = 1.0f;
@@ -60,12 +52,6 @@ public class GeometricAcousticsCore implements IClassTransformer
 		public static float clothReflectivity = 0.05f;
 		public static float sandReflectivity = 0.2f;
 		public static float snowReflectivity = 0.2f;
-		
-		//misc
-		public static boolean debugLogging = false;
-		public static boolean occlusionLogging = false;
-		public static boolean environmentLogging = false;
-		public static boolean performanceLogging = false;
 		
 		public static final String categoryGeneral = "general";
 		public static final String categoryPerformance = "performance";

@@ -54,11 +54,7 @@ public class GeometricAcoustics
 	//
 	private static Minecraft minecraft;
 	//
-	public static int attenuationModel = SoundSystemConfig.ATTENUATION_ROLLOFF;
-	public static float globalRolloffFactor = GeometricAcousticsCore.Config.rolloffFactor;
 	public static float globalVolumeMultiplier = 4.0f;
-	public static float globalReverbMultiplier = 0.7f * GeometricAcousticsCore.Config.globalReverbGain;
-	public static double soundDistanceAllowance = GeometricAcousticsCore.Config.soundDistanceAllowance;
 		
 	// ------------------------------------------------- //
 	
@@ -186,9 +182,9 @@ public class GeometricAcoustics
 		final int rayBounces = 4;
 
 		float[] bounceReflectivityRatio = new float[rayBounces];
+		float rcpTotalRays = 1.0f / (numRays * rayBounces);
 		
-		float rcpTotalRays = 1.0f / (numRays * rayBounces);;
-		final double reflectionEnergyCurve = 1.0;
+		// ---------------------- //
 		
 		for (int i = 0; i < numRays; i++)
 		{
@@ -230,24 +226,18 @@ public class GeometricAcoustics
 					Vec3d newRayEnd = new Vec3d(newRayStart.xCoord + newRayDir.xCoord * maxDistance, newRayStart.yCoord + newRayDir.yCoord * maxDistance, newRayStart.zCoord + newRayDir.zCoord * maxDistance);					
 					RayTraceResult newRayHit = minecraft.theWorld.rayTraceBlocks(newRayStart, newRayEnd, true);
 					
-					float energyTowardsPlayer = 0.25f;
 					float blockReflectivity = getBlockReflectivity(lastHitBlock);
+					float energyTowardsPlayer = 0.25f;
 					energyTowardsPlayer *= blockReflectivity * 0.75f + 0.25f;
 										
 					if (newRayHit != null)
 					{	
 						double newRayLength = lastHitPos.distanceTo(newRayHit.hitVec);
-						bounceReflectivityRatio[j] += (float)Math.pow(blockReflectivity, reflectionEnergyCurve);
+						bounceReflectivityRatio[j] += blockReflectivity;
 						totalRayDistance += newRayLength;
 						
 						lastHitPos = newRayHit.hitVec;
 						lastHitNormal = getNormalFromFacing(newRayHit.sideHit);
-						
-						if (GeometricAcousticsCore.Config.simplerSharedAirspaceSimulation && j == rayBounces-1 || !GeometricAcousticsCore.Config.simplerSharedAirspaceSimulation)
-						{
-							Vec3d finalRayStart = new Vec3d(lastHitPos.xCoord + lastHitNormal.xCoord * 0.01, lastHitPos.yCoord + lastHitNormal.yCoord * 0.01, lastHitPos.zCoord + lastHitNormal.zCoord * 0.01);
-							RayTraceResult finalRayHit = minecraft.theWorld.rayTraceBlocks(finalRayStart, playerPos, true);
-						}
 					}
 					else
 						totalRayDistance += lastHitPos.distanceTo(playerPos);
@@ -269,10 +259,10 @@ public class GeometricAcoustics
 			}
 		}
 		
-		bounceReflectivityRatio[0] = (float)Math.pow(bounceReflectivityRatio[0] / (float)numRays, 1.0 / reflectionEnergyCurve);
-		bounceReflectivityRatio[1] = (float)Math.pow(bounceReflectivityRatio[1] / (float)numRays, 1.0 / reflectionEnergyCurve);
-		bounceReflectivityRatio[2] = (float)Math.pow(bounceReflectivityRatio[2] / (float)numRays, 1.0 / reflectionEnergyCurve);
-		bounceReflectivityRatio[3] = (float)Math.pow(bounceReflectivityRatio[3] / (float)numRays, 1.0 / reflectionEnergyCurve);
+		bounceReflectivityRatio[0] = (float)bounceReflectivityRatio[0] / (float)numRays;
+		bounceReflectivityRatio[1] = (float)bounceReflectivityRatio[1] / (float)numRays;
+		bounceReflectivityRatio[2] = (float)bounceReflectivityRatio[2] / (float)numRays;
+		bounceReflectivityRatio[3] = (float)bounceReflectivityRatio[3] / (float)numRays;
 		
 		sendGain1 *= (float)Math.pow(bounceReflectivityRatio[1], 1.0); 
 		sendGain2 *= (float)Math.pow(bounceReflectivityRatio[2], 3.0);
@@ -285,13 +275,7 @@ public class GeometricAcoustics
 		
 		// ---------------------- //
 		
-//		log("directGain: " + directGain);
-//		log("directCutoff: " + directCutoff);
-//		log("Gain: " + sendGain0 + ", " + sendGain1 + ", " + sendGain2 + ", " + sendGain3);
-//		log("SendCutoff: " + sendCutoff0 + ", " + sendCutoff1 + ", " + sendCutoff2 + ", " + sendCutoff3);
-		
-		// ---------------------- //
-		
+		//log("Gain: " + sendGain0 + ", " + sendGain1 + ", " + sendGain2 + ", " + sendGain3);
 		setEnvironment(sourceID, sendGain0, sendGain1, sendGain2, sendGain3, sendCutoff0, sendCutoff1, sendCutoff2, sendCutoff3, directCutoff, directGain);
 	}
 	
