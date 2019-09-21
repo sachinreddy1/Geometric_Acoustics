@@ -154,7 +154,6 @@ public class GeometricAcoustics
 		Vec3d soundPos = new Vec3d(posX, posY, posZ);
 		Vec3d playerPos = minecraft.thePlayer.getPositionVector();
 		playerPos = new Vec3d(playerPos.xCoord, playerPos.yCoord + minecraft.thePlayer.getEyeHeight(), playerPos.zCoord);
-		soundPos = offsetSoundByName(soundPos, playerPos, lastSoundName, lastSoundCategory.getName());		
 		
 		// ---------------------- //
 			
@@ -330,40 +329,6 @@ public class GeometricAcoustics
 		double y = dir.yCoord - 2.0 * dot * normal.yCoord;
 		double z = dir.zCoord - 2.0 * dot * normal.zCoord;
 		return new Vec3d(x, y, z);
-	}
-	
-	private static Vec3d offsetSoundByName(Vec3d soundPos, Vec3d playerPos, String name, String soundCategory)
-	{
-		double offsetX = 0.0;
-		double offsetY = 0.0;
-		double offsetZ = 0.0;
-		
-		double offsetTowardsPlayer = 0.0;
-		
-		Vec3d toPlayerVector = playerPos.subtract(soundPos).normalize();
-		
-		//names
-		if (name.matches(".*step.*"))
-		{
-			offsetY = 0.1;
-		}
-		
-		//categories
-		if (soundCategory.matches("block") || soundCategory.matches("record"))
-		{
-			offsetTowardsPlayer = 0.89;
-		}
-		
-		if (soundPos.yCoord % 1.0 < 0.001 && soundPos.yCoord > 0.01)
-		{
-			offsetY = 0.1;
-		}
-		
-		offsetX += toPlayerVector.xCoord * offsetTowardsPlayer;
-		offsetY += toPlayerVector.yCoord * offsetTowardsPlayer;
-		offsetZ += toPlayerVector.zCoord * offsetTowardsPlayer;
-		soundPos = soundPos.addVector(offsetX, offsetY, offsetZ);		
-		return soundPos;
 	}
 	
 	// ------------------------------------------------- //

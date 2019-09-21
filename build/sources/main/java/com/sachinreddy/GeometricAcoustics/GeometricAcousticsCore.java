@@ -36,14 +36,8 @@ public class GeometricAcousticsCore implements IClassTransformer
 	public static class Config
 	{
 		//general
-//		public static float rolloffFactor = 1.0f;
-//		public static float globalReverbGain = 1.0f;
-//		public static float globalReverbBrightness = 1.0f;
-//		public static double soundDistanceAllowance = 4.0f;
-//		public static float globalBlockAbsorption = 1.0f;
 		public static float globalBlockReflectance = 1.0f;
 		public static float airAbsorption = 1.0f;
-//		public static float underwaterFilter = 0.8f;
 		
 		//performance
 		public static int environmentEvaluationRays = 32;
