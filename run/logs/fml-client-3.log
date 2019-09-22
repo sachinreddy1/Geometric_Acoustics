@@ -1,347 +1,347 @@
-[09:06:10] [main/DEBUG] [FML/]: Injecting tracing printstreams for STDOUT/STDERR.
-[09:06:10] [main/INFO] [FML/]: Forge Mod Loader version 13.19.1.2189 for Minecraft 1.11 loading
-[09:06:10] [main/INFO] [FML/]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.6.0_65, running on Mac OS X:x86_64:10.14.6, installed at /Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
-[09:06:10] [main/DEBUG] [FML/]: Java classpath at launch is /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/bin:/Users/sachinreddy/.gradle/caches/minecraft/net/minecraftforge/forge/1.11-13.19.1.2189/snapshot/20161111/forgeSrc-1.11-13.19.1.2189.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.1/f7be08ec23c21485b9b5a1cf1654c2ec8c58168d/jsr305-3.0.1.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.mojang/netty/1.6/4b75825a06139752bd800d9e29c5fd55b8b1b1e4/netty-1.6.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/oshi-project/oshi-core/1.1/9ddf7b048a8d701be231c0f4f95fd986198fd2d8/oshi-core-1.1.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/3.4.0/803ff252fedbd395baffd43b37341dc4a150a554/jna-3.4.0.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/platform/3.4.0/e3f70017be8100d3d6923f50b3d2ee17714e9c13/platform-3.4.0.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.ibm.icu/icu4j-core-mojang/51.2/63d216a9311cca6be337c1e458e587f99d382b84/icu4j-core-mojang-51.2.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/4.6/306816fb57cf94f108a43c95731b08934dcae15c/jopt-simple-4.6.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.0.23.Final/294104aaf1781d6a56a07d561e792c5d0c95f45/netty-all-4.0.23.Final.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/17.0/9c6ef172e8de35fd8d4d8783e4821e57cdef7445/guava-17.0.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.3.2/90a3822c38ec8c996e84c16a3477ef632cbc87a3/commons-lang3-3.3.2.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.9/9ce04e34240f674bc72680f8b843b1457383161a/commons-codec-1.9.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.java.jutils/jutils/1.0.0/e12fe1fda814bd348c1579329c86943d2cd3c6a6/jutils-1.0.0.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.mojang/authlib/1.5.24/889ff5477b844800cff734babbf42c1bbda4b10/authlib-1.5.24.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.mojang/realms/1.10.4/7e837a5eae3fc08b13d5e1baf5ddf5b5d31aa2ff/realms-1.10.4.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.8.1/a698750c16740fd5b3871425f4cb3bbaa87f529d/commons-compress-1.8.1.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.3.3/18f4247ff4572a074444572cee34647c43e7c9c7/httpclient-4.3.3.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.3/f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f/commons-logging-1.1.3.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.2/31fbbff1ddbf98f3aa7377c94d33b0447c646b6e/httpcore-4.3.2.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/7.0.12_mojang/ba787e741efdc425fc5d2ea654b57c15fba27efa/fastutil-7.0.12_mojang.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.0-beta9/1dd66e68cccd907880229f9e2de1314bd13ff785/log4j-api-2.0-beta9.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.0-beta9/678861ba1b2e1fccb594bb0ca03114bb05da9695/log4j-core-2.0-beta9.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.minecraft/launchwrapper/1.12/111e7bea9c968cdb3d06ef4632bf7ff0824d0f36/launchwrapper-1.12.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/jline/jline/2.13/2d9530d0a25daffaffda7c35037b046b627bb171/jline-2.13.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-debug-all/5.0.3/f9e364ae2a66ce2a543012a4668856e84e5dab74/asm-debug-all-5.0.3.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.typesafe.akka/akka-actor_2.11/2.3.3/ed62e9fc709ca0f2ff1a3220daa8b70a2870078e/akka-actor_2.11-2.3.3.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.typesafe/config/1.2.1/f771f71fdae3df231bcd54d5ca2d57f0bf93f467/config-1.2.1.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-actors-migration_2.11/1.1.0/dfa8bc42b181d5b9f1a5dd147f8ae308b893eb6f/scala-actors-migration_2.11-1.1.0.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-compiler/2.11.1/56ea2e6c025e0821f28d73ca271218b8dd04926a/scala-compiler-2.11.1.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang.plugins/scala-continuations-library_2.11/1.0.2/e517c53a7e9acd6b1668c5a35eccbaa3bab9aac/scala-continuations-library_2.11-1.0.2.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang.plugins/scala-continuations-plugin_2.11.1/1.0.2/f361a3283452c57fa30c1ee69448995de23c60f7/scala-continuations-plugin_2.11.1-1.0.2.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.11.1/e11da23da3eabab9f4777b9220e60d44c1aab6a/scala-library-2.11.1.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-parser-combinators_2.11/1.0.1/f05d7345bf5a58924f2837c6c1f4d73a938e1ff0/scala-parser-combinators_2.11-1.0.1.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.11.1/6580347e61cc7f8e802941e7fde40fa83b8badeb/scala-reflect-2.11.1.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-swing_2.11/1.0.1/b1cdd92bd47b1e1837139c1c53020e86bb9112ae/scala-swing_2.11-1.0.1.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-xml_2.11/1.0.2/820fbca7e524b530fdadc594c39d49a21ea0337e/scala-xml_2.11-1.0.2.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/lzma/lzma/0.0.1/521616dc7487b42bef0e803bd2fa3faf668101d7/lzma-0.0.1.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.sf.trove4j/trove4j/3.0.3/42ccaf4761f0dfdfa805c9e340d99a755907e2dd/trove4j-3.0.3.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.paulscode/codecjorbis/20101023/c73b5636faf089d9f00e8732a829577de25237ee/codecjorbis-20101023.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.paulscode/codecwav/20101023/12f031cfe88fef5c1dd36c563c0a3a69bd7261da/codecwav-20101023.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.paulscode/libraryjavasound/20101123/5c5e304366f75f9eaa2e8cca546a1fb6109348b3/libraryjavasound-20101123.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.paulscode/librarylwjglopenal/20100824/73e80d0794c39665aec3f62eee88ca91676674ef/librarylwjglopenal-20100824.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.paulscode/soundsystem/20120107/419c05fe9be71f792b2d76cfc9b67f1ed0fec7f6/soundsystem-20120107.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput/2.0.5/39c7796b469a600f72380316f6b1f11db6c2c7c4/jinput-2.0.5.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl/2.9.2-nightly-20140822/7707204c9ffa5d91662de95f0a224e2f721b22af/lwjgl-2.9.2-nightly-20140822.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl_util/2.9.2-nightly-20140822/f0e612c840a7639c1f77f68d72a28dae2f0c8490/lwjgl_util-2.9.2-nightly-20140822.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/java3d/vecmath/1.5.2/79846ba34cbd89e2422d74d53752f993dcc2ccaf/vecmath-1.5.2.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.fusesource.jansi/jansi/1.11/655c643309c2f45a56a747fda70e3fadf57e9f11/jansi-1.11.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-actors/2.11.0/8ccfb6541de179bb1c4d45cf414acee069b7f78b/scala-actors-2.11.0.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput-platform/2.0.5/7ff832a6eb9ab6a767f1ade2b548092d0fa64795/jinput-platform-2.0.5-natives-linux.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput-platform/2.0.5/385ee093e01f587f30ee1c8a2ee7d408fd732e16/jinput-platform-2.0.5-natives-windows.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput-platform/2.0.5/53f9c919f34d2ca9de8c51fc4e1e8282029a9232/jinput-platform-2.0.5-natives-osx.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl-platform/2.9.2-nightly-20140822/78b2a55ce4dc29c6b3ec4df8ca165eba05f9b341/lwjgl-platform-2.9.2-nightly-20140822-natives-windows.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl-platform/2.9.2-nightly-20140822/d898a33b5d0a6ef3fed3a4ead506566dce6720a5/lwjgl-platform-2.9.2-nightly-20140822-natives-linux.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl-platform/2.9.2-nightly-20140822/79f5ce2fea02e77fe47a3c745219167a542121d7/lwjgl-platform-2.9.2-nightly-20140822-natives-osx.jar:/Users/sachinreddy/.gradle/caches/minecraft/deobfedDeps/compileDummy.jar:/Users/sachinreddy/.gradle/caches/minecraft/deobfedDeps/providedDummy.jar:/Users/sachinreddy/.gradle/caches/minecraft/net/minecraftforge/forge/1.11-13.19.1.2189/start
-[09:06:10] [main/DEBUG] [FML/]: Java library path at launch is .:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:/Users/sachinreddy/.gradle/caches/minecraft/net/minecraft/natives/1.11
-[09:06:10] [main/INFO] [FML/]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
-[09:06:10] [main/DEBUG] [FML/]: Instantiating coremod class FMLCorePlugin
-[09:06:10] [main/DEBUG] [FML/]: Added access transformer class net.minecraftforge.fml.common.asm.transformers.AccessTransformer to enqueued access transformers
-[09:06:10] [main/DEBUG] [FML/]: Enqueued coremod FMLCorePlugin
-[09:06:10] [main/DEBUG] [FML/]: Instantiating coremod class FMLForgePlugin
-[09:06:10] [main/DEBUG] [FML/]: Enqueued coremod FMLForgePlugin
-[09:06:10] [main/DEBUG] [FML/]: All fundamental core mods are successfully located
-[09:06:10] [main/DEBUG] [FML/]: Attempting to load commandline specified mods, relative to /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/run/.
-[09:06:10] [main/DEBUG] [FML/]: Discovering coremods
-[09:06:10] [main/DEBUG] [FML/]: Examining for coremod candidacy GeometricAcoustics-1.11.jar
-[09:06:10] [main/TRACE] [FML/]: Found FMLCorePluginContainsFMLMod marker in GeometricAcoustics-1.11.jar, it will be examined later for regular @Mod instances
-[09:06:10] [main/DEBUG] [FML/]: Instantiating coremod class GAFMLLoadingPlugin
-[09:06:10] [main/DEBUG] [FML/]: The coremod com.sachinreddy.GeometricAcoustics.GAFMLLoadingPlugin requested minecraft version 1.11 and minecraft is 1.11. It will be loaded.
-[09:06:10] [main/DEBUG] [FML/]: Enqueued coremod GAFMLLoadingPlugin
-[09:06:10] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
-[09:06:10] [main/INFO] [GradleStart/]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
-[09:06:10] [main/INFO] [GradleStart/]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
-[09:06:10] [main/INFO] [GradleStart/]: Injecting location in coremod com.sachinreddy.GeometricAcoustics.GAFMLLoadingPlugin
-[09:06:10] [main/INFO] [LaunchWrapper/]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[09:06:10] [main/INFO] [LaunchWrapper/]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[09:06:10] [main/INFO] [LaunchWrapper/]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
-[09:06:10] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[09:06:10] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[09:06:10] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[09:06:10] [main/DEBUG] [FML/]: Injecting coremod FMLCorePlugin {net.minecraftforge.fml.relauncher.FMLCorePlugin} class transformers
-[09:06:10] [main/TRACE] [FML/]: Registering transformer net.minecraftforge.fml.common.asm.transformers.BlamingTransformer
-[09:06:10] [main/TRACE] [FML/]: Registering transformer net.minecraftforge.fml.common.asm.transformers.SideTransformer
-[09:06:10] [main/TRACE] [FML/]: Registering transformer net.minecraftforge.fml.common.asm.transformers.EventSubscriptionTransformer
-[09:06:10] [main/TRACE] [FML/]: Registering transformer net.minecraftforge.fml.common.asm.transformers.EventSubscriberTransformer
-[09:06:10] [main/DEBUG] [FML/]: Injection complete
-[09:06:10] [main/DEBUG] [FML/]: Running coremod plugin for FMLCorePlugin {net.minecraftforge.fml.relauncher.FMLCorePlugin}
-[09:06:10] [main/DEBUG] [FML/]: Running coremod plugin FMLCorePlugin
-[09:06:10] [main/ERROR] [FML/]: The binary patch set is missing. Either you are in a development environment, or things are not going to work!
-[09:06:11] [main/DEBUG] [FML/]: Loading deobfuscation resource /Users/sachinreddy/.gradle/caches/minecraft/de/oceanlabs/mcp/mcp_snapshot/20161111/1.11/srgs/srg-mcp.srg with 33470 records
-[09:06:12] [main/ERROR] [FML/]: FML appears to be missing any signature data. This is not a good thing
-[09:06:12] [main/DEBUG] [FML/]: Coremod plugin class FMLCorePlugin run successfully
-[09:06:12] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[09:06:12] [main/DEBUG] [FML/]: Injecting coremod FMLForgePlugin {net.minecraftforge.classloading.FMLForgePlugin} class transformers
-[09:06:12] [main/DEBUG] [FML/]: Injection complete
-[09:06:12] [main/DEBUG] [FML/]: Running coremod plugin for FMLForgePlugin {net.minecraftforge.classloading.FMLForgePlugin}
-[09:06:12] [main/DEBUG] [FML/]: Running coremod plugin FMLForgePlugin
-[09:06:12] [main/DEBUG] [FML/]: Coremod plugin class FMLForgePlugin run successfully
-[09:06:12] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[09:06:12] [main/DEBUG] [FML/]: Injecting coremod GAFMLLoadingPlugin {com.sachinreddy.GeometricAcoustics.GAFMLLoadingPlugin} class transformers
-[09:06:12] [main/TRACE] [FML/]: Registering transformer com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore
-[09:06:12] [main/DEBUG] [FML/]: Injection complete
-[09:06:12] [main/DEBUG] [FML/]: Running coremod plugin for GAFMLLoadingPlugin {com.sachinreddy.GeometricAcoustics.GAFMLLoadingPlugin}
-[09:06:12] [main/DEBUG] [FML/]: Running coremod plugin GAFMLLoadingPlugin
-[09:06:12] [main/DEBUG] [FML/]: Coremod plugin class GAFMLLoadingPlugin run successfully
-[09:06:13] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[09:06:13] [main/DEBUG] [FML/]: Loaded 190 rules from AccessTransformer config file forge_at.cfg
-[09:06:13] [main/DEBUG] [FML/]: Validating minecraft
-[09:06:13] [main/ERROR] [FML/]: The game is not running with Java 8. Forge recommends Java 8 for maximum compatibility with mods
-[09:06:14] [main/DEBUG] [FML/]: Minecraft validated, launching...
-[09:06:14] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
-[09:06:14] [main/INFO] [LaunchWrapper/]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
-[09:06:14] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
-[09:06:14] [main/INFO] [LaunchWrapper/]: Launching wrapped minecraft {net.minecraft.client.main.Main}
-[09:06:22] [Client thread/DEBUG] [FML/]: Creating vanilla freeze snapshot
-[09:06:22] [Client thread/DEBUG] [FML/]: Vanilla freeze snapshot created
-[09:06:23] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - LanguageManager took 0.002s
-[09:06:23] [Client thread/INFO] [FML/]: MinecraftForge v13.19.1.2189 Initialized
-[09:06:23] [Client thread/INFO] [FML/]: Replaced 232 ore recipes
-[09:06:23] [Client thread/DEBUG] [FML/]: File /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/run/config/injectedDependencies.json not found. No dependencies injected
-[09:06:23] [Client thread/DEBUG] [FML/]: Building injected Mod Containers [net.minecraftforge.fml.common.FMLContainer, net.minecraftforge.common.ForgeModContainer]
-[09:06:23] [Client thread/DEBUG] [FML/]: Attempting to load mods contained in the minecraft jar file and associated classes
-[09:06:23] [Client thread/DEBUG] [FML/]: Found a minecraft related directory at /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/bin, examining for mod candidates
-[09:06:23] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /Users/sachinreddy/.gradle/caches/minecraft/net/minecraftforge/forge/1.11-13.19.1.2189/snapshot/20161111/forgeSrc-1.11-13.19.1.2189.jar, examining for mod candidates
-[09:06:23] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.1/f7be08ec23c21485b9b5a1cf1654c2ec8c58168d/jsr305-3.0.1.jar, examining for mod candidates
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.mojang/netty/1.6/4b75825a06139752bd800d9e29c5fd55b8b1b1e4/netty-1.6.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/oshi-project/oshi-core/1.1/9ddf7b048a8d701be231c0f4f95fd986198fd2d8/oshi-core-1.1.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/3.4.0/803ff252fedbd395baffd43b37341dc4a150a554/jna-3.4.0.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/platform/3.4.0/e3f70017be8100d3d6923f50b3d2ee17714e9c13/platform-3.4.0.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.ibm.icu/icu4j-core-mojang/51.2/63d216a9311cca6be337c1e458e587f99d382b84/icu4j-core-mojang-51.2.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/4.6/306816fb57cf94f108a43c95731b08934dcae15c/jopt-simple-4.6.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.0.23.Final/294104aaf1781d6a56a07d561e792c5d0c95f45/netty-all-4.0.23.Final.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/17.0/9c6ef172e8de35fd8d4d8783e4821e57cdef7445/guava-17.0.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.3.2/90a3822c38ec8c996e84c16a3477ef632cbc87a3/commons-lang3-3.3.2.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.9/9ce04e34240f674bc72680f8b843b1457383161a/commons-codec-1.9.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.java.jutils/jutils/1.0.0/e12fe1fda814bd348c1579329c86943d2cd3c6a6/jutils-1.0.0.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.mojang/authlib/1.5.24/889ff5477b844800cff734babbf42c1bbda4b10/authlib-1.5.24.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.mojang/realms/1.10.4/7e837a5eae3fc08b13d5e1baf5ddf5b5d31aa2ff/realms-1.10.4.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.8.1/a698750c16740fd5b3871425f4cb3bbaa87f529d/commons-compress-1.8.1.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.3.3/18f4247ff4572a074444572cee34647c43e7c9c7/httpclient-4.3.3.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.3/f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f/commons-logging-1.1.3.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.2/31fbbff1ddbf98f3aa7377c94d33b0447c646b6e/httpcore-4.3.2.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/7.0.12_mojang/ba787e741efdc425fc5d2ea654b57c15fba27efa/fastutil-7.0.12_mojang.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.0-beta9/1dd66e68cccd907880229f9e2de1314bd13ff785/log4j-api-2.0-beta9.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.0-beta9/678861ba1b2e1fccb594bb0ca03114bb05da9695/log4j-core-2.0-beta9.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.minecraft/launchwrapper/1.12/111e7bea9c968cdb3d06ef4632bf7ff0824d0f36/launchwrapper-1.12.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/jline/jline/2.13/2d9530d0a25daffaffda7c35037b046b627bb171/jline-2.13.jar
-[09:06:23] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-debug-all/5.0.3/f9e364ae2a66ce2a543012a4668856e84e5dab74/asm-debug-all-5.0.3.jar, examining for mod candidates
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.typesafe.akka/akka-actor_2.11/2.3.3/ed62e9fc709ca0f2ff1a3220daa8b70a2870078e/akka-actor_2.11-2.3.3.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.typesafe/config/1.2.1/f771f71fdae3df231bcd54d5ca2d57f0bf93f467/config-1.2.1.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-actors-migration_2.11/1.1.0/dfa8bc42b181d5b9f1a5dd147f8ae308b893eb6f/scala-actors-migration_2.11-1.1.0.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-compiler/2.11.1/56ea2e6c025e0821f28d73ca271218b8dd04926a/scala-compiler-2.11.1.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang.plugins/scala-continuations-library_2.11/1.0.2/e517c53a7e9acd6b1668c5a35eccbaa3bab9aac/scala-continuations-library_2.11-1.0.2.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang.plugins/scala-continuations-plugin_2.11.1/1.0.2/f361a3283452c57fa30c1ee69448995de23c60f7/scala-continuations-plugin_2.11.1-1.0.2.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.11.1/e11da23da3eabab9f4777b9220e60d44c1aab6a/scala-library-2.11.1.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-parser-combinators_2.11/1.0.1/f05d7345bf5a58924f2837c6c1f4d73a938e1ff0/scala-parser-combinators_2.11-1.0.1.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.11.1/6580347e61cc7f8e802941e7fde40fa83b8badeb/scala-reflect-2.11.1.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-swing_2.11/1.0.1/b1cdd92bd47b1e1837139c1c53020e86bb9112ae/scala-swing_2.11-1.0.1.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-xml_2.11/1.0.2/820fbca7e524b530fdadc594c39d49a21ea0337e/scala-xml_2.11-1.0.2.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/lzma/lzma/0.0.1/521616dc7487b42bef0e803bd2fa3faf668101d7/lzma-0.0.1.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.sf.trove4j/trove4j/3.0.3/42ccaf4761f0dfdfa805c9e340d99a755907e2dd/trove4j-3.0.3.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.paulscode/codecjorbis/20101023/c73b5636faf089d9f00e8732a829577de25237ee/codecjorbis-20101023.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.paulscode/codecwav/20101023/12f031cfe88fef5c1dd36c563c0a3a69bd7261da/codecwav-20101023.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.paulscode/libraryjavasound/20101123/5c5e304366f75f9eaa2e8cca546a1fb6109348b3/libraryjavasound-20101123.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.paulscode/librarylwjglopenal/20100824/73e80d0794c39665aec3f62eee88ca91676674ef/librarylwjglopenal-20100824.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.paulscode/soundsystem/20120107/419c05fe9be71f792b2d76cfc9b67f1ed0fec7f6/soundsystem-20120107.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput/2.0.5/39c7796b469a600f72380316f6b1f11db6c2c7c4/jinput-2.0.5.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl/2.9.2-nightly-20140822/7707204c9ffa5d91662de95f0a224e2f721b22af/lwjgl-2.9.2-nightly-20140822.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl_util/2.9.2-nightly-20140822/f0e612c840a7639c1f77f68d72a28dae2f0c8490/lwjgl_util-2.9.2-nightly-20140822.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/java3d/vecmath/1.5.2/79846ba34cbd89e2422d74d53752f993dcc2ccaf/vecmath-1.5.2.jar
-[09:06:23] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.fusesource.jansi/jansi/1.11/655c643309c2f45a56a747fda70e3fadf57e9f11/jansi-1.11.jar, examining for mod candidates
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-actors/2.11.0/8ccfb6541de179bb1c4d45cf414acee069b7f78b/scala-actors-2.11.0.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput-platform/2.0.5/7ff832a6eb9ab6a767f1ade2b548092d0fa64795/jinput-platform-2.0.5-natives-linux.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput-platform/2.0.5/385ee093e01f587f30ee1c8a2ee7d408fd732e16/jinput-platform-2.0.5-natives-windows.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput-platform/2.0.5/53f9c919f34d2ca9de8c51fc4e1e8282029a9232/jinput-platform-2.0.5-natives-osx.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl-platform/2.9.2-nightly-20140822/78b2a55ce4dc29c6b3ec4df8ca165eba05f9b341/lwjgl-platform-2.9.2-nightly-20140822-natives-windows.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl-platform/2.9.2-nightly-20140822/d898a33b5d0a6ef3fed3a4ead506566dce6720a5/lwjgl-platform-2.9.2-nightly-20140822-natives-linux.jar
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl-platform/2.9.2-nightly-20140822/79f5ce2fea02e77fe47a3c745219167a542121d7/lwjgl-platform-2.9.2-nightly-20140822-natives-osx.jar
-[09:06:23] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /Users/sachinreddy/.gradle/caches/minecraft/deobfedDeps/compileDummy.jar, examining for mod candidates
-[09:06:23] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /Users/sachinreddy/.gradle/caches/minecraft/deobfedDeps/providedDummy.jar, examining for mod candidates
-[09:06:23] [Client thread/DEBUG] [FML/]: Found a minecraft related directory at /Users/sachinreddy/.gradle/caches/minecraft/net/minecraftforge/forge/1.11-13.19.1.2189/start, examining for mod candidates
-[09:06:23] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/run/mods/GeometricAcoustics-1.11.jar
-[09:06:23] [Client thread/DEBUG] [FML/]: Minecraft jar mods loaded successfully
-[09:06:23] [Client thread/INFO] [FML/]: Found 0 mods from the command line. Injecting into mod discoverer
-[09:06:23] [Client thread/INFO] [FML/]: Searching /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/run/mods for mods
-[09:06:23] [Client thread/DEBUG] [FML/]: Ignoring unknown file .DS_Store in mods directory
-[09:06:23] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file GeometricAcoustics-1.11.jar
-[09:06:23] [Client thread/DEBUG] [FML/]: Examining directory bin for potential mods
-[09:06:23] [Client thread/DEBUG] [FML/]: Found an mcmod.info file in directory bin
-[09:06:23] [Client thread/TRACE] [FML/]: Recursing into package com
-[09:06:23] [Client thread/DEBUG] [FML/]: Examining file forgeSrc-1.11-13.19.1.2189.jar for potential mods
-[09:06:23] [Client thread/DEBUG] [FML/]: The mod container forgeSrc-1.11-13.19.1.2189.jar appears to be missing an mcmod.info file
-[09:06:25] [Client thread/DEBUG] [FML/]: Examining file jsr305-3.0.1.jar for potential mods
-[09:06:25] [Client thread/DEBUG] [FML/]: The mod container jsr305-3.0.1.jar appears to be missing an mcmod.info file
-[09:06:25] [Client thread/DEBUG] [FML/]: Examining file asm-debug-all-5.0.3.jar for potential mods
-[09:06:25] [Client thread/DEBUG] [FML/]: The mod container asm-debug-all-5.0.3.jar appears to be missing an mcmod.info file
-[09:06:25] [Client thread/DEBUG] [FML/]: Examining file jansi-1.11.jar for potential mods
-[09:06:25] [Client thread/DEBUG] [FML/]: The mod container jansi-1.11.jar appears to be missing an mcmod.info file
-[09:06:25] [Client thread/DEBUG] [FML/]: Examining file compileDummy.jar for potential mods
-[09:06:25] [Client thread/DEBUG] [FML/]: The mod container compileDummy.jar appears to be missing an mcmod.info file
-[09:06:25] [Client thread/DEBUG] [FML/]: Examining file providedDummy.jar for potential mods
-[09:06:25] [Client thread/DEBUG] [FML/]: The mod container providedDummy.jar appears to be missing an mcmod.info file
-[09:06:25] [Client thread/DEBUG] [FML/]: Examining directory start for potential mods
-[09:06:25] [Client thread/DEBUG] [FML/]: No mcmod.info file found in directory start
-[09:06:25] [Client thread/TRACE] [FML/]: Recursing into package net
-[09:06:25] [Client thread/TRACE] [FML/]: Recursing into package net/minecraftforge
-[09:06:25] [Client thread/TRACE] [FML/]: Recursing into package net/minecraftforge/gradle
-[09:06:25] [Client thread/TRACE] [FML/]: Recursing into package net/minecraftforge/gradle/tweakers
-[09:06:25] [Client thread/DEBUG] [FML/]: Examining file GeometricAcoustics-1.11.jar for potential mods
-[09:06:25] [Client thread/TRACE] [FML/]: Located mcmod.info file in file GeometricAcoustics-1.11.jar
-[09:06:25] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore) - loading
-[09:06:25] [Client thread/TRACE] [ga/]: Parsed dependency info : [] [] []
-[09:06:25] [Client thread/INFO] [FML/]: Forge Mod Loader has identified 4 mods to load
-[09:06:25] [Client thread/TRACE] [FML/]: Received a system property request ''
-[09:06:25] [Client thread/TRACE] [FML/]: System property request managing the state of 0 mods
-[09:06:25] [Client thread/DEBUG] [FML/]: After merging, found state information for 0 mods
-[09:06:25] [Client thread/DEBUG] [Forge Mod Loader/]: Mod Forge Mod Loader is missing a pack.mcmeta file, substituting a dummy one
-[09:06:25] [Client thread/DEBUG] [Minecraft Forge/]: Mod Minecraft Forge is missing a pack.mcmeta file, substituting a dummy one
-[09:06:25] [Client thread/DEBUG] [ga/]: Enabling mod ga
-[09:06:25] [Client thread/DEBUG] [Geometric Acoustics/]: Mod Geometric Acoustics is missing a pack.mcmeta file, substituting a dummy one
-[09:06:25] [Client thread/TRACE] [FML/]: Verifying mod requirements are satisfied
-[09:06:25] [Client thread/TRACE] [FML/]: All mod requirements are satisfied
-[09:06:25] [Client thread/TRACE] [FML/]: Sorting mods into an ordered list
-[09:06:25] [Client thread/TRACE] [FML/]: Mod sorting completed successfully
-[09:06:25] [Client thread/DEBUG] [FML/]: Mod sorting data
-[09:06:25] [Client thread/DEBUG] [FML/]: 	ga(Geometric Acoustics:1.0): GeometricAcoustics-1.11.jar ()
-[09:06:25] [Client thread/DEBUG] [FML/]: Loading @Config anotation data
-[09:06:25] [Client thread/TRACE] [mcp/mcp]: Sending event FMLConstructionEvent to mod mcp
-[09:06:25] [Client thread/TRACE] [mcp/mcp]: Sent event FMLConstructionEvent to mod mcp
-[09:06:25] [Client thread/DEBUG] [FML/]: Bar Step: Construction - Minecraft Coder Pack took 0.003s
-[09:06:25] [Client thread/TRACE] [FML/FML]: Sending event FMLConstructionEvent to mod FML
-[09:06:25] [Client thread/TRACE] [FML/FML]: Mod FML is using network checker : Invoking method checkModLists
-[09:06:25] [Client thread/TRACE] [FML/FML]: Testing mod FML to verify it accepts its own version in a remote connection
-[09:06:25] [Client thread/TRACE] [FML/FML]: The mod FML accepts its own version (8.0.99.99)
-[09:06:25] [Client thread/INFO] [FML/FML]: Attempting connection with missing mods [mcp, FML, forge, ga] at CLIENT
-[09:06:25] [Client thread/INFO] [FML/FML]: Attempting connection with missing mods [mcp, FML, forge, ga] at SERVER
-[09:06:26] [Client thread/TRACE] [FML/FML]: Sent event FMLConstructionEvent to mod FML
-[09:06:26] [Client thread/DEBUG] [FML/]: Bar Step: Construction - Forge Mod Loader took 0.749s
-[09:06:26] [Client thread/TRACE] [forge/forge]: Sending event FMLConstructionEvent to mod forge
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: Preloading CrashReport Classes
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/Minecraft$10
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/Minecraft$11
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/Minecraft$12
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/Minecraft$13
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/Minecraft$14
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/Minecraft$15
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/Minecraft$3
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/Minecraft$4
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/Minecraft$5
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/Minecraft$6
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/Minecraft$7
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/Minecraft$8
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/Minecraft$9
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/multiplayer/WorldClient$1
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/multiplayer/WorldClient$2
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/multiplayer/WorldClient$3
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/multiplayer/WorldClient$4
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/particle/ParticleManager$1
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/particle/ParticleManager$2
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/particle/ParticleManager$3
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/particle/ParticleManager$4
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/renderer/EntityRenderer$2
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/renderer/EntityRenderer$3
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/renderer/EntityRenderer$4
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/renderer/RenderGlobal$1
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/renderer/RenderItem$1
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/renderer/RenderItem$2
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/renderer/RenderItem$3
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/renderer/RenderItem$4
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/renderer/texture/TextureAtlasSprite$1
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/renderer/texture/TextureManager$1
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/renderer/texture/TextureMap$1
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/renderer/texture/TextureMap$2
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/renderer/texture/TextureMap$3
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/crash/CrashReport$1
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/crash/CrashReport$2
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/crash/CrashReport$3
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/crash/CrashReport$4
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/crash/CrashReport$5
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/crash/CrashReport$6
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/crash/CrashReport$7
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/crash/CrashReportCategory$1
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/crash/CrashReportCategory$2
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/crash/CrashReportCategory$3
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/crash/CrashReportCategory$4
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/crash/CrashReportCategory$5
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/entity/Entity$2
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/entity/Entity$3
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/entity/Entity$4
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/entity/Entity$5
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/entity/EntityTracker$1
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/entity/player/InventoryPlayer$1
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/nbt/NBTTagCompound$1
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/nbt/NBTTagCompound$2
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/network/NetHandlerPlayServer$3
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/network/NetworkSystem$6
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/server/MinecraftServer$2
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/server/MinecraftServer$3
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/server/dedicated/DedicatedServer$3
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/server/dedicated/DedicatedServer$4
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/server/integrated/IntegratedServer$1
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/server/integrated/IntegratedServer$2
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/tileentity/CommandBlockBaseLogic$1
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/tileentity/CommandBlockBaseLogic$2
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/tileentity/TileEntity$1
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/tileentity/TileEntity$2
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/tileentity/TileEntity$3
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/World$1
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/World$2
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/World$3
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/World$4
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/World$5
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/chunk/Chunk$1
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/gen/structure/MapGenStructure$1
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/gen/structure/MapGenStructure$2
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/gen/structure/MapGenStructure$3
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/storage/WorldInfo$10
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/storage/WorldInfo$2
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/storage/WorldInfo$3
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/storage/WorldInfo$4
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/storage/WorldInfo$5
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/storage/WorldInfo$6
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/storage/WorldInfo$7
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/storage/WorldInfo$8
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/storage/WorldInfo$9
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraftforge/fml/client/SplashProgress$1
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraftforge/fml/common/FMLCommonHandler$1
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraftforge/fml/common/ICrashCallable
-[09:06:26] [Client thread/DEBUG] [Forge/forge]: 	net/minecraftforge/fml/common/Loader$3
-[09:06:26] [Client thread/TRACE] [FML/forge]: Mod forge is using network checker : No network checking performed
-[09:06:26] [Client thread/TRACE] [FML/forge]: Testing mod forge to verify it accepts its own version in a remote connection
-[09:06:26] [Client thread/TRACE] [FML/forge]: The mod forge accepts its own version (13.19.1.2189)
-[09:06:26] [Client thread/DEBUG] [FML/forge]: Attempting to inject @Config classes into forge for type INSTANCE
-[09:06:26] [Client thread/TRACE] [forge/forge]: Sent event FMLConstructionEvent to mod forge
-[09:06:26] [Client thread/DEBUG] [FML/]: Bar Step: Construction - Minecraft Forge took 0.121s
-[09:06:26] [Client thread/TRACE] [ga/ga]: Sending event FMLConstructionEvent to mod ga
-[09:06:26] [Client thread/TRACE] [FML/ga]: Mod ga is using network checker : Accepting version 1.0
-[09:06:26] [Client thread/TRACE] [FML/ga]: Testing mod ga to verify it accepts its own version in a remote connection
-[09:06:26] [Client thread/TRACE] [FML/ga]: The mod ga accepts its own version (1.0)
-[09:06:26] [Client thread/DEBUG] [FML/ga]: Attempting to inject @SidedProxy classes into ga
-[09:06:26] [Client thread/DEBUG] [FML/ga]: Attempting to inject @EventBusSubscriber classes into the eventbus for ga
-[09:06:26] [Client thread/DEBUG] [FML/ga]: Attempting to inject @Config classes into ga for type INSTANCE
-[09:06:26] [Client thread/TRACE] [ga/ga]: Sent event FMLConstructionEvent to mod ga
-[09:06:26] [Client thread/DEBUG] [FML/]: Bar Step: Construction - Geometric Acoustics took 0.018s
-[09:06:26] [Client thread/DEBUG] [FML/]: Bar Finished: Construction took 0.890s
-[09:06:26] [Client thread/DEBUG] [FML/]: Mod signature data
-[09:06:26] [Client thread/DEBUG] [FML/]:  	Valid Signatures:
-[09:06:26] [Client thread/DEBUG] [FML/]:  	Missing Signatures:
-[09:06:26] [Client thread/DEBUG] [FML/]: 		mcp	(Minecraft Coder Pack	9.19)	minecraft.jar
-[09:06:26] [Client thread/DEBUG] [FML/]: 		FML	(Forge Mod Loader	8.0.99.99)	forgeSrc-1.11-13.19.1.2189.jar
-[09:06:26] [Client thread/DEBUG] [FML/]: 		forge	(Minecraft Forge	13.19.1.2189)	forgeSrc-1.11-13.19.1.2189.jar
-[09:06:26] [Client thread/DEBUG] [FML/]: 		ga	(Geometric Acoustics	1.0)	GeometricAcoustics-1.11.jar
-[09:06:26] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - Default took 0.007s
-[09:06:26] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Forge Mod Loader took 0.030s
-[09:06:26] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Minecraft Forge took 0.030s
-[09:06:26] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Geometric Acoustics took 0.001s
-[09:06:26] [Client thread/DEBUG] [FML/]: Bar Finished: Reloading - LanguageManager took 0.031s
-[09:06:26] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - Reloading listeners took 0.032s
-[09:06:26] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resources took 0.100s
-[09:06:26] [Client thread/DEBUG] [Forge Mod Loader/]: Mod Forge Mod Loader is missing a pack.mcmeta file, substituting a dummy one
-[09:06:26] [Client thread/DEBUG] [Minecraft Forge/]: Mod Minecraft Forge is missing a pack.mcmeta file, substituting a dummy one
-[09:06:26] [Client thread/DEBUG] [Geometric Acoustics/]: Mod Geometric Acoustics is missing a pack.mcmeta file, substituting a dummy one
-[09:06:26] [Client thread/INFO] [FML/]: Processing ObjectHolder annotations
-[09:06:26] [Client thread/INFO] [FML/]: Found 443 ObjectHolder annotations
-[09:06:26] [Client thread/INFO] [FML/]: Identifying ItemStackHolder annotations
-[09:06:26] [Client thread/INFO] [FML/]: Found 0 ItemStackHolder annotations
-[09:06:26] [Client thread/INFO] [FML/]: Applying holder lookups
-[09:06:26] [Client thread/INFO] [FML/]: Holder lookups applied
-[09:06:26] [Client thread/INFO] [FML/]: Applying holder lookups
-[09:06:26] [Client thread/INFO] [FML/]: Holder lookups applied
-[09:06:26] [Client thread/INFO] [FML/]: Applying holder lookups
-[09:06:26] [Client thread/INFO] [FML/]: Holder lookups applied
-[09:06:26] [Client thread/TRACE] [mcp/mcp]: Sending event FMLPreInitializationEvent to mod mcp
-[09:06:26] [Client thread/TRACE] [mcp/mcp]: Sent event FMLPreInitializationEvent to mod mcp
-[09:06:26] [Client thread/DEBUG] [FML/]: Bar Step: PreInitialization - Minecraft Coder Pack took 0.001s
-[09:06:26] [Client thread/TRACE] [FML/FML]: Sending event FMLPreInitializationEvent to mod FML
-[09:06:26] [Client thread/TRACE] [FML/FML]: Sent event FMLPreInitializationEvent to mod FML
-[09:06:26] [Client thread/DEBUG] [FML/]: Bar Step: PreInitialization - Forge Mod Loader took 0.002s
-[09:06:26] [Client thread/TRACE] [forge/forge]: Sending event FMLPreInitializationEvent to mod forge
-[09:06:26] [Client thread/INFO] [FML/forge]: Configured a dormant chunk cache size of 0
-[09:06:26] [Client thread/TRACE] [forge/forge]: Sent event FMLPreInitializationEvent to mod forge
-[09:06:26] [Client thread/DEBUG] [FML/]: Bar Step: PreInitialization - Minecraft Forge took 0.125s
-[09:06:26] [Forge Version Check/INFO] [ForgeVersionCheck/forge]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
-[09:06:26] [Client thread/TRACE] [ga/ga]: Sending event FMLPreInitializationEvent to mod ga
-[09:06:26] [Client thread/TRACE] [ga/ga]: Sent event FMLPreInitializationEvent to mod ga
-[09:06:26] [Client thread/DEBUG] [FML/]: Bar Step: PreInitialization - Geometric Acoustics took 0.002s
-[09:06:26] [Client thread/DEBUG] [FML/]: Bar Finished: PreInitialization took 0.130s
-[09:06:26] [Client thread/INFO] [FML/]: Applying holder lookups
-[09:06:26] [Client thread/INFO] [FML/]: Holder lookups applied
-[09:06:26] [Client thread/INFO] [FML/]: Injecting itemstacks
-[09:06:26] [Client thread/INFO] [FML/]: Itemstack injection complete
-[09:06:26] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - TextureManager took 0.000s
-[09:06:26] [Forge Version Check/DEBUG] [ForgeVersionCheck/forge]: [forge] Received version check data:
+[19:04:30] [main/DEBUG] [FML/]: Injecting tracing printstreams for STDOUT/STDERR.
+[19:04:30] [main/INFO] [FML/]: Forge Mod Loader version 13.19.1.2189 for Minecraft 1.11 loading
+[19:04:30] [main/INFO] [FML/]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.6.0_65, running on Mac OS X:x86_64:10.14.6, installed at /Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+[19:04:30] [main/DEBUG] [FML/]: Java classpath at launch is /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/bin:/Users/sachinreddy/.gradle/caches/minecraft/net/minecraftforge/forge/1.11-13.19.1.2189/snapshot/20161111/forgeSrc-1.11-13.19.1.2189.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.1/f7be08ec23c21485b9b5a1cf1654c2ec8c58168d/jsr305-3.0.1.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.mojang/netty/1.6/4b75825a06139752bd800d9e29c5fd55b8b1b1e4/netty-1.6.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/oshi-project/oshi-core/1.1/9ddf7b048a8d701be231c0f4f95fd986198fd2d8/oshi-core-1.1.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/3.4.0/803ff252fedbd395baffd43b37341dc4a150a554/jna-3.4.0.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/platform/3.4.0/e3f70017be8100d3d6923f50b3d2ee17714e9c13/platform-3.4.0.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.ibm.icu/icu4j-core-mojang/51.2/63d216a9311cca6be337c1e458e587f99d382b84/icu4j-core-mojang-51.2.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/4.6/306816fb57cf94f108a43c95731b08934dcae15c/jopt-simple-4.6.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.0.23.Final/294104aaf1781d6a56a07d561e792c5d0c95f45/netty-all-4.0.23.Final.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/17.0/9c6ef172e8de35fd8d4d8783e4821e57cdef7445/guava-17.0.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.3.2/90a3822c38ec8c996e84c16a3477ef632cbc87a3/commons-lang3-3.3.2.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.9/9ce04e34240f674bc72680f8b843b1457383161a/commons-codec-1.9.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.java.jutils/jutils/1.0.0/e12fe1fda814bd348c1579329c86943d2cd3c6a6/jutils-1.0.0.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.mojang/authlib/1.5.24/889ff5477b844800cff734babbf42c1bbda4b10/authlib-1.5.24.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.mojang/realms/1.10.4/7e837a5eae3fc08b13d5e1baf5ddf5b5d31aa2ff/realms-1.10.4.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.8.1/a698750c16740fd5b3871425f4cb3bbaa87f529d/commons-compress-1.8.1.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.3.3/18f4247ff4572a074444572cee34647c43e7c9c7/httpclient-4.3.3.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.3/f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f/commons-logging-1.1.3.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.2/31fbbff1ddbf98f3aa7377c94d33b0447c646b6e/httpcore-4.3.2.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/7.0.12_mojang/ba787e741efdc425fc5d2ea654b57c15fba27efa/fastutil-7.0.12_mojang.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.0-beta9/1dd66e68cccd907880229f9e2de1314bd13ff785/log4j-api-2.0-beta9.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.0-beta9/678861ba1b2e1fccb594bb0ca03114bb05da9695/log4j-core-2.0-beta9.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.minecraft/launchwrapper/1.12/111e7bea9c968cdb3d06ef4632bf7ff0824d0f36/launchwrapper-1.12.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/jline/jline/2.13/2d9530d0a25daffaffda7c35037b046b627bb171/jline-2.13.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-debug-all/5.0.3/f9e364ae2a66ce2a543012a4668856e84e5dab74/asm-debug-all-5.0.3.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.typesafe.akka/akka-actor_2.11/2.3.3/ed62e9fc709ca0f2ff1a3220daa8b70a2870078e/akka-actor_2.11-2.3.3.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.typesafe/config/1.2.1/f771f71fdae3df231bcd54d5ca2d57f0bf93f467/config-1.2.1.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-actors-migration_2.11/1.1.0/dfa8bc42b181d5b9f1a5dd147f8ae308b893eb6f/scala-actors-migration_2.11-1.1.0.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-compiler/2.11.1/56ea2e6c025e0821f28d73ca271218b8dd04926a/scala-compiler-2.11.1.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang.plugins/scala-continuations-library_2.11/1.0.2/e517c53a7e9acd6b1668c5a35eccbaa3bab9aac/scala-continuations-library_2.11-1.0.2.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang.plugins/scala-continuations-plugin_2.11.1/1.0.2/f361a3283452c57fa30c1ee69448995de23c60f7/scala-continuations-plugin_2.11.1-1.0.2.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.11.1/e11da23da3eabab9f4777b9220e60d44c1aab6a/scala-library-2.11.1.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-parser-combinators_2.11/1.0.1/f05d7345bf5a58924f2837c6c1f4d73a938e1ff0/scala-parser-combinators_2.11-1.0.1.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.11.1/6580347e61cc7f8e802941e7fde40fa83b8badeb/scala-reflect-2.11.1.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-swing_2.11/1.0.1/b1cdd92bd47b1e1837139c1c53020e86bb9112ae/scala-swing_2.11-1.0.1.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-xml_2.11/1.0.2/820fbca7e524b530fdadc594c39d49a21ea0337e/scala-xml_2.11-1.0.2.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/lzma/lzma/0.0.1/521616dc7487b42bef0e803bd2fa3faf668101d7/lzma-0.0.1.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.sf.trove4j/trove4j/3.0.3/42ccaf4761f0dfdfa805c9e340d99a755907e2dd/trove4j-3.0.3.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.paulscode/codecjorbis/20101023/c73b5636faf089d9f00e8732a829577de25237ee/codecjorbis-20101023.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.paulscode/codecwav/20101023/12f031cfe88fef5c1dd36c563c0a3a69bd7261da/codecwav-20101023.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.paulscode/libraryjavasound/20101123/5c5e304366f75f9eaa2e8cca546a1fb6109348b3/libraryjavasound-20101123.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.paulscode/librarylwjglopenal/20100824/73e80d0794c39665aec3f62eee88ca91676674ef/librarylwjglopenal-20100824.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.paulscode/soundsystem/20120107/419c05fe9be71f792b2d76cfc9b67f1ed0fec7f6/soundsystem-20120107.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput/2.0.5/39c7796b469a600f72380316f6b1f11db6c2c7c4/jinput-2.0.5.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl/2.9.2-nightly-20140822/7707204c9ffa5d91662de95f0a224e2f721b22af/lwjgl-2.9.2-nightly-20140822.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl_util/2.9.2-nightly-20140822/f0e612c840a7639c1f77f68d72a28dae2f0c8490/lwjgl_util-2.9.2-nightly-20140822.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/java3d/vecmath/1.5.2/79846ba34cbd89e2422d74d53752f993dcc2ccaf/vecmath-1.5.2.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.fusesource.jansi/jansi/1.11/655c643309c2f45a56a747fda70e3fadf57e9f11/jansi-1.11.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-actors/2.11.0/8ccfb6541de179bb1c4d45cf414acee069b7f78b/scala-actors-2.11.0.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput-platform/2.0.5/7ff832a6eb9ab6a767f1ade2b548092d0fa64795/jinput-platform-2.0.5-natives-linux.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput-platform/2.0.5/385ee093e01f587f30ee1c8a2ee7d408fd732e16/jinput-platform-2.0.5-natives-windows.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput-platform/2.0.5/53f9c919f34d2ca9de8c51fc4e1e8282029a9232/jinput-platform-2.0.5-natives-osx.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl-platform/2.9.2-nightly-20140822/78b2a55ce4dc29c6b3ec4df8ca165eba05f9b341/lwjgl-platform-2.9.2-nightly-20140822-natives-windows.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl-platform/2.9.2-nightly-20140822/d898a33b5d0a6ef3fed3a4ead506566dce6720a5/lwjgl-platform-2.9.2-nightly-20140822-natives-linux.jar:/Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl-platform/2.9.2-nightly-20140822/79f5ce2fea02e77fe47a3c745219167a542121d7/lwjgl-platform-2.9.2-nightly-20140822-natives-osx.jar:/Users/sachinreddy/.gradle/caches/minecraft/deobfedDeps/compileDummy.jar:/Users/sachinreddy/.gradle/caches/minecraft/deobfedDeps/providedDummy.jar:/Users/sachinreddy/.gradle/caches/minecraft/net/minecraftforge/forge/1.11-13.19.1.2189/start
+[19:04:30] [main/DEBUG] [FML/]: Java library path at launch is .:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:/Users/sachinreddy/.gradle/caches/minecraft/net/minecraft/natives/1.11
+[19:04:30] [main/INFO] [FML/]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[19:04:30] [main/DEBUG] [FML/]: Instantiating coremod class FMLCorePlugin
+[19:04:30] [main/DEBUG] [FML/]: Added access transformer class net.minecraftforge.fml.common.asm.transformers.AccessTransformer to enqueued access transformers
+[19:04:30] [main/DEBUG] [FML/]: Enqueued coremod FMLCorePlugin
+[19:04:30] [main/DEBUG] [FML/]: Instantiating coremod class FMLForgePlugin
+[19:04:30] [main/DEBUG] [FML/]: Enqueued coremod FMLForgePlugin
+[19:04:30] [main/DEBUG] [FML/]: All fundamental core mods are successfully located
+[19:04:30] [main/DEBUG] [FML/]: Attempting to load commandline specified mods, relative to /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/run/.
+[19:04:30] [main/DEBUG] [FML/]: Discovering coremods
+[19:04:30] [main/DEBUG] [FML/]: Examining for coremod candidacy GeometricAcoustics-1.11.jar
+[19:04:30] [main/TRACE] [FML/]: Found FMLCorePluginContainsFMLMod marker in GeometricAcoustics-1.11.jar, it will be examined later for regular @Mod instances
+[19:04:30] [main/DEBUG] [FML/]: Instantiating coremod class GAFMLLoadingPlugin
+[19:04:30] [main/DEBUG] [FML/]: The coremod com.sachinreddy.GeometricAcoustics.GAFMLLoadingPlugin requested minecraft version 1.11 and minecraft is 1.11. It will be loaded.
+[19:04:30] [main/DEBUG] [FML/]: Enqueued coremod GAFMLLoadingPlugin
+[19:04:30] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
+[19:04:30] [main/INFO] [GradleStart/]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
+[19:04:30] [main/INFO] [GradleStart/]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
+[19:04:30] [main/INFO] [GradleStart/]: Injecting location in coremod com.sachinreddy.GeometricAcoustics.GAFMLLoadingPlugin
+[19:04:30] [main/INFO] [LaunchWrapper/]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[19:04:30] [main/INFO] [LaunchWrapper/]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[19:04:30] [main/INFO] [LaunchWrapper/]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[19:04:30] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[19:04:30] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[19:04:30] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[19:04:30] [main/DEBUG] [FML/]: Injecting coremod FMLCorePlugin {net.minecraftforge.fml.relauncher.FMLCorePlugin} class transformers
+[19:04:30] [main/TRACE] [FML/]: Registering transformer net.minecraftforge.fml.common.asm.transformers.BlamingTransformer
+[19:04:30] [main/TRACE] [FML/]: Registering transformer net.minecraftforge.fml.common.asm.transformers.SideTransformer
+[19:04:30] [main/TRACE] [FML/]: Registering transformer net.minecraftforge.fml.common.asm.transformers.EventSubscriptionTransformer
+[19:04:30] [main/TRACE] [FML/]: Registering transformer net.minecraftforge.fml.common.asm.transformers.EventSubscriberTransformer
+[19:04:30] [main/DEBUG] [FML/]: Injection complete
+[19:04:30] [main/DEBUG] [FML/]: Running coremod plugin for FMLCorePlugin {net.minecraftforge.fml.relauncher.FMLCorePlugin}
+[19:04:30] [main/DEBUG] [FML/]: Running coremod plugin FMLCorePlugin
+[19:04:30] [main/ERROR] [FML/]: The binary patch set is missing. Either you are in a development environment, or things are not going to work!
+[19:04:31] [main/DEBUG] [FML/]: Loading deobfuscation resource /Users/sachinreddy/.gradle/caches/minecraft/de/oceanlabs/mcp/mcp_snapshot/20161111/1.11/srgs/srg-mcp.srg with 33470 records
+[19:04:32] [main/ERROR] [FML/]: FML appears to be missing any signature data. This is not a good thing
+[19:04:32] [main/DEBUG] [FML/]: Coremod plugin class FMLCorePlugin run successfully
+[19:04:32] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[19:04:32] [main/DEBUG] [FML/]: Injecting coremod FMLForgePlugin {net.minecraftforge.classloading.FMLForgePlugin} class transformers
+[19:04:32] [main/DEBUG] [FML/]: Injection complete
+[19:04:32] [main/DEBUG] [FML/]: Running coremod plugin for FMLForgePlugin {net.minecraftforge.classloading.FMLForgePlugin}
+[19:04:32] [main/DEBUG] [FML/]: Running coremod plugin FMLForgePlugin
+[19:04:32] [main/DEBUG] [FML/]: Coremod plugin class FMLForgePlugin run successfully
+[19:04:32] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[19:04:32] [main/DEBUG] [FML/]: Injecting coremod GAFMLLoadingPlugin {com.sachinreddy.GeometricAcoustics.GAFMLLoadingPlugin} class transformers
+[19:04:32] [main/TRACE] [FML/]: Registering transformer com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore
+[19:04:32] [main/DEBUG] [FML/]: Injection complete
+[19:04:32] [main/DEBUG] [FML/]: Running coremod plugin for GAFMLLoadingPlugin {com.sachinreddy.GeometricAcoustics.GAFMLLoadingPlugin}
+[19:04:32] [main/DEBUG] [FML/]: Running coremod plugin GAFMLLoadingPlugin
+[19:04:32] [main/DEBUG] [FML/]: Coremod plugin class GAFMLLoadingPlugin run successfully
+[19:04:32] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[19:04:32] [main/DEBUG] [FML/]: Loaded 190 rules from AccessTransformer config file forge_at.cfg
+[19:04:32] [main/DEBUG] [FML/]: Validating minecraft
+[19:04:33] [main/ERROR] [FML/]: The game is not running with Java 8. Forge recommends Java 8 for maximum compatibility with mods
+[19:04:34] [main/DEBUG] [FML/]: Minecraft validated, launching...
+[19:04:34] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[19:04:34] [main/INFO] [LaunchWrapper/]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[19:04:34] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[19:04:34] [main/INFO] [LaunchWrapper/]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[19:04:43] [Client thread/DEBUG] [FML/]: Creating vanilla freeze snapshot
+[19:04:43] [Client thread/DEBUG] [FML/]: Vanilla freeze snapshot created
+[19:04:45] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - LanguageManager took 0.002s
+[19:04:45] [Client thread/INFO] [FML/]: MinecraftForge v13.19.1.2189 Initialized
+[19:04:45] [Client thread/INFO] [FML/]: Replaced 232 ore recipes
+[19:04:45] [Client thread/DEBUG] [FML/]: File /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/run/config/injectedDependencies.json not found. No dependencies injected
+[19:04:45] [Client thread/DEBUG] [FML/]: Building injected Mod Containers [net.minecraftforge.fml.common.FMLContainer, net.minecraftforge.common.ForgeModContainer]
+[19:04:45] [Client thread/DEBUG] [FML/]: Attempting to load mods contained in the minecraft jar file and associated classes
+[19:04:45] [Client thread/DEBUG] [FML/]: Found a minecraft related directory at /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/bin, examining for mod candidates
+[19:04:45] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /Users/sachinreddy/.gradle/caches/minecraft/net/minecraftforge/forge/1.11-13.19.1.2189/snapshot/20161111/forgeSrc-1.11-13.19.1.2189.jar, examining for mod candidates
+[19:04:45] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.1/f7be08ec23c21485b9b5a1cf1654c2ec8c58168d/jsr305-3.0.1.jar, examining for mod candidates
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.mojang/netty/1.6/4b75825a06139752bd800d9e29c5fd55b8b1b1e4/netty-1.6.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/oshi-project/oshi-core/1.1/9ddf7b048a8d701be231c0f4f95fd986198fd2d8/oshi-core-1.1.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/3.4.0/803ff252fedbd395baffd43b37341dc4a150a554/jna-3.4.0.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/platform/3.4.0/e3f70017be8100d3d6923f50b3d2ee17714e9c13/platform-3.4.0.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.ibm.icu/icu4j-core-mojang/51.2/63d216a9311cca6be337c1e458e587f99d382b84/icu4j-core-mojang-51.2.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/4.6/306816fb57cf94f108a43c95731b08934dcae15c/jopt-simple-4.6.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.0.23.Final/294104aaf1781d6a56a07d561e792c5d0c95f45/netty-all-4.0.23.Final.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/17.0/9c6ef172e8de35fd8d4d8783e4821e57cdef7445/guava-17.0.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.3.2/90a3822c38ec8c996e84c16a3477ef632cbc87a3/commons-lang3-3.3.2.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.9/9ce04e34240f674bc72680f8b843b1457383161a/commons-codec-1.9.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.java.jutils/jutils/1.0.0/e12fe1fda814bd348c1579329c86943d2cd3c6a6/jutils-1.0.0.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.mojang/authlib/1.5.24/889ff5477b844800cff734babbf42c1bbda4b10/authlib-1.5.24.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.mojang/realms/1.10.4/7e837a5eae3fc08b13d5e1baf5ddf5b5d31aa2ff/realms-1.10.4.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.8.1/a698750c16740fd5b3871425f4cb3bbaa87f529d/commons-compress-1.8.1.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.3.3/18f4247ff4572a074444572cee34647c43e7c9c7/httpclient-4.3.3.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.3/f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f/commons-logging-1.1.3.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.2/31fbbff1ddbf98f3aa7377c94d33b0447c646b6e/httpcore-4.3.2.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/7.0.12_mojang/ba787e741efdc425fc5d2ea654b57c15fba27efa/fastutil-7.0.12_mojang.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.0-beta9/1dd66e68cccd907880229f9e2de1314bd13ff785/log4j-api-2.0-beta9.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.0-beta9/678861ba1b2e1fccb594bb0ca03114bb05da9695/log4j-core-2.0-beta9.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.minecraft/launchwrapper/1.12/111e7bea9c968cdb3d06ef4632bf7ff0824d0f36/launchwrapper-1.12.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/jline/jline/2.13/2d9530d0a25daffaffda7c35037b046b627bb171/jline-2.13.jar
+[19:04:45] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-debug-all/5.0.3/f9e364ae2a66ce2a543012a4668856e84e5dab74/asm-debug-all-5.0.3.jar, examining for mod candidates
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.typesafe.akka/akka-actor_2.11/2.3.3/ed62e9fc709ca0f2ff1a3220daa8b70a2870078e/akka-actor_2.11-2.3.3.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.typesafe/config/1.2.1/f771f71fdae3df231bcd54d5ca2d57f0bf93f467/config-1.2.1.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-actors-migration_2.11/1.1.0/dfa8bc42b181d5b9f1a5dd147f8ae308b893eb6f/scala-actors-migration_2.11-1.1.0.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-compiler/2.11.1/56ea2e6c025e0821f28d73ca271218b8dd04926a/scala-compiler-2.11.1.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang.plugins/scala-continuations-library_2.11/1.0.2/e517c53a7e9acd6b1668c5a35eccbaa3bab9aac/scala-continuations-library_2.11-1.0.2.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang.plugins/scala-continuations-plugin_2.11.1/1.0.2/f361a3283452c57fa30c1ee69448995de23c60f7/scala-continuations-plugin_2.11.1-1.0.2.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.11.1/e11da23da3eabab9f4777b9220e60d44c1aab6a/scala-library-2.11.1.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-parser-combinators_2.11/1.0.1/f05d7345bf5a58924f2837c6c1f4d73a938e1ff0/scala-parser-combinators_2.11-1.0.1.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.11.1/6580347e61cc7f8e802941e7fde40fa83b8badeb/scala-reflect-2.11.1.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-swing_2.11/1.0.1/b1cdd92bd47b1e1837139c1c53020e86bb9112ae/scala-swing_2.11-1.0.1.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-xml_2.11/1.0.2/820fbca7e524b530fdadc594c39d49a21ea0337e/scala-xml_2.11-1.0.2.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/lzma/lzma/0.0.1/521616dc7487b42bef0e803bd2fa3faf668101d7/lzma-0.0.1.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.sf.trove4j/trove4j/3.0.3/42ccaf4761f0dfdfa805c9e340d99a755907e2dd/trove4j-3.0.3.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.paulscode/codecjorbis/20101023/c73b5636faf089d9f00e8732a829577de25237ee/codecjorbis-20101023.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.paulscode/codecwav/20101023/12f031cfe88fef5c1dd36c563c0a3a69bd7261da/codecwav-20101023.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.paulscode/libraryjavasound/20101123/5c5e304366f75f9eaa2e8cca546a1fb6109348b3/libraryjavasound-20101123.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.paulscode/librarylwjglopenal/20100824/73e80d0794c39665aec3f62eee88ca91676674ef/librarylwjglopenal-20100824.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/com.paulscode/soundsystem/20120107/419c05fe9be71f792b2d76cfc9b67f1ed0fec7f6/soundsystem-20120107.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput/2.0.5/39c7796b469a600f72380316f6b1f11db6c2c7c4/jinput-2.0.5.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl/2.9.2-nightly-20140822/7707204c9ffa5d91662de95f0a224e2f721b22af/lwjgl-2.9.2-nightly-20140822.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl_util/2.9.2-nightly-20140822/f0e612c840a7639c1f77f68d72a28dae2f0c8490/lwjgl_util-2.9.2-nightly-20140822.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/java3d/vecmath/1.5.2/79846ba34cbd89e2422d74d53752f993dcc2ccaf/vecmath-1.5.2.jar
+[19:04:45] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.fusesource.jansi/jansi/1.11/655c643309c2f45a56a747fda70e3fadf57e9f11/jansi-1.11.jar, examining for mod candidates
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-actors/2.11.0/8ccfb6541de179bb1c4d45cf414acee069b7f78b/scala-actors-2.11.0.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput-platform/2.0.5/7ff832a6eb9ab6a767f1ade2b548092d0fa64795/jinput-platform-2.0.5-natives-linux.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput-platform/2.0.5/385ee093e01f587f30ee1c8a2ee7d408fd732e16/jinput-platform-2.0.5-natives-windows.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput-platform/2.0.5/53f9c919f34d2ca9de8c51fc4e1e8282029a9232/jinput-platform-2.0.5-natives-osx.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl-platform/2.9.2-nightly-20140822/78b2a55ce4dc29c6b3ec4df8ca165eba05f9b341/lwjgl-platform-2.9.2-nightly-20140822-natives-windows.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl-platform/2.9.2-nightly-20140822/d898a33b5d0a6ef3fed3a4ead506566dce6720a5/lwjgl-platform-2.9.2-nightly-20140822-natives-linux.jar
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl-platform/2.9.2-nightly-20140822/79f5ce2fea02e77fe47a3c745219167a542121d7/lwjgl-platform-2.9.2-nightly-20140822-natives-osx.jar
+[19:04:45] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /Users/sachinreddy/.gradle/caches/minecraft/deobfedDeps/compileDummy.jar, examining for mod candidates
+[19:04:45] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /Users/sachinreddy/.gradle/caches/minecraft/deobfedDeps/providedDummy.jar, examining for mod candidates
+[19:04:45] [Client thread/DEBUG] [FML/]: Found a minecraft related directory at /Users/sachinreddy/.gradle/caches/minecraft/net/minecraftforge/forge/1.11-13.19.1.2189/start, examining for mod candidates
+[19:04:45] [Client thread/TRACE] [FML/]: Skipping known library file /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/run/mods/GeometricAcoustics-1.11.jar
+[19:04:45] [Client thread/DEBUG] [FML/]: Minecraft jar mods loaded successfully
+[19:04:45] [Client thread/INFO] [FML/]: Found 0 mods from the command line. Injecting into mod discoverer
+[19:04:45] [Client thread/INFO] [FML/]: Searching /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/run/mods for mods
+[19:04:45] [Client thread/DEBUG] [FML/]: Ignoring unknown file .DS_Store in mods directory
+[19:04:45] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file GeometricAcoustics-1.11.jar
+[19:04:45] [Client thread/DEBUG] [FML/]: Examining directory bin for potential mods
+[19:04:45] [Client thread/DEBUG] [FML/]: Found an mcmod.info file in directory bin
+[19:04:45] [Client thread/TRACE] [FML/]: Recursing into package com
+[19:04:45] [Client thread/DEBUG] [FML/]: Examining file forgeSrc-1.11-13.19.1.2189.jar for potential mods
+[19:04:45] [Client thread/DEBUG] [FML/]: The mod container forgeSrc-1.11-13.19.1.2189.jar appears to be missing an mcmod.info file
+[19:04:48] [Client thread/DEBUG] [FML/]: Examining file jsr305-3.0.1.jar for potential mods
+[19:04:48] [Client thread/DEBUG] [FML/]: The mod container jsr305-3.0.1.jar appears to be missing an mcmod.info file
+[19:04:48] [Client thread/DEBUG] [FML/]: Examining file asm-debug-all-5.0.3.jar for potential mods
+[19:04:48] [Client thread/DEBUG] [FML/]: The mod container asm-debug-all-5.0.3.jar appears to be missing an mcmod.info file
+[19:04:48] [Client thread/DEBUG] [FML/]: Examining file jansi-1.11.jar for potential mods
+[19:04:48] [Client thread/DEBUG] [FML/]: The mod container jansi-1.11.jar appears to be missing an mcmod.info file
+[19:04:48] [Client thread/DEBUG] [FML/]: Examining file compileDummy.jar for potential mods
+[19:04:48] [Client thread/DEBUG] [FML/]: The mod container compileDummy.jar appears to be missing an mcmod.info file
+[19:04:48] [Client thread/DEBUG] [FML/]: Examining file providedDummy.jar for potential mods
+[19:04:48] [Client thread/DEBUG] [FML/]: The mod container providedDummy.jar appears to be missing an mcmod.info file
+[19:04:48] [Client thread/DEBUG] [FML/]: Examining directory start for potential mods
+[19:04:48] [Client thread/DEBUG] [FML/]: No mcmod.info file found in directory start
+[19:04:48] [Client thread/TRACE] [FML/]: Recursing into package net
+[19:04:48] [Client thread/TRACE] [FML/]: Recursing into package net/minecraftforge
+[19:04:48] [Client thread/TRACE] [FML/]: Recursing into package net/minecraftforge/gradle
+[19:04:48] [Client thread/TRACE] [FML/]: Recursing into package net/minecraftforge/gradle/tweakers
+[19:04:48] [Client thread/DEBUG] [FML/]: Examining file GeometricAcoustics-1.11.jar for potential mods
+[19:04:48] [Client thread/TRACE] [FML/]: Located mcmod.info file in file GeometricAcoustics-1.11.jar
+[19:04:48] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore) - loading
+[19:04:48] [Client thread/TRACE] [ga/]: Parsed dependency info : [] [] []
+[19:04:48] [Client thread/INFO] [FML/]: Forge Mod Loader has identified 4 mods to load
+[19:04:48] [Client thread/TRACE] [FML/]: Received a system property request ''
+[19:04:48] [Client thread/TRACE] [FML/]: System property request managing the state of 0 mods
+[19:04:48] [Client thread/DEBUG] [FML/]: After merging, found state information for 0 mods
+[19:04:48] [Client thread/DEBUG] [Forge Mod Loader/]: Mod Forge Mod Loader is missing a pack.mcmeta file, substituting a dummy one
+[19:04:48] [Client thread/DEBUG] [Minecraft Forge/]: Mod Minecraft Forge is missing a pack.mcmeta file, substituting a dummy one
+[19:04:48] [Client thread/DEBUG] [ga/]: Enabling mod ga
+[19:04:48] [Client thread/DEBUG] [Geometric Acoustics/]: Mod Geometric Acoustics is missing a pack.mcmeta file, substituting a dummy one
+[19:04:48] [Client thread/TRACE] [FML/]: Verifying mod requirements are satisfied
+[19:04:48] [Client thread/TRACE] [FML/]: All mod requirements are satisfied
+[19:04:48] [Client thread/TRACE] [FML/]: Sorting mods into an ordered list
+[19:04:48] [Client thread/TRACE] [FML/]: Mod sorting completed successfully
+[19:04:48] [Client thread/DEBUG] [FML/]: Mod sorting data
+[19:04:48] [Client thread/DEBUG] [FML/]: 	ga(Geometric Acoustics:1.0): GeometricAcoustics-1.11.jar ()
+[19:04:48] [Client thread/DEBUG] [FML/]: Loading @Config anotation data
+[19:04:48] [Client thread/TRACE] [mcp/mcp]: Sending event FMLConstructionEvent to mod mcp
+[19:04:48] [Client thread/TRACE] [mcp/mcp]: Sent event FMLConstructionEvent to mod mcp
+[19:04:48] [Client thread/DEBUG] [FML/]: Bar Step: Construction - Minecraft Coder Pack took 0.004s
+[19:04:48] [Client thread/TRACE] [FML/FML]: Sending event FMLConstructionEvent to mod FML
+[19:04:49] [Client thread/TRACE] [FML/FML]: Mod FML is using network checker : Invoking method checkModLists
+[19:04:49] [Client thread/TRACE] [FML/FML]: Testing mod FML to verify it accepts its own version in a remote connection
+[19:04:49] [Client thread/TRACE] [FML/FML]: The mod FML accepts its own version (8.0.99.99)
+[19:04:49] [Client thread/INFO] [FML/FML]: Attempting connection with missing mods [mcp, FML, forge, ga] at CLIENT
+[19:04:49] [Client thread/INFO] [FML/FML]: Attempting connection with missing mods [mcp, FML, forge, ga] at SERVER
+[19:04:50] [Client thread/TRACE] [FML/FML]: Sent event FMLConstructionEvent to mod FML
+[19:04:50] [Client thread/DEBUG] [FML/]: Bar Step: Construction - Forge Mod Loader took 1.327s
+[19:04:50] [Client thread/TRACE] [forge/forge]: Sending event FMLConstructionEvent to mod forge
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: Preloading CrashReport Classes
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/Minecraft$10
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/Minecraft$11
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/Minecraft$12
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/Minecraft$13
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/Minecraft$14
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/Minecraft$15
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/Minecraft$3
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/Minecraft$4
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/Minecraft$5
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/Minecraft$6
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/Minecraft$7
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/Minecraft$8
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/Minecraft$9
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/multiplayer/WorldClient$1
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/multiplayer/WorldClient$2
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/multiplayer/WorldClient$3
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/multiplayer/WorldClient$4
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/particle/ParticleManager$1
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/particle/ParticleManager$2
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/particle/ParticleManager$3
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/particle/ParticleManager$4
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/renderer/EntityRenderer$2
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/renderer/EntityRenderer$3
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/renderer/EntityRenderer$4
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/renderer/RenderGlobal$1
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/renderer/RenderItem$1
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/renderer/RenderItem$2
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/renderer/RenderItem$3
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/renderer/RenderItem$4
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/renderer/texture/TextureAtlasSprite$1
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/renderer/texture/TextureManager$1
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/renderer/texture/TextureMap$1
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/renderer/texture/TextureMap$2
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/client/renderer/texture/TextureMap$3
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/crash/CrashReport$1
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/crash/CrashReport$2
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/crash/CrashReport$3
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/crash/CrashReport$4
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/crash/CrashReport$5
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/crash/CrashReport$6
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/crash/CrashReport$7
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/crash/CrashReportCategory$1
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/crash/CrashReportCategory$2
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/crash/CrashReportCategory$3
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/crash/CrashReportCategory$4
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/crash/CrashReportCategory$5
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/entity/Entity$2
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/entity/Entity$3
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/entity/Entity$4
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/entity/Entity$5
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/entity/EntityTracker$1
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/entity/player/InventoryPlayer$1
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/nbt/NBTTagCompound$1
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/nbt/NBTTagCompound$2
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/network/NetHandlerPlayServer$3
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/network/NetworkSystem$6
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/server/MinecraftServer$2
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/server/MinecraftServer$3
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/server/dedicated/DedicatedServer$3
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/server/dedicated/DedicatedServer$4
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/server/integrated/IntegratedServer$1
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/server/integrated/IntegratedServer$2
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/tileentity/CommandBlockBaseLogic$1
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/tileentity/CommandBlockBaseLogic$2
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/tileentity/TileEntity$1
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/tileentity/TileEntity$2
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/tileentity/TileEntity$3
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/World$1
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/World$2
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/World$3
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/World$4
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/World$5
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/chunk/Chunk$1
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/gen/structure/MapGenStructure$1
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/gen/structure/MapGenStructure$2
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/gen/structure/MapGenStructure$3
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/storage/WorldInfo$10
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/storage/WorldInfo$2
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/storage/WorldInfo$3
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/storage/WorldInfo$4
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/storage/WorldInfo$5
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/storage/WorldInfo$6
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/storage/WorldInfo$7
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/storage/WorldInfo$8
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraft/world/storage/WorldInfo$9
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraftforge/fml/client/SplashProgress$1
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraftforge/fml/common/FMLCommonHandler$1
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraftforge/fml/common/ICrashCallable
+[19:04:50] [Client thread/DEBUG] [Forge/forge]: 	net/minecraftforge/fml/common/Loader$3
+[19:04:50] [Client thread/TRACE] [FML/forge]: Mod forge is using network checker : No network checking performed
+[19:04:50] [Client thread/TRACE] [FML/forge]: Testing mod forge to verify it accepts its own version in a remote connection
+[19:04:50] [Client thread/TRACE] [FML/forge]: The mod forge accepts its own version (13.19.1.2189)
+[19:04:50] [Client thread/DEBUG] [FML/forge]: Attempting to inject @Config classes into forge for type INSTANCE
+[19:04:50] [Client thread/TRACE] [forge/forge]: Sent event FMLConstructionEvent to mod forge
+[19:04:50] [Client thread/DEBUG] [FML/]: Bar Step: Construction - Minecraft Forge took 0.334s
+[19:04:50] [Client thread/TRACE] [ga/ga]: Sending event FMLConstructionEvent to mod ga
+[19:04:50] [Client thread/TRACE] [FML/ga]: Mod ga is using network checker : Accepting version 1.0
+[19:04:50] [Client thread/TRACE] [FML/ga]: Testing mod ga to verify it accepts its own version in a remote connection
+[19:04:50] [Client thread/TRACE] [FML/ga]: The mod ga accepts its own version (1.0)
+[19:04:50] [Client thread/DEBUG] [FML/ga]: Attempting to inject @SidedProxy classes into ga
+[19:04:50] [Client thread/DEBUG] [FML/ga]: Attempting to inject @EventBusSubscriber classes into the eventbus for ga
+[19:04:50] [Client thread/DEBUG] [FML/ga]: Attempting to inject @Config classes into ga for type INSTANCE
+[19:04:50] [Client thread/TRACE] [ga/ga]: Sent event FMLConstructionEvent to mod ga
+[19:04:50] [Client thread/DEBUG] [FML/]: Bar Step: Construction - Geometric Acoustics took 0.048s
+[19:04:50] [Client thread/DEBUG] [FML/]: Bar Finished: Construction took 1.712s
+[19:04:50] [Client thread/DEBUG] [FML/]: Mod signature data
+[19:04:50] [Client thread/DEBUG] [FML/]:  	Valid Signatures:
+[19:04:50] [Client thread/DEBUG] [FML/]:  	Missing Signatures:
+[19:04:50] [Client thread/DEBUG] [FML/]: 		mcp	(Minecraft Coder Pack	9.19)	minecraft.jar
+[19:04:50] [Client thread/DEBUG] [FML/]: 		FML	(Forge Mod Loader	8.0.99.99)	forgeSrc-1.11-13.19.1.2189.jar
+[19:04:50] [Client thread/DEBUG] [FML/]: 		forge	(Minecraft Forge	13.19.1.2189)	forgeSrc-1.11-13.19.1.2189.jar
+[19:04:50] [Client thread/DEBUG] [FML/]: 		ga	(Geometric Acoustics	1.0)	GeometricAcoustics-1.11.jar
+[19:04:50] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - Default took 0.019s
+[19:04:50] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Forge Mod Loader took 0.051s
+[19:04:50] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Minecraft Forge took 0.091s
+[19:04:50] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Geometric Acoustics took 0.001s
+[19:04:50] [Client thread/DEBUG] [FML/]: Bar Finished: Reloading - LanguageManager took 0.053s
+[19:04:50] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - Reloading listeners took 0.054s
+[19:04:50] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resources took 0.214s
+[19:04:50] [Client thread/DEBUG] [Forge Mod Loader/]: Mod Forge Mod Loader is missing a pack.mcmeta file, substituting a dummy one
+[19:04:50] [Client thread/DEBUG] [Minecraft Forge/]: Mod Minecraft Forge is missing a pack.mcmeta file, substituting a dummy one
+[19:04:50] [Client thread/DEBUG] [Geometric Acoustics/]: Mod Geometric Acoustics is missing a pack.mcmeta file, substituting a dummy one
+[19:04:50] [Client thread/INFO] [FML/]: Processing ObjectHolder annotations
+[19:04:50] [Client thread/INFO] [FML/]: Found 443 ObjectHolder annotations
+[19:04:50] [Client thread/INFO] [FML/]: Identifying ItemStackHolder annotations
+[19:04:50] [Client thread/INFO] [FML/]: Found 0 ItemStackHolder annotations
+[19:04:50] [Client thread/INFO] [FML/]: Applying holder lookups
+[19:04:50] [Client thread/INFO] [FML/]: Holder lookups applied
+[19:04:50] [Client thread/INFO] [FML/]: Applying holder lookups
+[19:04:50] [Client thread/INFO] [FML/]: Holder lookups applied
+[19:04:50] [Client thread/INFO] [FML/]: Applying holder lookups
+[19:04:50] [Client thread/INFO] [FML/]: Holder lookups applied
+[19:04:50] [Client thread/TRACE] [mcp/mcp]: Sending event FMLPreInitializationEvent to mod mcp
+[19:04:50] [Client thread/TRACE] [mcp/mcp]: Sent event FMLPreInitializationEvent to mod mcp
+[19:04:50] [Client thread/DEBUG] [FML/]: Bar Step: PreInitialization - Minecraft Coder Pack took 0.001s
+[19:04:50] [Client thread/TRACE] [FML/FML]: Sending event FMLPreInitializationEvent to mod FML
+[19:04:50] [Client thread/TRACE] [FML/FML]: Sent event FMLPreInitializationEvent to mod FML
+[19:04:50] [Client thread/DEBUG] [FML/]: Bar Step: PreInitialization - Forge Mod Loader took 0.002s
+[19:04:50] [Client thread/TRACE] [forge/forge]: Sending event FMLPreInitializationEvent to mod forge
+[19:04:51] [Client thread/INFO] [FML/forge]: Configured a dormant chunk cache size of 0
+[19:04:51] [Client thread/TRACE] [forge/forge]: Sent event FMLPreInitializationEvent to mod forge
+[19:04:51] [Client thread/DEBUG] [FML/]: Bar Step: PreInitialization - Minecraft Forge took 0.197s
+[19:04:51] [Forge Version Check/INFO] [ForgeVersionCheck/forge]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[19:04:51] [Client thread/TRACE] [ga/ga]: Sending event FMLPreInitializationEvent to mod ga
+[19:04:51] [Client thread/TRACE] [ga/ga]: Sent event FMLPreInitializationEvent to mod ga
+[19:04:51] [Client thread/DEBUG] [FML/]: Bar Step: PreInitialization - Geometric Acoustics took 0.001s
+[19:04:51] [Client thread/DEBUG] [FML/]: Bar Finished: PreInitialization took 0.202s
+[19:04:51] [Client thread/INFO] [FML/]: Applying holder lookups
+[19:04:51] [Client thread/INFO] [FML/]: Holder lookups applied
+[19:04:51] [Client thread/INFO] [FML/]: Injecting itemstacks
+[19:04:51] [Client thread/INFO] [FML/]: Itemstack injection complete
+[19:04:51] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - TextureManager took 0.000s
+[19:04:51] [Forge Version Check/DEBUG] [ForgeVersionCheck/forge]: [forge] Received version check data:
 {
   "homepage": "http://files.minecraftforge.net/maven/net/minecraftforge/forge/",
   "promos": {
@@ -362,7 +362,7 @@
     "1.13.2-latest": "25.0.219",
     "1.14.2-latest": "26.0.63",
     "1.14.3-latest": "27.0.60",
-    "1.14.4-latest": "28.1.10",
+    "1.14.4-latest": "28.1.11",
     "1.14.4-recommended": "28.1.0",
     "1.5.2-latest": "7.8.1.738",
     "1.5.2-recommended": "7.8.1.737",
@@ -389,281 +389,284 @@
     "latest-1.7.10": "10.13.2.1343"
   }
 }
-[09:06:26] [Forge Version Check/INFO] [ForgeVersionCheck/forge]: [forge] Found status: UP_TO_DATE Target: null
-[09:06:29] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - SoundHandler took 1.804s
-[09:06:29] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - FontRenderer took 0.004s
-[09:06:29] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - FontRenderer took 0.004s
-[09:06:29] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - GrassColorReloadListener took 0.013s
-[09:06:29] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - FoliageColorReloadListener took 0.008s
-[09:06:29] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - GL Setup took 0.001s
-[09:06:29] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Loading Texture Map took 0.009s
-[09:06:29] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - B3DLoader took 0.000s
-[09:06:29] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - OBJLoader took 0.000s
-[09:06:29] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - ModelFluid$FluidLoader took 0.000s
-[09:06:29] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - ItemLayerModel$Loader took 0.000s
-[09:06:29] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - MultiLayerModel$Loader took 0.000s
-[09:06:29] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - ModelDynBucket$LoaderDynBucket took 0.000s
-[09:06:32] [Client thread/DEBUG] [FML/]: Bar Finished: ModelLoader: blocks took 2.912s
-[09:06:33] [Client thread/DEBUG] [FML/]: Bar Finished: ModelLoader: items took 0.835s
-[09:06:33] [Client thread/INFO] [FML/]: Max texture size: 16384
-[09:06:33] [Client thread/DEBUG] [FML/]: Bar Finished: Texture stitching - missingno took 0.001s
-[09:06:33] [Client thread/DEBUG] [FML/]: Bar Finished: Texture creation took 0.002s
-[09:06:33] [Client thread/DEBUG] [FML/]: Bar Finished: Texture mipmap and upload - missingno took 0.001s
-[09:06:34] [Client thread/DEBUG] [FML/]: Bar Finished: ModelLoader: baking took 1.419s
-[09:06:34] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - ModelManager took 5.535s
-[09:06:34] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Loading Model Manager took 5.682s
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - RenderItem took 0.003s
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Loading Item Renderer took 0.273s
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - EntityRenderer took 0.000s
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - BlockRendererDispatcher took 0.000s
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - RenderGlobal took 0.000s
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Loading Entity Renderer took 0.154s
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Finished: Rendering Setup took 6.120s
-[09:06:35] [Client thread/TRACE] [mcp/mcp]: Sending event FMLInitializationEvent to mod mcp
-[09:06:35] [Client thread/TRACE] [mcp/mcp]: Sent event FMLInitializationEvent to mod mcp
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Step: Initialization - Minecraft Coder Pack took 0.000s
-[09:06:35] [Client thread/TRACE] [FML/FML]: Sending event FMLInitializationEvent to mod FML
-[09:06:35] [Client thread/TRACE] [FML/FML]: Sent event FMLInitializationEvent to mod FML
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Step: Initialization - Forge Mod Loader took 0.000s
-[09:06:35] [Client thread/TRACE] [forge/forge]: Sending event FMLInitializationEvent to mod forge
-[09:06:35] [Client thread/TRACE] [forge/forge]: Sent event FMLInitializationEvent to mod forge
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Step: Initialization - Minecraft Forge took 0.000s
-[09:06:35] [Client thread/TRACE] [ga/ga]: Sending event FMLInitializationEvent to mod ga
-[09:06:35] [Client thread/TRACE] [ga/ga]: Sent event FMLInitializationEvent to mod ga
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Step: Initialization - Geometric Acoustics took 0.001s
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Finished: Initialization took 0.002s
-[09:06:35] [Client thread/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod mcp
-[09:06:35] [Client thread/TRACE] [mcp/mcp]: Sending event IMCEvent to mod mcp
-[09:06:35] [Client thread/TRACE] [mcp/mcp]: Sent event IMCEvent to mod mcp
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Step: InterModComms$IMC - Minecraft Coder Pack took 0.003s
-[09:06:35] [Client thread/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod FML
-[09:06:35] [Client thread/TRACE] [FML/FML]: Sending event IMCEvent to mod FML
-[09:06:35] [Client thread/TRACE] [FML/FML]: Sent event IMCEvent to mod FML
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Step: InterModComms$IMC - Forge Mod Loader took 0.000s
-[09:06:35] [Client thread/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod forge
-[09:06:35] [Client thread/TRACE] [forge/forge]: Sending event IMCEvent to mod forge
-[09:06:35] [Client thread/TRACE] [forge/forge]: Sent event IMCEvent to mod forge
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Step: InterModComms$IMC - Minecraft Forge took 0.000s
-[09:06:35] [Client thread/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod ga
-[09:06:35] [Client thread/TRACE] [ga/ga]: Sending event IMCEvent to mod ga
-[09:06:35] [Client thread/TRACE] [ga/ga]: Sent event IMCEvent to mod ga
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Step: InterModComms$IMC - Geometric Acoustics took 0.000s
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Finished: InterModComms$IMC took 0.004s
-[09:06:35] [Client thread/INFO] [FML/]: Injecting itemstacks
-[09:06:35] [Client thread/INFO] [FML/]: Itemstack injection complete
-[09:06:35] [Client thread/TRACE] [mcp/mcp]: Sending event FMLPostInitializationEvent to mod mcp
-[09:06:35] [Client thread/TRACE] [mcp/mcp]: Sent event FMLPostInitializationEvent to mod mcp
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Step: PostInitialization - Minecraft Coder Pack took 0.001s
-[09:06:35] [Client thread/TRACE] [FML/FML]: Sending event FMLPostInitializationEvent to mod FML
-[09:06:35] [Client thread/TRACE] [FML/FML]: Sent event FMLPostInitializationEvent to mod FML
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Step: PostInitialization - Forge Mod Loader took 0.000s
-[09:06:35] [Client thread/TRACE] [forge/forge]: Sending event FMLPostInitializationEvent to mod forge
-[09:06:35] [Client thread/TRACE] [forge/forge]: Sent event FMLPostInitializationEvent to mod forge
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Step: PostInitialization - Minecraft Forge took 0.008s
-[09:06:35] [Client thread/TRACE] [ga/ga]: Sending event FMLPostInitializationEvent to mod ga
-[09:06:35] [Client thread/TRACE] [ga/ga]: Sent event FMLPostInitializationEvent to mod ga
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Step: PostInitialization - Geometric Acoustics took 0.000s
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Finished: PostInitialization took 0.009s
-[09:06:35] [Client thread/TRACE] [mcp/mcp]: Sending event FMLLoadCompleteEvent to mod mcp
-[09:06:35] [Client thread/TRACE] [mcp/mcp]: Sent event FMLLoadCompleteEvent to mod mcp
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Step: LoadComplete - Minecraft Coder Pack took 0.000s
-[09:06:35] [Client thread/TRACE] [FML/FML]: Sending event FMLLoadCompleteEvent to mod FML
-[09:06:35] [Client thread/TRACE] [FML/FML]: Sent event FMLLoadCompleteEvent to mod FML
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Step: LoadComplete - Forge Mod Loader took 0.000s
-[09:06:35] [Client thread/TRACE] [forge/forge]: Sending event FMLLoadCompleteEvent to mod forge
-[09:06:35] [Client thread/DEBUG] [FML/forge]: Forge RecipeSorter Baking:
-[09:06:35] [Client thread/DEBUG] [FML/forge]:   16: RecipeEntry("Before", UNKNOWN, )
-[09:06:35] [Client thread/DEBUG] [FML/forge]:   15: RecipeEntry("minecraft:shaped", SHAPED, net.minecraft.item.crafting.ShapedRecipes) Before: minecraft:shapeless
-[09:06:35] [Client thread/DEBUG] [FML/forge]:   14: RecipeEntry("forge:shapedore", SHAPED, net.minecraftforge.oredict.ShapedOreRecipe) Before: minecraft:shapeless After: minecraft:shaped
-[09:06:35] [Client thread/DEBUG] [FML/forge]:   13: RecipeEntry("minecraft:mapextending", SHAPED, net.minecraft.item.crafting.RecipesMapExtending) Before: minecraft:shapeless After: minecraft:shaped
-[09:06:35] [Client thread/DEBUG] [FML/forge]:   12: RecipeEntry("minecraft:shapeless", SHAPELESS, net.minecraft.item.crafting.ShapelessRecipes) After: minecraft:shaped
-[09:06:35] [Client thread/DEBUG] [FML/forge]:   11: RecipeEntry("minecraft:pattern_dupe", SHAPELESS, net.minecraft.item.crafting.RecipesBanners$RecipeDuplicatePattern) After: minecraft:shapeless
-[09:06:35] [Client thread/DEBUG] [FML/forge]:   10: RecipeEntry("minecraft:bookcloning", SHAPELESS, net.minecraft.item.crafting.RecipeBookCloning) After: minecraft:shapeless
-[09:06:35] [Client thread/DEBUG] [FML/forge]:   9: RecipeEntry("minecraft:mapcloning", SHAPELESS, net.minecraft.item.crafting.RecipesMapCloning) After: minecraft:shapeless
-[09:06:35] [Client thread/DEBUG] [FML/forge]:   8: RecipeEntry("minecraft:repair", SHAPELESS, net.minecraft.item.crafting.RecipeRepairItem) After: minecraft:shapeless
-[09:06:35] [Client thread/DEBUG] [FML/forge]:   7: RecipeEntry("minecraft:tippedarrow", SHAPELESS, net.minecraft.item.crafting.RecipeTippedArrow) After: minecraft:shapeless
-[09:06:35] [Client thread/DEBUG] [FML/forge]:   6: RecipeEntry("minecraft:shield_deco", SHAPELESS, net.minecraft.item.crafting.ShieldRecipes$Decoration) After: minecraft:shapeless
-[09:06:35] [Client thread/DEBUG] [FML/forge]:   5: RecipeEntry("minecraft:fireworks", SHAPELESS, net.minecraft.item.crafting.RecipeFireworks) After: minecraft:shapeless
-[09:06:35] [Client thread/DEBUG] [FML/forge]:   4: RecipeEntry("forge:shapelessore", SHAPELESS, net.minecraftforge.oredict.ShapelessOreRecipe) After: minecraft:shapeless
-[09:06:35] [Client thread/DEBUG] [FML/forge]:   3: RecipeEntry("minecraft:pattern_add", SHAPELESS, net.minecraft.item.crafting.RecipesBanners$RecipeAddPattern) After: minecraft:shapeless
-[09:06:35] [Client thread/DEBUG] [FML/forge]:   2: RecipeEntry("minecraft:armordyes", SHAPELESS, net.minecraft.item.crafting.RecipesArmorDyes) After: minecraft:shapeless
-[09:06:35] [Client thread/DEBUG] [FML/forge]:   1: RecipeEntry("After", UNKNOWN, )
-[09:06:35] [Client thread/DEBUG] [FML/forge]: Sorting recipes
-[09:06:35] [Client thread/TRACE] [forge/forge]: Sent event FMLLoadCompleteEvent to mod forge
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Step: LoadComplete - Minecraft Forge took 0.025s
-[09:06:35] [Client thread/TRACE] [ga/ga]: Sending event FMLLoadCompleteEvent to mod ga
-[09:06:35] [Client thread/TRACE] [ga/ga]: Sent event FMLLoadCompleteEvent to mod ga
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Step: LoadComplete - Geometric Acoustics took 0.000s
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Finished: LoadComplete took 0.026s
-[09:06:35] [Client thread/DEBUG] [FML/]: Freezing block and item id maps
-[09:06:35] [Client thread/INFO] [FML/]: Forge Mod Loader has successfully loaded 4 mods
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - Default took 0.002s
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Forge Mod Loader took 0.013s
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Minecraft Forge took 0.031s
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Geometric Acoustics took 0.000s
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Step: Reloading Texture Manager - minecraft:dynamic/logo_1 took 0.000s
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Step: Reloading Texture Manager - minecraft:dynamic/lightmap_1 took 0.000s
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Step: Reloading Texture Manager - minecraft:textures/atlas/blocks.png took 0.000s
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Step: Reloading Texture Manager - minecraft:textures/font/ascii.png took 0.004s
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Step: Reloading Texture Manager - minecraft:textures/font/ascii_sga.png took 0.028s
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Step: Reloading Texture Manager - minecraft:textures/misc/forcefield.png took 0.006s
-[09:06:35] [Client thread/DEBUG] [FML/]: Bar Finished: Reloading Texture Manager took 0.039s
-[09:06:38] [Client thread/DEBUG] [FML/]: Bar Finished: ModelLoader: blocks took 1.538s
-[09:06:39] [Client thread/DEBUG] [FML/]: Bar Finished: ModelLoader: items took 0.639s
-[09:06:39] [Client thread/INFO] [FML/]: Max texture size: 16384
-[09:06:39] [Client thread/DEBUG] [FML/]: Bar Finished: Texture stitching took 0.617s
-[09:06:39] [Client thread/DEBUG] [FML/]: Bar Finished: Texture stitching took 0.051s
-[09:06:39] [Client thread/DEBUG] [FML/]: Bar Finished: Texture creation took 0.060s
-[09:06:40] [Client thread/DEBUG] [FML/]: Bar Finished: Texture mipmap and upload took 0.410s
-[09:06:41] [Client thread/DEBUG] [FML/]: Bar Finished: ModelLoader: baking took 0.860s
-[09:06:41] [Client thread/DEBUG] [FML/]: Bar Finished: Reloading took 5.771s
-[09:06:41] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - Reloading listeners took 5.772s
-[09:06:41] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resources took 5.818s
-[09:06:41] [Client thread/DEBUG] [Forge Mod Loader/]: Mod Forge Mod Loader is missing a pack.mcmeta file, substituting a dummy one
-[09:06:41] [Client thread/DEBUG] [Minecraft Forge/]: Mod Minecraft Forge is missing a pack.mcmeta file, substituting a dummy one
-[09:06:41] [Client thread/DEBUG] [Geometric Acoustics/]: Mod Geometric Acoustics is missing a pack.mcmeta file, substituting a dummy one
-[09:06:41] [Client thread/DEBUG] [FML/]: Bar Finished: Loading took 17.587s
-[09:06:53] [Server thread/TRACE] [mcp/mcp]: Sending event FMLServerAboutToStartEvent to mod mcp
-[09:06:53] [Server thread/TRACE] [mcp/mcp]: Sent event FMLServerAboutToStartEvent to mod mcp
-[09:06:53] [Server thread/DEBUG] [FML/]: Bar Step: ServerAboutToStart - Minecraft Coder Pack took 0.001s
-[09:06:53] [Server thread/TRACE] [FML/FML]: Sending event FMLServerAboutToStartEvent to mod FML
-[09:06:53] [Server thread/TRACE] [FML/FML]: Sent event FMLServerAboutToStartEvent to mod FML
-[09:06:53] [Server thread/DEBUG] [FML/]: Bar Step: ServerAboutToStart - Forge Mod Loader took 0.001s
-[09:06:53] [Server thread/TRACE] [forge/forge]: Sending event FMLServerAboutToStartEvent to mod forge
-[09:06:53] [Server thread/TRACE] [forge/forge]: Sent event FMLServerAboutToStartEvent to mod forge
-[09:06:53] [Server thread/DEBUG] [FML/]: Bar Step: ServerAboutToStart - Minecraft Forge took 0.001s
-[09:06:53] [Server thread/TRACE] [ga/ga]: Sending event FMLServerAboutToStartEvent to mod ga
-[09:06:53] [Server thread/TRACE] [ga/ga]: Sent event FMLServerAboutToStartEvent to mod ga
-[09:06:53] [Server thread/DEBUG] [FML/]: Bar Step: ServerAboutToStart - Geometric Acoustics took 0.001s
-[09:06:53] [Server thread/DEBUG] [FML/]: Bar Finished: ServerAboutToStart took 0.003s
-[09:06:53] [Server thread/INFO] [FML/]: Injecting existing block and item data into this server instance
-[09:06:53] [Server thread/TRACE] [mcp/mcp]: Sending event FMLModIdMappingEvent to mod mcp
-[09:06:53] [Server thread/TRACE] [mcp/mcp]: Sent event FMLModIdMappingEvent to mod mcp
-[09:06:53] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - Minecraft Coder Pack took 0.001s
-[09:06:53] [Server thread/TRACE] [FML/FML]: Sending event FMLModIdMappingEvent to mod FML
-[09:06:53] [Server thread/TRACE] [FML/FML]: Sent event FMLModIdMappingEvent to mod FML
-[09:06:53] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - Forge Mod Loader took 0.000s
-[09:06:53] [Server thread/TRACE] [forge/forge]: Sending event FMLModIdMappingEvent to mod forge
-[09:06:53] [Server thread/TRACE] [forge/forge]: Sent event FMLModIdMappingEvent to mod forge
-[09:06:53] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - Minecraft Forge took 0.127s
-[09:06:53] [Server thread/TRACE] [ga/ga]: Sending event FMLModIdMappingEvent to mod ga
-[09:06:53] [Server thread/TRACE] [ga/ga]: Sent event FMLModIdMappingEvent to mod ga
-[09:06:53] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - Geometric Acoustics took 0.001s
-[09:06:53] [Server thread/DEBUG] [FML/]: Bar Finished: ModIdMapping took 0.129s
-[09:06:53] [Server thread/INFO] [FML/]: Applying holder lookups
-[09:06:53] [Server thread/INFO] [FML/]: Holder lookups applied
-[09:06:53] [Server thread/DEBUG] [FML/]: Loading persistent fluid defaults from world
-[09:06:53] [Server thread/DEBUG] [FML/]: The fluid minecraft:water has been selected as the default fluid for water
-[09:06:53] [Server thread/DEBUG] [FML/]: The fluid minecraft:lava has been selected as the default fluid for lava
-[09:06:53] [Server thread/INFO] [FML/]: Loading dimension 0 (Test_World) (net.minecraft.server.integrated.IntegratedServer@70730f12)
-[09:06:54] [Server thread/INFO] [FML/]: Loading dimension 1 (Test_World) (net.minecraft.server.integrated.IntegratedServer@70730f12)
-[09:06:54] [Server thread/INFO] [FML/]: Loading dimension -1 (Test_World) (net.minecraft.server.integrated.IntegratedServer@70730f12)
-[09:06:57] [Server thread/TRACE] [mcp/mcp]: Sending event FMLServerStartingEvent to mod mcp
-[09:06:57] [Server thread/TRACE] [mcp/mcp]: Sent event FMLServerStartingEvent to mod mcp
-[09:06:57] [Server thread/DEBUG] [FML/]: Bar Step: ServerStarting - Minecraft Coder Pack took 0.001s
-[09:06:57] [Server thread/TRACE] [FML/FML]: Sending event FMLServerStartingEvent to mod FML
-[09:06:57] [Server thread/TRACE] [FML/FML]: Sent event FMLServerStartingEvent to mod FML
-[09:06:57] [Server thread/DEBUG] [FML/]: Bar Step: ServerStarting - Forge Mod Loader took 0.000s
-[09:06:57] [Server thread/TRACE] [forge/forge]: Sending event FMLServerStartingEvent to mod forge
-[09:06:57] [Server thread/TRACE] [forge/forge]: Sent event FMLServerStartingEvent to mod forge
-[09:06:57] [Server thread/DEBUG] [FML/]: Bar Step: ServerStarting - Minecraft Forge took 0.002s
-[09:06:57] [Server thread/TRACE] [ga/ga]: Sending event FMLServerStartingEvent to mod ga
-[09:06:57] [Server thread/TRACE] [ga/ga]: Sent event FMLServerStartingEvent to mod ga
-[09:06:57] [Server thread/DEBUG] [FML/]: Bar Step: ServerStarting - Geometric Acoustics took 0.000s
-[09:06:57] [Server thread/DEBUG] [FML/]: Bar Finished: ServerStarting took 0.004s
-[09:06:57] [Server thread/TRACE] [mcp/mcp]: Sending event FMLServerStartedEvent to mod mcp
-[09:06:57] [Server thread/TRACE] [mcp/mcp]: Sent event FMLServerStartedEvent to mod mcp
-[09:06:57] [Server thread/DEBUG] [FML/]: Bar Step: ServerStarted - Minecraft Coder Pack took 0.000s
-[09:06:57] [Server thread/TRACE] [FML/FML]: Sending event FMLServerStartedEvent to mod FML
-[09:06:57] [Server thread/TRACE] [FML/FML]: Sent event FMLServerStartedEvent to mod FML
-[09:06:57] [Server thread/DEBUG] [FML/]: Bar Step: ServerStarted - Forge Mod Loader took 0.000s
-[09:06:57] [Server thread/TRACE] [forge/forge]: Sending event FMLServerStartedEvent to mod forge
-[09:06:57] [Server thread/TRACE] [forge/forge]: Sent event FMLServerStartedEvent to mod forge
-[09:06:57] [Server thread/DEBUG] [FML/]: Bar Step: ServerStarted - Minecraft Forge took 0.000s
-[09:06:57] [Server thread/TRACE] [ga/ga]: Sending event FMLServerStartedEvent to mod ga
-[09:06:57] [Server thread/TRACE] [ga/ga]: Sent event FMLServerStartedEvent to mod ga
-[09:06:57] [Server thread/DEBUG] [FML/]: Bar Step: ServerStarted - Geometric Acoustics took 0.000s
-[09:06:57] [Server thread/DEBUG] [FML/]: Bar Finished: ServerStarted took 0.001s
-[09:07:03] [Netty Local Client IO #0/TRACE] [FML/]: Handshake channel activating
-[09:07:03] [Netty Local Client IO #0/DEBUG] [FML/]: FMLHandshakeClientState: null->FMLHandshakeClientState$1:START
-[09:07:03] [Netty Local Client IO #0/DEBUG] [FML/]:   Next: HELLO
-[09:07:03] [Netty Server IO #1/TRACE] [FML/]: Handshake channel activating
-[09:07:03] [Netty Server IO #1/DEBUG] [FML/]: FMLHandshakeServerState: null->FMLHandshakeServerState$1:START
-[09:07:03] [Netty Server IO #1/DEBUG] [FML/]:   Next: HELLO
-[09:07:03] [Netty Local Client IO #0/DEBUG] [FML/]: Server FML protocol version 2, 4 byte dimension received 0
-[09:07:03] [Netty Local Client IO #0/DEBUG] [FML/]: FMLHandshakeClientState: $ServerHello->FMLHandshakeClientState$2:HELLO
-[09:07:03] [Netty Local Client IO #0/INFO] [FML/]: Server protocol version 2
-[09:07:03] [Netty Local Client IO #0/DEBUG] [FML/]: Received override dimension 0
-[09:07:03] [Netty Server IO #1/DEBUG] [FML/]: FMLHandshakeServerState: $ClientHello->FMLHandshakeServerState$2:HELLO
-[09:07:03] [Netty Server IO #1/INFO] [FML/]: Client protocol version 2
-[09:07:03] [Netty Server IO #1/DEBUG] [FML/]:   Next: HELLO
-[09:07:03] [Netty Local Client IO #0/DEBUG] [FML/]:   Next: WAITINGSERVERDATA
-[09:07:03] [Netty Server IO #1/DEBUG] [FML/]: FMLHandshakeServerState: $ModList:4 mods->FMLHandshakeServerState$2:HELLO
-[09:07:03] [Netty Server IO #1/INFO] [FML/]: Client attempting to join with 4 mods : mcp@9.19,FML@8.0.99.99,forge@13.19.1.2189,ga@1.0
-[09:07:03] [Netty Server IO #1/DEBUG] [FML/]:   Next: WAITINGCACK
-[09:07:03] [Netty Local Client IO #0/DEBUG] [FML/]: FMLHandshakeClientState: $ModList:4 mods->FMLHandshakeClientState$3:WAITINGSERVERDATA
-[09:07:03] [Netty Local Client IO #0/DEBUG] [FML/]:   Next: PENDINGCOMPLETE
-[09:07:03] [Netty Server IO #1/DEBUG] [FML/]: FMLHandshakeServerState: $HandshakeAck:{2}->FMLHandshakeServerState$3:WAITINGCACK
-[09:07:03] [Netty Local Client IO #0/DEBUG] [FML/]: FMLHandshakeClientState: $HandshakeAck:{2}->FMLHandshakeClientState$5:PENDINGCOMPLETE
-[09:07:03] [Netty Local Client IO #0/DEBUG] [FML/]:   Next: COMPLETE
-[09:07:03] [Netty Server IO #1/DEBUG] [FML/]:   Next: COMPLETE
-[09:07:03] [Netty Server IO #1/DEBUG] [FML/]: FMLHandshakeServerState: $HandshakeAck:{4}->FMLHandshakeServerState$4:COMPLETE
-[09:07:03] [Netty Local Client IO #0/DEBUG] [FML/]: The fluid minecraft:water has been selected as the default fluid for water
-[09:07:03] [Netty Local Client IO #0/DEBUG] [FML/]: The fluid minecraft:lava has been selected as the default fluid for lava
-[09:07:03] [Netty Server IO #1/DEBUG] [FML/]:   Next: DONE
-[09:07:03] [Netty Local Client IO #0/DEBUG] [FML/]: FMLHandshakeClientState: $HandshakeAck:{3}->FMLHandshakeClientState$6:COMPLETE
-[09:07:03] [Netty Local Client IO #0/DEBUG] [FML/]:   Next: DONE
-[09:07:03] [Netty Server IO #1/DEBUG] [FML/]: FMLHandshakeServerState: $HandshakeAck:{5}->FMLHandshakeServerState$5:DONE
-[09:07:03] [Netty Server IO #1/DEBUG] [FML/]:   Next: DONE
-[09:07:03] [Netty Local Client IO #0/INFO] [FML/]: [Netty Local Client IO #0] Client side modded connection established
-[09:07:03] [Server thread/INFO] [FML/]: [Server thread] Server side modded connection established
-[09:07:03] [Client thread/DEBUG] [FML/]: Overriding dimension: using 0
-[09:07:05] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Test_World
-[09:07:42] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Test_World
-[09:07:43] [Server thread/TRACE] [mcp/mcp]: Sending event FMLServerStoppingEvent to mod mcp
-[09:07:43] [Server thread/TRACE] [mcp/mcp]: Sent event FMLServerStoppingEvent to mod mcp
-[09:07:43] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopping - Minecraft Coder Pack took 0.001s
-[09:07:43] [Server thread/TRACE] [FML/FML]: Sending event FMLServerStoppingEvent to mod FML
-[09:07:43] [Server thread/TRACE] [FML/FML]: Sent event FMLServerStoppingEvent to mod FML
-[09:07:43] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopping - Forge Mod Loader took 0.001s
-[09:07:43] [Server thread/TRACE] [forge/forge]: Sending event FMLServerStoppingEvent to mod forge
-[09:07:43] [Server thread/TRACE] [forge/forge]: Sent event FMLServerStoppingEvent to mod forge
-[09:07:43] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopping - Minecraft Forge took 0.001s
-[09:07:43] [Server thread/TRACE] [ga/ga]: Sending event FMLServerStoppingEvent to mod ga
-[09:07:43] [Server thread/TRACE] [ga/ga]: Sent event FMLServerStoppingEvent to mod ga
-[09:07:43] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopping - Geometric Acoustics took 0.001s
-[09:07:43] [Server thread/DEBUG] [FML/]: Bar Finished: ServerStopping took 0.002s
-[09:07:43] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Test_World
-[09:07:44] [Server thread/INFO] [FML/]: Unloading dimension 0
-[09:07:44] [Server thread/INFO] [FML/]: Unloading dimension -1
-[09:07:44] [Server thread/INFO] [FML/]: Unloading dimension 1
-[09:07:44] [Server thread/DEBUG] [FML/]: Reverting to frozen data state.
-[09:07:44] [Server thread/TRACE] [mcp/mcp]: Sending event FMLModIdMappingEvent to mod mcp
-[09:07:44] [Server thread/TRACE] [mcp/mcp]: Sent event FMLModIdMappingEvent to mod mcp
-[09:07:44] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - Minecraft Coder Pack took 0.000s
-[09:07:44] [Server thread/TRACE] [FML/FML]: Sending event FMLModIdMappingEvent to mod FML
-[09:07:44] [Server thread/TRACE] [FML/FML]: Sent event FMLModIdMappingEvent to mod FML
-[09:07:44] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - Forge Mod Loader took 0.000s
-[09:07:44] [Server thread/TRACE] [forge/forge]: Sending event FMLModIdMappingEvent to mod forge
-[09:07:44] [Server thread/TRACE] [forge/forge]: Sent event FMLModIdMappingEvent to mod forge
-[09:07:44] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - Minecraft Forge took 0.060s
-[09:07:44] [Server thread/TRACE] [ga/ga]: Sending event FMLModIdMappingEvent to mod ga
-[09:07:44] [Server thread/TRACE] [ga/ga]: Sent event FMLModIdMappingEvent to mod ga
-[09:07:44] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - Geometric Acoustics took 0.001s
-[09:07:44] [Server thread/DEBUG] [FML/]: Bar Finished: ModIdMapping took 0.062s
-[09:07:44] [Server thread/INFO] [FML/]: Applying holder lookups
-[09:07:44] [Server thread/INFO] [FML/]: Holder lookups applied
-[09:07:44] [Server thread/DEBUG] [FML/]: Frozen state restored.
-[09:07:44] [Server thread/TRACE] [mcp/mcp]: Sending event FMLServerStoppedEvent to mod mcp
-[09:07:44] [Server thread/TRACE] [mcp/mcp]: Sent event FMLServerStoppedEvent to mod mcp
-[09:07:44] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopped - Minecraft Coder Pack took 0.001s
-[09:07:44] [Server thread/TRACE] [FML/FML]: Sending event FMLServerStoppedEvent to mod FML
-[09:07:44] [Server thread/TRACE] [FML/FML]: Sent event FMLServerStoppedEvent to mod FML
-[09:07:44] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopped - Forge Mod Loader took 0.001s
-[09:07:44] [Server thread/TRACE] [forge/forge]: Sending event FMLServerStoppedEvent to mod forge
-[09:07:44] [Server thread/TRACE] [forge/forge]: Sent event FMLServerStoppedEvent to mod forge
-[09:07:44] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopped - Minecraft Forge took 0.001s
-[09:07:44] [Server thread/TRACE] [ga/ga]: Sending event FMLServerStoppedEvent to mod ga
-[09:07:44] [Server thread/TRACE] [ga/ga]: Sent event FMLServerStoppedEvent to mod ga
-[09:07:44] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopped - Geometric Acoustics took 0.001s
-[09:07:44] [Server thread/DEBUG] [FML/]: Bar Finished: ServerStopped took 0.002s
+[19:04:51] [Forge Version Check/INFO] [ForgeVersionCheck/forge]: [forge] Found status: UP_TO_DATE Target: null
+[19:04:55] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - SoundHandler took 3.262s
+[19:04:55] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - FontRenderer took 0.006s
+[19:04:55] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - FontRenderer took 0.004s
+[19:04:55] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - GrassColorReloadListener took 0.019s
+[19:04:55] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - FoliageColorReloadListener took 0.013s
+[19:04:55] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - GL Setup took 0.002s
+[19:04:55] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Loading Texture Map took 0.028s
+[19:04:55] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - B3DLoader took 0.000s
+[19:04:55] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - OBJLoader took 0.000s
+[19:04:55] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - ModelFluid$FluidLoader took 0.000s
+[19:04:55] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - ItemLayerModel$Loader took 0.000s
+[19:04:55] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - MultiLayerModel$Loader took 0.000s
+[19:04:55] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - ModelDynBucket$LoaderDynBucket took 0.000s
+[19:05:00] [Client thread/DEBUG] [FML/]: Bar Finished: ModelLoader: blocks took 4.316s
+[19:05:02] [Client thread/DEBUG] [FML/]: Bar Finished: ModelLoader: items took 1.781s
+[19:05:02] [Client thread/INFO] [FML/]: Max texture size: 16384
+[19:05:02] [Client thread/DEBUG] [FML/]: Bar Finished: Texture stitching - missingno took 0.002s
+[19:05:02] [Client thread/DEBUG] [FML/]: Bar Finished: Texture creation took 0.004s
+[19:05:02] [Client thread/DEBUG] [FML/]: Bar Finished: Texture mipmap and upload - missingno took 0.001s
+[19:05:04] [Client thread/DEBUG] [FML/]: Bar Finished: ModelLoader: baking took 2.626s
+[19:05:04] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - ModelManager took 9.201s
+[19:05:04] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Loading Model Manager took 9.602s
+[19:05:05] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - RenderItem took 0.004s
+[19:05:05] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Loading Item Renderer took 0.585s
+[19:05:05] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - EntityRenderer took 0.000s
+[19:05:05] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - BlockRendererDispatcher took 0.000s
+[19:05:05] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - RenderGlobal took 0.000s
+[19:05:05] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Loading Entity Renderer took 0.338s
+[19:05:05] [Client thread/DEBUG] [FML/]: Bar Finished: Rendering Setup took 10.556s
+[19:05:05] [Client thread/TRACE] [mcp/mcp]: Sending event FMLInitializationEvent to mod mcp
+[19:05:05] [Client thread/TRACE] [mcp/mcp]: Sent event FMLInitializationEvent to mod mcp
+[19:05:05] [Client thread/DEBUG] [FML/]: Bar Step: Initialization - Minecraft Coder Pack took 0.001s
+[19:05:05] [Client thread/TRACE] [FML/FML]: Sending event FMLInitializationEvent to mod FML
+[19:05:05] [Client thread/TRACE] [FML/FML]: Sent event FMLInitializationEvent to mod FML
+[19:05:05] [Client thread/DEBUG] [FML/]: Bar Step: Initialization - Forge Mod Loader took 0.001s
+[19:05:05] [Client thread/TRACE] [forge/forge]: Sending event FMLInitializationEvent to mod forge
+[19:05:05] [Client thread/TRACE] [forge/forge]: Sent event FMLInitializationEvent to mod forge
+[19:05:05] [Client thread/DEBUG] [FML/]: Bar Step: Initialization - Minecraft Forge took 0.001s
+[19:05:05] [Client thread/TRACE] [ga/ga]: Sending event FMLInitializationEvent to mod ga
+[19:05:05] [Client thread/TRACE] [ga/ga]: Sent event FMLInitializationEvent to mod ga
+[19:05:05] [Client thread/DEBUG] [FML/]: Bar Step: Initialization - Geometric Acoustics took 0.002s
+[19:05:05] [Client thread/DEBUG] [FML/]: Bar Finished: Initialization took 0.003s
+[19:05:05] [Client thread/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod mcp
+[19:05:05] [Client thread/TRACE] [mcp/mcp]: Sending event IMCEvent to mod mcp
+[19:05:05] [Client thread/TRACE] [mcp/mcp]: Sent event IMCEvent to mod mcp
+[19:05:05] [Client thread/DEBUG] [FML/]: Bar Step: InterModComms$IMC - Minecraft Coder Pack took 0.006s
+[19:05:05] [Client thread/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod FML
+[19:05:05] [Client thread/TRACE] [FML/FML]: Sending event IMCEvent to mod FML
+[19:05:05] [Client thread/TRACE] [FML/FML]: Sent event IMCEvent to mod FML
+[19:05:05] [Client thread/DEBUG] [FML/]: Bar Step: InterModComms$IMC - Forge Mod Loader took 0.001s
+[19:05:05] [Client thread/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod forge
+[19:05:05] [Client thread/TRACE] [forge/forge]: Sending event IMCEvent to mod forge
+[19:05:05] [Client thread/TRACE] [forge/forge]: Sent event IMCEvent to mod forge
+[19:05:05] [Client thread/DEBUG] [FML/]: Bar Step: InterModComms$IMC - Minecraft Forge took 0.001s
+[19:05:05] [Client thread/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod ga
+[19:05:05] [Client thread/TRACE] [ga/ga]: Sending event IMCEvent to mod ga
+[19:05:05] [Client thread/TRACE] [ga/ga]: Sent event IMCEvent to mod ga
+[19:05:05] [Client thread/DEBUG] [FML/]: Bar Step: InterModComms$IMC - Geometric Acoustics took 0.001s
+[19:05:05] [Client thread/DEBUG] [FML/]: Bar Finished: InterModComms$IMC took 0.011s
+[19:05:05] [Client thread/INFO] [FML/]: Injecting itemstacks
+[19:05:05] [Client thread/INFO] [FML/]: Itemstack injection complete
+[19:05:05] [Client thread/TRACE] [mcp/mcp]: Sending event FMLPostInitializationEvent to mod mcp
+[19:05:05] [Client thread/TRACE] [mcp/mcp]: Sent event FMLPostInitializationEvent to mod mcp
+[19:05:05] [Client thread/DEBUG] [FML/]: Bar Step: PostInitialization - Minecraft Coder Pack took 0.001s
+[19:05:05] [Client thread/TRACE] [FML/FML]: Sending event FMLPostInitializationEvent to mod FML
+[19:05:05] [Client thread/TRACE] [FML/FML]: Sent event FMLPostInitializationEvent to mod FML
+[19:05:05] [Client thread/DEBUG] [FML/]: Bar Step: PostInitialization - Forge Mod Loader took 0.001s
+[19:05:05] [Client thread/TRACE] [forge/forge]: Sending event FMLPostInitializationEvent to mod forge
+[19:05:05] [Client thread/TRACE] [forge/forge]: Sent event FMLPostInitializationEvent to mod forge
+[19:05:05] [Client thread/DEBUG] [FML/]: Bar Step: PostInitialization - Minecraft Forge took 0.015s
+[19:05:05] [Client thread/TRACE] [ga/ga]: Sending event FMLPostInitializationEvent to mod ga
+[19:05:05] [Client thread/TRACE] [ga/ga]: Sent event FMLPostInitializationEvent to mod ga
+[19:05:05] [Client thread/DEBUG] [FML/]: Bar Step: PostInitialization - Geometric Acoustics took 0.001s
+[19:05:05] [Client thread/DEBUG] [FML/]: Bar Finished: PostInitialization took 0.017s
+[19:05:05] [Client thread/TRACE] [mcp/mcp]: Sending event FMLLoadCompleteEvent to mod mcp
+[19:05:05] [Client thread/TRACE] [mcp/mcp]: Sent event FMLLoadCompleteEvent to mod mcp
+[19:05:05] [Client thread/DEBUG] [FML/]: Bar Step: LoadComplete - Minecraft Coder Pack took 0.002s
+[19:05:05] [Client thread/TRACE] [FML/FML]: Sending event FMLLoadCompleteEvent to mod FML
+[19:05:05] [Client thread/TRACE] [FML/FML]: Sent event FMLLoadCompleteEvent to mod FML
+[19:05:05] [Client thread/DEBUG] [FML/]: Bar Step: LoadComplete - Forge Mod Loader took 0.002s
+[19:05:05] [Client thread/TRACE] [forge/forge]: Sending event FMLLoadCompleteEvent to mod forge
+[19:05:05] [Client thread/DEBUG] [FML/forge]: Forge RecipeSorter Baking:
+[19:05:05] [Client thread/DEBUG] [FML/forge]:   16: RecipeEntry("Before", UNKNOWN, )
+[19:05:05] [Client thread/DEBUG] [FML/forge]:   15: RecipeEntry("minecraft:shaped", SHAPED, net.minecraft.item.crafting.ShapedRecipes) Before: minecraft:shapeless
+[19:05:05] [Client thread/DEBUG] [FML/forge]:   14: RecipeEntry("forge:shapedore", SHAPED, net.minecraftforge.oredict.ShapedOreRecipe) Before: minecraft:shapeless After: minecraft:shaped
+[19:05:05] [Client thread/DEBUG] [FML/forge]:   13: RecipeEntry("minecraft:mapextending", SHAPED, net.minecraft.item.crafting.RecipesMapExtending) Before: minecraft:shapeless After: minecraft:shaped
+[19:05:05] [Client thread/DEBUG] [FML/forge]:   12: RecipeEntry("minecraft:shapeless", SHAPELESS, net.minecraft.item.crafting.ShapelessRecipes) After: minecraft:shaped
+[19:05:05] [Client thread/DEBUG] [FML/forge]:   11: RecipeEntry("minecraft:pattern_dupe", SHAPELESS, net.minecraft.item.crafting.RecipesBanners$RecipeDuplicatePattern) After: minecraft:shapeless
+[19:05:05] [Client thread/DEBUG] [FML/forge]:   10: RecipeEntry("minecraft:bookcloning", SHAPELESS, net.minecraft.item.crafting.RecipeBookCloning) After: minecraft:shapeless
+[19:05:05] [Client thread/DEBUG] [FML/forge]:   9: RecipeEntry("minecraft:mapcloning", SHAPELESS, net.minecraft.item.crafting.RecipesMapCloning) After: minecraft:shapeless
+[19:05:05] [Client thread/DEBUG] [FML/forge]:   8: RecipeEntry("minecraft:repair", SHAPELESS, net.minecraft.item.crafting.RecipeRepairItem) After: minecraft:shapeless
+[19:05:05] [Client thread/DEBUG] [FML/forge]:   7: RecipeEntry("minecraft:tippedarrow", SHAPELESS, net.minecraft.item.crafting.RecipeTippedArrow) After: minecraft:shapeless
+[19:05:05] [Client thread/DEBUG] [FML/forge]:   6: RecipeEntry("minecraft:shield_deco", SHAPELESS, net.minecraft.item.crafting.ShieldRecipes$Decoration) After: minecraft:shapeless
+[19:05:05] [Client thread/DEBUG] [FML/forge]:   5: RecipeEntry("minecraft:fireworks", SHAPELESS, net.minecraft.item.crafting.RecipeFireworks) After: minecraft:shapeless
+[19:05:05] [Client thread/DEBUG] [FML/forge]:   4: RecipeEntry("forge:shapelessore", SHAPELESS, net.minecraftforge.oredict.ShapelessOreRecipe) After: minecraft:shapeless
+[19:05:05] [Client thread/DEBUG] [FML/forge]:   3: RecipeEntry("minecraft:pattern_add", SHAPELESS, net.minecraft.item.crafting.RecipesBanners$RecipeAddPattern) After: minecraft:shapeless
+[19:05:05] [Client thread/DEBUG] [FML/forge]:   2: RecipeEntry("minecraft:armordyes", SHAPELESS, net.minecraft.item.crafting.RecipesArmorDyes) After: minecraft:shapeless
+[19:05:05] [Client thread/DEBUG] [FML/forge]:   1: RecipeEntry("After", UNKNOWN, )
+[19:05:05] [Client thread/DEBUG] [FML/forge]: Sorting recipes
+[19:05:05] [Client thread/TRACE] [forge/forge]: Sent event FMLLoadCompleteEvent to mod forge
+[19:05:05] [Client thread/DEBUG] [FML/]: Bar Step: LoadComplete - Minecraft Forge took 0.020s
+[19:05:05] [Client thread/TRACE] [ga/ga]: Sending event FMLLoadCompleteEvent to mod ga
+[19:05:05] [Client thread/TRACE] [ga/ga]: Sent event FMLLoadCompleteEvent to mod ga
+[19:05:05] [Client thread/DEBUG] [FML/]: Bar Step: LoadComplete - Geometric Acoustics took 0.001s
+[19:05:05] [Client thread/DEBUG] [FML/]: Bar Finished: LoadComplete took 0.025s
+[19:05:05] [Client thread/DEBUG] [FML/]: Freezing block and item id maps
+[19:05:05] [Client thread/INFO] [FML/]: Forge Mod Loader has successfully loaded 4 mods
+[19:05:05] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - Default took 0.019s
+[19:05:06] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Forge Mod Loader took 0.105s
+[19:05:06] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Minecraft Forge took 0.065s
+[19:05:06] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Geometric Acoustics took 0.000s
+[19:05:06] [Client thread/DEBUG] [FML/]: Bar Step: Reloading Texture Manager - minecraft:dynamic/logo_1 took 0.000s
+[19:05:06] [Client thread/DEBUG] [FML/]: Bar Step: Reloading Texture Manager - minecraft:dynamic/lightmap_1 took 0.002s
+[19:05:06] [Client thread/DEBUG] [FML/]: Bar Step: Reloading Texture Manager - minecraft:textures/atlas/blocks.png took 0.000s
+[19:05:06] [Client thread/DEBUG] [FML/]: Bar Step: Reloading Texture Manager - minecraft:textures/font/ascii.png took 0.006s
+[19:05:06] [Client thread/DEBUG] [FML/]: Bar Step: Reloading Texture Manager - minecraft:textures/font/ascii_sga.png took 0.008s
+[19:05:06] [Client thread/DEBUG] [FML/]: Bar Step: Reloading Texture Manager - minecraft:textures/misc/forcefield.png took 0.005s
+[19:05:06] [Client thread/DEBUG] [FML/]: Bar Finished: Reloading Texture Manager took 0.021s
+[19:05:12] [Client thread/DEBUG] [FML/]: Bar Finished: ModelLoader: blocks took 3.527s
+[19:05:14] [Client thread/DEBUG] [FML/]: Bar Finished: ModelLoader: items took 1.309s
+[19:05:14] [Client thread/INFO] [FML/]: Max texture size: 16384
+[19:05:14] [Client thread/DEBUG] [FML/]: Bar Finished: Texture stitching took 0.578s
+[19:05:14] [Client thread/DEBUG] [FML/]: Bar Finished: Texture stitching took 0.082s
+[19:05:14] [Client thread/DEBUG] [FML/]: Bar Finished: Texture creation took 0.095s
+[19:05:15] [Client thread/DEBUG] [FML/]: Bar Finished: Texture mipmap and upload took 0.919s
+[19:05:17] [Client thread/DEBUG] [FML/]: Bar Finished: ModelLoader: baking took 1.392s
+[19:05:17] [Client thread/DEBUG] [FML/]: Bar Finished: Reloading took 10.984s
+[19:05:17] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - Reloading listeners took 10.987s
+[19:05:17] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resources took 11.176s
+[19:05:17] [Client thread/DEBUG] [Forge Mod Loader/]: Mod Forge Mod Loader is missing a pack.mcmeta file, substituting a dummy one
+[19:05:17] [Client thread/DEBUG] [Minecraft Forge/]: Mod Minecraft Forge is missing a pack.mcmeta file, substituting a dummy one
+[19:05:17] [Client thread/DEBUG] [Geometric Acoustics/]: Mod Geometric Acoustics is missing a pack.mcmeta file, substituting a dummy one
+[19:05:17] [Client thread/DEBUG] [FML/]: Bar Finished: Loading took 31.635s
+[19:05:23] [Server thread/TRACE] [mcp/mcp]: Sending event FMLServerAboutToStartEvent to mod mcp
+[19:05:23] [Server thread/TRACE] [mcp/mcp]: Sent event FMLServerAboutToStartEvent to mod mcp
+[19:05:23] [Server thread/DEBUG] [FML/]: Bar Step: ServerAboutToStart - Minecraft Coder Pack took 0.001s
+[19:05:23] [Server thread/TRACE] [FML/FML]: Sending event FMLServerAboutToStartEvent to mod FML
+[19:05:23] [Server thread/TRACE] [FML/FML]: Sent event FMLServerAboutToStartEvent to mod FML
+[19:05:23] [Server thread/DEBUG] [FML/]: Bar Step: ServerAboutToStart - Forge Mod Loader took 0.001s
+[19:05:23] [Server thread/TRACE] [forge/forge]: Sending event FMLServerAboutToStartEvent to mod forge
+[19:05:23] [Server thread/TRACE] [forge/forge]: Sent event FMLServerAboutToStartEvent to mod forge
+[19:05:23] [Server thread/DEBUG] [FML/]: Bar Step: ServerAboutToStart - Minecraft Forge took 0.001s
+[19:05:23] [Server thread/TRACE] [ga/ga]: Sending event FMLServerAboutToStartEvent to mod ga
+[19:05:23] [Server thread/TRACE] [ga/ga]: Sent event FMLServerAboutToStartEvent to mod ga
+[19:05:23] [Server thread/DEBUG] [FML/]: Bar Step: ServerAboutToStart - Geometric Acoustics took 0.001s
+[19:05:23] [Server thread/DEBUG] [FML/]: Bar Finished: ServerAboutToStart took 0.003s
+[19:05:24] [Server thread/INFO] [FML/]: Injecting existing block and item data into this server instance
+[19:05:24] [Server thread/TRACE] [mcp/mcp]: Sending event FMLModIdMappingEvent to mod mcp
+[19:05:24] [Server thread/TRACE] [mcp/mcp]: Sent event FMLModIdMappingEvent to mod mcp
+[19:05:24] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - Minecraft Coder Pack took 0.001s
+[19:05:24] [Server thread/TRACE] [FML/FML]: Sending event FMLModIdMappingEvent to mod FML
+[19:05:24] [Server thread/TRACE] [FML/FML]: Sent event FMLModIdMappingEvent to mod FML
+[19:05:24] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - Forge Mod Loader took 0.002s
+[19:05:24] [Server thread/TRACE] [forge/forge]: Sending event FMLModIdMappingEvent to mod forge
+[19:05:24] [Server thread/TRACE] [forge/forge]: Sent event FMLModIdMappingEvent to mod forge
+[19:05:24] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - Minecraft Forge took 0.200s
+[19:05:24] [Server thread/TRACE] [ga/ga]: Sending event FMLModIdMappingEvent to mod ga
+[19:05:24] [Server thread/TRACE] [ga/ga]: Sent event FMLModIdMappingEvent to mod ga
+[19:05:24] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - Geometric Acoustics took 0.001s
+[19:05:24] [Server thread/DEBUG] [FML/]: Bar Finished: ModIdMapping took 0.204s
+[19:05:24] [Server thread/INFO] [FML/]: Applying holder lookups
+[19:05:24] [Server thread/INFO] [FML/]: Holder lookups applied
+[19:05:24] [Server thread/DEBUG] [FML/]: Loading persistent fluid defaults from world
+[19:05:24] [Server thread/DEBUG] [FML/]: The fluid minecraft:water has been selected as the default fluid for water
+[19:05:24] [Server thread/DEBUG] [FML/]: The fluid minecraft:lava has been selected as the default fluid for lava
+[19:05:24] [Server thread/INFO] [FML/]: Loading dimension 0 (Test_World) (net.minecraft.server.integrated.IntegratedServer@e2b02a3)
+[19:05:25] [Server thread/INFO] [FML/]: Loading dimension 1 (Test_World) (net.minecraft.server.integrated.IntegratedServer@e2b02a3)
+[19:05:25] [Server thread/INFO] [FML/]: Loading dimension -1 (Test_World) (net.minecraft.server.integrated.IntegratedServer@e2b02a3)
+[19:05:30] [Server thread/TRACE] [mcp/mcp]: Sending event FMLServerStartingEvent to mod mcp
+[19:05:30] [Server thread/TRACE] [mcp/mcp]: Sent event FMLServerStartingEvent to mod mcp
+[19:05:30] [Server thread/DEBUG] [FML/]: Bar Step: ServerStarting - Minecraft Coder Pack took 0.001s
+[19:05:30] [Server thread/TRACE] [FML/FML]: Sending event FMLServerStartingEvent to mod FML
+[19:05:30] [Server thread/TRACE] [FML/FML]: Sent event FMLServerStartingEvent to mod FML
+[19:05:30] [Server thread/DEBUG] [FML/]: Bar Step: ServerStarting - Forge Mod Loader took 0.001s
+[19:05:30] [Server thread/TRACE] [forge/forge]: Sending event FMLServerStartingEvent to mod forge
+[19:05:30] [Server thread/TRACE] [forge/forge]: Sent event FMLServerStartingEvent to mod forge
+[19:05:30] [Server thread/DEBUG] [FML/]: Bar Step: ServerStarting - Minecraft Forge took 0.008s
+[19:05:30] [Server thread/TRACE] [ga/ga]: Sending event FMLServerStartingEvent to mod ga
+[19:05:30] [Server thread/TRACE] [ga/ga]: Sent event FMLServerStartingEvent to mod ga
+[19:05:30] [Server thread/DEBUG] [FML/]: Bar Step: ServerStarting - Geometric Acoustics took 0.001s
+[19:05:30] [Server thread/DEBUG] [FML/]: Bar Finished: ServerStarting took 0.011s
+[19:05:30] [Server thread/TRACE] [mcp/mcp]: Sending event FMLServerStartedEvent to mod mcp
+[19:05:30] [Server thread/TRACE] [mcp/mcp]: Sent event FMLServerStartedEvent to mod mcp
+[19:05:30] [Server thread/DEBUG] [FML/]: Bar Step: ServerStarted - Minecraft Coder Pack took 0.000s
+[19:05:30] [Server thread/TRACE] [FML/FML]: Sending event FMLServerStartedEvent to mod FML
+[19:05:30] [Server thread/TRACE] [FML/FML]: Sent event FMLServerStartedEvent to mod FML
+[19:05:30] [Server thread/DEBUG] [FML/]: Bar Step: ServerStarted - Forge Mod Loader took 0.001s
+[19:05:30] [Server thread/TRACE] [forge/forge]: Sending event FMLServerStartedEvent to mod forge
+[19:05:30] [Server thread/TRACE] [forge/forge]: Sent event FMLServerStartedEvent to mod forge
+[19:05:30] [Server thread/DEBUG] [FML/]: Bar Step: ServerStarted - Minecraft Forge took 0.001s
+[19:05:30] [Server thread/TRACE] [ga/ga]: Sending event FMLServerStartedEvent to mod ga
+[19:05:30] [Server thread/TRACE] [ga/ga]: Sent event FMLServerStartedEvent to mod ga
+[19:05:30] [Server thread/DEBUG] [FML/]: Bar Step: ServerStarted - Geometric Acoustics took 0.001s
+[19:05:30] [Server thread/DEBUG] [FML/]: Bar Finished: ServerStarted took 0.003s
+[19:05:32] [Netty Local Client IO #0/TRACE] [FML/]: Handshake channel activating
+[19:05:32] [Netty Local Client IO #0/DEBUG] [FML/]: FMLHandshakeClientState: null->FMLHandshakeClientState$1:START
+[19:05:32] [Netty Local Client IO #0/DEBUG] [FML/]:   Next: HELLO
+[19:05:32] [Netty Server IO #1/TRACE] [FML/]: Handshake channel activating
+[19:05:32] [Netty Server IO #1/DEBUG] [FML/]: FMLHandshakeServerState: null->FMLHandshakeServerState$1:START
+[19:05:32] [Netty Server IO #1/DEBUG] [FML/]:   Next: HELLO
+[19:05:32] [Netty Local Client IO #0/DEBUG] [FML/]: Server FML protocol version 2, 4 byte dimension received 0
+[19:05:32] [Netty Local Client IO #0/DEBUG] [FML/]: FMLHandshakeClientState: $ServerHello->FMLHandshakeClientState$2:HELLO
+[19:05:32] [Netty Local Client IO #0/INFO] [FML/]: Server protocol version 2
+[19:05:32] [Netty Local Client IO #0/DEBUG] [FML/]: Received override dimension 0
+[19:05:32] [Netty Server IO #1/DEBUG] [FML/]: FMLHandshakeServerState: $ClientHello->FMLHandshakeServerState$2:HELLO
+[19:05:32] [Netty Server IO #1/INFO] [FML/]: Client protocol version 2
+[19:05:32] [Netty Server IO #1/DEBUG] [FML/]:   Next: HELLO
+[19:05:32] [Netty Local Client IO #0/DEBUG] [FML/]:   Next: WAITINGSERVERDATA
+[19:05:32] [Netty Server IO #1/DEBUG] [FML/]: FMLHandshakeServerState: $ModList:4 mods->FMLHandshakeServerState$2:HELLO
+[19:05:32] [Netty Server IO #1/INFO] [FML/]: Client attempting to join with 4 mods : mcp@9.19,FML@8.0.99.99,forge@13.19.1.2189,ga@1.0
+[19:05:32] [Netty Server IO #1/DEBUG] [FML/]:   Next: WAITINGCACK
+[19:05:32] [Netty Local Client IO #0/DEBUG] [FML/]: FMLHandshakeClientState: $ModList:4 mods->FMLHandshakeClientState$3:WAITINGSERVERDATA
+[19:05:32] [Netty Local Client IO #0/DEBUG] [FML/]:   Next: PENDINGCOMPLETE
+[19:05:32] [Netty Server IO #1/DEBUG] [FML/]: FMLHandshakeServerState: $HandshakeAck:{2}->FMLHandshakeServerState$3:WAITINGCACK
+[19:05:32] [Netty Server IO #1/DEBUG] [FML/]:   Next: COMPLETE
+[19:05:32] [Netty Local Client IO #0/DEBUG] [FML/]: FMLHandshakeClientState: $HandshakeAck:{2}->FMLHandshakeClientState$5:PENDINGCOMPLETE
+[19:05:32] [Netty Server IO #1/DEBUG] [FML/]: FMLHandshakeServerState: $HandshakeAck:{4}->FMLHandshakeServerState$4:COMPLETE
+[19:05:32] [Netty Local Client IO #0/DEBUG] [FML/]:   Next: COMPLETE
+[19:05:32] [Netty Server IO #1/DEBUG] [FML/]:   Next: DONE
+[19:05:32] [Netty Local Client IO #0/DEBUG] [FML/]: The fluid minecraft:water has been selected as the default fluid for water
+[19:05:32] [Netty Local Client IO #0/DEBUG] [FML/]: The fluid minecraft:lava has been selected as the default fluid for lava
+[19:05:32] [Netty Local Client IO #0/DEBUG] [FML/]: FMLHandshakeClientState: $HandshakeAck:{3}->FMLHandshakeClientState$6:COMPLETE
+[19:05:32] [Netty Local Client IO #0/DEBUG] [FML/]:   Next: DONE
+[19:05:32] [Netty Server IO #1/DEBUG] [FML/]: FMLHandshakeServerState: $HandshakeAck:{5}->FMLHandshakeServerState$5:DONE
+[19:05:32] [Netty Server IO #1/DEBUG] [FML/]:   Next: DONE
+[19:05:32] [Netty Local Client IO #0/INFO] [FML/]: [Netty Local Client IO #0] Client side modded connection established
+[19:05:32] [Server thread/INFO] [FML/]: [Server thread] Server side modded connection established
+[19:05:32] [Client thread/DEBUG] [FML/]: Overriding dimension: using 0
+[19:05:36] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Test_World
+[19:05:40] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Test_World
+[19:06:32] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Test_World
+[19:07:17] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Test_World
+[19:08:02] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Test_World
+[19:08:02] [Server thread/TRACE] [mcp/mcp]: Sending event FMLServerStoppingEvent to mod mcp
+[19:08:02] [Server thread/TRACE] [mcp/mcp]: Sent event FMLServerStoppingEvent to mod mcp
+[19:08:02] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopping - Minecraft Coder Pack took 0.001s
+[19:08:02] [Server thread/TRACE] [FML/FML]: Sending event FMLServerStoppingEvent to mod FML
+[19:08:02] [Server thread/TRACE] [FML/FML]: Sent event FMLServerStoppingEvent to mod FML
+[19:08:02] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopping - Forge Mod Loader took 0.001s
+[19:08:02] [Server thread/TRACE] [forge/forge]: Sending event FMLServerStoppingEvent to mod forge
+[19:08:02] [Server thread/TRACE] [forge/forge]: Sent event FMLServerStoppingEvent to mod forge
+[19:08:02] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopping - Minecraft Forge took 0.001s
+[19:08:02] [Server thread/TRACE] [ga/ga]: Sending event FMLServerStoppingEvent to mod ga
+[19:08:02] [Server thread/TRACE] [ga/ga]: Sent event FMLServerStoppingEvent to mod ga
+[19:08:02] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopping - Geometric Acoustics took 0.001s
+[19:08:02] [Server thread/DEBUG] [FML/]: Bar Finished: ServerStopping took 0.003s
+[19:08:02] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Test_World
+[19:08:03] [Server thread/INFO] [FML/]: Unloading dimension 0
+[19:08:03] [Server thread/INFO] [FML/]: Unloading dimension -1
+[19:08:03] [Server thread/INFO] [FML/]: Unloading dimension 1
+[19:08:03] [Server thread/DEBUG] [FML/]: Reverting to frozen data state.
+[19:08:03] [Server thread/TRACE] [mcp/mcp]: Sending event FMLModIdMappingEvent to mod mcp
+[19:08:03] [Server thread/TRACE] [mcp/mcp]: Sent event FMLModIdMappingEvent to mod mcp
+[19:08:03] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - Minecraft Coder Pack took 0.001s
+[19:08:03] [Server thread/TRACE] [FML/FML]: Sending event FMLModIdMappingEvent to mod FML
+[19:08:03] [Server thread/TRACE] [FML/FML]: Sent event FMLModIdMappingEvent to mod FML
+[19:08:03] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - Forge Mod Loader took 0.001s
+[19:08:03] [Server thread/TRACE] [forge/forge]: Sending event FMLModIdMappingEvent to mod forge
+[19:08:03] [Server thread/TRACE] [forge/forge]: Sent event FMLModIdMappingEvent to mod forge
+[19:08:03] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - Minecraft Forge took 0.074s
+[19:08:03] [Server thread/TRACE] [ga/ga]: Sending event FMLModIdMappingEvent to mod ga
+[19:08:03] [Server thread/TRACE] [ga/ga]: Sent event FMLModIdMappingEvent to mod ga
+[19:08:03] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - Geometric Acoustics took 0.001s
+[19:08:03] [Server thread/DEBUG] [FML/]: Bar Finished: ModIdMapping took 0.076s
+[19:08:03] [Server thread/INFO] [FML/]: Applying holder lookups
+[19:08:03] [Server thread/INFO] [FML/]: Holder lookups applied
+[19:08:03] [Server thread/DEBUG] [FML/]: Frozen state restored.
+[19:08:03] [Server thread/TRACE] [mcp/mcp]: Sending event FMLServerStoppedEvent to mod mcp
+[19:08:03] [Server thread/TRACE] [mcp/mcp]: Sent event FMLServerStoppedEvent to mod mcp
+[19:08:03] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopped - Minecraft Coder Pack took 0.000s
+[19:08:03] [Server thread/TRACE] [FML/FML]: Sending event FMLServerStoppedEvent to mod FML
+[19:08:03] [Server thread/TRACE] [FML/FML]: Sent event FMLServerStoppedEvent to mod FML
+[19:08:03] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopped - Forge Mod Loader took 0.000s
+[19:08:03] [Server thread/TRACE] [forge/forge]: Sending event FMLServerStoppedEvent to mod forge
+[19:08:03] [Server thread/TRACE] [forge/forge]: Sent event FMLServerStoppedEvent to mod forge
+[19:08:03] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopped - Minecraft Forge took 0.000s
+[19:08:03] [Server thread/TRACE] [ga/ga]: Sending event FMLServerStoppedEvent to mod ga
+[19:08:03] [Server thread/TRACE] [ga/ga]: Sent event FMLServerStoppedEvent to mod ga
+[19:08:03] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopped - Geometric Acoustics took 0.000s
+[19:08:03] [Server thread/DEBUG] [FML/]: Bar Finished: ServerStopped took 0.002s

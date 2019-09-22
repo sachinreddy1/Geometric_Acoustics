@@ -142,7 +142,7 @@ public class GeometricAcoustics
 		// Main menu
 		if (posX < 0.01f && posY < 0.01f && posZ < 0.01f)
 		{			
-			setEnvironment(sourceID, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f);
+			setEnvironment(sourceID, 0.0f, 0.0f, 0.0f, 0.0f);
 			return;
 		}
 		
@@ -156,19 +156,11 @@ public class GeometricAcoustics
 		playerPos = new Vec3d(playerPos.xCoord, playerPos.yCoord + minecraft.thePlayer.getEyeHeight(), playerPos.zCoord);
 		
 		// ---------------------- //
-			
-		float directCutoff = 1.0f;
-		float directGain = 1.0f;
 						
 		float sendGain0 = 0.0f;
 		float sendGain1 = 0.0f;
 		float sendGain2 = 0.0f;
 		float sendGain3 = 0.0f;
-		
-		float sendCutoff0 = 1.0f;
-		float sendCutoff1 = 1.0f;
-		float sendCutoff2 = 1.0f;
-		float sendCutoff3 = 1.0f;
 		
 		// ---------------------- //
 		
@@ -219,7 +211,6 @@ public class GeometricAcoustics
 				//Secondary ray bounces
 				for (int j = 0; j < rayBounces; j++)
 				{
-					float fj = (float)j / rayBounces;
 					Vec3d newRayDir = reflect(lastRayDir, lastHitNormal);
 					Vec3d newRayStart = new Vec3d(lastHitPos.xCoord + lastHitNormal.xCoord * 0.01, lastHitPos.yCoord + lastHitNormal.yCoord * 0.01, lastHitPos.zCoord + lastHitNormal.zCoord * 0.01);
 					Vec3d newRayEnd = new Vec3d(newRayStart.xCoord + newRayDir.xCoord * maxDistance, newRayStart.yCoord + newRayDir.yCoord * maxDistance, newRayStart.zCoord + newRayDir.zCoord * maxDistance);					
@@ -275,7 +266,7 @@ public class GeometricAcoustics
 		// ---------------------- //
 		
 		//log("Gain: " + sendGain0 + ", " + sendGain1 + ", " + sendGain2 + ", " + sendGain3);
-		setEnvironment(sourceID, sendGain0, sendGain1, sendGain2, sendGain3, sendCutoff0, sendCutoff1, sendCutoff2, sendCutoff3, directCutoff, directGain);
+		setEnvironment(sourceID, sendGain0, sendGain1, sendGain2, sendGain3);
 	}
 	
 	// ------------------------------------------------- //
@@ -333,30 +324,16 @@ public class GeometricAcoustics
 	
 	// ------------------------------------------------- //
 	
-	private static void setEnvironment(int sourceID, float sendGain0, float sendGain1, float sendGain2, float sendGain3, float sendCutoff0, float sendCutoff1,
-			float sendCutoff2, float sendCutoff3, float directCutoff, float directGain)
+	private static void setEnvironment(int sourceID, float sendGain0, float sendGain1, float sendGain2, float sendGain3)
 	{
 		EFX10.alFilterf(sendFilter0, EFX10.AL_LOWPASS_GAIN, sendGain0);
-		EFX10.alFilterf(sendFilter0, EFX10.AL_LOWPASS_GAINHF, sendCutoff0);
 		AL11.alSource3i(sourceID, EFX10.AL_AUXILIARY_SEND_FILTER, auxFXSlot0, 0, sendFilter0);	
-		
 		EFX10.alFilterf(sendFilter1, EFX10.AL_LOWPASS_GAIN, sendGain1);
-		EFX10.alFilterf(sendFilter1, EFX10.AL_LOWPASS_GAINHF, sendCutoff1);
 		AL11.alSource3i(sourceID, EFX10.AL_AUXILIARY_SEND_FILTER, auxFXSlot1, 1, sendFilter1);	
-		
 		EFX10.alFilterf(sendFilter2, EFX10.AL_LOWPASS_GAIN, sendGain2);
-		EFX10.alFilterf(sendFilter2, EFX10.AL_LOWPASS_GAINHF, sendCutoff2);
 		AL11.alSource3i(sourceID, EFX10.AL_AUXILIARY_SEND_FILTER, auxFXSlot2, 2, sendFilter2);	
-		
 		EFX10.alFilterf(sendFilter3, EFX10.AL_LOWPASS_GAIN, sendGain3);
-		EFX10.alFilterf(sendFilter3, EFX10.AL_LOWPASS_GAINHF, sendCutoff3);
 		AL11.alSource3i(sourceID, EFX10.AL_AUXILIARY_SEND_FILTER, auxFXSlot3, 3, sendFilter3);	
-		
-		EFX10.alFilterf(directFilter0, EFX10.AL_LOWPASS_GAIN, directGain);
-		EFX10.alFilterf(directFilter0, EFX10.AL_LOWPASS_GAINHF, directCutoff);
-		AL10.alSourcei(sourceID, EFX10.AL_DIRECT_FILTER, directFilter0);
-		
-		AL10.alSourcef(sourceID, EFX10.AL_AIR_ABSORPTION_FACTOR, GeometricAcousticsCore.Config.airAbsorption);
 	}
 	
 	protected static void setReverbParameters(ReverbParameters r, int auxFXSlot, int reverbSlot)
