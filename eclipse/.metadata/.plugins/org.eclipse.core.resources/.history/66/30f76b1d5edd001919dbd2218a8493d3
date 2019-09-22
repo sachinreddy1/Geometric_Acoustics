@@ -140,7 +140,7 @@ public class GeometricAcoustics
 	private static void calculateEnvironment(float posX, float posY, float posZ, int sourceID)
 	{
 		// Main menu
-		if (posX < 0.01f && posY < 0.01f && posZ < 0.01f || lastSoundName.matches(".*rain.*"))
+		if (posX < 0.01f && posY < 0.01f && posZ < 0.01f)
 		{			
 			setEnvironment(sourceID, 0.0f, 0.0f, 0.0f, 0.0f);
 			return;
@@ -156,11 +156,19 @@ public class GeometricAcoustics
 		playerPos = new Vec3d(playerPos.xCoord, playerPos.yCoord + minecraft.thePlayer.getEyeHeight(), playerPos.zCoord);
 		
 		// ---------------------- //
-		
+						
 		float sendGain0 = 0.0f;
 		float sendGain1 = 0.0f;
 		float sendGain2 = 0.0f;
 		float sendGain3 = 0.0f;
+		
+		// ---------------------- //
+		
+		if (lastSoundName.matches(".*rain.*"))
+		{
+			setEnvironment(sourceID, sendGain0, sendGain1, sendGain2, sendGain3, sendCutoff0, sendCutoff1, sendCutoff2, sendCutoff3, directCutoff, directGain);
+			return;
+		}
 		
 		// ---------------------- //
 		
@@ -219,7 +227,7 @@ public class GeometricAcoustics
 					float blockReflectivity = getBlockReflectivity(lastHitBlock);
 					float energyTowardsPlayer = 0.25f;
 					energyTowardsPlayer *= blockReflectivity * 0.75f + 0.25f;
-							
+										
 					if (newRayHit != null)
 					{	
 						double newRayLength = lastHitPos.distanceTo(newRayHit.hitVec);

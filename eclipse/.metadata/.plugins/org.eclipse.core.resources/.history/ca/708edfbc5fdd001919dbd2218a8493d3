@@ -219,7 +219,7 @@ public class GeometricAcoustics
 					float blockReflectivity = getBlockReflectivity(lastHitBlock);
 					float energyTowardsPlayer = 0.25f;
 					energyTowardsPlayer *= blockReflectivity * 0.75f + 0.25f;
-							
+										
 					if (newRayHit != null)
 					{	
 						double newRayLength = lastHitPos.distanceTo(newRayHit.hitVec);
