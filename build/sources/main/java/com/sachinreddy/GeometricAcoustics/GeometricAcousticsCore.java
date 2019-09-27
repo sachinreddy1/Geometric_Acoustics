@@ -40,7 +40,7 @@ public class GeometricAcousticsCore implements IClassTransformer
 		public static float airAbsorption = 1.0f;
 		
 		//performance
-		public static int environmentEvaluationRays = 32;
+		public static int environmentCalculationRays = 32;
 		
 		//block properties
 		public static float stoneReflectivity = 1.0f;
@@ -52,11 +52,6 @@ public class GeometricAcousticsCore implements IClassTransformer
 		public static float clothReflectivity = 0.05f;
 		public static float sandReflectivity = 0.2f;
 		public static float snowReflectivity = 0.2f;
-		
-		public static final String categoryGeneral = "general";
-		public static final String categoryPerformance = "performance";
-		public static final String categoryMaterialProperties = "material properties";
-		public static final String categoryMisc = "misc";
 	}
 	
 	// ------------------------------------------------- //

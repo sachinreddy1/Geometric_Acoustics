@@ -42,8 +42,6 @@ public class GeometricAcoustics
 	private static int reverb2;
 	private static int reverb3;
 	//
-	private static int directFilter0;
-	//
 	private static int sendFilter0;
 	private static int sendFilter1;
 	private static int sendFilter2;
@@ -85,7 +83,7 @@ public class GeometricAcoustics
 		auxFXSlot3 = EFX10.alGenAuxiliaryEffectSlots();
 		EFX10.alAuxiliaryEffectSloti(auxFXSlot3, EFX10.AL_EFFECTSLOT_AUXILIARY_SEND_AUTO, AL10.AL_TRUE);	
 		
-		// Create effect objects
+		// Create effects
 		reverb0 = EFX10.alGenEffects();
 		EFX10.alEffecti(reverb0, EFX10.AL_EFFECT_TYPE, EFX10.AL_EFFECT_EAXREVERB);
 		reverb1 = EFX10.alGenEffects();
@@ -96,8 +94,6 @@ public class GeometricAcoustics
 		EFX10.alEffecti(reverb3, EFX10.AL_EFFECT_TYPE, EFX10.AL_EFFECT_EAXREVERB);
 		
 		//Create filters
-		directFilter0 = EFX10.alGenFilters();
-		EFX10.alFilteri(directFilter0, EFX10.AL_FILTER_TYPE, EFX10.AL_FILTER_LOWPASS);
 		sendFilter0 = EFX10.alGenFilters();
 		EFX10.alFilteri(sendFilter0, EFX10.AL_FILTER_TYPE, EFX10.AL_FILTER_LOWPASS);
 		sendFilter1 = EFX10.alGenFilters();
@@ -133,13 +129,21 @@ public class GeometricAcoustics
 	{
 		//log("[SOUND PLAYED]: Source ID: " + sourceID + " | (" + posX + ", " + posY + ", " + posZ + ") | Sound category: " + lastSoundCategory.toString() + " | Sound name: " + lastSoundName);
 		calculateEnvironment(posX, posY, posZ, sourceID);
+//		testReverb(sourceID);
+	}
+	
+	// ------------------------------------------------- //
+	
+	private static void testReverb(int sourceID) {
+		float testVal = 0.5f;
+		setEnvironment(sourceID, testVal, testVal, testVal, testVal);
 	}
 	
 	// ------------------------------------------------- //
 	
 	private static void calculateEnvironment(float posX, float posY, float posZ, int sourceID)
 	{
-		// Main menu
+		// Main menu or if raining
 		if (posX < 0.01f && posY < 0.01f && posZ < 0.01f || lastSoundName.matches(".*rain.*"))
 		{			
 			setEnvironment(sourceID, 0.0f, 0.0f, 0.0f, 0.0f);
@@ -164,16 +168,16 @@ public class GeometricAcoustics
 		
 		// ---------------------- //
 		
-		//Shoot rays around sound
+		//Shoot rays around sound's source
 		final float phi = 1.618033988f;
 		final float gAngle = phi * (float)Math.PI * 2.0f;
 		final float maxDistance = 256.0f;
 		
-		final int numRays = GeometricAcousticsCore.Config.environmentEvaluationRays;
+		final int numRays = GeometricAcousticsCore.Config.environmentCalculationRays;
 		final int rayBounces = 4;
 
 		float[] bounceReflectivityRatio = new float[rayBounces];
-		float rcpTotalRays = 1.0f / (numRays * rayBounces);
+		float totalRays = 1.0f / (numRays * rayBounces);
 		
 		// ---------------------- //
 		
@@ -200,9 +204,10 @@ public class GeometricAcoustics
 			{
 				double rayLength = soundPos.distanceTo(rayHit.hitVec);
 				
-				//Additional bounces
+				// Additional bounces
 				Int3 lastHitBlock = Int3.create(rayHit.getBlockPos().getX(), rayHit.getBlockPos().getY(), rayHit.getBlockPos().getZ());
 				Vec3d lastHitPos = rayHit.hitVec;
+				// For reflecting
 				Vec3d lastHitNormal = getNormalFromFacing(rayHit.sideHit);
 				Vec3d lastRayDir = rayDir;
 				
@@ -232,16 +237,16 @@ public class GeometricAcoustics
 					else
 						totalRayDistance += lastHitPos.distanceTo(playerPos);
 					
-					float reflectionDelay = (float)Math.pow(Math.max(totalRayDistance, 0.0), 1.0) * 0.12f * blockReflectivity;
-					float cross0 = 1.0f - MathHelper.clamp_float(Math.abs(reflectionDelay - 0.0f), 0.0f, 1.0f);
+					float reflectionDelay = (float)totalRayDistance * blockReflectivity;
+					float cross0 = 1.0f - MathHelper.clamp_float(reflectionDelay, 0.0f, 1.0f);
 					float cross1 = 1.0f - MathHelper.clamp_float(Math.abs(reflectionDelay - 1.0f), 0.0f, 1.0f);
 					float cross2 = 1.0f - MathHelper.clamp_float(Math.abs(reflectionDelay - 2.0f), 0.0f, 1.0f);
-					float cross3 = MathHelper.clamp_float(reflectionDelay - 2.0f, 0.0f, 1.0f);
+					float cross3 = 1.0f - MathHelper.clamp_float(Math.abs(reflectionDelay - 3.0f), 0.0f, 1.0f);
 					
-					sendGain0 += cross0 * energyTowardsPlayer * 6.4f * rcpTotalRays;
-					sendGain1 += cross1 * energyTowardsPlayer * 12.8f * rcpTotalRays;
-					sendGain2 += cross2 * energyTowardsPlayer * 12.8f * rcpTotalRays;
-					sendGain3 += cross3 * energyTowardsPlayer * 12.8f * rcpTotalRays;
+					sendGain0 += cross0 * energyTowardsPlayer * 10.0f * totalRays;
+					sendGain1 += cross1 * energyTowardsPlayer * 10.0f * totalRays;
+					sendGain2 += cross2 * energyTowardsPlayer * 10.0f * totalRays;
+					sendGain3 += cross3 * energyTowardsPlayer * 10.0f * totalRays;
 					
 					if (newRayHit == null)
 						break;
@@ -265,7 +270,7 @@ public class GeometricAcoustics
 		
 		// ---------------------- //
 		
-		//log("Gain: " + sendGain0 + ", " + sendGain1 + ", " + sendGain2 + ", " + sendGain3);
+		log("Gain: " + sendGain0 + ", " + sendGain1 + ", " + sendGain2 + ", " + sendGain3);
 		setEnvironment(sourceID, sendGain0, sendGain1, sendGain2, sendGain3);
 	}
 	
