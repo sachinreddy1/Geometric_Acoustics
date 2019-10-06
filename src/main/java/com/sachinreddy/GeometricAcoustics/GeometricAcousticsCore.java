@@ -15,12 +15,14 @@ import org.objectweb.asm.tree.MethodNode;
 import org.objectweb.asm.tree.VarInsnNode;
 
 import net.minecraft.launchwrapper.IClassTransformer;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @Mod(modid = GeometricAcousticsCore.modid, version = GeometricAcousticsCore.version)
@@ -65,6 +67,12 @@ public class GeometricAcousticsCore implements IClassTransformer
 	public void init(FMLInitializationEvent event)
 	{
 		FMLCommonHandler.instance().bus().register(instance);
+	}
+	
+	@Mod.EventHandler
+	public void postInit(FMLPostInitializationEvent event)
+	{
+		MinecraftForge.EVENT_BUS.register(new GuiExample());
 	}
 	
 	// ------------------------------------------------- //

@@ -1,15 +1,19 @@
 Symbol range map extraction starting
-Processing 8 files
+Processing 9 files
 startProcessing "com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java" md5: a4f824add5da1f494aa4a8c3ce0582c5
 Cache Hit!
 endProcessing "com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java"
 
 startProcessing "com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java" md5: c8d5a0bdf02e39746496526279fc558d
+Cache Hit!
 endProcessing "com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java"
 
-startProcessing "com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java" md5: b75bc11831180a2f23cd9367c8ca5d9c
+startProcessing "com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java" md5: 3d346841539c418c656e6c121a0b51f2
 Cache Hit!
 endProcessing "com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java"
+
+startProcessing "com/sachinreddy/GeometricAcoustics/GuiExample.java" md5: 75d80be853bb0e86508e715a13a0dc79
+endProcessing "com/sachinreddy/GeometricAcoustics/GuiExample.java"
 
 startProcessing "com/sachinreddy/GeometricAcoustics/Int3.java" md5: 50197a435265f58d82c9b71bb9a2de85
 Cache Hit!
@@ -23,7 +27,7 @@ startProcessing "com/sachinreddy/proxy/ClientProxy.java" md5: 4cba42e944ca931819
 Cache Hit!
 endProcessing "com/sachinreddy/proxy/ClientProxy.java"
 
-startProcessing "com/sachinreddy/proxy/CommonProxy.java" md5: 95c42996cf90948f034e7f4426ed2e64
+startProcessing "com/sachinreddy/proxy/CommonProxy.java" md5: a36060a43a74a68d2c85a17fc8de4c79
 Cache Hit!
 endProcessing "com/sachinreddy/proxy/CommonProxy.java"
 

@@ -1,0 +1,16 @@
+package com.sachinreddy.GeometricAcoustics;
+
+import net.minecraftforge.client.event.RenderGameOverlayEvent;
+import net.minecraft.client.Minecraft;
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+
+public class RenderGuiHandler {
+	
+	@SubscribeEvent
+    public void onRenderGui(RenderGameOverlayEvent.Post event)
+    {
+		if (event.type != ElementType.EXPERIENCE) return;
+		new GuiExample(Minecraft.getMinecraft());
+    }
+	
+}
