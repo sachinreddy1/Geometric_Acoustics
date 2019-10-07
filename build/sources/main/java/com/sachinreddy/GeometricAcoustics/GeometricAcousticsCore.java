@@ -25,9 +25,14 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
+import net.minecraftforge.fml.common.SidedProxy;
+import com.sachinreddy.proxy.CommonProxy;
+
 @Mod(modid = GeometricAcousticsCore.modid, version = GeometricAcousticsCore.version)
 public class GeometricAcousticsCore implements IClassTransformer
 {
+	@SidedProxy(clientSide = "com.sachinreddy.proxy.ClientProxy", serverSide = "com.sachinreddy.proxy.CommonProxy")
+    public static CommonProxy proxy;
 	
 	@Mod.Instance("ga")
 	public static GeometricAcousticsCore instance;
@@ -61,18 +66,21 @@ public class GeometricAcousticsCore implements IClassTransformer
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
+		proxy.preInit(event);
 	}
 	
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event)
 	{
 		FMLCommonHandler.instance().bus().register(instance);
+		proxy.init(event);
 	}
 	
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event)
 	{
 		MinecraftForge.EVENT_BUS.register(new GuiExample());
+		proxy.postInit(event);
 	}
 	
 	// ------------------------------------------------- //

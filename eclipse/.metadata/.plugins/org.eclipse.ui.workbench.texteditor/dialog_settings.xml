@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="totalRays"/>
+		<item key="selection" value="InputEvent"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="InputEvent"/>
+			<item value="import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;&#x0A;"/>
+			<item value="import net.minecraftforge.client.event.RenderGameOverlayEvent;&#x0A;"/>
+			<item value="import net.minecraft.util.ResourceLocation;&#x0A;"/>
+			<item value="import net.minecraft.client.gui.Gui;&#x0A;"/>
+			<item value="import net.minecraft.client.Minecraft;import net.minecraft.client.gui.Gui;&#x0A;"/>
+			<item value="import net.minecraft.client.Minecraft;"/>
 			<item value="rcpTotalRays"/>
 			<item value="environmentCalculationRays"/>
 			<item value="environmentEvaluationRays"/>
@@ -16,13 +23,6 @@
 			<item value="directFilter0"/>
 			<item value="fj"/>
 			<item value="offsetSoundByName"/>
-			<item value="rolloffFactor"/>
-			<item value="globalReverbGain"/>
-			<item value="globalReverbBrightness"/>
-			<item value="soundDistanceAllowance"/>
-			<item value="globalBlockAbsorption"/>
-			<item value="attenuationModel"/>
-			<item value="globalRolloffFactor"/>
 		</list>
 		<list key="replacehistory">
 			<item value="totalRays"/>
