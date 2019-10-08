@@ -36,7 +36,6 @@ public class GeometricAcousticsCore implements IClassTransformer
 	
 	@Mod.Instance("ga")
 	public static GeometricAcousticsCore instance;
-	//
 	public static final String modid = "ga";
 	public static final String version = "1.0";
 		
