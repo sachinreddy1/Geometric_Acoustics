@@ -1,130 +1,126 @@
-[22:54:23] [Client thread/INFO]: Setting user: Player719
-[22:54:45] [Client thread/WARN]: Skipping bad option: lastServer:
-[22:54:45] [Client thread/INFO]: LWJGL Version: 2.9.2
-[22:54:55] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Geometric Acoustics
-[22:54:55] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: Geometric-Acoustics-1.11 in /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/run/mods/GeometricAcoustics-1.11.jar
-[22:54:55] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: Geometric-Acoustics-1.11 in /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/run/mods/GeometricAcoustics-1.11.jar
-[22:54:55] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: Geometric-Acoustics-1.11 in /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/run/mods/GeometricAcoustics-1.11.jar
-[22:54:56] [Client thread/INFO]: [STDOUT]: #################################################################   Patching Class: net.minecraft.client.audio.SoundManager
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Lnet/minecraft/client/audio/SoundHandler;Lnet/minecraft/client/settings/GameSettings;)V
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: reloadSoundSystem Desc: ()V
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: loadSoundSystem Desc: ()V
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: getVolume Desc: (Lnet/minecraft/util/SoundCategory;)F
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: setVolume Desc: (Lnet/minecraft/util/SoundCategory;F)V
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: unloadSoundSystem Desc: ()V
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopAllSounds Desc: ()V
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: addListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: removeListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: updateAllSounds Desc: ()V
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: isSoundPlaying Desc: (Lnet/minecraft/client/audio/ISound;)Z
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopSound Desc: (Lnet/minecraft/client/audio/ISound;)V
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: playSound Desc: (Lnet/minecraft/client/audio/ISound;)V
-[22:54:56] [Client thread/INFO]: [STDOUT]: *************************************** Inside target method: playSound
-[22:54:56] [Client thread/INFO]: [STDOUT]: Found target method invocation for injection: setVolume
-[22:54:56] [Client thread/INFO]: [STDOUT]: Patching complete!----------------------------------------------------------------------------------------
-[22:54:56] [Client thread/INFO]: [STDOUT]: #################################################################   Patching Class: net.minecraft.client.audio.SoundManager
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Lnet/minecraft/client/audio/SoundHandler;Lnet/minecraft/client/settings/GameSettings;)V
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: reloadSoundSystem Desc: ()V
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: loadSoundSystem Desc: ()V
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: getVolume Desc: (Lnet/minecraft/util/SoundCategory;)F
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: setVolume Desc: (Lnet/minecraft/util/SoundCategory;F)V
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: unloadSoundSystem Desc: ()V
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopAllSounds Desc: ()V
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: addListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: removeListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: updateAllSounds Desc: ()V
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: isSoundPlaying Desc: (Lnet/minecraft/client/audio/ISound;)Z
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopSound Desc: (Lnet/minecraft/client/audio/ISound;)V
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: playSound Desc: (Lnet/minecraft/client/audio/ISound;)V
-[22:54:56] [Client thread/INFO]: [STDOUT]: *************************************** Inside target method: playSound
-[22:54:56] [Client thread/INFO]: [STDOUT]: Found target method invocation for injection: setVolume
-[22:54:56] [Client thread/INFO]: [STDOUT]: Patching complete!----------------------------------------------------------------------------------------
-[22:54:56] [Client thread/INFO]: [STDOUT]: #################################################################   Patching Class: net.minecraft.client.audio.SoundManager
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Lnet/minecraft/client/audio/SoundHandler;Lnet/minecraft/client/settings/GameSettings;)V
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: reloadSoundSystem Desc: ()V
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: loadSoundSystem Desc: ()V
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: getVolume Desc: (Lnet/minecraft/util/SoundCategory;)F
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: setVolume Desc: (Lnet/minecraft/util/SoundCategory;F)V
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: unloadSoundSystem Desc: ()V
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopAllSounds Desc: ()V
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: addListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: removeListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: updateAllSounds Desc: ()V
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: isSoundPlaying Desc: (Lnet/minecraft/client/audio/ISound;)Z
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopSound Desc: (Lnet/minecraft/client/audio/ISound;)V
-[22:54:56] [Client thread/INFO]: [STDOUT]: ********* Method Name: playSound Desc: (Lnet/minecraft/client/audio/ISound;)V
-[22:54:56] [Client thread/INFO]: [STDOUT]: *************************************** Inside target method: playSound
-[22:54:56] [Client thread/INFO]: [STDOUT]: Found target method invocation for injection: getClampedVolume
-[22:54:56] [Client thread/INFO]: [STDOUT]: Patching complete!----------------------------------------------------------------------------------------
-[22:55:03] [Sound Library Loader/INFO]: [STDOUT]: #################################################################   Patching Class: net.minecraft.client.audio.SoundManager$SoundSystemStarterThread
-[22:55:03] [Sound Library Loader/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Lnet/minecraft/client/audio/SoundManager;)V
-[22:55:03] [Sound Library Loader/INFO]: [STDOUT]: *************************************** Inside target method: <init>
-[22:55:03] [Sound Library Loader/INFO]: [STDOUT]: Found target method invocation for injection: <init>
-[22:55:03] [Sound Library Loader/INFO]: [STDOUT]: Patching complete!----------------------------------------------------------------------------------------
-[22:55:03] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[22:55:03] [Thread-6/INFO]: [STDOUT]: #################################################################   Patching Class: paulscode.sound.libraries.SourceLWJGLOpenAL
-[22:55:03] [Thread-6/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Ljava/nio/FloatBuffer;Ljava/nio/IntBuffer;ZZZLjava/lang/String;Lpaulscode/sound/FilenameURL;Lpaulscode/sound/SoundBuffer;FFFIFZ)V
-[22:55:03] [Thread-6/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Ljava/nio/FloatBuffer;Ljava/nio/IntBuffer;Lpaulscode/sound/Source;Lpaulscode/sound/SoundBuffer;)V
-[22:55:03] [Thread-6/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Ljava/nio/FloatBuffer;Ljavax/sound/sampled/AudioFormat;ZLjava/lang/String;FFFIF)V
-[22:55:03] [Thread-6/INFO]: [STDOUT]: ********* Method Name: cleanup Desc: ()V
-[22:55:03] [Thread-6/INFO]: [STDOUT]: ********* Method Name: changeSource Desc: (Ljava/nio/FloatBuffer;Ljava/nio/IntBuffer;ZZZLjava/lang/String;Lpaulscode/sound/FilenameURL;Lpaulscode/sound/SoundBuffer;FFFIFZ)V
-[22:55:03] [Thread-6/INFO]: [STDOUT]: ********* Method Name: incrementSoundSequence Desc: ()Z
-[22:55:03] [Thread-6/INFO]: [STDOUT]: ********* Method Name: listenerMoved Desc: ()V
-[22:55:03] [Thread-6/INFO]: [STDOUT]: ********* Method Name: setPosition Desc: (FFF)V
-[22:55:03] [Thread-6/INFO]: [STDOUT]: ********* Method Name: positionChanged Desc: ()V
-[22:55:03] [Thread-6/INFO]: [STDOUT]: ********* Method Name: checkPitch Desc: ()V
-[22:55:03] [Thread-6/INFO]: [STDOUT]: ********* Method Name: setLooping Desc: (Z)V
-[22:55:03] [Thread-6/INFO]: [STDOUT]: ********* Method Name: setAttenuation Desc: (I)V
-[22:55:03] [Thread-6/INFO]: [STDOUT]: ********* Method Name: setDistOrRoll Desc: (F)V
-[22:55:03] [Thread-6/INFO]: [STDOUT]: ********* Method Name: setVelocity Desc: (FFF)V
-[22:55:03] [Thread-6/INFO]: [STDOUT]: ********* Method Name: setPitch Desc: (F)V
-[22:55:03] [Thread-6/INFO]: [STDOUT]: ********* Method Name: play Desc: (Lpaulscode/sound/Channel;)V
-[22:55:03] [Thread-6/INFO]: [STDOUT]: *************************************** Inside target method: play
-[22:55:03] [Thread-6/INFO]: [STDOUT]: Found target method invocation for injection: play
-[22:55:03] [Thread-6/INFO]: [STDOUT]: Patching complete!----------------------------------------------------------------------------------------
-[22:55:03] [Thread-6/INFO]: Initializing LWJGL OpenAL
-[22:55:03] [Thread-6/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[22:55:03] [Thread-6/INFO]: OpenAL initialized.
-[22:55:04] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Initializing Geometric Acoustics...
-[22:55:04] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: EFX Extension recognized.
-[22:55:04] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Reverb parameters setup.
-[22:55:04] [Sound Library Loader/INFO]: Sound engine started
-[22:55:20] [Client thread/INFO]: Created: 16x16 textures-atlas
-[22:55:30] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Geometric Acoustics
-[22:55:30] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: Geometric-Acoustics-1.11 in /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/run/mods/GeometricAcoustics-1.11.jar
-[22:55:30] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: Geometric-Acoustics-1.11 in /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/run/mods/GeometricAcoustics-1.11.jar
-[22:55:30] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: Geometric-Acoustics-1.11 in /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/run/mods/GeometricAcoustics-1.11.jar
-[22:55:52] [Client thread/INFO]: SoundSystem shutting down...
-[22:55:52] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[22:55:52] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[22:55:52] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[22:55:52] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[22:55:52] [Thread-8/INFO]: OpenAL initialized.
-[22:55:52] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Initializing Geometric Acoustics...
-[22:55:52] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: EFX Extension recognized.
-[22:55:52] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Reverb parameters setup.
-[22:55:52] [Sound Library Loader/INFO]: Sound engine started
-[22:56:11] [Client thread/INFO]: Created: 512x512 textures-atlas
-[22:56:16] [Client thread/WARN]: Skipping bad option: lastServer:
-[22:56:19] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[22:56:29] [Server thread/INFO]: Starting integrated minecraft server version 1.11
-[22:56:29] [Server thread/INFO]: Generating keypair
-[22:56:34] [Server thread/INFO]: Preparing start region for level 0
-[22:56:37] [Server thread/INFO]: Preparing spawn area: 0%
-[22:56:38] [Server thread/INFO]: Preparing spawn area: 4%
-[22:56:39] [Server thread/INFO]: Preparing spawn area: 20%
-[22:56:40] [Server thread/INFO]: Preparing spawn area: 38%
-[22:56:41] [Server thread/INFO]: Preparing spawn area: 53%
-[22:56:42] [Server thread/INFO]: Preparing spawn area: 72%
-[22:56:43] [Server thread/INFO]: Preparing spawn area: 98%
-[22:56:44] [Server thread/INFO]: Changing view distance to 12, from 10
-[22:56:48] [Server thread/INFO]: Player719[local:E:42315bbb] logged in with entity id 291 at (473.6324334156101, 66.0, 514.862730134264)
-[22:56:48] [Server thread/INFO]: Player719 joined the game
-[22:56:53] [Server thread/INFO]: Saving and pausing game...
-[22:56:53] [Server thread/INFO]: Saving chunks for level 'Test_World'/Overworld
-[22:56:55] [Server thread/INFO]: Saving chunks for level 'Test_World'/Nether
-[22:56:55] [Server thread/INFO]: Saving chunks for level 'Test_World'/The End
-[22:56:56] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@7b670026[id=f835675c-e0ba-394b-82c9-8aaebeea0b9f,name=Player719,properties={},legacy=false]
+[18:07:47] [Client thread/INFO]: Setting user: Player231
+[18:07:55] [Client thread/WARN]: Skipping bad option: lastServer:
+[18:07:55] [Client thread/INFO]: LWJGL Version: 2.9.2
+[18:08:03] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Geometric Acoustics
+[18:08:03] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: Geometric-Acoustics-1.11 in /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/run/mods/GeometricAcoustics-1.11.jar
+[18:08:03] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: Geometric-Acoustics-1.11 in /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/run/mods/GeometricAcoustics-1.11.jar
+[18:08:03] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: Geometric-Acoustics-1.11 in /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/run/mods/GeometricAcoustics-1.11.jar
+[18:08:13] [Client thread/INFO]: [STDOUT]: #################################################################   Patching Class: net.minecraft.client.audio.SoundManager
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Lnet/minecraft/client/audio/SoundHandler;Lnet/minecraft/client/settings/GameSettings;)V
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: reloadSoundSystem Desc: ()V
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: loadSoundSystem Desc: ()V
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: getVolume Desc: (Lnet/minecraft/util/SoundCategory;)F
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: setVolume Desc: (Lnet/minecraft/util/SoundCategory;F)V
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: unloadSoundSystem Desc: ()V
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopAllSounds Desc: ()V
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: addListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: removeListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: updateAllSounds Desc: ()V
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: isSoundPlaying Desc: (Lnet/minecraft/client/audio/ISound;)Z
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopSound Desc: (Lnet/minecraft/client/audio/ISound;)V
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: playSound Desc: (Lnet/minecraft/client/audio/ISound;)V
+[18:08:13] [Client thread/INFO]: [STDOUT]: *************************************** Inside target method: playSound
+[18:08:13] [Client thread/INFO]: [STDOUT]: Found target method invocation for injection: setVolume
+[18:08:13] [Client thread/INFO]: [STDOUT]: Patching complete!----------------------------------------------------------------------------------------
+[18:08:13] [Client thread/INFO]: [STDOUT]: #################################################################   Patching Class: net.minecraft.client.audio.SoundManager
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Lnet/minecraft/client/audio/SoundHandler;Lnet/minecraft/client/settings/GameSettings;)V
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: reloadSoundSystem Desc: ()V
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: loadSoundSystem Desc: ()V
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: getVolume Desc: (Lnet/minecraft/util/SoundCategory;)F
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: setVolume Desc: (Lnet/minecraft/util/SoundCategory;F)V
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: unloadSoundSystem Desc: ()V
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopAllSounds Desc: ()V
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: addListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: removeListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: updateAllSounds Desc: ()V
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: isSoundPlaying Desc: (Lnet/minecraft/client/audio/ISound;)Z
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopSound Desc: (Lnet/minecraft/client/audio/ISound;)V
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: playSound Desc: (Lnet/minecraft/client/audio/ISound;)V
+[18:08:13] [Client thread/INFO]: [STDOUT]: *************************************** Inside target method: playSound
+[18:08:13] [Client thread/INFO]: [STDOUT]: Found target method invocation for injection: setVolume
+[18:08:13] [Client thread/INFO]: [STDOUT]: Patching complete!----------------------------------------------------------------------------------------
+[18:08:13] [Client thread/INFO]: [STDOUT]: #################################################################   Patching Class: net.minecraft.client.audio.SoundManager
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Lnet/minecraft/client/audio/SoundHandler;Lnet/minecraft/client/settings/GameSettings;)V
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: reloadSoundSystem Desc: ()V
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: loadSoundSystem Desc: ()V
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: getVolume Desc: (Lnet/minecraft/util/SoundCategory;)F
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: setVolume Desc: (Lnet/minecraft/util/SoundCategory;F)V
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: unloadSoundSystem Desc: ()V
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopAllSounds Desc: ()V
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: addListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: removeListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: updateAllSounds Desc: ()V
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: isSoundPlaying Desc: (Lnet/minecraft/client/audio/ISound;)Z
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopSound Desc: (Lnet/minecraft/client/audio/ISound;)V
+[18:08:13] [Client thread/INFO]: [STDOUT]: ********* Method Name: playSound Desc: (Lnet/minecraft/client/audio/ISound;)V
+[18:08:13] [Client thread/INFO]: [STDOUT]: *************************************** Inside target method: playSound
+[18:08:13] [Client thread/INFO]: [STDOUT]: Found target method invocation for injection: getClampedVolume
+[18:08:13] [Client thread/INFO]: [STDOUT]: Patching complete!----------------------------------------------------------------------------------------
+[18:08:21] [Sound Library Loader/INFO]: [STDOUT]: #################################################################   Patching Class: net.minecraft.client.audio.SoundManager$SoundSystemStarterThread
+[18:08:21] [Sound Library Loader/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Lnet/minecraft/client/audio/SoundManager;)V
+[18:08:21] [Sound Library Loader/INFO]: [STDOUT]: *************************************** Inside target method: <init>
+[18:08:21] [Sound Library Loader/INFO]: [STDOUT]: Found target method invocation for injection: <init>
+[18:08:21] [Sound Library Loader/INFO]: [STDOUT]: Patching complete!----------------------------------------------------------------------------------------
+[18:08:21] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[18:08:21] [Thread-6/INFO]: [STDOUT]: #################################################################   Patching Class: paulscode.sound.libraries.SourceLWJGLOpenAL
+[18:08:21] [Thread-6/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Ljava/nio/FloatBuffer;Ljava/nio/IntBuffer;ZZZLjava/lang/String;Lpaulscode/sound/FilenameURL;Lpaulscode/sound/SoundBuffer;FFFIFZ)V
+[18:08:21] [Thread-6/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Ljava/nio/FloatBuffer;Ljava/nio/IntBuffer;Lpaulscode/sound/Source;Lpaulscode/sound/SoundBuffer;)V
+[18:08:21] [Thread-6/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Ljava/nio/FloatBuffer;Ljavax/sound/sampled/AudioFormat;ZLjava/lang/String;FFFIF)V
+[18:08:21] [Thread-6/INFO]: [STDOUT]: ********* Method Name: cleanup Desc: ()V
+[18:08:21] [Thread-6/INFO]: [STDOUT]: ********* Method Name: changeSource Desc: (Ljava/nio/FloatBuffer;Ljava/nio/IntBuffer;ZZZLjava/lang/String;Lpaulscode/sound/FilenameURL;Lpaulscode/sound/SoundBuffer;FFFIFZ)V
+[18:08:21] [Thread-6/INFO]: [STDOUT]: ********* Method Name: incrementSoundSequence Desc: ()Z
+[18:08:21] [Thread-6/INFO]: [STDOUT]: ********* Method Name: listenerMoved Desc: ()V
+[18:08:21] [Thread-6/INFO]: [STDOUT]: ********* Method Name: setPosition Desc: (FFF)V
+[18:08:21] [Thread-6/INFO]: [STDOUT]: ********* Method Name: positionChanged Desc: ()V
+[18:08:21] [Thread-6/INFO]: [STDOUT]: ********* Method Name: checkPitch Desc: ()V
+[18:08:21] [Thread-6/INFO]: [STDOUT]: ********* Method Name: setLooping Desc: (Z)V
+[18:08:21] [Thread-6/INFO]: [STDOUT]: ********* Method Name: setAttenuation Desc: (I)V
+[18:08:21] [Thread-6/INFO]: [STDOUT]: ********* Method Name: setDistOrRoll Desc: (F)V
+[18:08:21] [Thread-6/INFO]: [STDOUT]: ********* Method Name: setVelocity Desc: (FFF)V
+[18:08:21] [Thread-6/INFO]: [STDOUT]: ********* Method Name: setPitch Desc: (F)V
+[18:08:21] [Thread-6/INFO]: [STDOUT]: ********* Method Name: play Desc: (Lpaulscode/sound/Channel;)V
+[18:08:21] [Thread-6/INFO]: [STDOUT]: *************************************** Inside target method: play
+[18:08:21] [Thread-6/INFO]: [STDOUT]: Found target method invocation for injection: play
+[18:08:21] [Thread-6/INFO]: [STDOUT]: Patching complete!----------------------------------------------------------------------------------------
+[18:08:21] [Thread-6/INFO]: Initializing LWJGL OpenAL
+[18:08:21] [Thread-6/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[18:08:21] [Thread-6/INFO]: OpenAL initialized.
+[18:08:21] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Initializing Geometric Acoustics...
+[18:08:21] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: EFX Extension recognized.
+[18:08:21] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Reverb parameters setup.
+[18:08:21] [Sound Library Loader/INFO]: Sound engine started
+[18:08:30] [Client thread/INFO]: Created: 16x16 textures-atlas
+[18:08:33] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Geometric Acoustics
+[18:08:33] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: Geometric-Acoustics-1.11 in /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/run/mods/GeometricAcoustics-1.11.jar
+[18:08:33] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: Geometric-Acoustics-1.11 in /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/run/mods/GeometricAcoustics-1.11.jar
+[18:08:33] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: Geometric-Acoustics-1.11 in /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/run/mods/GeometricAcoustics-1.11.jar
+[18:08:37] [Client thread/INFO]: SoundSystem shutting down...
+[18:08:37] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[18:08:37] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[18:08:37] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[18:08:37] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[18:08:37] [Thread-8/INFO]: OpenAL initialized.
+[18:08:37] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Initializing Geometric Acoustics...
+[18:08:37] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: EFX Extension recognized.
+[18:08:37] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Reverb parameters setup.
+[18:08:37] [Sound Library Loader/INFO]: Sound engine started
+[18:08:44] [Client thread/INFO]: Created: 512x512 textures-atlas
+[18:08:46] [Client thread/WARN]: Skipping bad option: lastServer:
+[18:08:49] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[18:09:14] [Server thread/INFO]: Starting integrated minecraft server version 1.11
+[18:09:14] [Server thread/INFO]: Generating keypair
+[18:09:16] [Server thread/INFO]: Preparing start region for level 0
+[18:09:17] [Server thread/INFO]: Preparing spawn area: 0%
+[18:09:18] [Server thread/INFO]: Preparing spawn area: 25%
+[18:09:19] [Server thread/INFO]: Preparing spawn area: 68%
+[18:09:20] [Server thread/INFO]: Changing view distance to 12, from 10
+[18:09:21] [Server thread/INFO]: Player231[local:E:35d4990c] logged in with entity id 288 at (474.0303683035827, 66.0, 514.967390461927)
+[18:09:21] [Server thread/INFO]: Player231 joined the game
+[18:09:23] [Server thread/INFO]: Saving and pausing game...
+[18:09:23] [Server thread/INFO]: Saving chunks for level 'Test_World'/Overworld
+[18:09:24] [Server thread/INFO]: Saving chunks for level 'Test_World'/Nether
+[18:09:24] [Server thread/INFO]: Saving chunks for level 'Test_World'/The End
+[18:09:25] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@68f6b590[id=0ef61a2a-d91b-37b4-a10d-af67b917d543,name=Player231,properties={},legacy=false]
 com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
 	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:79) ~[YggdrasilAuthenticationService.class:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:180) [YggdrasilMinecraftSessionService.class:?]
@@ -146,65 +142,114 @@ com.mojang.authlib.exceptions.AuthenticationException: The client has sent too m
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_221]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_221]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_221]
-[22:57:00] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 13291ms behind, skipping 265 tick(s)
-[22:57:03] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.03638034, 0.092226386, 0.15559556
-[22:57:03] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.01314911, 0.12749211, 0.37436137, 0.42688903
-[22:57:06] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.009454602, 0.123493694, 0.3655133, 0.44356045
-[22:57:07] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0012937092, 0.0830759, 0.060960036, 0.023055697
-[22:57:07] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.001552545, 0.04183221, 0.16558579, 0.27131474
-[22:57:08] [Client thread/INFO]: Warning: Clientside chunk ticking took 292 ms
-[22:57:08] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.56762797, 0.069337524, 0.060393855, 0.13943093
-[22:57:09] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0065506147, 0.02541908
-[22:57:11] [Client thread/INFO]: Warning: Clientside chunk ticking took 146 ms
-[22:57:12] [Server thread/INFO]: Saving and pausing game...
-[22:57:12] [Server thread/INFO]: Saving chunks for level 'Test_World'/Overworld
-[22:57:15] [Server thread/INFO]: Saving chunks for level 'Test_World'/Nether
-[22:57:15] [Server thread/INFO]: Saving chunks for level 'Test_World'/The End
-[22:57:15] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 11008ms behind, skipping 220 tick(s)
-[22:57:16] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 1.0, 0.7087112, 0.0972664, 0.12495491
-[22:57:16] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 4.8455613E-4, 0.03579876, 0.094978616
-[22:57:16] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 1.5243568E-4, 0.02530558, 0.019405624, 0.0015721087
-[22:57:17] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.004653549, 0.052583955, 0.041860163
-[22:57:19] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.49997222, 0.11440252, 0.07788909, 0.11391277
-[22:57:19] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.001875648, 0.057105284
-[22:57:20] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.029572465, 0.12684861, 0.08690559, 0.083993144
-[22:57:21] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.019736923, 0.12136015, 0.29009336, 0.41625643
-[22:57:21] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0095993625, 0.10949099, 0.34321737, 0.5191763
-[22:57:21] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.024546998, 0.16870996, 0.4562882, 0.4492233
-[22:57:22] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.032682776, 0.13754366, 0.3512963, 0.44841403
-[22:57:24] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.014787602, 0.11510603, 0.3679391, 0.5239474
-[22:57:24] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.022608131, 0.12574014, 0.3863008, 0.47473082
-[22:57:25] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 1.0923313E-5, 0.009200225, 0.030990578
-[22:57:27] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.029655538, 0.24692854, 0.20996328, 0.47909772
-[22:57:27] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.034796976, 0.25800228, 0.1790253, 0.48017806
-[22:57:27] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.015016279, 0.12250572, 0.3936489, 0.5215825
-[22:57:29] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.022608131, 0.1628536, 0.45566803, 0.38874304
-[22:57:29] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.03949327, 0.0018633982, 0.04637483
-[22:57:30] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.01821927, 0.15019113, 0.35691226, 0.45144096
-[22:57:30] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.016082026, 0.14757401, 0.23607585, 0.23893343
-[22:57:30] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.010131599, 0.05541315, 0.12054542
-[22:57:31] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.03450662, 0.034031857, 0.049939685
-[22:57:31] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.003329408, 0.017806107, 0.009677559, 0.0027417552
-[22:57:34] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.007891277, 0.05048499
-[22:57:34] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.018608889, 0.06282661, 0.056332156
-[22:57:34] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0073515265, 0.03299371, 0.08507301
-[22:57:34] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.034818612, 0.075659566
-[22:57:34] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.008653871, 0.038719833, 0.086309396
-[22:57:34] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.04376595
-[22:57:37] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.019878196, 0.14026819
-[22:57:39] [Server thread/INFO]: Saving and pausing game...
-[22:57:39] [Server thread/INFO]: Saving chunks for level 'Test_World'/Overworld
-[22:57:40] [Server thread/INFO]: Saving chunks for level 'Test_World'/Nether
-[22:57:40] [Server thread/INFO]: Saving chunks for level 'Test_World'/The End
-[22:57:40] [Server thread/INFO]: Stopping server
-[22:57:40] [Server thread/INFO]: Saving players
-[22:57:40] [Server thread/INFO]: Player719 lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}
-[22:57:40] [Server thread/INFO]: Player719 left the game
-[22:57:40] [Server thread/INFO]: Stopping singleplayer server as player logged out
-[22:57:40] [Server thread/INFO]: Saving worlds
-[22:57:40] [Server thread/INFO]: Saving chunks for level 'Test_World'/Overworld
-[22:57:40] [Server thread/INFO]: Saving chunks for level 'Test_World'/Nether
-[22:57:40] [Server thread/INFO]: Saving chunks for level 'Test_World'/The End
-[22:57:43] [Client thread/INFO]: Stopping!
-[22:57:43] [Client thread/INFO]: SoundSystem shutting down...
-[22:57:43] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[18:09:25] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3886ms behind, skipping 77 tick(s)
+[18:09:28] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.086389415, 0.16322342, 0.054456286
+[18:09:28] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0042035654, 0.1510785, 0.18883891, 0.28472924
+[18:09:29] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0038206822, 0.101849295, 0.1507416, 0.5002063
+[18:09:29] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0076755174, 0.106115274, 0.12894385, 0.48210108
+[18:09:30] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.020130232, 0.2716441, 0.25905526, 0.3256702
+[18:09:31] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.029862098, 0.23206729, 0.24295779, 0.335822
+[18:09:32] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 1.0, 0.38438347, 0.20134172, 0.15789348
+[18:09:32] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.02755691, 0.28687948, 0.18106183, 0.33680677
+[18:09:32] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.96579653, 0.056121692, 0.003539397, 0.0011739023
+[18:09:32] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.008105602, 0.107874356, 0.1587948, 0.48542768
+[18:09:35] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.02614557, 0.14602916, 0.16953026, 0.5077326
+[18:09:35] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0023296892, 0.09374433
+[18:09:37] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.02614557, 0.14602916, 0.16953026, 0.5077326
+[18:09:38] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.016359236
+[18:09:38] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.016064333, 0.16900901, 0.158799, 0.44842476
+[18:09:39] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.024056781, 0.21385536, 0.18302658, 0.15838683
+[18:09:39] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.035258077, 0.10439747, 0.10345315
+[18:09:41] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.030735979, 0.044929672
+[18:09:41] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.007759871
+[18:09:43] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 1.0, 0.14006011, 0.0, 0.0
+[18:09:43] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.030735979, 0.044929672
+[18:09:43] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0063515333, 0.07377143
+[18:09:44] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.033639777, 0.099860735, 0.10114468
+[18:09:44] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.023739398, 0.23197001, 0.20982333, 0.22212082
+[18:09:45] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.014350232, 0.1404089, 0.17224358, 0.45976788
+[18:09:46] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.02614557, 0.14602916, 0.18068022, 0.45777223
+[18:09:46] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.007969234, 0.10772677, 0.18778048, 0.51999784
+[18:09:46] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.025592176
+[18:09:46] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.03355562, 0.28391838, 0.16810632, 0.34765273
+[18:09:48] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 1.0, 0.41114682, 0.18255763, 0.17191662
+[18:09:49] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.007969234, 0.10772677, 0.14634772, 0.4634968
+[18:09:51] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.012549097, 0.12724873, 0.24367805, 0.540731
+[18:09:51] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.0067695086
+[18:09:52] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.96579653, 0.11855963, 0.07456875, 0.051513102
+[18:09:52] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0075811064, 0.10730672, 0.14628167, 0.48275068
+[18:09:53] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.026426619, 0.30757883, 0.25396585, 0.33350706
+[18:09:53] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 1.0, 0.34405378, 0.17359255, 0.23373556
+[18:09:55] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 1.0, 0.41114682, 0.18255763, 0.17191662
+[18:09:55] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.003193739, 0.1188398, 0.39536405, 0.31347057
+[18:09:58] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.012549097, 0.10775073, 0.14547242, 0.48797897
+[18:09:59] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.018445205, 0.3006192, 0.35295153, 0.27058706
+[18:10:01] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.012549097, 0.10775073, 0.14547242, 0.48797897
+[18:10:02] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.008078328, 0.10784485, 0.14666194, 0.47570464
+[18:10:02] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.012471485, 0.14523718, 0.1672463, 0.46725342
+[18:10:02] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.019131418, 0.20060365, 0.18685977, 0.23181687
+[18:10:03] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.03616615, 0.11304059, 0.09080534
+[18:10:05] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.007961, 0.05405046, 0.045066226
+[18:10:05] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.026041117, 0.012316915, 0.0
+[18:10:06] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0077050347, 0.046957504, 0.05179936
+[18:10:06] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.004259511, 0.103657834, 0.1091985, 0.08849394
+[18:10:07] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 1.0, 0.23568147, 0.12655269, 0.038832206
+[18:10:10] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 1.0, 0.25509995, 0.117484346, 0.046370015
+[18:10:10] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.908711, 0.12470035, 0.017198734, 0.040818192
+[18:10:11] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.054762002, 0.14344174, 0.119329356, 0.0734813
+[18:10:12] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.006856725, 0.035793956, 0.062944144
+[18:10:12] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0022230449, 0.043136626
+[18:10:12] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.006080162, 0.019926526, 0.049128346
+[18:10:12] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.009281385, 0.04355144
+[18:10:12] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.00509516, 0.010714009, 0.054371797
+[18:10:12] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.005475371, 0.021177972, 0.052554134
+[18:10:12] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.003274934, 0.021448566, 0.055179883
+[18:10:12] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0024913163, 0.023852577, 0.05062394
+[18:10:12] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0068816687, 0.03114984, 0.08271439
+[18:10:12] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.011322555, 0.02248462, 0.03305748
+[18:10:12] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0012769192, 0.041450776
+[18:10:12] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.008904068, 0.043815866
+[18:10:12] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0027906513, 0.04394494
+[18:10:12] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.002302791, 0.043236118
+[18:10:14] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.049767055, 0.13518962, 0.0736186
+[18:10:15] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0017107363, 0.05986397, 0.06822775
+[18:10:15] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.003936269, 0.06250384
+[18:10:16] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.019017246, 0.030840972, 0.06488356
+[18:10:16] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.016466616, 0.031936854, 0.054018635
+[18:10:16] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.042084873, 0.087681875, 0.11164647
+[18:10:17] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 1.0, 0.30519304, 0.13019873, 0.07184507
+[18:10:17] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0036049716, 0.02328468, 0.06886313, 0.049358614
+[18:10:18] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.014185239, 0.045293927, 0.11368452
+[18:10:18] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.009289071, 0.06735473, 0.10711147
+[18:10:18] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0050831214, 0.115248665, 0.16756456, 0.09392477
+[18:10:19] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.03750728, 0.17563754, 0.3011569, 0.33815104
+[18:10:19] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 1.4039688E-5, 0.09802114, 0.16832519, 0.35976437
+[18:10:20] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.05734882, 0.20850457, 0.22191846, 0.36991718
+[18:10:20] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.027991073, 0.27556306, 0.30823544, 0.3033965
+[18:10:21] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.033728093, 0.2735634, 0.25100768, 0.3160701
+[18:10:22] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.011869943, 0.19730131, 0.24693558, 0.34259197
+[18:10:23] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 6.2788604E-5, 0.09369397, 0.15556844, 0.32459497
+[18:10:23] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.49773622, 0.14238554, 0.14875317, 0.38021833
+[18:10:24] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.008342542
+[18:10:25] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 2.7123952E-4, 1.7132137E-4, 2.9784349E-5
+[18:10:25] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.1318952, 0.21280521, 0.44146362
+[18:10:26] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.96579653, 0.18472186, 0.15919422, 0.26318857
+[18:10:26] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.0, 0.0, 0.0, 0.012423869
+[18:10:26] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 2.2929162E-4, 0.09358794, 0.15623046, 0.32345426
+[18:10:28] [Thread-8/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Gain: 0.49773622, 0.14238554, 0.15045784, 0.33109516
+[18:10:28] [Server thread/INFO]: Saving and pausing game...
+[18:10:28] [Server thread/INFO]: Saving chunks for level 'Test_World'/Overworld
+[18:10:28] [Server thread/INFO]: Saving chunks for level 'Test_World'/Nether
+[18:10:28] [Server thread/INFO]: Saving chunks for level 'Test_World'/The End
+[18:10:29] [Server thread/INFO]: Stopping server
+[18:10:29] [Server thread/INFO]: Saving players
+[18:10:29] [Server thread/INFO]: Player231 lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}
+[18:10:29] [Server thread/INFO]: Player231 left the game
+[18:10:29] [Server thread/INFO]: Stopping singleplayer server as player logged out
+[18:10:29] [Server thread/INFO]: Saving worlds
+[18:10:29] [Server thread/INFO]: Saving chunks for level 'Test_World'/Overworld
+[18:10:29] [Server thread/INFO]: Saving chunks for level 'Test_World'/Nether
+[18:10:29] [Server thread/INFO]: Saving chunks for level 'Test_World'/The End
+[18:10:32] [Client thread/INFO]: Stopping!
+[18:10:32] [Client thread/INFO]: SoundSystem shutting down...
+[18:10:33] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
