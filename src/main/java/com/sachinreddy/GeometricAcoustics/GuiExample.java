@@ -16,9 +16,21 @@ public class GuiExample extends Gui
 	private int verticalWidth = 6, verticalHeight = 245;
 	private final int verticalPadding = 60, horizontalPadding = 30;
 	
+	int color = Integer.parseInt("FFFFFF", 16);
+	//
 	String guiText = "Geometric Acoustics Analytics:";
 	String xAxisLabel = "Blocks";
 	String yAxisLabel = "Energy";
+	//
+	String lastSound_Label = "Last Sound Source: ";
+	String soundId_Label = "ID: ";
+	String coordinates_Label = "Coordinates: ";
+	String category_Label = "Category: ";
+	String name_Label = "Name: ";
+	String data_Label = "Data: ";
+	//
+	int rightTablePosition;
+	int rightTableOffset;
 	
 	@SubscribeEvent
 	public void renderOverlay(RenderGameOverlayEvent event) {
@@ -27,9 +39,10 @@ public class GuiExample extends Gui
             ScaledResolution scaled = new ScaledResolution(mc);
 			int width = scaled.getScaledWidth();
 			int height = scaled.getScaledHeight();
+			int titlePosition = height/15;
 			
 			// Draw debug title
-			drawCenteredString(mc.fontRendererObj, guiText, width/2, height/15, Integer.parseInt("FFFFFF", 16));
+			drawCenteredString(mc.fontRendererObj, guiText, width/2, titlePosition, color);
             
 			// Draw graph axis
 			if (verticalHeight > height)
@@ -43,20 +56,27 @@ public class GuiExample extends Gui
             drawTexturedModalRect(horizontalPadding + 2, height - verticalPadding, 0, 0, horizontalWidth, horizontalHeight);
             
             // Draw axis labels
- 			drawCenteredString(mc.fontRendererObj, xAxisLabel, horizontalPadding + 30, height - verticalPadding + 10, Integer.parseInt("FFFFFF", 16));
+ 			drawCenteredString(mc.fontRendererObj, xAxisLabel, horizontalPadding + 30, height - verticalPadding + 10, color);
  			GL11.glPushMatrix();
  			GL11.glTranslatef(horizontalPadding - 12, height - verticalPadding - 30, 0);
  			GL11.glRotatef(-90f, 0, 0, 1);
- 			drawCenteredString(mc.fontRendererObj, yAxisLabel, 0, 0, Integer.parseInt("FFFFFF", 16));
+ 			drawCenteredString(mc.fontRendererObj, yAxisLabel, 0, 0, color);
  			GL11.glPopMatrix();
  			
  			// Draw sound information
- 			// -> Source ID
- 			// -> Coordinates
- 			// -> Sound Category
- 			// -> Sound Name
- 			// -> (Quantifiable data)
+ 			rightTablePosition = width - 175;
+ 			rightTableOffset = 10;
+ 			drawString(mc.fontRendererObj, lastSound_Label, rightTablePosition, titlePosition + 30, color);
+ 			drawString(mc.fontRendererObj, soundId_Label, rightTablePosition + rightTableOffset, titlePosition + 50, color);
+ 			drawString(mc.fontRendererObj, coordinates_Label, rightTablePosition + rightTableOffset, titlePosition + 70, color);
+ 			drawString(mc.fontRendererObj, category_Label, rightTablePosition + rightTableOffset, titlePosition + 90, color);
+ 			drawString(mc.fontRendererObj, name_Label, rightTablePosition + rightTableOffset, titlePosition + 110, color);
+ 			drawString(mc.fontRendererObj, data_Label, rightTablePosition + rightTableOffset, titlePosition + 130, color);
         }
     }
+	
+	public void updateOverlay() {
+		
+	}
 	
 }
