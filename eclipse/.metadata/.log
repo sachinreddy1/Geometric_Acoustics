@@ -36984,3 +36984,6 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 
 !ENTRY org.eclipse.debug.core 4 120 2019-10-07 22:42:49.487
 !MESSAGE Variable references empty selection: ${project_loc}
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-10-08 20:38:17.054
+!MESSAGE The workspace will exit with unsaved changes in this session.

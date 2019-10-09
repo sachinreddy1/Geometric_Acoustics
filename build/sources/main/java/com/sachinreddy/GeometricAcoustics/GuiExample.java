@@ -17,6 +17,8 @@ public class GuiExample extends Gui
 	private final int verticalPadding = 60, horizontalPadding = 30;
 	
 	String guiText = "Geometric Acoustics Analytics:";
+	String xAxisLabel = "Blocks";
+	String yAxisLabel = "Energy";
 	
 	@SubscribeEvent
 	public void renderOverlay(RenderGameOverlayEvent event) {
@@ -25,6 +27,9 @@ public class GuiExample extends Gui
             ScaledResolution scaled = new ScaledResolution(mc);
 			int width = scaled.getScaledWidth();
 			int height = scaled.getScaledHeight();
+			
+			// Draw debug title
+			drawCenteredString(mc.fontRendererObj, guiText, width/2, height/15, Integer.parseInt("FFFFFF", 16));
             
 			// Draw graph axis
 			if (verticalHeight > height)
@@ -36,8 +41,10 @@ public class GuiExample extends Gui
 			drawTexturedModalRect(horizontalPadding, height - verticalPadding - verticalHeight + 2, 0, 0, verticalWidth, verticalHeight);
 			mc.renderEngine.bindTexture(horizontalBar);
             drawTexturedModalRect(horizontalPadding + 2, height - verticalPadding, 0, 0, horizontalWidth, horizontalHeight);
-            //
-			drawCenteredString(mc.fontRendererObj, guiText, width/2, height/15, Integer.parseInt("FFFFFF", 16));
+            
+            // Draw axis labels
+ 			drawCenteredString(mc.fontRendererObj, xAxisLabel, horizontalPadding + 30, height - verticalPadding + 10, Integer.parseInt("FFFFFF", 16));
+ 			drawCenteredString(mc.fontRendererObj, yAxisLabel, horizontalPadding, height - verticalPadding - 30, Integer.parseInt("FFFFFF", 16));
         }
     }
 	
