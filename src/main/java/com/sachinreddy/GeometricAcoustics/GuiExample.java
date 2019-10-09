@@ -4,19 +4,23 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
 import net.minecraft.client.gui.ScaledResolution;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.SoundCategory;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import org.lwjgl.opengl.GL11;
+import net.minecraft.util.SoundCategory;
 
 public class GuiExample extends Gui
 {
+	public static Minecraft mc;
+	//
 	private final ResourceLocation horizontalBar = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/horizontalaxis.png");
 	private final ResourceLocation verticalBar = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/verticalaxis.png");
 	private int horizontalWidth = 245, horizontalHeight = 6;
 	private int verticalWidth = 6, verticalHeight = 245;
 	private final int verticalPadding = 60, horizontalPadding = 30;
-	
-	int color = Integer.parseInt("FFFFFF", 16);
+	//
+	static int color = Integer.parseInt("FFFFFF", 16);
 	//
 	String guiText = "Geometric Acoustics Analytics:";
 	String xAxisLabel = "Blocks";
@@ -29,17 +33,24 @@ public class GuiExample extends Gui
 	String name_Label = "Name: ";
 	String data_Label = "Data: ";
 	//
-	int rightTablePosition;
-	int rightTableOffset;
+	static int rightTablePosition;
+	static int rightTableOffset;
+	static int titlePosition;
+	//
+	static String id_data = "";
+	static String coordinates_data = "";
+	static String soundCategory_data = "";
+	static String name_data = "";
+	
 	
 	@SubscribeEvent
 	public void renderOverlay(RenderGameOverlayEvent event) {
         if (event.getType() == RenderGameOverlayEvent.ElementType.TEXT) {
-            Minecraft mc = Minecraft.getMinecraft();
+            mc = Minecraft.getMinecraft();
             ScaledResolution scaled = new ScaledResolution(mc);
 			int width = scaled.getScaledWidth();
 			int height = scaled.getScaledHeight();
-			int titlePosition = height/15;
+			titlePosition = height/15;
 			
 			// Draw debug title
 			drawCenteredString(mc.fontRendererObj, guiText, width/2, titlePosition, color);
@@ -67,16 +78,25 @@ public class GuiExample extends Gui
  			rightTablePosition = width - 175;
  			rightTableOffset = 10;
  			drawString(mc.fontRendererObj, lastSound_Label, rightTablePosition, titlePosition + 30, color);
- 			drawString(mc.fontRendererObj, soundId_Label, rightTablePosition + rightTableOffset, titlePosition + 50, color);
- 			drawString(mc.fontRendererObj, coordinates_Label, rightTablePosition + rightTableOffset, titlePosition + 70, color);
- 			drawString(mc.fontRendererObj, category_Label, rightTablePosition + rightTableOffset, titlePosition + 90, color);
- 			drawString(mc.fontRendererObj, name_Label, rightTablePosition + rightTableOffset, titlePosition + 110, color);
- 			drawString(mc.fontRendererObj, data_Label, rightTablePosition + rightTableOffset, titlePosition + 130, color);
+ 			drawString(mc.fontRendererObj, soundId_Label, rightTablePosition + rightTableOffset, titlePosition + 45, color);
+ 			drawString(mc.fontRendererObj, coordinates_Label, rightTablePosition + rightTableOffset, titlePosition + 60, color);
+ 			drawString(mc.fontRendererObj, category_Label, rightTablePosition + rightTableOffset, titlePosition + 87, color);
+ 			drawString(mc.fontRendererObj, name_Label, rightTablePosition + rightTableOffset, titlePosition + 102, color);
+ 			drawString(mc.fontRendererObj, data_Label, rightTablePosition + rightTableOffset, titlePosition + 129, color);
+ 			
+ 			// Updating sound information
+ 			drawString(mc.fontRendererObj, id_data, rightTablePosition + rightTableOffset + 17, titlePosition + 45, color);
+ 			drawString(mc.fontRendererObj, coordinates_data, rightTablePosition + rightTableOffset + 10, titlePosition + 72, color);
+ 			drawString(mc.fontRendererObj, soundCategory_data.toString(), rightTablePosition + rightTableOffset + 55, titlePosition + 87, color);
+ 			drawString(mc.fontRendererObj, name_data, rightTablePosition + rightTableOffset + 10, titlePosition + 114, color);
         }
     }
 	
-	public void updateOverlay() {
-		
+	public static void updateOverlay(float posX, float posY, float posZ, int sourceID, SoundCategory sc, String name) {
+		id_data = Integer.toString(sourceID);
+		coordinates_data = "(" + posX + ", " + posY + ", " + posZ + ")";
+		soundCategory_data = sc.toString();
+		name_data = name;
 	}
 	
 }
