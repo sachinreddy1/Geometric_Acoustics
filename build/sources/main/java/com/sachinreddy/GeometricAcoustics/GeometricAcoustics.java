@@ -179,7 +179,7 @@ public class GeometricAcoustics
 
 		float[] bounceReflectivityRatio = new float[rayBounces];
 		float totalRays = 1.0f / (numRays * rayBounces);
-		
+				
 		// ---------------------- //
 		
 		for (int i = 0; i < numRays; i++)
@@ -252,9 +252,11 @@ public class GeometricAcoustics
 					if (newRayHit == null)
 						break;
 				}
+				
+				GAGuiOverlay.updateHistogram(lastHitBlock, totalRayDistance);
 			}
 		}
-		
+				
 		bounceReflectivityRatio[0] = (float)bounceReflectivityRatio[0] / (float)numRays;
 		bounceReflectivityRatio[1] = (float)bounceReflectivityRatio[1] / (float)numRays;
 		bounceReflectivityRatio[2] = (float)bounceReflectivityRatio[2] / (float)numRays;

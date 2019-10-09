@@ -179,7 +179,7 @@ public class GeometricAcoustics
 
 		float[] bounceReflectivityRatio = new float[rayBounces];
 		float totalRays = 1.0f / (numRays * rayBounces);
-		
+				
 		// ---------------------- //
 		
 		for (int i = 0; i < numRays; i++)
@@ -249,17 +249,14 @@ public class GeometricAcoustics
 					sendGain2 += cross2 * energyTowardsPlayer * 10.0f * totalRays;
 					sendGain3 += cross3 * energyTowardsPlayer * 10.0f * totalRays;
 					
-					// Update Histogram
-					// Params:
-					// -> array of all blocks hit
-					// -> array of reflection delays?
-					
 					if (newRayHit == null)
 						break;
 				}
+				
+				GAGuiOverlay.updateHistogram(lastHitBlock, totalRayDistance);
 			}
 		}
-		
+				
 		bounceReflectivityRatio[0] = (float)bounceReflectivityRatio[0] / (float)numRays;
 		bounceReflectivityRatio[1] = (float)bounceReflectivityRatio[1] / (float)numRays;
 		bounceReflectivityRatio[2] = (float)bounceReflectivityRatio[2] / (float)numRays;

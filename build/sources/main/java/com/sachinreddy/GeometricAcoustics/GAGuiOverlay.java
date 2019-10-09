@@ -1,10 +1,13 @@
 package com.sachinreddy.GeometricAcoustics;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.SoundType;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
 import net.minecraft.client.gui.ScaledResolution;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundCategory;
+import net.minecraft.util.math.BlockPos;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import org.lwjgl.opengl.GL11;
@@ -92,6 +95,8 @@ public class GAGuiOverlay extends Gui
         }
     }
 	
+	// ------------------------------------------------- //
+	
 	public static void updateOverlay(float posX, float posY, float posZ, int sourceID, SoundCategory sc, String name) {
 		id_data = Integer.toString(sourceID);
 		coordinates_data = "(" + (int)posX + ", " + (int)posY + ", " + (int)posZ + ")";
@@ -99,8 +104,42 @@ public class GAGuiOverlay extends Gui
 		name_data = name.substring(name.lastIndexOf(".") + 1);
 	}
 	
-	public static void updateHistogram() {
-		
+	public static void updateHistogram(Int3 lastHitBlock, float totalRayDistance) {
+		String type = getSoundType(lastHitBlock);
+		System.out.println(type + ": " + totalRayDistance);
+	}
+	
+	// ------------------------------------------------- //
+	
+	private static String getSoundType(Int3 blockPos)
+	{
+		Block block = mc.theWorld.getBlockState(new BlockPos(blockPos.x, blockPos.y, blockPos.z)).getBlock();
+		SoundType soundType = block.getSoundType();
+				
+		if (soundType == SoundType.STONE)
+			return "STONE";
+		else if (soundType == SoundType.WOOD)
+			return "WOOD";
+		else if (soundType == SoundType.GROUND)
+			return "GROUND";
+		else if (soundType == SoundType.PLANT)
+			return "PLANT";
+		else if (soundType == SoundType.METAL)
+			return "METAL";
+		else if (soundType == SoundType.GLASS)
+			return "GLASS";
+		else if (soundType == SoundType.CLOTH)
+			return "CLOTH";
+		else if (soundType == SoundType.SAND)	
+			return "SAND";
+		else if (soundType == SoundType.SNOW)
+			return "SNOW";
+		else if (soundType == SoundType.LADDER)
+			return "LADDER";
+		else if (soundType == SoundType.ANVIL)
+			return "ANVIL";
+				
+		return "UNKNOWN";
 	}
 	
 }
