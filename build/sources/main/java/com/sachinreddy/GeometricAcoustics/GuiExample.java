@@ -6,7 +6,7 @@ import net.minecraft.client.gui.ScaledResolution;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-//import com.sachinreddy.GeometricAcousticsMod;
+import org.lwjgl.opengl.GL11;
 
 public class GuiExample extends Gui
 {
@@ -44,7 +44,11 @@ public class GuiExample extends Gui
             
             // Draw axis labels
  			drawCenteredString(mc.fontRendererObj, xAxisLabel, horizontalPadding + 30, height - verticalPadding + 10, Integer.parseInt("FFFFFF", 16));
- 			drawCenteredString(mc.fontRendererObj, yAxisLabel, horizontalPadding, height - verticalPadding - 30, Integer.parseInt("FFFFFF", 16));
+ 			GL11.glPushMatrix();
+ 			GL11.glTranslatef(horizontalPadding - 12, height - verticalPadding - 30, 0);
+ 			GL11.glRotatef(-90f, 0, 0, 1);
+ 			drawCenteredString(mc.fontRendererObj, yAxisLabel, 0, 0, Integer.parseInt("FFFFFF", 16));
+ 			GL11.glPopMatrix();
         }
     }
 	
