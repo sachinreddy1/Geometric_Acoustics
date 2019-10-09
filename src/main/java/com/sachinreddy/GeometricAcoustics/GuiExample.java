@@ -49,6 +49,13 @@ public class GuiExample extends Gui
  			GL11.glRotatef(-90f, 0, 0, 1);
  			drawCenteredString(mc.fontRendererObj, yAxisLabel, 0, 0, Integer.parseInt("FFFFFF", 16));
  			GL11.glPopMatrix();
+ 			
+ 			// Draw sound information
+ 			// -> Source ID
+ 			// -> Coordinates
+ 			// -> Sound Category
+ 			// -> Sound Name
+ 			// -> (Quantifiable data)
         }
     }
 	

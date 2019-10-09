@@ -127,7 +127,7 @@ public class GeometricAcoustics
 	
 	public static void onPlaySound(float posX, float posY, float posZ, int sourceID)
 	{
-		//log("[SOUND PLAYED]: Source ID: " + sourceID + " | (" + posX + ", " + posY + ", " + posZ + ") | Sound category: " + lastSoundCategory.toString() + " | Sound name: " + lastSoundName);
+//		log("[SOUND PLAYED]: Source ID: " + sourceID + " | (" + posX + ", " + posY + ", " + posZ + ") | Sound category: " + lastSoundCategory.toString() + " | Sound name: " + lastSoundName);
 		calculateEnvironment(posX, posY, posZ, sourceID);
 //		testReverb(sourceID);
 	}
@@ -270,7 +270,7 @@ public class GeometricAcoustics
 		
 		// ---------------------- //
 		
-		log("Gain: " + sendGain0 + ", " + sendGain1 + ", " + sendGain2 + ", " + sendGain3);
+//		log("Gain: " + sendGain0 + ", " + sendGain1 + ", " + sendGain2 + ", " + sendGain3);
 		setEnvironment(sourceID, sendGain0, sendGain1, sendGain2, sendGain3);
 	}
 	
