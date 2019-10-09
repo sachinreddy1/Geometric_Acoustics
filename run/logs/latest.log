@@ -1,126 +1,123 @@
-[00:18:40] [Client thread/INFO]: Setting user: Player434
-[00:18:47] [Client thread/WARN]: Skipping bad option: lastServer:
-[00:18:47] [Client thread/INFO]: LWJGL Version: 2.9.2
-[00:18:53] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Geometric Acoustics
-[00:18:53] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: Geometric-Acoustics-1.11 in /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/run/mods/GeometricAcoustics-1.11.jar
-[00:18:53] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: Geometric-Acoustics-1.11 in /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/run/mods/GeometricAcoustics-1.11.jar
-[00:18:53] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: Geometric-Acoustics-1.11 in /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/run/mods/GeometricAcoustics-1.11.jar
-[00:18:53] [Client thread/INFO]: [STDOUT]: #################################################################   Patching Class: net.minecraft.client.audio.SoundManager
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Lnet/minecraft/client/audio/SoundHandler;Lnet/minecraft/client/settings/GameSettings;)V
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: reloadSoundSystem Desc: ()V
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: loadSoundSystem Desc: ()V
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: getVolume Desc: (Lnet/minecraft/util/SoundCategory;)F
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: setVolume Desc: (Lnet/minecraft/util/SoundCategory;F)V
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: unloadSoundSystem Desc: ()V
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopAllSounds Desc: ()V
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: addListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: removeListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: updateAllSounds Desc: ()V
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: isSoundPlaying Desc: (Lnet/minecraft/client/audio/ISound;)Z
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopSound Desc: (Lnet/minecraft/client/audio/ISound;)V
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: playSound Desc: (Lnet/minecraft/client/audio/ISound;)V
-[00:18:53] [Client thread/INFO]: [STDOUT]: *************************************** Inside target method: playSound
-[00:18:53] [Client thread/INFO]: [STDOUT]: Found target method invocation for injection: setVolume
-[00:18:53] [Client thread/INFO]: [STDOUT]: Patching complete!----------------------------------------------------------------------------------------
-[00:18:53] [Client thread/INFO]: [STDOUT]: #################################################################   Patching Class: net.minecraft.client.audio.SoundManager
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Lnet/minecraft/client/audio/SoundHandler;Lnet/minecraft/client/settings/GameSettings;)V
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: reloadSoundSystem Desc: ()V
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: loadSoundSystem Desc: ()V
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: getVolume Desc: (Lnet/minecraft/util/SoundCategory;)F
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: setVolume Desc: (Lnet/minecraft/util/SoundCategory;F)V
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: unloadSoundSystem Desc: ()V
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopAllSounds Desc: ()V
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: addListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: removeListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: updateAllSounds Desc: ()V
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: isSoundPlaying Desc: (Lnet/minecraft/client/audio/ISound;)Z
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopSound Desc: (Lnet/minecraft/client/audio/ISound;)V
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: playSound Desc: (Lnet/minecraft/client/audio/ISound;)V
-[00:18:53] [Client thread/INFO]: [STDOUT]: *************************************** Inside target method: playSound
-[00:18:53] [Client thread/INFO]: [STDOUT]: Found target method invocation for injection: setVolume
-[00:18:53] [Client thread/INFO]: [STDOUT]: Patching complete!----------------------------------------------------------------------------------------
-[00:18:53] [Client thread/INFO]: [STDOUT]: #################################################################   Patching Class: net.minecraft.client.audio.SoundManager
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Lnet/minecraft/client/audio/SoundHandler;Lnet/minecraft/client/settings/GameSettings;)V
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: reloadSoundSystem Desc: ()V
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: loadSoundSystem Desc: ()V
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: getVolume Desc: (Lnet/minecraft/util/SoundCategory;)F
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: setVolume Desc: (Lnet/minecraft/util/SoundCategory;F)V
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: unloadSoundSystem Desc: ()V
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopAllSounds Desc: ()V
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: addListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: removeListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: updateAllSounds Desc: ()V
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: isSoundPlaying Desc: (Lnet/minecraft/client/audio/ISound;)Z
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopSound Desc: (Lnet/minecraft/client/audio/ISound;)V
-[00:18:53] [Client thread/INFO]: [STDOUT]: ********* Method Name: playSound Desc: (Lnet/minecraft/client/audio/ISound;)V
-[00:18:53] [Client thread/INFO]: [STDOUT]: *************************************** Inside target method: playSound
-[00:18:53] [Client thread/INFO]: [STDOUT]: Found target method invocation for injection: getClampedVolume
-[00:18:53] [Client thread/INFO]: [STDOUT]: Patching complete!----------------------------------------------------------------------------------------
-[00:18:57] [Sound Library Loader/INFO]: [STDOUT]: #################################################################   Patching Class: net.minecraft.client.audio.SoundManager$SoundSystemStarterThread
-[00:18:57] [Sound Library Loader/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Lnet/minecraft/client/audio/SoundManager;)V
-[00:18:57] [Sound Library Loader/INFO]: [STDOUT]: *************************************** Inside target method: <init>
-[00:18:57] [Sound Library Loader/INFO]: [STDOUT]: Found target method invocation for injection: <init>
-[00:18:57] [Sound Library Loader/INFO]: [STDOUT]: Patching complete!----------------------------------------------------------------------------------------
-[00:18:57] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[00:18:57] [Thread-6/INFO]: [STDOUT]: #################################################################   Patching Class: paulscode.sound.libraries.SourceLWJGLOpenAL
-[00:18:57] [Thread-6/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Ljava/nio/FloatBuffer;Ljava/nio/IntBuffer;ZZZLjava/lang/String;Lpaulscode/sound/FilenameURL;Lpaulscode/sound/SoundBuffer;FFFIFZ)V
-[00:18:57] [Thread-6/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Ljava/nio/FloatBuffer;Ljava/nio/IntBuffer;Lpaulscode/sound/Source;Lpaulscode/sound/SoundBuffer;)V
-[00:18:57] [Thread-6/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Ljava/nio/FloatBuffer;Ljavax/sound/sampled/AudioFormat;ZLjava/lang/String;FFFIF)V
-[00:18:57] [Thread-6/INFO]: [STDOUT]: ********* Method Name: cleanup Desc: ()V
-[00:18:57] [Thread-6/INFO]: [STDOUT]: ********* Method Name: changeSource Desc: (Ljava/nio/FloatBuffer;Ljava/nio/IntBuffer;ZZZLjava/lang/String;Lpaulscode/sound/FilenameURL;Lpaulscode/sound/SoundBuffer;FFFIFZ)V
-[00:18:57] [Thread-6/INFO]: [STDOUT]: ********* Method Name: incrementSoundSequence Desc: ()Z
-[00:18:57] [Thread-6/INFO]: [STDOUT]: ********* Method Name: listenerMoved Desc: ()V
-[00:18:57] [Thread-6/INFO]: [STDOUT]: ********* Method Name: setPosition Desc: (FFF)V
-[00:18:57] [Thread-6/INFO]: [STDOUT]: ********* Method Name: positionChanged Desc: ()V
-[00:18:57] [Thread-6/INFO]: [STDOUT]: ********* Method Name: checkPitch Desc: ()V
-[00:18:57] [Thread-6/INFO]: [STDOUT]: ********* Method Name: setLooping Desc: (Z)V
-[00:18:57] [Thread-6/INFO]: [STDOUT]: ********* Method Name: setAttenuation Desc: (I)V
-[00:18:57] [Thread-6/INFO]: [STDOUT]: ********* Method Name: setDistOrRoll Desc: (F)V
-[00:18:57] [Thread-6/INFO]: [STDOUT]: ********* Method Name: setVelocity Desc: (FFF)V
-[00:18:57] [Thread-6/INFO]: [STDOUT]: ********* Method Name: setPitch Desc: (F)V
-[00:18:57] [Thread-6/INFO]: [STDOUT]: ********* Method Name: play Desc: (Lpaulscode/sound/Channel;)V
-[00:18:57] [Thread-6/INFO]: [STDOUT]: *************************************** Inside target method: play
-[00:18:57] [Thread-6/INFO]: [STDOUT]: Found target method invocation for injection: play
-[00:18:57] [Thread-6/INFO]: [STDOUT]: Patching complete!----------------------------------------------------------------------------------------
-[00:18:57] [Thread-6/INFO]: Initializing LWJGL OpenAL
-[00:18:57] [Thread-6/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[00:18:57] [Thread-6/INFO]: OpenAL initialized.
-[00:18:58] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Initializing Geometric Acoustics...
-[00:18:58] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: EFX Extension recognized.
-[00:18:58] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Reverb parameters setup.
-[00:18:58] [Sound Library Loader/INFO]: Sound engine started
-[00:19:02] [Client thread/INFO]: Created: 16x16 textures-atlas
-[00:19:05] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Geometric Acoustics
-[00:19:05] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: Geometric-Acoustics-1.11 in /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/run/mods/GeometricAcoustics-1.11.jar
-[00:19:05] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: Geometric-Acoustics-1.11 in /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/run/mods/GeometricAcoustics-1.11.jar
-[00:19:05] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: Geometric-Acoustics-1.11 in /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/run/mods/GeometricAcoustics-1.11.jar
-[00:19:08] [Client thread/INFO]: SoundSystem shutting down...
-[00:19:08] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[00:19:08] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[00:19:08] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[00:19:08] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[00:19:08] [Thread-8/INFO]: OpenAL initialized.
-[00:19:08] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Initializing Geometric Acoustics...
-[00:19:08] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: EFX Extension recognized.
-[00:19:08] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Reverb parameters setup.
-[00:19:08] [Sound Library Loader/INFO]: Sound engine started
-[00:19:12] [Client thread/INFO]: Created: 512x512 textures-atlas
-[00:19:13] [Client thread/WARN]: Skipping bad option: lastServer:
-[00:19:15] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[00:19:18] [Server thread/INFO]: Starting integrated minecraft server version 1.11
-[00:19:18] [Server thread/INFO]: Generating keypair
-[00:19:19] [Server thread/INFO]: Preparing start region for level 0
-[00:19:20] [Server thread/INFO]: Preparing spawn area: 3%
-[00:19:21] [Server thread/INFO]: Preparing spawn area: 47%
-[00:19:22] [Server thread/INFO]: Changing view distance to 12, from 10
-[00:19:24] [Server thread/INFO]: Player434[local:E:1ca57777] logged in with entity id 298 at (474.3662944084665, 66.0, 522.3381510598849)
-[00:19:24] [Server thread/INFO]: Player434 joined the game
-[00:19:25] [Server thread/INFO]: Saving and pausing game...
-[00:19:25] [Server thread/INFO]: Saving chunks for level 'Test_World'/Overworld
-[00:19:26] [Server thread/INFO]: Saving chunks for level 'Test_World'/Nether
-[00:19:26] [Server thread/INFO]: Saving chunks for level 'Test_World'/The End
-[00:19:26] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2085ms behind, skipping 41 tick(s)
-[00:19:26] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@323022b1[id=fd09468e-08e7-31aa-bab7-195a6ef31320,name=Player434,properties={},legacy=false]
+[11:40:26] [Client thread/INFO]: Setting user: Player582
+[11:40:32] [Client thread/WARN]: Skipping bad option: lastServer:
+[11:40:32] [Client thread/INFO]: LWJGL Version: 2.9.2
+[11:40:37] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Geometric Acoustics
+[11:40:37] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: Geometric-Acoustics-1.11 in /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/run/mods/GeometricAcoustics-1.11.jar
+[11:40:37] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: Geometric-Acoustics-1.11 in /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/run/mods/GeometricAcoustics-1.11.jar
+[11:40:37] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: Geometric-Acoustics-1.11 in /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/run/mods/GeometricAcoustics-1.11.jar
+[11:40:38] [Client thread/INFO]: [STDOUT]: #################################################################   Patching Class: net.minecraft.client.audio.SoundManager
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Lnet/minecraft/client/audio/SoundHandler;Lnet/minecraft/client/settings/GameSettings;)V
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: reloadSoundSystem Desc: ()V
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: loadSoundSystem Desc: ()V
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: getVolume Desc: (Lnet/minecraft/util/SoundCategory;)F
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: setVolume Desc: (Lnet/minecraft/util/SoundCategory;F)V
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: unloadSoundSystem Desc: ()V
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopAllSounds Desc: ()V
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: addListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: removeListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: updateAllSounds Desc: ()V
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: isSoundPlaying Desc: (Lnet/minecraft/client/audio/ISound;)Z
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopSound Desc: (Lnet/minecraft/client/audio/ISound;)V
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: playSound Desc: (Lnet/minecraft/client/audio/ISound;)V
+[11:40:38] [Client thread/INFO]: [STDOUT]: *************************************** Inside target method: playSound
+[11:40:38] [Client thread/INFO]: [STDOUT]: Found target method invocation for injection: setVolume
+[11:40:38] [Client thread/INFO]: [STDOUT]: Patching complete!----------------------------------------------------------------------------------------
+[11:40:38] [Client thread/INFO]: [STDOUT]: #################################################################   Patching Class: net.minecraft.client.audio.SoundManager
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Lnet/minecraft/client/audio/SoundHandler;Lnet/minecraft/client/settings/GameSettings;)V
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: reloadSoundSystem Desc: ()V
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: loadSoundSystem Desc: ()V
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: getVolume Desc: (Lnet/minecraft/util/SoundCategory;)F
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: setVolume Desc: (Lnet/minecraft/util/SoundCategory;F)V
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: unloadSoundSystem Desc: ()V
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopAllSounds Desc: ()V
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: addListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: removeListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: updateAllSounds Desc: ()V
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: isSoundPlaying Desc: (Lnet/minecraft/client/audio/ISound;)Z
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopSound Desc: (Lnet/minecraft/client/audio/ISound;)V
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: playSound Desc: (Lnet/minecraft/client/audio/ISound;)V
+[11:40:38] [Client thread/INFO]: [STDOUT]: *************************************** Inside target method: playSound
+[11:40:38] [Client thread/INFO]: [STDOUT]: Found target method invocation for injection: setVolume
+[11:40:38] [Client thread/INFO]: [STDOUT]: Patching complete!----------------------------------------------------------------------------------------
+[11:40:38] [Client thread/INFO]: [STDOUT]: #################################################################   Patching Class: net.minecraft.client.audio.SoundManager
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Lnet/minecraft/client/audio/SoundHandler;Lnet/minecraft/client/settings/GameSettings;)V
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: reloadSoundSystem Desc: ()V
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: loadSoundSystem Desc: ()V
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: getVolume Desc: (Lnet/minecraft/util/SoundCategory;)F
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: setVolume Desc: (Lnet/minecraft/util/SoundCategory;F)V
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: unloadSoundSystem Desc: ()V
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopAllSounds Desc: ()V
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: addListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: removeListener Desc: (Lnet/minecraft/client/audio/ISoundEventListener;)V
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: updateAllSounds Desc: ()V
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: isSoundPlaying Desc: (Lnet/minecraft/client/audio/ISound;)Z
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: stopSound Desc: (Lnet/minecraft/client/audio/ISound;)V
+[11:40:38] [Client thread/INFO]: [STDOUT]: ********* Method Name: playSound Desc: (Lnet/minecraft/client/audio/ISound;)V
+[11:40:38] [Client thread/INFO]: [STDOUT]: *************************************** Inside target method: playSound
+[11:40:38] [Client thread/INFO]: [STDOUT]: Found target method invocation for injection: getClampedVolume
+[11:40:38] [Client thread/INFO]: [STDOUT]: Patching complete!----------------------------------------------------------------------------------------
+[11:40:40] [Sound Library Loader/INFO]: [STDOUT]: #################################################################   Patching Class: net.minecraft.client.audio.SoundManager$SoundSystemStarterThread
+[11:40:40] [Sound Library Loader/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Lnet/minecraft/client/audio/SoundManager;)V
+[11:40:40] [Sound Library Loader/INFO]: [STDOUT]: *************************************** Inside target method: <init>
+[11:40:40] [Sound Library Loader/INFO]: [STDOUT]: Found target method invocation for injection: <init>
+[11:40:40] [Sound Library Loader/INFO]: [STDOUT]: Patching complete!----------------------------------------------------------------------------------------
+[11:40:40] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[11:40:40] [Thread-6/INFO]: [STDOUT]: #################################################################   Patching Class: paulscode.sound.libraries.SourceLWJGLOpenAL
+[11:40:40] [Thread-6/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Ljava/nio/FloatBuffer;Ljava/nio/IntBuffer;ZZZLjava/lang/String;Lpaulscode/sound/FilenameURL;Lpaulscode/sound/SoundBuffer;FFFIFZ)V
+[11:40:40] [Thread-6/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Ljava/nio/FloatBuffer;Ljava/nio/IntBuffer;Lpaulscode/sound/Source;Lpaulscode/sound/SoundBuffer;)V
+[11:40:40] [Thread-6/INFO]: [STDOUT]: ********* Method Name: <init> Desc: (Ljava/nio/FloatBuffer;Ljavax/sound/sampled/AudioFormat;ZLjava/lang/String;FFFIF)V
+[11:40:40] [Thread-6/INFO]: [STDOUT]: ********* Method Name: cleanup Desc: ()V
+[11:40:40] [Thread-6/INFO]: [STDOUT]: ********* Method Name: changeSource Desc: (Ljava/nio/FloatBuffer;Ljava/nio/IntBuffer;ZZZLjava/lang/String;Lpaulscode/sound/FilenameURL;Lpaulscode/sound/SoundBuffer;FFFIFZ)V
+[11:40:40] [Thread-6/INFO]: [STDOUT]: ********* Method Name: incrementSoundSequence Desc: ()Z
+[11:40:40] [Thread-6/INFO]: [STDOUT]: ********* Method Name: listenerMoved Desc: ()V
+[11:40:40] [Thread-6/INFO]: [STDOUT]: ********* Method Name: setPosition Desc: (FFF)V
+[11:40:40] [Thread-6/INFO]: [STDOUT]: ********* Method Name: positionChanged Desc: ()V
+[11:40:40] [Thread-6/INFO]: [STDOUT]: ********* Method Name: checkPitch Desc: ()V
+[11:40:40] [Thread-6/INFO]: [STDOUT]: ********* Method Name: setLooping Desc: (Z)V
+[11:40:40] [Thread-6/INFO]: [STDOUT]: ********* Method Name: setAttenuation Desc: (I)V
+[11:40:40] [Thread-6/INFO]: [STDOUT]: ********* Method Name: setDistOrRoll Desc: (F)V
+[11:40:40] [Thread-6/INFO]: [STDOUT]: ********* Method Name: setVelocity Desc: (FFF)V
+[11:40:40] [Thread-6/INFO]: [STDOUT]: ********* Method Name: setPitch Desc: (F)V
+[11:40:40] [Thread-6/INFO]: [STDOUT]: ********* Method Name: play Desc: (Lpaulscode/sound/Channel;)V
+[11:40:40] [Thread-6/INFO]: [STDOUT]: *************************************** Inside target method: play
+[11:40:40] [Thread-6/INFO]: [STDOUT]: Found target method invocation for injection: play
+[11:40:40] [Thread-6/INFO]: [STDOUT]: Patching complete!----------------------------------------------------------------------------------------
+[11:40:40] [Thread-6/INFO]: Initializing LWJGL OpenAL
+[11:40:40] [Thread-6/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[11:40:41] [Thread-6/INFO]: OpenAL initialized.
+[11:40:41] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Initializing Geometric Acoustics...
+[11:40:41] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: EFX Extension recognized.
+[11:40:41] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Reverb parameters setup.
+[11:40:41] [Sound Library Loader/INFO]: Sound engine started
+[11:40:45] [Client thread/INFO]: Created: 16x16 textures-atlas
+[11:40:47] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Geometric Acoustics
+[11:40:47] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: Geometric-Acoustics-1.11 in /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/run/mods/GeometricAcoustics-1.11.jar
+[11:40:47] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: Geometric-Acoustics-1.11 in /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/run/mods/GeometricAcoustics-1.11.jar
+[11:40:47] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: Geometric-Acoustics-1.11 in /Users/sachinreddy/Documents/Project_Files/MinecraftMods/Geometric-Acoustics-1.11/run/mods/GeometricAcoustics-1.11.jar
+[11:40:49] [Client thread/INFO]: SoundSystem shutting down...
+[11:40:50] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[11:40:50] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[11:40:50] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[11:40:50] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[11:40:50] [Thread-8/INFO]: OpenAL initialized.
+[11:40:50] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Initializing Geometric Acoustics...
+[11:40:50] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: EFX Extension recognized.
+[11:40:50] [Sound Library Loader/INFO]: [STDOUT]: [GEOMETRIC ACOUSTICS]: Reverb parameters setup.
+[11:40:50] [Sound Library Loader/INFO]: Sound engine started
+[11:40:54] [Client thread/INFO]: Created: 512x512 textures-atlas
+[11:40:55] [Client thread/WARN]: Skipping bad option: lastServer:
+[11:40:57] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[11:41:00] [Server thread/INFO]: Starting integrated minecraft server version 1.11
+[11:41:00] [Server thread/INFO]: Generating keypair
+[11:41:01] [Server thread/INFO]: Preparing start region for level 0
+[11:41:02] [Server thread/INFO]: Preparing spawn area: 0%
+[11:41:03] [Server thread/INFO]: Preparing spawn area: 44%
+[11:41:04] [Server thread/INFO]: Changing view distance to 12, from 10
+[11:41:05] [Server thread/INFO]: Player582[local:E:b2dd611d] logged in with entity id 291 at (474.2216952125899, 66.0, 522.6533271275637)
+[11:41:05] [Server thread/INFO]: Player582 joined the game
+[11:41:07] [Server thread/INFO]: Saving and pausing game...
+[11:41:07] [Server thread/INFO]: Saving chunks for level 'Test_World'/Overworld
+[11:41:07] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@7b4b79b6[id=5d36a45e-9473-37e3-8760-623ba7be7a5c,name=Player582,properties={},legacy=false]
 com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
 	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:79) ~[YggdrasilAuthenticationService.class:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:180) [YggdrasilMinecraftSessionService.class:?]
@@ -142,39 +139,22 @@ com.mojang.authlib.exceptions.AuthenticationException: The client has sent too m
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_221]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_221]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_221]
-[00:20:27] [Server thread/INFO]: Saving and pausing game...
-[00:20:27] [Server thread/INFO]: Saving chunks for level 'Test_World'/Overworld
-[00:20:27] [Server thread/INFO]: Saving chunks for level 'Test_World'/Nether
-[00:20:27] [Server thread/INFO]: Saving chunks for level 'Test_World'/The End
-[00:20:41] [Server thread/INFO]: Saving and pausing game...
-[00:20:41] [Server thread/INFO]: Saving chunks for level 'Test_World'/Overworld
-[00:20:41] [Server thread/INFO]: Saving chunks for level 'Test_World'/Nether
-[00:20:41] [Server thread/INFO]: Saving chunks for level 'Test_World'/The End
-[00:20:58] [Server thread/INFO]: Saving and pausing game...
-[00:20:58] [Server thread/INFO]: Saving chunks for level 'Test_World'/Overworld
-[00:20:58] [Server thread/INFO]: Saving chunks for level 'Test_World'/Nether
-[00:20:58] [Server thread/INFO]: Saving chunks for level 'Test_World'/The End
-[00:21:36] [Server thread/INFO]: Saving and pausing game...
-[00:21:36] [Server thread/INFO]: Saving chunks for level 'Test_World'/Overworld
-[00:21:37] [Server thread/INFO]: Saving chunks for level 'Test_World'/Nether
-[00:21:37] [Server thread/INFO]: Saving chunks for level 'Test_World'/The End
-[00:22:44] [Server thread/INFO]: Saving and pausing game...
-[00:22:44] [Server thread/INFO]: Saving chunks for level 'Test_World'/Overworld
-[00:22:44] [Server thread/INFO]: Saving chunks for level 'Test_World'/Nether
-[00:22:44] [Server thread/INFO]: Saving chunks for level 'Test_World'/The End
-[00:22:53] [Server thread/INFO]: Saving and pausing game...
-[00:22:53] [Server thread/INFO]: Saving chunks for level 'Test_World'/Overworld
-[00:22:53] [Server thread/INFO]: Saving chunks for level 'Test_World'/Nether
-[00:22:53] [Server thread/INFO]: Saving chunks for level 'Test_World'/The End
-[00:22:54] [Server thread/INFO]: Stopping server
-[00:22:54] [Server thread/INFO]: Saving players
-[00:22:54] [Server thread/INFO]: Player434 lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}
-[00:22:54] [Server thread/INFO]: Player434 left the game
-[00:22:54] [Server thread/INFO]: Stopping singleplayer server as player logged out
-[00:22:54] [Server thread/INFO]: Saving worlds
-[00:22:54] [Server thread/INFO]: Saving chunks for level 'Test_World'/Overworld
-[00:22:54] [Server thread/INFO]: Saving chunks for level 'Test_World'/Nether
-[00:22:54] [Server thread/INFO]: Saving chunks for level 'Test_World'/The End
-[00:22:57] [Client thread/INFO]: Stopping!
-[00:22:57] [Client thread/INFO]: SoundSystem shutting down...
-[00:22:57] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[11:41:07] [Server thread/INFO]: Saving chunks for level 'Test_World'/Nether
+[11:41:07] [Server thread/INFO]: Saving chunks for level 'Test_World'/The End
+[11:41:09] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2518ms behind, skipping 50 tick(s)
+[12:05:22] [Server thread/INFO]: Saving and pausing game...
+[12:05:22] [Server thread/INFO]: Saving chunks for level 'Test_World'/Overworld
+[12:05:22] [Server thread/INFO]: Saving chunks for level 'Test_World'/Nether
+[12:05:22] [Server thread/INFO]: Saving chunks for level 'Test_World'/The End
+[12:05:23] [Server thread/INFO]: Stopping server
+[12:05:23] [Server thread/INFO]: Saving players
+[12:05:23] [Server thread/INFO]: Player582 lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}
+[12:05:23] [Server thread/INFO]: Player582 left the game
+[12:05:23] [Server thread/INFO]: Stopping singleplayer server as player logged out
+[12:05:23] [Server thread/INFO]: Saving worlds
+[12:05:23] [Server thread/INFO]: Saving chunks for level 'Test_World'/Overworld
+[12:05:23] [Server thread/INFO]: Saving chunks for level 'Test_World'/Nether
+[12:05:23] [Server thread/INFO]: Saving chunks for level 'Test_World'/The End
+[12:05:25] [Client thread/INFO]: Stopping!
+[12:05:25] [Client thread/INFO]: SoundSystem shutting down...
+[12:05:25] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

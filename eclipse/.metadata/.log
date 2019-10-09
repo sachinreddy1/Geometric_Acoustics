@@ -37025,3 +37025,22 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 
 !ENTRY org.eclipse.debug.core 4 120 2019-10-08 23:13:06.093
 !MESSAGE Variable references empty selection: ${project_loc}
+!SESSION 2019-10-09 10:54:22.503 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/sachinreddy/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/sachinreddy/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2019-10-09 10:54:32.106
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.egit.core 1 0 2019-10-09 10:54:32.196
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.debug.core 4 120 2019-10-09 11:02:55.554
+!MESSAGE Variable references empty selection: ${project_loc}
+
+!ENTRY org.eclipse.debug.core 4 120 2019-10-09 11:40:15.040
+!MESSAGE Variable references empty selection: ${project_loc}

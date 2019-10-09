@@ -129,7 +129,7 @@ public class GeometricAcoustics
 	{
 //		log("[SOUND PLAYED]: Source ID: " + sourceID + " | (" + posX + ", " + posY + ", " + posZ + ") | Sound category: " + lastSoundCategory.toString() + " | Sound name: " + lastSoundName);
 		calculateEnvironment(posX, posY, posZ, sourceID);
-		GuiExample.updateOverlay(posX, posY, posZ, sourceID, lastSoundCategory, lastSoundName);
+		GAGuiOverlay.updateOverlay(posX, posY, posZ, sourceID, lastSoundCategory, lastSoundName);
 //		testReverb(sourceID);
 	}
 	

@@ -129,7 +129,7 @@ public class GeometricAcoustics
 	{
 //		log("[SOUND PLAYED]: Source ID: " + sourceID + " | (" + posX + ", " + posY + ", " + posZ + ") | Sound category: " + lastSoundCategory.toString() + " | Sound name: " + lastSoundName);
 		calculateEnvironment(posX, posY, posZ, sourceID);
-		GuiExample.updateOverlay(posX, posY, posZ, sourceID, lastSoundCategory, lastSoundName);
+		GAGuiOverlay.updateOverlay(posX, posY, posZ, sourceID, lastSoundCategory, lastSoundName);
 //		testReverb(sourceID);
 	}
 	
@@ -248,6 +248,11 @@ public class GeometricAcoustics
 					sendGain1 += cross1 * energyTowardsPlayer * 10.0f * totalRays;
 					sendGain2 += cross2 * energyTowardsPlayer * 10.0f * totalRays;
 					sendGain3 += cross3 * energyTowardsPlayer * 10.0f * totalRays;
+					
+					// Update Histogram
+					// Params:
+					// -> array of all blocks hit
+					// -> array of reflection delays?
 					
 					if (newRayHit == null)
 						break;

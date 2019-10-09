@@ -78,7 +78,7 @@ public class GeometricAcousticsCore implements IClassTransformer
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event)
 	{
-		MinecraftForge.EVENT_BUS.register(new GuiExample());
+		MinecraftForge.EVENT_BUS.register(new GAGuiOverlay());
 		proxy.postInit(event);
 	}
 	
