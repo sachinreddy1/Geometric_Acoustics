@@ -36,7 +36,7 @@ public class GAGuiOverlay extends Gui
 	static String name_data = "";
 	// ------------------ //
 	static int[] raySoundTypes = new int[GeometricAcousticsCore.Config.environmentCalculationRays];
-	static float[] rayDistances = new float[GeometricAcousticsCore.Config.environmentCalculationRays];
+	static float[] histogramData = new float[GeometricAcousticsCore.Config.environmentCalculationRays];
 	
 	@SubscribeEvent
 	public void renderOverlay(RenderGameOverlayEvent event) {
@@ -63,22 +63,22 @@ public class GAGuiOverlay extends Gui
 	// ------------------------------------------------- //
 	
 	public void renderHistogram(RenderGameOverlayEvent event) {
-		ResourceLocation histogramBlock = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/blocks/histogramBlock.png");
+		ResourceLocation histogramBlock = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/histogram.png");
 		
 		if (event.getType() == RenderGameOverlayEvent.ElementType.TEXT) {
 			int histOffestX = axisWidth / GeometricAcousticsCore.Config.environmentCalculationRays;
  			
  			for (int i = 0; i < GeometricAcousticsCore.Config.environmentCalculationRays; i++) {
-	 			int histOffestY = height - verticalPadding - (int)rayDistances[i];
-	 			float r = ((raySoundTypes[i]>>16)&0xFF)/255;
-	 			float b = ((raySoundTypes[i])&0xFF)/255;
-	 			float g = ((raySoundTypes[i]>>8)&0xFF)/255;
+	 			int histOffestY = height - verticalPadding - (int)histogramData[i];
+	 			float r = (float)((raySoundTypes[i]>>16)&0xFF)/255f;
+	 			float b = (float)((raySoundTypes[i])&0xFF)/255f;
+	 			float g = (float)((raySoundTypes[i]>>8)&0xFF)/255f;
  				
  				GL11.glPushMatrix();
  	 			{
 	 				GL11.glColor3f(r, g, b);
 	 				mc.renderEngine.bindTexture(histogramBlock);
-					drawTexturedModalRect(horizontalPadding + 4 + histOffestX * i, histOffestY + 2, 0, 0, histOffestX, (int)rayDistances[i]);
+					drawTexturedModalRect(horizontalPadding + 4 + histOffestX * i, histOffestY + 2, 0, 0, histOffestX, (int)histogramData[i]);
  	 			}
  	 			GL11.glPopMatrix();
  			}
@@ -171,12 +171,12 @@ public class GAGuiOverlay extends Gui
 		name_data = name.substring(name.lastIndexOf(".") + 1);
 	}
 	
-	public static void updateHistogram(Int3 lastHitBlock, float totalRayDistance, int index) {
+	public static void updateHistogram(Int3 lastHitBlock, float data, int index) {
 		raySoundTypes[index] = getSoundResource(lastHitBlock);
-		if (totalRayDistance > axisHeight)
-			rayDistances[index] = axisHeight;
+		if (data > axisHeight)
+			histogramData[index] = axisHeight;
 		else
-			rayDistances[index] = totalRayDistance;
+			histogramData[index] = data;
 	}
 	
 	// ------------------------------------------------- //
@@ -199,7 +199,7 @@ public class GAGuiOverlay extends Gui
 		else if (soundType == SoundType.GLASS)
 			return Integer.parseInt("dcdcdc", 16);
 		else if (soundType == SoundType.CLOTH)
-			return Integer.parseInt("ffff00", 16);
+			return Integer.parseInt("ffc04d", 16);
 		else if (soundType == SoundType.SAND)	
 			return Integer.parseInt("f4a460", 16);
 		else if (soundType == SoundType.SNOW)
