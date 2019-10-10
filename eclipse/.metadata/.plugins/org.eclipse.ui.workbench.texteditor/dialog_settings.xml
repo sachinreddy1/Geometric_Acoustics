@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="GeometricAcou"/>
+		<item key="selection" value="lastSoundResource"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="lastSoundResource"/>
+			<item value="color"/>
+			<item value="clear"/>
+			<item value="release"/>
+			<item value="rect"/>
+			<item value="horizontalWidth"/>
+			<item value="GuiExample"/>
 			<item value="geometricacou"/>
 			<item value="processResources&#x0A;{&#x0A;    // this will ensure that this task is redone when the versions change.&#x0A;    inputs.property &quot;version&quot;, project.version&#x0A;    inputs.property &quot;mcversion&quot;, project.minecraft.version&#x0A;&#x0A;    // replace stuff in mcmod.info, nothing else&#x0A;    from(sourceSets.main.resources.srcDirs) {&#x0A;        include &apos;mcmod.info&apos;&#x0A;                &#x0A;        // replace version and mcversion&#x0A;        expand &apos;version&apos;:project.version, &apos;mcversion&apos;:project.minecraft.version&#x0A;    }&#x0A;        &#x0A;    // copy everything else, thats not the mcmod.info&#x0A;    from(sourceSets.main.resources.srcDirs) {&#x0A;        exclude &apos;mcmod.info&apos;&#x0A;    }&#x0A;}"/>
 			<item value="InputEvent"/>
@@ -16,13 +23,6 @@
 			<item value="import net.minecraft.util.ResourceLocation;&#x0A;"/>
 			<item value="import net.minecraft.client.gui.Gui;&#x0A;"/>
 			<item value="import net.minecraft.client.Minecraft;import net.minecraft.client.gui.Gui;&#x0A;"/>
-			<item value="import net.minecraft.client.Minecraft;"/>
-			<item value="rcpTotalRays"/>
-			<item value="environmentCalculationRays"/>
-			<item value="environmentEvaluationRays"/>
-			<item value="categoryGeneral"/>
-			<item value="setReverbParameters"/>
-			<item value="directFilter0"/>
 		</list>
 		<list key="replacehistory">
 			<item value="totalRays"/>

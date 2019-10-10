@@ -23,7 +23,7 @@ public class GAGuiOverlay extends Gui
 	// ------------------ //
 	private int width;
 	private int height;
-	private int axisHeight;
+	static int axisHeight;
 	private int axisWidth;
 	// ------------------ //
 	static int rightTablePosition;
@@ -35,9 +35,8 @@ public class GAGuiOverlay extends Gui
 	static String soundCategory_data = "";
 	static String name_data = "";
 	// ------------------ //
-	static ResourceLocation lastSoundResource;
-	static float lastRayDistance;
-	static int lastIndex;
+	static int[] raySoundTypes = new int[GeometricAcousticsCore.Config.environmentCalculationRays];
+	static float[] rayDistances = new float[GeometricAcousticsCore.Config.environmentCalculationRays];
 	
 	@SubscribeEvent
 	public void renderOverlay(RenderGameOverlayEvent event) {
@@ -50,26 +49,39 @@ public class GAGuiOverlay extends Gui
 			
 			// Draw axis
 			renderAxis(event);
- 			// Updating histogram
-//			renderHistogram(event);
+			// Updating histogram
+			renderHistogram(event);
 			// Updating sound information
 			renderSoundData(event);
 			// Draw axis labels
 			renderAxisLabels(event);
 			// Draw sound information
 			renderSoundInfoLabels(event);
-			
         }
     }
 	
 	// ------------------------------------------------- //
 	
 	public void renderHistogram(RenderGameOverlayEvent event) {
+		ResourceLocation histogramBlock = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/blocks/histogramBlock.png");
+		
 		if (event.getType() == RenderGameOverlayEvent.ElementType.TEXT) {
 			int histOffestX = axisWidth / GeometricAcousticsCore.Config.environmentCalculationRays;
- 			int histOffestY = height - verticalPadding - (int)lastRayDistance;
- 			mc.renderEngine.bindTexture(lastSoundResource);
-			drawTexturedModalRect(horizontalPadding + histOffestX * lastIndex, histOffestY, 0, 0, horizontalPadding + histOffestX * (lastIndex + 1), (int)lastRayDistance);
+ 			
+ 			for (int i = 0; i < GeometricAcousticsCore.Config.environmentCalculationRays; i++) {
+	 			int histOffestY = height - verticalPadding - (int)rayDistances[i];
+	 			float r = ((raySoundTypes[i]>>16)&0xFF)/255;
+	 			float b = ((raySoundTypes[i])&0xFF)/255;
+	 			float g = ((raySoundTypes[i]>>8)&0xFF)/255;
+ 				
+ 				GL11.glPushMatrix();
+ 	 			{
+	 				GL11.glColor3f(r, g, b);
+	 				mc.renderEngine.bindTexture(histogramBlock);
+					drawTexturedModalRect(horizontalPadding + 4 + histOffestX * i, histOffestY + 2, 0, 0, histOffestX, (int)rayDistances[i]);
+ 	 			}
+ 	 			GL11.glPopMatrix();
+ 			}
 		}
 	}
 	
@@ -145,6 +157,8 @@ public class GAGuiOverlay extends Gui
  			drawString(mc.fontRendererObj, coordinates_data, rightTablePosition + rightTableOffset + 10, titlePosition + 72, color);
  			drawString(mc.fontRendererObj, soundCategory_data, rightTablePosition + rightTableOffset + 55, titlePosition + 87, color);
  			drawString(mc.fontRendererObj, name_data, rightTablePosition + rightTableOffset + 10, titlePosition + 114, color);
+ 			//
+ 			GL11.glRecti(width/2 - 20, height/2 + 30, width/2 + 20, height/2 - 30);
         }
 	}
 	
@@ -158,54 +172,43 @@ public class GAGuiOverlay extends Gui
 	}
 	
 	public static void updateHistogram(Int3 lastHitBlock, float totalRayDistance, int index) {
-		lastSoundResource = getSoundResource(lastHitBlock);
-		lastRayDistance = totalRayDistance;
-		lastIndex = index;
+		raySoundTypes[index] = getSoundResource(lastHitBlock);
+		if (totalRayDistance > axisHeight)
+			rayDistances[index] = axisHeight;
+		else
+			rayDistances[index] = totalRayDistance;
 	}
 	
 	// ------------------------------------------------- //
 	
-	private static ResourceLocation getSoundResource(Int3 blockPos)
-	{
-		ResourceLocation anvil = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/blocks/anvil.png");
-		ResourceLocation cloth = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/blocks/cloth.png");
-		ResourceLocation glass = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/blocks/glass.png");
-		ResourceLocation ground = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/blocks/ground.png");
-		ResourceLocation ladder = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/blocks/ladder.png");
-		ResourceLocation metal = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/blocks/metal.png");
-		ResourceLocation plant = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/blocks/plant.png");
-		ResourceLocation sand = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/blocks/sand.png");
-		ResourceLocation snow = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/blocks/snow.png");
-		ResourceLocation stone = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/blocks/stone.png");
-		ResourceLocation unknown = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/blocks/unknown.png");
-		ResourceLocation wood = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/blocks/wood.png");
-		
+	private static int getSoundResource(Int3 blockPos)
+	{		
 		Block block = mc.theWorld.getBlockState(new BlockPos(blockPos.x, blockPos.y, blockPos.z)).getBlock();
 		SoundType soundType = block.getSoundType();
-				
+		
 		if (soundType == SoundType.STONE)
-			return stone;
+			return Integer.parseInt("a9a9a9", 16);
 		else if (soundType == SoundType.WOOD)
-			return wood;
+			return Integer.parseInt("deb887", 16);
 		else if (soundType == SoundType.GROUND)
-			return ground;
+			return Integer.parseInt("a5682a", 16);
 		else if (soundType == SoundType.PLANT)
-			return plant;
+			return Integer.parseInt("228b22", 16);
 		else if (soundType == SoundType.METAL)
-			return metal;
+			return Integer.parseInt("4682b4", 16);
 		else if (soundType == SoundType.GLASS)
-			return glass;
+			return Integer.parseInt("dcdcdc", 16);
 		else if (soundType == SoundType.CLOTH)
-			return cloth;
+			return Integer.parseInt("ffff00", 16);
 		else if (soundType == SoundType.SAND)	
-			return sand;
+			return Integer.parseInt("f4a460", 16);
 		else if (soundType == SoundType.SNOW)
-			return snow;
+			return Integer.parseInt("ffffff", 16);
 		else if (soundType == SoundType.LADDER)
-			return ladder;
+			return Integer.parseInt("ce954b", 16);
 		else if (soundType == SoundType.ANVIL)
-			return anvil;
+			return Integer.parseInt("1a1a1a", 16);
 				
-		return unknown;
+		return Integer.parseInt("9370db", 16);
 	}
 }
