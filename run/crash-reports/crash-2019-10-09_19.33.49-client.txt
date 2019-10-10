@@ -1,0 +1,133 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  GAFMLLoadingPlugin (GeometricAcoustics-1.11.jar)
+Contact their authors BEFORE contacting forge
+
+// Shall we play a game?
+
+Time: 10/9/19 7:33 PM
+Description: Registering texture
+
+java.lang.NullPointerException: Registering texture
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:61)
+	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:34)
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:67)
+	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:42)
+	at com.sachinreddy.GeometricAcoustics.GAGuiOverlay.renderOverlay(GAGuiOverlay.java:116)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_6_GAGuiOverlay_renderOverlay_RenderGameOverlayEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:185)
+	at net.minecraftforge.client.GuiIngameForge.renderHUDText(GuiIngameForge.java:694)
+	at net.minecraftforge.client.GuiIngameForge.renderGameOverlay(GuiIngameForge.java:171)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1142)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1138)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:405)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:26)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:61)
+	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:34)
+
+-- Resource location being registered --
+Details:
+	Resource location: ~~NULL~~
+	Texture object class: net.minecraft.client.renderer.texture.SimpleTexture
+Stacktrace:
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:67)
+	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:42)
+	at com.sachinreddy.GeometricAcoustics.GAGuiOverlay.renderOverlay(GAGuiOverlay.java:116)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_6_GAGuiOverlay_renderOverlay_RenderGameOverlayEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:185)
+	at net.minecraftforge.client.GuiIngameForge.renderHUDText(GuiIngameForge.java:694)
+	at net.minecraftforge.client.GuiIngameForge.renderGameOverlay(GuiIngameForge.java:171)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player638'/310, l='MpServer', x=8.50, y=65.00, z=8.50]]
+	Chunk stats: MultiplayerChunkCache: 0, 0
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (8,64,8), Chunk: (at 8,4,8 in 0,0; contains blocks 0,0,0 to 15,255,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 0 game time, 0 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 1 total; [EntityPlayerSP['Player638'/310, l='MpServer', x=8.50, y=65.00, z=8.50]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:456)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2772)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:426)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:26)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.11
+	Operating System: Mac OS X (x86_64) version 10.15
+	Java Version: 1.8.0_221, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 495565504 bytes (472 MB) / 1038876672 bytes (990 MB) up to 1038876672 bytes (990 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP 9.35 Powered by Forge 13.19.1.2189 4 mods loaded, 4 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.19} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{8.0.99.99} [Forge Mod Loader] (forgeSrc-1.11-13.19.1.2189.jar) 
+	UCHIJAAAA	forge{13.19.1.2189} [Minecraft Forge] (forgeSrc-1.11-13.19.1.2189.jar) 
+	UCHIJAAAA	ga{1.0} [Geometric Acoustics] (GeometricAcoustics-1.11.jar) 
+	Loaded coremods (and transformers): 
+GAFMLLoadingPlugin (GeometricAcoustics-1.11.jar)
+  com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore
+	Launched Version: 1.11
+	LWJGL: 2.9.2
+	OpenGL: Intel(R) HD Graphics 615 GL version 2.1 INTEL-14.0.69, Intel Inc.
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because ARB_framebuffer_object is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 4x Intel(R) Core(TM) m3-7Y32 CPU @ 1.10GHz

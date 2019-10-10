@@ -253,7 +253,7 @@ public class GeometricAcoustics
 						break;
 				}
 				
-				GAGuiOverlay.updateHistogram(lastHitBlock, totalRayDistance);
+				GAGuiOverlay.updateHistogram(lastHitBlock, totalRayDistance, i);
 			}
 		}
 				

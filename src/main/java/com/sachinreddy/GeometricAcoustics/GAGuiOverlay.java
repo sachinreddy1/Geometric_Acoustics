@@ -16,35 +16,52 @@ import net.minecraft.util.SoundCategory;
 public class GAGuiOverlay extends Gui
 {
 	public static Minecraft mc;
-	//
+	// ------------------ //
 	private final ResourceLocation horizontalBar = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/horizontalaxis.png");
 	private final ResourceLocation verticalBar = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/verticalaxis.png");
+	// ------------------ //
+	static final ResourceLocation anvil = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/blocks/anvil.png");
+	static final ResourceLocation cloth = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/blocks/cloth.png");
+	static final ResourceLocation glass = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/blocks/glass.png");
+	static final ResourceLocation ground = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/blocks/ground.png");
+	static final ResourceLocation ladder = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/blocks/ladder.png");
+	static final ResourceLocation metal = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/blocks/metal.png");
+	static final ResourceLocation plant = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/blocks/plant.png");
+	static final ResourceLocation sand = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/blocks/sand.png");
+	static final ResourceLocation snow = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/blocks/snow.png");
+	static final ResourceLocation stone = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/blocks/stone.png");
+	static final ResourceLocation unknown = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/blocks/unknown.png");
+	static final ResourceLocation wood = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/blocks/wood.png");
+	// ------------------ //
 	private int horizontalWidth = 245, horizontalHeight = 6;
 	private int verticalWidth = 6, verticalHeight = 245;
 	private final int verticalPadding = 60, horizontalPadding = 30;
-	//
+	// ------------------ //
+	static int rightTablePosition;
+	static int rightTableOffset;
+	static int titlePosition;
+	// ------------------ //
 	static int color = Integer.parseInt("FFFFFF", 16);
-	//
+	// ------------------ //
 	String guiText = "Geometric Acoustics Analytics:";
 	String xAxisLabel = "Blocks";
 	String yAxisLabel = "Energy";
-	//
+	// ------------------ //
 	String lastSound_Label = "Last Sound Source: ";
 	String soundId_Label = "ID: ";
 	String coordinates_Label = "Coordinates: ";
 	String category_Label = "Category: ";
 	String name_Label = "Name: ";
 	String data_Label = "Data: ";
-	//
-	static int rightTablePosition;
-	static int rightTableOffset;
-	static int titlePosition;
-	//
+	// ------------------ //
 	static String id_data = "";
 	static String coordinates_data = "";
 	static String soundCategory_data = "";
 	static String name_data = "";
-	
+	// ------------------ //
+	static ResourceLocation lastSoundResource;
+	static float lastRayDistance;
+	static int lastIndex;
 	
 	@SubscribeEvent
 	public void renderOverlay(RenderGameOverlayEvent event) {
@@ -92,6 +109,12 @@ public class GAGuiOverlay extends Gui
  			drawString(mc.fontRendererObj, coordinates_data, rightTablePosition + rightTableOffset + 10, titlePosition + 72, color);
  			drawString(mc.fontRendererObj, soundCategory_data, rightTablePosition + rightTableOffset + 55, titlePosition + 87, color);
  			drawString(mc.fontRendererObj, name_data, rightTablePosition + rightTableOffset + 10, titlePosition + 114, color);
+ 			
+ 			// Updating histogram
+// 			int histOffestX = horizontalWidth / GeometricAcousticsCore.Config.environmentCalculationRays;
+// 			int histOffestY = height - verticalPadding - (int)lastRayDistance;
+// 			mc.renderEngine.bindTexture(lastSoundResource);
+//			drawTexturedModalRect(horizontalPadding + histOffestX * lastIndex, histOffestY, 0, 0, horizontalPadding + histOffestX * (lastIndex + 1), (int)lastRayDistance);
         }
     }
 	
@@ -104,42 +127,43 @@ public class GAGuiOverlay extends Gui
 		name_data = name.substring(name.lastIndexOf(".") + 1);
 	}
 	
-	public static void updateHistogram(Int3 lastHitBlock, float totalRayDistance) {
-		String type = getSoundType(lastHitBlock);
-		System.out.println(type + ": " + totalRayDistance);
+	public static void updateHistogram(Int3 lastHitBlock, float totalRayDistance, int index) {
+		lastSoundResource = getSoundResource(lastHitBlock);
+		lastRayDistance = totalRayDistance;
+		lastIndex = index;
 	}
 	
 	// ------------------------------------------------- //
 	
-	private static String getSoundType(Int3 blockPos)
+	private static ResourceLocation getSoundResource(Int3 blockPos)
 	{
 		Block block = mc.theWorld.getBlockState(new BlockPos(blockPos.x, blockPos.y, blockPos.z)).getBlock();
 		SoundType soundType = block.getSoundType();
 				
 		if (soundType == SoundType.STONE)
-			return "STONE";
+			return stone;
 		else if (soundType == SoundType.WOOD)
-			return "WOOD";
+			return wood;
 		else if (soundType == SoundType.GROUND)
-			return "GROUND";
+			return ground;
 		else if (soundType == SoundType.PLANT)
-			return "PLANT";
+			return plant;
 		else if (soundType == SoundType.METAL)
-			return "METAL";
+			return metal;
 		else if (soundType == SoundType.GLASS)
-			return "GLASS";
+			return glass;
 		else if (soundType == SoundType.CLOTH)
-			return "CLOTH";
+			return cloth;
 		else if (soundType == SoundType.SAND)	
-			return "SAND";
+			return sand;
 		else if (soundType == SoundType.SNOW)
-			return "SNOW";
+			return snow;
 		else if (soundType == SoundType.LADDER)
-			return "LADDER";
+			return ladder;
 		else if (soundType == SoundType.ANVIL)
-			return "ANVIL";
+			return anvil;
 				
-		return "UNKNOWN";
+		return unknown;
 	}
 	
 }
