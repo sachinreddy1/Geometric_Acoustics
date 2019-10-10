@@ -19,6 +19,7 @@ public class GAGuiOverlay extends Gui
 	// ------------------ //
 	private final int verticalPadding = 60, horizontalPadding = 30;
 	static int color = Integer.parseInt("FFFFFF", 16);
+	static int headerColor = Integer.parseInt("FFC04D", 16);
 	// ------------------ //
 	private int width;
 	private int height;
@@ -46,17 +47,18 @@ public class GAGuiOverlay extends Gui
             ScaledResolution scaled = new ScaledResolution(mc);
 			width = scaled.getScaledWidth();
 			height = scaled.getScaledHeight();
-						
+			
 			// Draw axis
 			renderAxis(event);
-            // Draw axis labels
-			renderAxisLabels(event);
- 			// Draw sound information
-			renderSoundInfoLabels(event);
- 			// Updating sound information
-			renderSoundData(event);
  			// Updating histogram
-			// renderHistogram(event);
+//			renderHistogram(event);
+			// Updating sound information
+			renderSoundData(event);
+			// Draw axis labels
+			renderAxisLabels(event);
+			// Draw sound information
+			renderSoundInfoLabels(event);
+			
         }
     }
 	
@@ -85,27 +87,34 @@ public class GAGuiOverlay extends Gui
 			if (axisWidth > width)
 				axisWidth = width - (2 * horizontalPadding);
 			
-			mc.renderEngine.bindTexture(verticalBar);
-			drawTexturedModalRect(horizontalPadding, height - verticalPadding - axisHeight + 2, 0, 0, verticalWidth, axisHeight);
-			mc.renderEngine.bindTexture(horizontalBar);
-            drawTexturedModalRect(horizontalPadding + 2, height - verticalPadding, 0, 0, axisWidth, horizontalHeight);
+			GL11.glPushMatrix();
+ 			{
+ 				GL11.glColor3f(1, 1, 1);
+				mc.renderEngine.bindTexture(verticalBar);
+				drawTexturedModalRect(horizontalPadding, height - verticalPadding - axisHeight + 2, 0, 0, verticalWidth, axisHeight);
+				mc.renderEngine.bindTexture(horizontalBar);
+	            drawTexturedModalRect(horizontalPadding + 2, height - verticalPadding, 0, 0, axisWidth, horizontalHeight);
+ 			}
+ 			GL11.glPopMatrix();
         }
 	}
 	
 	public void renderAxisLabels(RenderGameOverlayEvent event) {
-		String guiText = "Geometric Acoustics Analytics:";
+		
 		String xAxisLabel = "Blocks Hit";
 		String yAxisLabel = "Ray Distance";
+		String guiText = "Geometric Acoustics Analytics:";
+		titlePosition = height/15;
 		
         if (event.getType() == RenderGameOverlayEvent.ElementType.TEXT) {
-        	titlePosition = height/15;
-			drawCenteredString(mc.fontRendererObj, guiText, width/2, titlePosition, color);
-			
+        	drawCenteredString(mc.fontRendererObj, guiText, width/2, titlePosition, color);
         	drawString(mc.fontRendererObj, xAxisLabel, horizontalPadding + 20, height - verticalPadding + 11, color);
  			GL11.glPushMatrix();
- 			GL11.glTranslatef(horizontalPadding - 12, height - verticalPadding - 20, 0);
- 			GL11.glRotatef(-90f, 0, 0, 1);
- 			drawString(mc.fontRendererObj, yAxisLabel, 0, 0, color);
+ 			{
+	 			GL11.glTranslatef(horizontalPadding - 12, height - verticalPadding - 20, 0);
+	 			GL11.glRotatef(-90f, 0, 0, 1);
+	 			drawString(mc.fontRendererObj, yAxisLabel, 0, 0, color);
+ 			}
  			GL11.glPopMatrix();
         }
 	}
@@ -121,12 +130,12 @@ public class GAGuiOverlay extends Gui
         if (event.getType() == RenderGameOverlayEvent.ElementType.TEXT) {
         	rightTablePosition = width - 175;
  			rightTableOffset = 10;
- 			drawString(mc.fontRendererObj, lastSound_Label, rightTablePosition, titlePosition + 30, color);
- 			drawString(mc.fontRendererObj, soundId_Label, rightTablePosition + rightTableOffset, titlePosition + 45, color);
- 			drawString(mc.fontRendererObj, coordinates_Label, rightTablePosition + rightTableOffset, titlePosition + 60, color);
- 			drawString(mc.fontRendererObj, category_Label, rightTablePosition + rightTableOffset, titlePosition + 87, color);
- 			drawString(mc.fontRendererObj, name_Label, rightTablePosition + rightTableOffset, titlePosition + 102, color);
- 			drawString(mc.fontRendererObj, data_Label, rightTablePosition + rightTableOffset, titlePosition + 129, color);
+ 			drawString(mc.fontRendererObj, lastSound_Label, rightTablePosition, titlePosition + 30, headerColor);
+ 			drawString(mc.fontRendererObj, soundId_Label, rightTablePosition + rightTableOffset, titlePosition + 45, headerColor);
+ 			drawString(mc.fontRendererObj, coordinates_Label, rightTablePosition + rightTableOffset, titlePosition + 60, headerColor);
+ 			drawString(mc.fontRendererObj, category_Label, rightTablePosition + rightTableOffset, titlePosition + 87, headerColor);
+ 			drawString(mc.fontRendererObj, name_Label, rightTablePosition + rightTableOffset, titlePosition + 102, headerColor);
+ 			drawString(mc.fontRendererObj, data_Label, rightTablePosition + rightTableOffset, titlePosition + 129, headerColor);
         }
 	}
 	
@@ -199,5 +208,4 @@ public class GAGuiOverlay extends Gui
 				
 		return unknown;
 	}
-	
 }
