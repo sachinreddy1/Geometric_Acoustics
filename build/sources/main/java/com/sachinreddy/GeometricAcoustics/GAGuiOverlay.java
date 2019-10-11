@@ -12,6 +12,8 @@ import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import org.lwjgl.opengl.GL11;
 import net.minecraft.util.SoundCategory;
+import org.lwjgl.input.Keyboard;
+import net.minecraftforge.fml.common.gameevent.InputEvent;
 
 public class GAGuiOverlay extends Gui
 {
@@ -37,10 +39,12 @@ public class GAGuiOverlay extends Gui
 	// ------------------ //
 	static int[] raySoundTypes = new int[GeometricAcousticsCore.Config.environmentCalculationRays];
 	static float[] histogramData = new float[GeometricAcousticsCore.Config.environmentCalculationRays];
+	// ------------------ //
+	public static boolean isDisplaying = false;
 	
 	@SubscribeEvent
 	public void renderOverlay(RenderGameOverlayEvent event) {
-        if (event.getType() == RenderGameOverlayEvent.ElementType.TEXT) {
+        if (event.getType() == RenderGameOverlayEvent.ElementType.TEXT && isDisplaying) {
             mc = Minecraft.getMinecraft();
             
             ScaledResolution scaled = new ScaledResolution(mc);
@@ -48,44 +52,41 @@ public class GAGuiOverlay extends Gui
 			height = scaled.getScaledHeight();
 			
 			// Draw axis
-			renderAxis(event);
+			renderAxis();
 			// Updating histogram
-			renderHistogram(event);
+			renderHistogram();
 			// Updating sound information
-			renderSoundData(event);
+			renderSoundData();
 			// Draw axis labels
-			renderAxisLabels(event);
+			renderAxisLabels();
 			// Draw sound information
-			renderSoundInfoLabels(event);
+			renderSoundInfoLabels();
         }
     }
 	
 	// ------------------------------------------------- //
 	
-	public void renderHistogram(RenderGameOverlayEvent event) {
+	public void renderHistogram() {
 		ResourceLocation histogramBlock = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/histogram.png");
+		int histOffestX = axisWidth / GeometricAcousticsCore.Config.environmentCalculationRays;
 		
-		if (event.getType() == RenderGameOverlayEvent.ElementType.TEXT) {
-			int histOffestX = axisWidth / GeometricAcousticsCore.Config.environmentCalculationRays;
- 			
- 			for (int i = 0; i < GeometricAcousticsCore.Config.environmentCalculationRays; i++) {
-	 			int histOffestY = height - verticalPadding - (int)histogramData[i];
-	 			float r = (float)((raySoundTypes[i]>>16)&0xFF)/255f;
-	 			float b = (float)((raySoundTypes[i])&0xFF)/255f;
-	 			float g = (float)((raySoundTypes[i]>>8)&0xFF)/255f;
- 				
- 				GL11.glPushMatrix();
- 	 			{
-	 				GL11.glColor3f(r, g, b);
-	 				mc.renderEngine.bindTexture(histogramBlock);
-					drawTexturedModalRect(horizontalPadding + 4 + histOffestX * i, histOffestY + 2, 0, 0, histOffestX, (int)histogramData[i]);
- 	 			}
- 	 			GL11.glPopMatrix();
+		for (int i = 0; i < GeometricAcousticsCore.Config.environmentCalculationRays; i++) {
+ 			int histOffestY = height - verticalPadding - (int)histogramData[i];
+ 			float r = (float)((raySoundTypes[i]>>16)&0xFF)/255f;
+ 			float b = (float)((raySoundTypes[i])&0xFF)/255f;
+ 			float g = (float)((raySoundTypes[i]>>8)&0xFF)/255f;
+			
+			GL11.glPushMatrix();
+ 			{
+ 				GL11.glColor3f(r, g, b);
+ 				mc.renderEngine.bindTexture(histogramBlock);
+				drawTexturedModalRect(horizontalPadding + 4 + histOffestX * i, histOffestY + 2, 0, 0, histOffestX, (int)histogramData[i]);
  			}
+ 			GL11.glPopMatrix();
 		}
 	}
 	
-	public void renderAxis(RenderGameOverlayEvent event) {
+	public void renderAxis() {
 		ResourceLocation horizontalBar = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/horizontalaxis.png");
 		ResourceLocation verticalBar = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/verticalaxis.png");
 		int horizontalHeight = 6;
@@ -93,73 +94,61 @@ public class GAGuiOverlay extends Gui
 		axisWidth = 245;
 		axisHeight = 245;
 		
-        if (event.getType() == RenderGameOverlayEvent.ElementType.TEXT) {
-			if (axisHeight > height)
-				axisHeight = height - (2 * verticalPadding);
-			if (axisWidth > width)
-				axisWidth = width - (2 * horizontalPadding);
-			
-			GL11.glPushMatrix();
- 			{
- 				GL11.glColor3f(1, 1, 1);
-				mc.renderEngine.bindTexture(verticalBar);
-				drawTexturedModalRect(horizontalPadding, height - verticalPadding - axisHeight + 2, 0, 0, verticalWidth, axisHeight);
-				mc.renderEngine.bindTexture(horizontalBar);
-	            drawTexturedModalRect(horizontalPadding + 2, height - verticalPadding, 0, 0, axisWidth, horizontalHeight);
- 			}
- 			GL11.glPopMatrix();
-        }
+		if (axisHeight > height)
+			axisHeight = height - (2 * verticalPadding);
+		if (axisWidth > width)
+			axisWidth = width - (2 * horizontalPadding);
+		
+		GL11.glPushMatrix();
+		{
+			GL11.glColor3f(1, 1, 1);
+			mc.renderEngine.bindTexture(verticalBar);
+			drawTexturedModalRect(horizontalPadding, height - verticalPadding - axisHeight + 2, 0, 0, verticalWidth, axisHeight);
+			mc.renderEngine.bindTexture(horizontalBar);
+            drawTexturedModalRect(horizontalPadding + 2, height - verticalPadding, 0, 0, axisWidth, horizontalHeight);
+		}
+		GL11.glPopMatrix();
 	}
 	
-	public void renderAxisLabels(RenderGameOverlayEvent event) {
+	public void renderAxisLabels() {
 		
 		String xAxisLabel = "Blocks Hit";
 		String yAxisLabel = "Ray Distance";
 		String guiText = "Geometric Acoustics Analytics:";
 		titlePosition = height/15;
 		
-        if (event.getType() == RenderGameOverlayEvent.ElementType.TEXT) {
-        	drawCenteredString(mc.fontRendererObj, guiText, width/2, titlePosition, color);
-        	drawString(mc.fontRendererObj, xAxisLabel, horizontalPadding + 20, height - verticalPadding + 11, color);
- 			GL11.glPushMatrix();
- 			{
-	 			GL11.glTranslatef(horizontalPadding - 12, height - verticalPadding - 20, 0);
-	 			GL11.glRotatef(-90f, 0, 0, 1);
-	 			drawString(mc.fontRendererObj, yAxisLabel, 0, 0, color);
- 			}
- 			GL11.glPopMatrix();
-        }
+    	drawCenteredString(mc.fontRendererObj, guiText, width/2, titlePosition, color);
+    	drawString(mc.fontRendererObj, xAxisLabel, horizontalPadding + 20, height - verticalPadding + 11, color);
+		GL11.glPushMatrix();
+		{
+ 			GL11.glTranslatef(horizontalPadding - 12, height - verticalPadding - 20, 0);
+ 			GL11.glRotatef(-90f, 0, 0, 1);
+ 			drawString(mc.fontRendererObj, yAxisLabel, 0, 0, color);
+		}
+		GL11.glPopMatrix();
 	}
 	
-	public void renderSoundInfoLabels(RenderGameOverlayEvent event) {
+	public void renderSoundInfoLabels() {
 		String lastSound_Label = "Last Sound Source: ";
 		String soundId_Label = "ID: ";
 		String coordinates_Label = "Coordinates: ";
 		String category_Label = "Category: ";
 		String name_Label = "Name: ";
-		String data_Label = "Data: ";
 		
-        if (event.getType() == RenderGameOverlayEvent.ElementType.TEXT) {
-        	rightTablePosition = width - 175;
- 			rightTableOffset = 10;
- 			drawString(mc.fontRendererObj, lastSound_Label, rightTablePosition, titlePosition + 30, headerColor);
- 			drawString(mc.fontRendererObj, soundId_Label, rightTablePosition + rightTableOffset, titlePosition + 45, headerColor);
- 			drawString(mc.fontRendererObj, coordinates_Label, rightTablePosition + rightTableOffset, titlePosition + 60, headerColor);
- 			drawString(mc.fontRendererObj, category_Label, rightTablePosition + rightTableOffset, titlePosition + 87, headerColor);
- 			drawString(mc.fontRendererObj, name_Label, rightTablePosition + rightTableOffset, titlePosition + 102, headerColor);
- 			drawString(mc.fontRendererObj, data_Label, rightTablePosition + rightTableOffset, titlePosition + 129, headerColor);
-        }
+    	rightTablePosition = width - 175;
+		rightTableOffset = 10;
+		drawString(mc.fontRendererObj, lastSound_Label, rightTablePosition, titlePosition + 30, headerColor);
+		drawString(mc.fontRendererObj, soundId_Label, rightTablePosition + rightTableOffset, titlePosition + 45, headerColor);
+		drawString(mc.fontRendererObj, coordinates_Label, rightTablePosition + rightTableOffset, titlePosition + 60, headerColor);
+		drawString(mc.fontRendererObj, category_Label, rightTablePosition + rightTableOffset, titlePosition + 87, headerColor);
+		drawString(mc.fontRendererObj, name_Label, rightTablePosition + rightTableOffset, titlePosition + 102, headerColor);
 	}
 	
-	public void renderSoundData(RenderGameOverlayEvent event) {
-        if (event.getType() == RenderGameOverlayEvent.ElementType.TEXT) {
-        	drawString(mc.fontRendererObj, id_data, rightTablePosition + rightTableOffset + 17, titlePosition + 45, color);
- 			drawString(mc.fontRendererObj, coordinates_data, rightTablePosition + rightTableOffset + 10, titlePosition + 72, color);
- 			drawString(mc.fontRendererObj, soundCategory_data, rightTablePosition + rightTableOffset + 55, titlePosition + 87, color);
- 			drawString(mc.fontRendererObj, name_data, rightTablePosition + rightTableOffset + 10, titlePosition + 114, color);
- 			//
- 			GL11.glRecti(width/2 - 20, height/2 + 30, width/2 + 20, height/2 - 30);
-        }
+	public void renderSoundData() {
+    	drawString(mc.fontRendererObj, id_data, rightTablePosition + rightTableOffset + 17, titlePosition + 45, color);
+		drawString(mc.fontRendererObj, coordinates_data, rightTablePosition + rightTableOffset + 10, titlePosition + 72, color);
+		drawString(mc.fontRendererObj, soundCategory_data, rightTablePosition + rightTableOffset + 55, titlePosition + 87, color);
+		drawString(mc.fontRendererObj, name_data, rightTablePosition + rightTableOffset + 10, titlePosition + 114, color);
 	}
 	
 	// ------------------------------------------------- //
@@ -189,9 +178,9 @@ public class GAGuiOverlay extends Gui
 		if (soundType == SoundType.STONE)
 			return Integer.parseInt("a9a9a9", 16);
 		else if (soundType == SoundType.WOOD)
-			return Integer.parseInt("deb887", 16);
+			return Integer.parseInt("6f4c1e", 16);
 		else if (soundType == SoundType.GROUND)
-			return Integer.parseInt("a5682a", 16);
+			return Integer.parseInt("cc8236", 16);
 		else if (soundType == SoundType.PLANT)
 			return Integer.parseInt("228b22", 16);
 		else if (soundType == SoundType.METAL)
@@ -211,4 +200,17 @@ public class GAGuiOverlay extends Gui
 				
 		return Integer.parseInt("9370db", 16);
 	}
+	
+	// ------------------------------------------------- //
+	
+	@SubscribeEvent
+	public void onKeyPress(InputEvent.KeyInputEvent event) {
+	    if(Keyboard.isKeyDown(Keyboard.KEY_F6)) {
+	    	if (isDisplaying)
+	    		isDisplaying = false;
+	    	else
+	    		isDisplaying = true;
+	    }
+	}
+	
 }

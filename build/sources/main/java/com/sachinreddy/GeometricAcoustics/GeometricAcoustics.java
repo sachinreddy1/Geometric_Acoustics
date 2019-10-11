@@ -242,18 +242,21 @@ public class GeometricAcoustics
 					float cross0 = 1.0f - MathHelper.clamp_float(reflectionDelay, 0.0f, 1.0f);
 					float cross1 = 1.0f - MathHelper.clamp_float(Math.abs(reflectionDelay - 1.0f), 0.0f, 1.0f);
 					float cross2 = 1.0f - MathHelper.clamp_float(Math.abs(reflectionDelay - 2.0f), 0.0f, 1.0f);
-					float cross3 = 1.0f - MathHelper.clamp_float(Math.abs(reflectionDelay - 3.0f), 0.0f, 1.0f);
+					float cross3 = MathHelper.clamp_float(reflectionDelay - 2.0f, 0.0f, 1.0f);
+//					float cross3 = 1.0f - MathHelper.clamp_float(Math.abs(reflectionDelay - 3.0f), 0.0f, 1.0f);
 					
-					sendGain0 += cross0 * energyTowardsPlayer * 10.0f * totalRays;
-					sendGain1 += cross1 * energyTowardsPlayer * 10.0f * totalRays;
-					sendGain2 += cross2 * energyTowardsPlayer * 10.0f * totalRays;
-					sendGain3 += cross3 * energyTowardsPlayer * 10.0f * totalRays;
+					sendGain0 += cross0 * energyTowardsPlayer * 6.4f * totalRays;
+					sendGain1 += cross1 * energyTowardsPlayer * 12.8f * totalRays;
+					sendGain2 += cross2 * energyTowardsPlayer * 12.8f * totalRays;
+					sendGain3 += cross3 * energyTowardsPlayer * 12.8f * totalRays;
 					
 					if (newRayHit == null)
 						break;
 				}
 				
-				GAGuiOverlay.updateHistogram(lastHitBlock, totalRayDistance, i);
+				if (GAGuiOverlay.isDisplaying)
+					GAGuiOverlay.updateHistogram(lastHitBlock, totalRayDistance, i);
+				
 			}
 		}
 				
