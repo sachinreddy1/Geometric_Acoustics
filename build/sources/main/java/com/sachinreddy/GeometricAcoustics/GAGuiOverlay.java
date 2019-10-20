@@ -14,6 +14,7 @@ import org.lwjgl.opengl.GL11;
 import net.minecraft.util.SoundCategory;
 import org.lwjgl.input.Keyboard;
 import net.minecraftforge.fml.common.gameevent.InputEvent;
+import java.util.Arrays; 
 
 public class GAGuiOverlay extends Gui
 {
@@ -69,6 +70,9 @@ public class GAGuiOverlay extends Gui
 	public void renderHistogram() {
 		ResourceLocation histogramBlock = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/histogram.png");
 		int histOffestX = axisWidth / GeometricAcousticsCore.Config.environmentCalculationRays;
+		
+		// Sort based on ray length
+		Arrays.sort(histogramData); 
 		
 		for (int i = 0; i < GeometricAcousticsCore.Config.environmentCalculationRays; i++) {
  			int histOffestY = height - verticalPadding - (int)histogramData[i];

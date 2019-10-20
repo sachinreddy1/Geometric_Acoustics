@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="lastSoundResource"/>
+		<item key="selection" value="rayDistances"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="rayDistances"/>
 			<item value="lastSoundResource"/>
 			<item value="color"/>
 			<item value="clear"/>
@@ -22,7 +23,6 @@
 			<item value="import net.minecraftforge.client.event.RenderGameOverlayEvent;&#x0A;"/>
 			<item value="import net.minecraft.util.ResourceLocation;&#x0A;"/>
 			<item value="import net.minecraft.client.gui.Gui;&#x0A;"/>
-			<item value="import net.minecraft.client.Minecraft;import net.minecraft.client.gui.Gui;&#x0A;"/>
 		</list>
 		<list key="replacehistory">
 			<item value="totalRays"/>
@@ -32,8 +32,8 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="1099"/>
-		<item key="DIALOG_Y_ORIGIN" value="136"/>
+		<item key="DIALOG_X_ORIGIN" value="1104"/>
+		<item key="DIALOG_Y_ORIGIN" value="167"/>
 		<item key="DIALOG_WIDTH" value="294"/>
 		<item key="DIALOG_HEIGHT" value="408"/>
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
