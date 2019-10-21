@@ -2,21 +2,20 @@ package com.sachinreddy.GeometricAcoustics;
 import java.io.*; 
 import java.util.*; 
 
-class Compare {
-    static Pair[] compare(Pair arr[]) 
+public class Compare {
+	public static void compare(Pair arr[], int n) 
     { 
         // Comparator to sort the pair according to second element 
         Arrays.sort(arr, new Comparator<Pair>() { 
             @Override public int compare(Pair p1, Pair p2) 
             { 
-                return p1.y - p2.y; 
+                return p1.rayDistance - p2.rayDistance; 
             } 
         }); 
   
-//        for (int i = 0; i < n; i++) { 
-//            System.out.print(arr[i].x + " " + arr[i].y + " "); 
-//        } 
-//        System.out.println(); 
-        return arr;
+        for (int i = 0; i < n; i++) { 
+            System.out.print(arr[i].rayDistance); 
+        } 
+        System.out.println(); 
     } 
 } 

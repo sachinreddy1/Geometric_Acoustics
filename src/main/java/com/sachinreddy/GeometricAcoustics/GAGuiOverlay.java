@@ -14,7 +14,7 @@ import org.lwjgl.opengl.GL11;
 import net.minecraft.util.SoundCategory;
 import org.lwjgl.input.Keyboard;
 import net.minecraftforge.fml.common.gameevent.InputEvent;
-import java.util.Arrays; 
+import java.util.Arrays;
 
 public class GAGuiOverlay extends Gui
 {
@@ -39,7 +39,8 @@ public class GAGuiOverlay extends Gui
 	static String name_data = "";
 	// ------------------ //
 	static int[] raySoundTypes = new int[GeometricAcousticsCore.Config.environmentCalculationRays];
-	static float[] histogramData = new float[GeometricAcousticsCore.Config.environmentCalculationRays];
+	static int[] histogramData = new int[GeometricAcousticsCore.Config.environmentCalculationRays];
+//	static Pair[] histogramData = new Pair[GeometricAcousticsCore.Config.environmentCalculationRays];
 	// ------------------ //
 	public static boolean isDisplaying = false;
 	
@@ -71,20 +72,23 @@ public class GAGuiOverlay extends Gui
 		ResourceLocation histogramBlock = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/histogram.png");
 		int histOffestX = axisWidth / GeometricAcousticsCore.Config.environmentCalculationRays;
 		
-		// Sort based on ray length
-		Arrays.sort(histogramData); 
-		
 		for (int i = 0; i < GeometricAcousticsCore.Config.environmentCalculationRays; i++) {
- 			int histOffestY = height - verticalPadding - (int)histogramData[i];
+ 			int histOffestY = height - verticalPadding - histogramData[i];
  			float r = (float)((raySoundTypes[i]>>16)&0xFF)/255f;
  			float b = (float)((raySoundTypes[i])&0xFF)/255f;
  			float g = (float)((raySoundTypes[i]>>8)&0xFF)/255f;
 			
+//			int histOffestY = height - verticalPadding - histogramData[i].rayDistance;
+// 			float r = (float)((histogramData[i].soundType>>16)&0xFF)/255f;
+// 			float b = (float)((histogramData[i].soundType)&0xFF)/255f;
+// 			float g = (float)((histogramData[i].soundType>>8)&0xFF)/255f;
+ 			
 			GL11.glPushMatrix();
  			{
  				GL11.glColor3f(r, g, b);
  				mc.renderEngine.bindTexture(histogramBlock);
-				drawTexturedModalRect(horizontalPadding + 4 + histOffestX * i, histOffestY + 2, 0, 0, histOffestX, (int)histogramData[i]);
+				drawTexturedModalRect(horizontalPadding + 4 + histOffestX * i, histOffestY + 2, 0, 0, histOffestX, histogramData[i]);
+//				drawTexturedModalRect(horizontalPadding + 4 + histOffestX * i, histOffestY + 2, 0, 0, histOffestX, histogramData[i].rayDistance);
  			}
  			GL11.glPopMatrix();
 		}
@@ -97,7 +101,7 @@ public class GAGuiOverlay extends Gui
 		int verticalWidth = 6;
 		axisWidth = 245;
 		axisHeight = 245;
-		
+	
 		if (axisHeight > height)
 			axisHeight = height - (2 * verticalPadding);
 		if (axisWidth > width)
@@ -115,7 +119,6 @@ public class GAGuiOverlay extends Gui
 	}
 	
 	public void renderAxisLabels() {
-		
 		String xAxisLabel = "Blocks Hit";
 		String yAxisLabel = "Ray Distance";
 		String guiText = "Geometric Acoustics Analytics:";
@@ -169,7 +172,12 @@ public class GAGuiOverlay extends Gui
 		if (data > axisHeight)
 			histogramData[index] = axisHeight;
 		else
-			histogramData[index] = data;
+			histogramData[index] = (int)data;
+		
+//		if (data > axisHeight)
+//			histogramData[index] = Pair.create(getSoundResource(lastHitBlock), axisHeight);
+//		else
+//			histogramData[index] = Pair.create(getSoundResource(lastHitBlock), (int)data);
 	}
 	
 	// ------------------------------------------------- //
