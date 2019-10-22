@@ -2,12 +2,19 @@ package com.sachinreddy.GeometricAcoustics;
 
 public class Pair 
 {
-	public static int soundType;	// SoundType color
-	public static int rayDistance;	// Ray Distance
+	public int soundType = 0;	// SoundType color
+	public int rayDistance = 0;	// Ray Distance
 	
-	public Pair(int soundType, int rayDistance)
+	public static Pair create(int soundType, int rayDistance)
 	{
-		this.soundType = soundType; 
-        this.rayDistance = rayDistance; 
+		Pair i = new Pair();
+		i.soundType = soundType;
+		i.rayDistance = rayDistance;		
+		return i;
+	}
+	
+	Pair()
+	{
+		
 	}
 }

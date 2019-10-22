@@ -38,9 +38,7 @@ public class GAGuiOverlay extends Gui
 	static String soundCategory_data = "";
 	static String name_data = "";
 	// ------------------ //
-	static int[] raySoundTypes = new int[GeometricAcousticsCore.Config.environmentCalculationRays];
-	static int[] histogramData = new int[GeometricAcousticsCore.Config.environmentCalculationRays];
-//	static Pair[] histogramData = new Pair[GeometricAcousticsCore.Config.environmentCalculationRays];
+	public static Pair[] histogramData = new Pair[GeometricAcousticsCore.Config.environmentCalculationRays];
 	// ------------------ //
 	public static boolean isDisplaying = false;
 	
@@ -72,23 +70,21 @@ public class GAGuiOverlay extends Gui
 		ResourceLocation histogramBlock = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/histogram.png");
 		int histOffestX = axisWidth / GeometricAcousticsCore.Config.environmentCalculationRays;
 		
-		for (int i = 0; i < GeometricAcousticsCore.Config.environmentCalculationRays; i++) {
- 			int histOffestY = height - verticalPadding - histogramData[i];
- 			float r = (float)((raySoundTypes[i]>>16)&0xFF)/255f;
- 			float b = (float)((raySoundTypes[i])&0xFF)/255f;
- 			float g = (float)((raySoundTypes[i]>>8)&0xFF)/255f;
-			
-//			int histOffestY = height - verticalPadding - histogramData[i].rayDistance;
-// 			float r = (float)((histogramData[i].soundType>>16)&0xFF)/255f;
-// 			float b = (float)((histogramData[i].soundType)&0xFF)/255f;
-// 			float g = (float)((histogramData[i].soundType>>8)&0xFF)/255f;
+		// Sort the Pair array
+		Compare obj = new Compare(); 
+        obj.compare(histogramData); 
+		
+		for (int i = 0; i < GeometricAcousticsCore.Config.environmentCalculationRays; i++) {			
+			int histOffestY = height - verticalPadding - histogramData[i].rayDistance;
+ 			float r = (float)((histogramData[i].soundType>>16)&0xFF)/255f;
+ 			float b = (float)((histogramData[i].soundType)&0xFF)/255f;
+ 			float g = (float)((histogramData[i].soundType>>8)&0xFF)/255f;
  			
 			GL11.glPushMatrix();
  			{
  				GL11.glColor3f(r, g, b);
  				mc.renderEngine.bindTexture(histogramBlock);
-				drawTexturedModalRect(horizontalPadding + 4 + histOffestX * i, histOffestY + 2, 0, 0, histOffestX, histogramData[i]);
-//				drawTexturedModalRect(horizontalPadding + 4 + histOffestX * i, histOffestY + 2, 0, 0, histOffestX, histogramData[i].rayDistance);
+				drawTexturedModalRect(horizontalPadding + 4 + histOffestX * i, histOffestY + 2, 0, 0, histOffestX, histogramData[i].rayDistance);
  			}
  			GL11.glPopMatrix();
 		}
@@ -165,52 +161,6 @@ public class GAGuiOverlay extends Gui
 		coordinates_data = "(" + (int)posX + ", " + (int)posY + ", " + (int)posZ + ")";
 		soundCategory_data = sc.toString();
 		name_data = name.substring(name.lastIndexOf(".") + 1);
-	}
-	
-	public static void updateHistogram(Int3 lastHitBlock, float data, int index) {
-		raySoundTypes[index] = getSoundResource(lastHitBlock);
-		if (data > axisHeight)
-			histogramData[index] = axisHeight;
-		else
-			histogramData[index] = (int)data;
-		
-//		if (data > axisHeight)
-//			histogramData[index] = Pair.create(getSoundResource(lastHitBlock), axisHeight);
-//		else
-//			histogramData[index] = Pair.create(getSoundResource(lastHitBlock), (int)data);
-	}
-	
-	// ------------------------------------------------- //
-	
-	private static int getSoundResource(Int3 blockPos)
-	{		
-		Block block = mc.theWorld.getBlockState(new BlockPos(blockPos.x, blockPos.y, blockPos.z)).getBlock();
-		SoundType soundType = block.getSoundType();
-		
-		if (soundType == SoundType.STONE)
-			return Integer.parseInt("a9a9a9", 16);
-		else if (soundType == SoundType.WOOD)
-			return Integer.parseInt("6f4c1e", 16);
-		else if (soundType == SoundType.GROUND)
-			return Integer.parseInt("cc8236", 16);
-		else if (soundType == SoundType.PLANT)
-			return Integer.parseInt("228b22", 16);
-		else if (soundType == SoundType.METAL)
-			return Integer.parseInt("4682b4", 16);
-		else if (soundType == SoundType.GLASS)
-			return Integer.parseInt("dcdcdc", 16);
-		else if (soundType == SoundType.CLOTH)
-			return Integer.parseInt("ffc04d", 16);
-		else if (soundType == SoundType.SAND)	
-			return Integer.parseInt("f4a460", 16);
-		else if (soundType == SoundType.SNOW)
-			return Integer.parseInt("ffffff", 16);
-		else if (soundType == SoundType.LADDER)
-			return Integer.parseInt("ce954b", 16);
-		else if (soundType == SoundType.ANVIL)
-			return Integer.parseInt("1a1a1a", 16);
-				
-		return Integer.parseInt("9370db", 16);
 	}
 	
 	// ------------------------------------------------- //

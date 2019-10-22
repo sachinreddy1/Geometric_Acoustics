@@ -179,7 +179,6 @@ public class GeometricAcoustics
 
 		float[] bounceReflectivityRatio = new float[rayBounces];
 		float totalRays = 1.0f / (numRays * rayBounces);
-				
 		// ---------------------- //
 		
 		for (int i = 0; i < numRays; i++)
@@ -253,10 +252,7 @@ public class GeometricAcoustics
 					if (newRayHit == null)
 						break;
 				}
-				
-				if (GAGuiOverlay.isDisplaying)
-					GAGuiOverlay.updateHistogram(lastHitBlock, totalRayDistance, i);
-				
+				GAGuiOverlay.histogramData[i] = Pair.create(getSoundResource(lastHitBlock), (int)totalRayDistance);
 			}
 		}
 				
@@ -282,6 +278,37 @@ public class GeometricAcoustics
 	
 	// ------------------------------------------------- //
 	
+	private static int getSoundResource(Int3 blockPos)
+	{		
+		Block block = minecraft.theWorld.getBlockState(new BlockPos(blockPos.x, blockPos.y, blockPos.z)).getBlock();
+		SoundType soundType = block.getSoundType();
+		
+		if (soundType == SoundType.STONE)
+			return Integer.parseInt("a9a9a9", 16);
+		else if (soundType == SoundType.WOOD)
+			return Integer.parseInt("6f4c1e", 16);
+		else if (soundType == SoundType.GROUND)
+			return Integer.parseInt("cc8236", 16);
+		else if (soundType == SoundType.PLANT)
+			return Integer.parseInt("228b22", 16);
+		else if (soundType == SoundType.METAL)
+			return Integer.parseInt("4682b4", 16);
+		else if (soundType == SoundType.GLASS)
+			return Integer.parseInt("dcdcdc", 16);
+		else if (soundType == SoundType.CLOTH)
+			return Integer.parseInt("ffc04d", 16);
+		else if (soundType == SoundType.SAND)	
+			return Integer.parseInt("f4a460", 16);
+		else if (soundType == SoundType.SNOW)
+			return Integer.parseInt("ffffff", 16);
+		else if (soundType == SoundType.LADDER)
+			return Integer.parseInt("ce954b", 16);
+		else if (soundType == SoundType.ANVIL)
+			return Integer.parseInt("1a1a1a", 16);
+				
+		return Integer.parseInt("9370db", 16);
+	}
+		
 	private static float getBlockReflectivity(Int3 blockPos)
 	{
 		Block block = minecraft.theWorld.getBlockState(new BlockPos(blockPos.x, blockPos.y, blockPos.z)).getBlock();
@@ -316,6 +343,8 @@ public class GeometricAcoustics
 		
 		return reflectivity;
 	}
+	
+	// ------------------------------------------------- //
 	
 	private static Vec3d getNormalFromFacing(EnumFacing sideHit)
 	{

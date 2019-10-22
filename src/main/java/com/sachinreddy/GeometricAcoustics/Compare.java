@@ -3,7 +3,7 @@ import java.io.*;
 import java.util.*; 
 
 public class Compare {
-	public static void compare(Pair arr[], int n) 
+	public static void compare(Pair arr[]) 
     { 
         // Comparator to sort the pair according to second element 
         Arrays.sort(arr, new Comparator<Pair>() { 
@@ -12,10 +12,5 @@ public class Compare {
                 return p1.rayDistance - p2.rayDistance; 
             } 
         }); 
-  
-        for (int i = 0; i < n; i++) { 
-            System.out.print(arr[i].rayDistance); 
-        } 
-        System.out.println(); 
     } 
 } 
