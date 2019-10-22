@@ -9,7 +9,7 @@ public class Compare {
         Arrays.sort(arr, new Comparator<Pair>() { 
             @Override public int compare(Pair p1, Pair p2) 
             { 
-                return p1.rayDistance - p2.rayDistance; 
+                return p1.data - p2.data; 
             } 
         }); 
     } 

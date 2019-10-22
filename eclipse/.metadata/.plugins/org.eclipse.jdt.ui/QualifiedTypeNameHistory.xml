@@ -3,4 +3,7 @@
 <fullyQualifiedTypeName name="net.minecraftforge.common.MinecraftForge"/>
 <fullyQualifiedTypeName name="net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType"/>
 <fullyQualifiedTypeName name="com.sachinreddy.GeometricAcoustics.GuiExample"/>
+<fullyQualifiedTypeName name="com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore"/>
+<fullyQualifiedTypeName name="com.sachinreddy.GeometricAcoustics.Int3"/>
+<fullyQualifiedTypeName name="com.sachinreddy.GeometricAcoustics.Pair"/>
 </qualifiedTypeNameHistroy>

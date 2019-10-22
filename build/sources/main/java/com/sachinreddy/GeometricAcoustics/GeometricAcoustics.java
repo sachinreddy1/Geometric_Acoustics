@@ -244,6 +244,8 @@ public class GeometricAcoustics
 					float cross3 = MathHelper.clamp_float(reflectionDelay - 2.0f, 0.0f, 1.0f);
 //					float cross3 = 1.0f - MathHelper.clamp_float(Math.abs(reflectionDelay - 3.0f), 0.0f, 1.0f);
 					
+					GAGuiOverlay.histogramData[i] = Pair.create(getSoundResource(lastHitBlock), (int)reflectionDelay);
+					
 					sendGain0 += cross0 * energyTowardsPlayer * 6.4f * totalRays;
 					sendGain1 += cross1 * energyTowardsPlayer * 12.8f * totalRays;
 					sendGain2 += cross2 * energyTowardsPlayer * 12.8f * totalRays;
@@ -252,7 +254,7 @@ public class GeometricAcoustics
 					if (newRayHit == null)
 						break;
 				}
-				GAGuiOverlay.histogramData[i] = Pair.create(getSoundResource(lastHitBlock), (int)totalRayDistance);
+//				GAGuiOverlay.histogramData[i] = Pair.create(getSoundResource(lastHitBlock), (int)totalRayDistance);
 			}
 		}
 				
@@ -308,9 +310,7 @@ public class GeometricAcoustics
 				
 		return Integer.parseInt("9370db", 16);
 	}
-	
-	// ------------------------------------------------- //
-	
+		
 	private static float getBlockReflectivity(Int3 blockPos)
 	{
 		Block block = minecraft.theWorld.getBlockState(new BlockPos(blockPos.x, blockPos.y, blockPos.z)).getBlock();
@@ -345,6 +345,8 @@ public class GeometricAcoustics
 		
 		return reflectivity;
 	}
+	
+	// ------------------------------------------------- //
 	
 	private static Vec3d getNormalFromFacing(EnumFacing sideHit)
 	{

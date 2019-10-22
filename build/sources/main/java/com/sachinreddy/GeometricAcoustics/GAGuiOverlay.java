@@ -19,27 +19,27 @@ import java.util.Arrays;
 public class GAGuiOverlay extends Gui
 {
 	public static Minecraft mc;		
-	// ------------------ //
+	//
 	private final int verticalPadding = 60, horizontalPadding = 30;
 	static int color = Integer.parseInt("FFFFFF", 16);
 	static int headerColor = Integer.parseInt("FFC04D", 16);
-	// ------------------ //
+	//
 	private int width;
 	private int height;
 	static int axisHeight;
 	private int axisWidth;
-	// ------------------ //
+	//
 	static int rightTablePosition;
 	static int rightTableOffset;
 	static int titlePosition;	
-	// ------------------ //
+	//
 	static String id_data = "";
 	static String coordinates_data = "";
 	static String soundCategory_data = "";
 	static String name_data = "";
-	// ------------------ //
+	//
 	public static Pair[] histogramData = new Pair[GeometricAcousticsCore.Config.environmentCalculationRays];
-	// ------------------ //
+	//
 	public static boolean isDisplaying = false;
 	
 	@SubscribeEvent
@@ -72,10 +72,14 @@ public class GAGuiOverlay extends Gui
 		
 		// Sort the Pair array
 		Compare obj = new Compare(); 
-        obj.compare(histogramData); 
+        obj.compare(histogramData);
 		
-		for (int i = 0; i < GeometricAcousticsCore.Config.environmentCalculationRays; i++) {			
-			int histOffestY = height - verticalPadding - histogramData[i].rayDistance;
+		for (int i = 0; i < GeometricAcousticsCore.Config.environmentCalculationRays; i++) {		
+			// Set the height threshold
+			if (histogramData[i].data > axisHeight) 
+				histogramData[i].data = axisHeight;
+			
+			int histOffestY = height - verticalPadding - histogramData[i].data;
  			float r = (float)((histogramData[i].soundType>>16)&0xFF)/255f;
  			float b = (float)((histogramData[i].soundType)&0xFF)/255f;
  			float g = (float)((histogramData[i].soundType>>8)&0xFF)/255f;
@@ -84,7 +88,7 @@ public class GAGuiOverlay extends Gui
  			{
  				GL11.glColor3f(r, g, b);
  				mc.renderEngine.bindTexture(histogramBlock);
-				drawTexturedModalRect(horizontalPadding + 4 + histOffestX * i, histOffestY + 2, 0, 0, histOffestX, histogramData[i].rayDistance);
+				drawTexturedModalRect(horizontalPadding + 4 + histOffestX * i, histOffestY + 2, 0, 0, histOffestX, histogramData[i].data);
  			}
  			GL11.glPopMatrix();
 		}
