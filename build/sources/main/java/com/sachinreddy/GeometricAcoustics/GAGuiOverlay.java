@@ -84,7 +84,22 @@ public class GAGuiOverlay extends Gui
  			float b = (float)((histogramData[i].soundType)&0xFF)/255f;
  			float g = (float)((histogramData[i].soundType>>8)&0xFF)/255f;
  			
-			GL11.glPushMatrix();
+ 			// Draw x-values
+ 			GL11.glPushMatrix();
+ 			{
+ 				float size = 0.5f;
+ 				GL11.glScalef(size,size,size);
+ 				float mSize = (float)Math.pow(size,-1);
+ 				String text = Integer.toString(histogramData[i].data);
+	 			int x = horizontalPadding + 5 + histOffestX * i;
+	 			int y = height - verticalPadding + 8;
+	 			drawString(mc.fontRendererObj, text, Math.round(x/size), Math.round(y/size), color);
+	 			GL11.glScalef(mSize,mSize,mSize);
+ 			}
+ 			GL11.glPopMatrix();
+ 			
+ 			// Draw histogram bar
+ 			GL11.glPushMatrix();
  			{
  				GL11.glColor3f(r, g, b);
  				mc.renderEngine.bindTexture(histogramBlock);
@@ -119,13 +134,13 @@ public class GAGuiOverlay extends Gui
 	}
 	
 	public void renderAxisLabels() {
-		String xAxisLabel = "Blocks Hit";
-		String yAxisLabel = "Ray Distance";
+		String xAxisLabel = "Ray Length";	// Blocks Hit
+		String yAxisLabel = "Frequency";	// Ray Distance
 		String guiText = "Geometric Acoustics Analytics:";
 		titlePosition = height/15;
 		
     	drawCenteredString(mc.fontRendererObj, guiText, width/2, titlePosition, color);
-    	drawString(mc.fontRendererObj, xAxisLabel, horizontalPadding + 20, height - verticalPadding + 11, color);
+    	drawString(mc.fontRendererObj, xAxisLabel, horizontalPadding + 20, height - verticalPadding + 18, color);
 		GL11.glPushMatrix();
 		{
  			GL11.glTranslatef(horizontalPadding - 12, height - verticalPadding - 20, 0);
