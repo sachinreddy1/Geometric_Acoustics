@@ -93,7 +93,12 @@ public class GAGuiOverlay extends Gui
  				String text = Integer.toString(histogramData[i].data);
 	 			int x = horizontalPadding + 5 + histOffestX * i;
 	 			int y = height - verticalPadding + 8;
-	 			drawString(mc.fontRendererObj, text, Math.round(x/size), Math.round(y/size), color);
+	 			
+	 			int textColor = Integer.parseInt("FFC04D", 16); 
+	 			if (i%2==0)
+	 				textColor = Integer.parseInt("FFFFFF", 16);
+	 			
+ 				drawString(mc.fontRendererObj, text, Math.round(x/size), Math.round(y/size), textColor);
 	 			GL11.glScalef(mSize,mSize,mSize);
  			}
  			GL11.glPopMatrix();
@@ -140,7 +145,7 @@ public class GAGuiOverlay extends Gui
 		titlePosition = height/15;
 		
     	drawCenteredString(mc.fontRendererObj, guiText, width/2, titlePosition, color);
-    	drawString(mc.fontRendererObj, xAxisLabel, horizontalPadding + 20, height - verticalPadding + 18, color);
+    	drawString(mc.fontRendererObj, xAxisLabel, horizontalPadding + 20, height - verticalPadding + 16, color);
 		GL11.glPushMatrix();
 		{
  			GL11.glTranslatef(horizontalPadding - 12, height - verticalPadding - 20, 0);
