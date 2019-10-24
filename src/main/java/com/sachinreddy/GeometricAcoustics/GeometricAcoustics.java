@@ -254,7 +254,7 @@ public class GeometricAcoustics
 					if (newRayHit == null)
 						break;
 				}
-				GAGuiOverlay.histogramData[i] = Pair.create(getSoundResource(lastHitBlock), (int)totalRayDistance);
+				GAGuiOverlay.histogramData[i] = HistogramPair.create(getSoundResource(lastHitBlock), (int)totalRayDistance);
 			}
 		}
 				

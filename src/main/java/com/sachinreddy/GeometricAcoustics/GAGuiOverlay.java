@@ -11,6 +11,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import org.lwjgl.opengl.GL11;
+
+import akka.japi.Pair;
 import net.minecraft.util.SoundCategory;
 import org.lwjgl.input.Keyboard;
 import net.minecraftforge.fml.common.gameevent.InputEvent;
@@ -38,7 +40,7 @@ public class GAGuiOverlay extends Gui
 	static String soundCategory_data = "";
 	static String name_data = "";
 	//
-	public static Pair[] histogramData = new Pair[GeometricAcousticsCore.Config.environmentCalculationRays];
+	public static HistogramPair[] histogramData = new HistogramPair[GeometricAcousticsCore.Config.environmentCalculationRays];
 	//
 	public static boolean isDisplaying = false;
 	
@@ -73,16 +75,26 @@ public class GAGuiOverlay extends Gui
 		// Sort the Pair array
 		Compare obj = new Compare(); 
         obj.compare(histogramData);
+//        obj.countFreqValues(histogramData, histogramData.length);
+//        Int3[] arr = obj.getQuery();
 		
-		for (int i = 0; i < GeometricAcousticsCore.Config.environmentCalculationRays; i++) {		
+		for (int i = 0; i < GeometricAcousticsCore.Config.environmentCalculationRays; i++) {
+//        for (int i = 0; i < arr.length; i++) {
 			// Set the height threshold
 			if (histogramData[i].data > axisHeight) 
 				histogramData[i].data = axisHeight;
+//        	if (arr[i].z * 5 > axisHeight) 
+//        		arr[i].z = axisHeight;
 			
 			int histOffestY = height - verticalPadding - histogramData[i].data;
  			float r = (float)((histogramData[i].soundType>>16)&0xFF)/255f;
  			float b = (float)((histogramData[i].soundType)&0xFF)/255f;
  			float g = (float)((histogramData[i].soundType>>8)&0xFF)/255f;
+        	
+//        	int histOffestY = height - verticalPadding - arr[i].z * 5;
+// 			float r = (float)((arr[i].x>>16)&0xFF)/255f;
+// 			float b = (float)((arr[i].x)&0xFF)/255f;
+// 			float g = (float)((arr[i].x>>8)&0xFF)/255f;
  			
  			// Draw x-values
  			GL11.glPushMatrix();
@@ -91,6 +103,7 @@ public class GAGuiOverlay extends Gui
  				GL11.glScalef(size,size,size);
  				float mSize = (float)Math.pow(size,-1);
  				String text = Integer.toString(histogramData[i].data);
+// 				String text = Integer.toString(arr[i].y);
 	 			int x = horizontalPadding + 5 + histOffestX * i;
 	 			int y = height - verticalPadding + 8;
 	 			
@@ -109,6 +122,7 @@ public class GAGuiOverlay extends Gui
  				GL11.glColor3f(r, g, b);
  				mc.renderEngine.bindTexture(histogramBlock);
 				drawTexturedModalRect(horizontalPadding + 4 + histOffestX * i, histOffestY + 2, 0, 0, histOffestX, histogramData[i].data);
+// 				drawTexturedModalRect(horizontalPadding + 4 + histOffestX * i, histOffestY + 2, 0, 0, histOffestX, arr[i].z * 5);
  			}
  			GL11.glPopMatrix();
 		}
