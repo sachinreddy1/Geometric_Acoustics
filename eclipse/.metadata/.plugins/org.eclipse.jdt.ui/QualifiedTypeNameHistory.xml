@@ -6,4 +6,6 @@
 <fullyQualifiedTypeName name="com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore"/>
 <fullyQualifiedTypeName name="com.sachinreddy.GeometricAcoustics.Int3"/>
 <fullyQualifiedTypeName name="com.sachinreddy.GeometricAcoustics.Pair"/>
+<fullyQualifiedTypeName name="org.apache.commons.lang3.tuple.Pair"/>
+<fullyQualifiedTypeName name="akka.japi.Pair"/>
 </qualifiedTypeNameHistroy>

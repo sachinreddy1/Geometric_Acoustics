@@ -42,7 +42,6 @@ public class GAGuiOverlay extends Gui
 	static String name_data = "";
 	//
 	public static HistogramPair[] histogramData = new HistogramPair[GeometricAcousticsCore.Config.environmentCalculationRays];
-//	public static Int3[] arr = new Int3[GeometricAcousticsCore.Config.environmentCalculationRays];
 	//
 	public static boolean isDisplaying = false;
 	
@@ -147,8 +146,8 @@ public class GAGuiOverlay extends Gui
 	}
 	
 	public void renderAxisLabels() {
-		String xAxisLabel = "Ray Length";	// Blocks Hit
-		String yAxisLabel = "Frequency";	// Ray Distance
+		String xAxisLabel = "Ray Length";
+		String yAxisLabel = "Frequency";
 		String guiText = "Geometric Acoustics Analytics:";
 		titlePosition = height/15;
 		
