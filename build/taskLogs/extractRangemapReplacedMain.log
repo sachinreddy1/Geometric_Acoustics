@@ -1,6 +1,6 @@
 Symbol range map extraction starting
-Processing 11 files
-startProcessing "com/sachinreddy/GeometricAcoustics/Compare.java" md5: 5a69173460dfadf40c8d14d0d3554c5f
+Processing 12 files
+startProcessing "com/sachinreddy/GeometricAcoustics/Compare.java" md5: a6f2d0943bf4329043a1e524107c8e86
 Cache Hit!
 endProcessing "com/sachinreddy/GeometricAcoustics/Compare.java"
 
@@ -8,7 +8,7 @@ startProcessing "com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java" md5
 Cache Hit!
 endProcessing "com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java"
 
-startProcessing "com/sachinreddy/GeometricAcoustics/GAGuiOverlay.java" md5: 8b5e09120ccb4d279495f402e663e7ba
+startProcessing "com/sachinreddy/GeometricAcoustics/GAGuiOverlay.java" md5: d59225296ad35ceab689129d62ca5d43
 endProcessing "com/sachinreddy/GeometricAcoustics/GAGuiOverlay.java"
 
 startProcessing "com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java" md5: c0225aff81510aa1952e9d8e7848e637
@@ -22,6 +22,10 @@ endProcessing "com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java"
 startProcessing "com/sachinreddy/GeometricAcoustics/HistogramPair.java" md5: 24daec654552bcdd05ccce6394a940fd
 Cache Hit!
 endProcessing "com/sachinreddy/GeometricAcoustics/HistogramPair.java"
+
+startProcessing "com/sachinreddy/GeometricAcoustics/HistogramTriple.java" md5: cbdcfded4a171698798a25ba406b3844
+Cache Hit!
+endProcessing "com/sachinreddy/GeometricAcoustics/HistogramTriple.java"
 
 startProcessing "com/sachinreddy/GeometricAcoustics/Int3.java" md5: 50197a435265f58d82c9b71bb9a2de85
 Cache Hit!

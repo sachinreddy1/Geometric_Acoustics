@@ -17,6 +17,7 @@ import net.minecraft.util.SoundCategory;
 import org.lwjgl.input.Keyboard;
 import net.minecraftforge.fml.common.gameevent.InputEvent;
 import java.util.Arrays;
+import java.util.ArrayList; 
 
 public class GAGuiOverlay extends Gui
 {
@@ -41,6 +42,7 @@ public class GAGuiOverlay extends Gui
 	static String name_data = "";
 	//
 	public static HistogramPair[] histogramData = new HistogramPair[GeometricAcousticsCore.Config.environmentCalculationRays];
+//	public static Int3[] arr = new Int3[GeometricAcousticsCore.Config.environmentCalculationRays];
 	//
 	public static boolean isDisplaying = false;
 	
@@ -70,31 +72,22 @@ public class GAGuiOverlay extends Gui
 	
 	public void renderHistogram() {
 		ResourceLocation histogramBlock = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/histogram.png");
-		int histOffestX = axisWidth / GeometricAcousticsCore.Config.environmentCalculationRays;
 		
 		// Sort the Pair array
 		Compare obj = new Compare(); 
-        obj.compare(histogramData);
-//        obj.countFreqValues(histogramData, histogramData.length);
-//        Int3[] arr = obj.getQuery();
+        ArrayList<HistogramTriple> histogramValues = obj.countFreqValues(histogramData, histogramData.length);
+        obj.compareTriple(histogramValues);
+        int histOffestX = axisWidth / histogramValues.size();
 		
-		for (int i = 0; i < GeometricAcousticsCore.Config.environmentCalculationRays; i++) {
-//        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < histogramValues.size(); i++) {
 			// Set the height threshold
-			if (histogramData[i].data > axisHeight) 
-				histogramData[i].data = axisHeight;
-//        	if (arr[i].z * 5 > axisHeight) 
-//        		arr[i].z = axisHeight;
-			
-			int histOffestY = height - verticalPadding - histogramData[i].data;
- 			float r = (float)((histogramData[i].soundType>>16)&0xFF)/255f;
- 			float b = (float)((histogramData[i].soundType)&0xFF)/255f;
- 			float g = (float)((histogramData[i].soundType>>8)&0xFF)/255f;
+        	if (histogramValues.get(i).frequency * 5 > axisHeight) 
+        		histogramValues.get(i).frequency = axisHeight;
         	
-//        	int histOffestY = height - verticalPadding - arr[i].z * 5;
-// 			float r = (float)((arr[i].x>>16)&0xFF)/255f;
-// 			float b = (float)((arr[i].x)&0xFF)/255f;
-// 			float g = (float)((arr[i].x>>8)&0xFF)/255f;
+        	int histOffestY = height - verticalPadding - histogramValues.get(i).frequency * 5;
+ 			float r = (float)((histogramValues.get(i).soundType>>16)&0xFF)/255f;
+ 			float b = (float)((histogramValues.get(i).soundType)&0xFF)/255f;
+ 			float g = (float)((histogramValues.get(i).soundType>>8)&0xFF)/255f;
  			
  			// Draw x-values
  			GL11.glPushMatrix();
@@ -102,16 +95,18 @@ public class GAGuiOverlay extends Gui
  				float size = 0.5f;
  				GL11.glScalef(size,size,size);
  				float mSize = (float)Math.pow(size,-1);
- 				String text = Integer.toString(histogramData[i].data);
-// 				String text = Integer.toString(arr[i].y);
-	 			int x = horizontalPadding + 5 + histOffestX * i;
-	 			int y = height - verticalPadding + 8;
+ 				String rayDistanceText = Integer.toString(histogramValues.get(i).rayDistance);
+ 				String frequencyText = Integer.toString(histogramValues.get(i).frequency);
+	 			int x = horizontalPadding + histOffestX/2 + histOffestX * i + 2;
+	 			int rayDistanceTextY = height - verticalPadding + 8;
+	 			int frequencyTextY = height - verticalPadding - histogramValues.get(i).frequency * 5 - 5;
 	 			
 	 			int textColor = Integer.parseInt("FFC04D", 16); 
 	 			if (i%2==0)
 	 				textColor = Integer.parseInt("FFFFFF", 16);
 	 			
- 				drawString(mc.fontRendererObj, text, Math.round(x/size), Math.round(y/size), textColor);
+	 			drawString(mc.fontRendererObj, rayDistanceText, Math.round(x/size), Math.round(rayDistanceTextY/size), textColor);
+ 				drawString(mc.fontRendererObj, frequencyText, Math.round(x/size), Math.round(frequencyTextY/size), textColor);
 	 			GL11.glScalef(mSize,mSize,mSize);
  			}
  			GL11.glPopMatrix();
@@ -121,8 +116,7 @@ public class GAGuiOverlay extends Gui
  			{
  				GL11.glColor3f(r, g, b);
  				mc.renderEngine.bindTexture(histogramBlock);
-				drawTexturedModalRect(horizontalPadding + 4 + histOffestX * i, histOffestY + 2, 0, 0, histOffestX, histogramData[i].data);
-// 				drawTexturedModalRect(horizontalPadding + 4 + histOffestX * i, histOffestY + 2, 0, 0, histOffestX, arr[i].z * 5);
+ 				drawTexturedModalRect(horizontalPadding + 4 + histOffestX * i, histOffestY + 2, 0, 0, histOffestX, histogramValues.get(i).frequency * 5);
  			}
  			GL11.glPopMatrix();
 		}

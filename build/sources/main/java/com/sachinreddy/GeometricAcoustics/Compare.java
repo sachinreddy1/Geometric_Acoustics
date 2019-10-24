@@ -2,13 +2,12 @@ package com.sachinreddy.GeometricAcoustics;
 import java.io.*; 
 import java.util.*;
 
-import org.apache.commons.lang3.tuple.Pair; 
 
 public class Compare {
 	
-   static HashMap <HistogramPair, Integer> hm; 
+   static HashMap <Integer, ArrayList<Integer>> hm; 
 	
-   public static void compare(HistogramPair arr[]) 
+   public static void comparePair(HistogramPair arr[]) 
    { 
 		// Comparator to sort the pair according to second element 
 		Arrays.sort(arr, new Comparator<HistogramPair>() { 
@@ -19,38 +18,72 @@ public class Compare {
 		});
    } 
    
+   public static void compareTriple(ArrayList<HistogramTriple> arr) 
+   { 
+		// Comparator to sort the pair according to second element 
+	   Collections.sort(arr, new Comparator<HistogramTriple>() { 
+		    @Override public int compare(HistogramTriple p1, HistogramTriple p2) 
+		    { 
+		        return p1.rayDistance - p2.rayDistance; 
+		    } 
+		});
+   } 
+   
    // ------------------------------------------------- //
-   
-   // Sort the list
-   // Count frequencies of all pairs in the list
-   // index - Triple(color, rayLength, freq)
-   
-   public static void countFreqValues(HistogramPair arr[], int n) 
+      
+   public static ArrayList<HistogramTriple> countFreqValues(HistogramPair arr[], int n) 
    { 
-	   	hm = new HashMap<HistogramPair, Integer>();
-        for (int i=0; i<n; i++) 
-            if (hm.containsKey(arr[i])) 
-                hm.put(arr[i], hm.get(arr[i]) + 1); 
-            else hm.put(arr[i] , 1); 
+	   	// For each rayDistance, get all assigned soundTypes
+	   	hm = new HashMap<Integer, ArrayList<Integer>>();
+        for (int i=0; i<n; i++) {
+        	if (hm.get(arr[i].data) == null)
+        		hm.put(arr[i].data, new ArrayList<Integer>());
+        	hm.get(hm.get(arr[i].data).add(arr[i].soundType));
+        }
+        
+        // Count number of soundTypes for each rayDistance, and assign most frequent soundType
+        ArrayList<HistogramTriple> ret = new ArrayList<HistogramTriple>();
+        Set<Integer> keys = hm.keySet();
+        for(Integer key: keys)
+        {
+        	ArrayList<Integer> colors = hm.get(key);
+        	int frequency = colors.size();
+        	int soundType = mostFrequentColor(colors, frequency);
+        	int rayDistance = key;
+        	ret.add(HistogramTriple.create(soundType, rayDistance, frequency));
+        }
+        
+        return ret;
    }
    
-   public static int query(HistogramPair x) 
+   static int mostFrequentColor(ArrayList<Integer> arr, int n) 
    { 
-       if (hm.containsKey(x)) 
-           return hm.get(x); 
-       return 0; 
-   }
-   
-   public static Int3[] getQuery() 
-   { 
-	   Set<HistogramPair> keys = hm.keySet();
-	   Int3[] ret = new Int3[hm.size()];
-	   int i = 0;
-	   for(HistogramPair key: keys)
-	   {
-		   ret[i] = Int3.create(key.soundType, key.data, hm.get(key));
-		   i++;
-	   }
-	   return ret;
-   }
+       // Sort the array 
+	   Collections.sort(arr);
+       // find the max frequency using linear traversal
+       int max_count = 1, res = arr.get(0); 
+       int curr_count = 1; 
+       for (int i = 1; i < n; i++) 
+       { 
+           if (arr.get(i) == arr.get(i-1)) 
+               curr_count++; 
+           else 
+           { 
+               if (curr_count > max_count) 
+               { 
+                   max_count = curr_count; 
+                   res = arr.get(i-1); 
+               } 
+               curr_count = 1; 
+           } 
+       } 
+     
+       // If last element is most frequent 
+       if (curr_count > max_count) 
+       { 
+           max_count = curr_count; 
+           res = arr.get(n-1); 
+       } 
+       return res; 
+   } 
 } 
