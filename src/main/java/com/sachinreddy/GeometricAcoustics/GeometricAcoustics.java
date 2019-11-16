@@ -160,6 +160,21 @@ public class GeometricAcoustics
 		Vec3d playerPos = minecraft.thePlayer.getPositionVector();
 		playerPos = new Vec3d(playerPos.xCoord, playerPos.yCoord + minecraft.thePlayer.getEyeHeight(), playerPos.zCoord);
 		
+		// ----- OCCLUSION ------ //
+		
+		float directCutoff = 1.0f;
+		float absorptionCoeff = GeometricAcousticsCore.Config.globalBlockAbsorption * 3.0f;
+		
+		float soundDistance = (float)soundPos.distanceTo(playerPos);
+		Vec3d toPlayerVector = playerPos.subtract(soundPos).normalize();
+		
+		// Offset the ray start position towards the player by the diagonal half length of a cube
+		Vec3d rayOrigin = new Vec3d(soundPos.xCoord, soundPos.yCoord, soundPos.zCoord);
+		if (lastSoundName.matches(".*block.*"))
+		{
+			rayOrigin = rayOrigin.add(toPlayerVector.scale(0.867));
+		}
+		
 		// ---------------------- //
 		
 		float sendGain0 = 0.0f;
