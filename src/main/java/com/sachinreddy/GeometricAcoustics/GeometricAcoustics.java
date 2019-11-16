@@ -175,6 +175,28 @@ public class GeometricAcoustics
 			rayOrigin = rayOrigin.add(toPlayerVector.scale(0.867));
 		}
 		
+		float occlusionAccumulation = 0.0f;		
+		for(int i = 0; i < 10; i++) {
+			RayTraceResult rayHit = mc.theWorld.rayTraceBlocks(rayOrigin, playerPos, true);
+			
+			if (rayHit != null) {
+				Block blockHit = mc.theWorld.getBlockState(rayHit.getBlockPos()).getBlock();
+				float blockOcclusion = 1.0f;
+				
+				if (!blockHit.isOpaqueCube(blockHit.getDefaultState()))
+					blockOcclusion *= 0.15f;
+				
+				occlusionAccumulation += blockOcclusion;
+				
+				rayOrigin = new Vec3d(rayHit.hitVec.xCoord + toPlayerVector.xCoord * 0.1, rayHit.hitVec.yCoord + toPlayerVector.yCoord * 0.1, rayHit.hitVec.zCoord + toPlayerVector.zCoord * 0.1);
+			}
+			else
+				break;
+		}
+		
+		directCutoff = (float)Math.exp(-occlusionAccumulation * absorptionCoeff);
+		float directGain = (float)Math.pow(directCutoff, 0.1);
+		
 		// ---------------------- //
 		
 		float sendGain0 = 0.0f;
