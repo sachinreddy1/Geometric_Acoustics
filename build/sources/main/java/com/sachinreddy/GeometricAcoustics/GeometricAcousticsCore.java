@@ -28,7 +28,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.SidedProxy;
 import com.sachinreddy.proxy.CommonProxy;
 
-@Mod(modid = GeometricAcousticsCore.modid, version = GeometricAcousticsCore.version)
+@Mod(modid = GeometricAcousticsCore.modid, version = GeometricAcousticsCore.version, guiFactory = "com.sachinreddy.GeometricAcoustics.GAGUIFactory")
 public class GeometricAcousticsCore implements IClassTransformer
 {
 	@SidedProxy(clientSide = "com.sachinreddy.proxy.ClientProxy", serverSide = "com.sachinreddy.proxy.CommonProxy")
@@ -38,6 +38,8 @@ public class GeometricAcousticsCore implements IClassTransformer
 	public static GeometricAcousticsCore instance;
 	public static final String modid = "ga";
 	public static final String version = "1.0";
+	
+	public static Configuration configFile;
 		
 	public static class Config
 	{
@@ -59,6 +61,10 @@ public class GeometricAcousticsCore implements IClassTransformer
 		public static float clothReflectivity = 0.05f;
 		public static float sandReflectivity = 0.2f;
 		public static float snowReflectivity = 0.2f;
+		
+		public static final String categoryGeneral = "general";
+		public static final String categoryPerformance = "performance";
+		public static final String categoryMaterialProperties = "material properties";
 	}
 	
 	// ------------------------------------------------- //
@@ -66,6 +72,9 @@ public class GeometricAcousticsCore implements IClassTransformer
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
+		configFile = new Configuration(event.getSuggestedConfigurationFile());
+		syncConfig();
+		
 		proxy.preInit(event);
 	}
 	
@@ -81,6 +90,43 @@ public class GeometricAcousticsCore implements IClassTransformer
 	{
 		MinecraftForge.EVENT_BUS.register(new GAGuiOverlay());
 		proxy.postInit(event);
+	}
+	
+	// ------------------------------------------------- //
+	
+	@SubscribeEvent
+	public void onConfigChanged(ConfigChangedEvent.OnConfigChangedEvent eventArgs)
+	{
+		if (eventArgs.getModID().equals(modid))
+			syncConfig();
+	}
+	
+	public static void syncConfig()
+	{
+		//General
+		Config.globalBlockAbsorption = configFile.getFloat("Global Block Absorption", Configuration.CATEGORY_GENERAL, 1.0f, 0.1f, 4.0f, "The global amount of sound that will be absorbed when traveling through blocks.");
+		Config.globalBlockReflectance = configFile.getFloat("Global Block Reflectance", Configuration.CATEGORY_GENERAL, 1.0f, 0.1f, 4.0f, "The global amount of sound reflectance energy of all blocks. Lower values result in more conservative reverb simulation with shorter reverb tails. Higher values result in more generous reverb simulation with higher reverb tails.");
+		Config.airAbsorption = configFile.getFloat("Air Absorption", Configuration.CATEGORY_GENERAL, 1.0f, 0.0f, 5.0f, "A value controlling the amount that air absorbs high frequencies with distance. A value of 1.0 is physically correct for air with normal humidity and temperature. Higher values mean air will absorb more high frequencies with distance. 0 disables this effect.");
+		
+		//performance
+		Config.environmentCalculationRays = configFile.getInt("Environment Evaluation Rays", Config.categoryPerformance, 32, 8, 64, "The number of rays to trace to determine reverberation for each sound source. More rays provides more consistent tracing results but takes more time to calculate. Decrease this value if you experience lag spikes when sounds play." );
+		
+		//material properties
+		Config.stoneReflectivity = configFile.getFloat("Stone Reflectivity", Config.categoryMaterialProperties, 1.0f, 0.0f, 1.0f, "Sound reflectivity for stone blocks.");
+		Config.woodReflectivity = configFile.getFloat("Wood Reflectivity", Config.categoryMaterialProperties, 0.4f, 0.0f, 1.0f, "Sound reflectivity for wooden blocks.");
+		Config.groundReflectivity = configFile.getFloat("Ground Reflectivity", Config.categoryMaterialProperties, 0.3f, 0.0f, 1.0f, "Sound reflectivity for ground blocks (dirt, gravel, etc).");
+		Config.plantReflectivity = configFile.getFloat("Foliage Reflectivity", Config.categoryMaterialProperties, 0.5f, 0.0f, 1.0f, "Sound reflectivity for foliage blocks (leaves, grass, etc.).");
+		Config.metalReflectivity = configFile.getFloat("Metal Reflectivity", Config.categoryMaterialProperties, 1.0f, 0.0f, 1.0f, "Sound reflectivity for metal blocks.");
+		Config.glassReflectivity = configFile.getFloat("Glass Reflectivity", Config.categoryMaterialProperties, 0.5f, 0.0f, 1.0f, "Sound reflectivity for glass blocks.");
+		Config.clothReflectivity = configFile.getFloat("Cloth Reflectivity", Config.categoryMaterialProperties, 0.05f, 0.0f, 1.0f, "Sound reflectivity for cloth blocks (carpet, wool, etc).");
+		Config.sandReflectivity = configFile.getFloat("Sand Reflectivity", Config.categoryMaterialProperties, 0.2f, 0.0f, 1.0f, "Sound reflectivity for sand blocks.");
+		Config.snowReflectivity = configFile.getFloat("Snow Reflectivity", Config.categoryMaterialProperties, 0.2f, 0.0f, 1.0f, "Sound reflectivity for snow blocks.");
+		
+	    if(configFile.hasChanged())
+	    {
+	    	configFile.save();
+	    	GeometricAcoustics.applyConfigChanges(); 
+	    }
 	}
 	
 	// ------------------------------------------------- //

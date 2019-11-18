@@ -108,12 +108,20 @@ public class GeometricAcoustics
 		sendFilter3 = EFX10.alGenFilters();
 		EFX10.alFilteri(sendFilter3, EFX10.AL_FILTER_TYPE, EFX10.AL_FILTER_LOWPASS);
 		
-		setReverbParameters(ReverbParameters.getReverb0(), auxFXSlot0, reverb0);
-		setReverbParameters(ReverbParameters.getReverb1(), auxFXSlot1, reverb1);
-		setReverbParameters(ReverbParameters.getReverb2(), auxFXSlot2, reverb2);
-		setReverbParameters(ReverbParameters.getReverb3(), auxFXSlot3, reverb3);
+		applyConfigChanges();
 		
 		log("Reverb parameters setup.");
+	}
+	
+	public static void applyConfigChanges()
+	{		
+		if (auxFXSlot0 != 0)
+		{
+			setReverbParameters(ReverbParameters.getReverb0(), auxFXSlot0, reverb0);	
+			setReverbParameters(ReverbParameters.getReverb1(), auxFXSlot1, reverb1);	
+			setReverbParameters(ReverbParameters.getReverb2(), auxFXSlot2, reverb2);
+			setReverbParameters(ReverbParameters.getReverb3(), auxFXSlot3, reverb3);
+		}
 	}
 	
 	// ------------------------------------------------- //

@@ -1,21 +1,30 @@
 Symbol range map extraction starting
-Processing 12 files
+Processing 14 files
 startProcessing "com/sachinreddy/GeometricAcoustics/Compare.java" md5: a6f2d0943bf4329043a1e524107c8e86
 Cache Hit!
 endProcessing "com/sachinreddy/GeometricAcoustics/Compare.java"
+
+startProcessing "com/sachinreddy/GeometricAcoustics/GAConfigGUI.java" md5: 8d71f51ee3490a6d2ba6612c5729f282
+Cache Hit!
+endProcessing "com/sachinreddy/GeometricAcoustics/GAConfigGUI.java"
 
 startProcessing "com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java" md5: a4f824add5da1f494aa4a8c3ce0582c5
 Cache Hit!
 endProcessing "com/sachinreddy/GeometricAcoustics/GAFMLLoadingPlugin.java"
 
+startProcessing "com/sachinreddy/GeometricAcoustics/GAGUIFactory.java" md5: 6b297be43bc567f2ed9e5be3d6086185
+Cache Hit!
+endProcessing "com/sachinreddy/GeometricAcoustics/GAGUIFactory.java"
+
 startProcessing "com/sachinreddy/GeometricAcoustics/GAGuiOverlay.java" md5: 457033b120a796dc21c4636372324517
 Cache Hit!
 endProcessing "com/sachinreddy/GeometricAcoustics/GAGuiOverlay.java"
 
-startProcessing "com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java" md5: e78cc4a712192de203e50186fe0030af
+startProcessing "com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java" md5: ccee5cd0cb5696b86005cb38209cd263
+Cache Hit!
 endProcessing "com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java"
 
-startProcessing "com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java" md5: 1381ffa9e460c935d847266dd573b6ed
+startProcessing "com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java" md5: e3cbd8c6cf23f2044ac47b39324348c0
 Cache Hit!
 endProcessing "com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java"
 
