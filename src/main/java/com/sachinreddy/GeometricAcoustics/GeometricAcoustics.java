@@ -98,7 +98,6 @@ public class GeometricAcoustics
 		//Create filters
 		directFilter0 = EFX10.alGenFilters();
 		EFX10.alFilteri(directFilter0, EFX10.AL_FILTER_TYPE, EFX10.AL_FILTER_LOWPASS);
-		
 		sendFilter0 = EFX10.alGenFilters();
 		EFX10.alFilteri(sendFilter0, EFX10.AL_FILTER_TYPE, EFX10.AL_FILTER_LOWPASS);
 		sendFilter1 = EFX10.alGenFilters();
@@ -143,14 +142,6 @@ public class GeometricAcoustics
 //		log("[SOUND PLAYED]: Source ID: " + sourceID + " | (" + posX + ", " + posY + ", " + posZ + ") | Sound category: " + lastSoundCategory.toString() + " | Sound name: " + lastSoundName);
 		calculateEnvironment(posX, posY, posZ, sourceID);
 		GAGuiOverlay.updateOverlay(posX, posY, posZ, sourceID, lastSoundCategory, lastSoundName);
-//		testReverb(sourceID);
-	}
-	
-	// ------------------------------------------------- //
-	
-	private static void testReverb(int sourceID) {
-		float testVal = 0.5f;
-		setEnvironment(sourceID, testVal, testVal, testVal, testVal, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f);
 	}
 	
 	// ------------------------------------------------- //
@@ -313,7 +304,6 @@ public class GeometricAcoustics
 					float cross1 = 1.0f - MathHelper.clamp_float(Math.abs(reflectionDelay - 1.0f), 0.0f, 1.0f);
 					float cross2 = 1.0f - MathHelper.clamp_float(Math.abs(reflectionDelay - 2.0f), 0.0f, 1.0f);
 					float cross3 = MathHelper.clamp_float(reflectionDelay - 2.0f, 0.0f, 1.0f);
-//					float cross3 = 1.0f - MathHelper.clamp_float(Math.abs(reflectionDelay - 3.0f), 0.0f, 1.0f);
 										
 					sendGain0 += cross0 * energyTowardsPlayer * 6.4f * totalRays;
 					sendGain1 += cross1 * energyTowardsPlayer * 12.8f * totalRays;
@@ -400,7 +390,6 @@ public class GeometricAcoustics
 			return Integer.parseInt("ce954b", 16);
 		else if (soundType == SoundType.ANVIL)
 			return Integer.parseInt("1a1a1a", 16);
-				
 		return Integer.parseInt("9370db", 16);
 	}
 		
@@ -469,25 +458,18 @@ public class GeometricAcoustics
 		
 		//names
 		if (name.matches(".*step.*"))
-		{
 			offsetY = 0.1;
-		}
 		
 		//categories
 		if (soundCategory.matches("block") || soundCategory.matches("record"))
-		{
 			offsetTowardsPlayer = 0.89;
-		}
 		
 		if (soundPos.yCoord % 1.0 < 0.001 && soundPos.yCoord > 0.01)
-		{
 			offsetY = 0.1;
-		}
 		
 		offsetX += toPlayerVector.xCoord * offsetTowardsPlayer;
 		offsetY += toPlayerVector.yCoord * offsetTowardsPlayer;
 		offsetZ += toPlayerVector.zCoord * offsetTowardsPlayer;
-		
 		soundPos = soundPos.addVector(offsetX, offsetY, offsetZ);
 				
 		return soundPos;
