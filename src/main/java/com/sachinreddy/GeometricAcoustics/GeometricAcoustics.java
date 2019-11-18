@@ -42,6 +42,8 @@ public class GeometricAcoustics
 	private static int reverb2;
 	private static int reverb3;
 	//
+	private static int directFilter0;
+	//
 	private static int sendFilter0;
 	private static int sendFilter1;
 	private static int sendFilter2;
@@ -94,6 +96,9 @@ public class GeometricAcoustics
 		EFX10.alEffecti(reverb3, EFX10.AL_EFFECT_TYPE, EFX10.AL_EFFECT_EAXREVERB);
 		
 		//Create filters
+		directFilter0 = EFX10.alGenFilters();
+		EFX10.alFilteri(directFilter0, EFX10.AL_FILTER_TYPE, EFX10.AL_FILTER_LOWPASS);
+		
 		sendFilter0 = EFX10.alGenFilters();
 		EFX10.alFilteri(sendFilter0, EFX10.AL_FILTER_TYPE, EFX10.AL_FILTER_LOWPASS);
 		sendFilter1 = EFX10.alGenFilters();
@@ -177,10 +182,10 @@ public class GeometricAcoustics
 		
 		float occlusionAccumulation = 0.0f;		
 		for(int i = 0; i < 10; i++) {
-			RayTraceResult rayHit = mc.theWorld.rayTraceBlocks(rayOrigin, playerPos, true);
+			RayTraceResult rayHit = minecraft.theWorld.rayTraceBlocks(rayOrigin, playerPos, true);
 			
 			if (rayHit != null) {
-				Block blockHit = mc.theWorld.getBlockState(rayHit.getBlockPos()).getBlock();
+				Block blockHit = minecraft.theWorld.getBlockState(rayHit.getBlockPos()).getBlock();
 				float blockOcclusion = 1.0f;
 				
 				if (!blockHit.isOpaqueCube(blockHit.getDefaultState()))
@@ -210,6 +215,8 @@ public class GeometricAcoustics
 		float sendCutoff1 = 1.0f;
 		float sendCutoff2 = 1.0f;
 		float sendCutoff3 = 1.0f;
+		
+		float sharedAirspace = 0.0f;
 		
 		// ---------------------- //
 		
@@ -278,6 +285,16 @@ public class GeometricAcoustics
 						
 						lastHitPos = newRayHit.hitVec;
 						lastHitNormal = getNormalFromFacing(newRayHit.sideHit);
+						
+						// ----- OCCLUSION ------ //
+						
+						Vec3d finalHitToPlayer = playerPos.subtract(lastHitPos).normalize();
+						Vec3d finalRayStart = new Vec3d(lastHitPos.xCoord + lastHitNormal.xCoord * 0.01, lastHitPos.yCoord + lastHitNormal.yCoord * 0.01, lastHitPos.zCoord + lastHitNormal.zCoord * 0.01);
+						RayTraceResult finalRayHit = minecraft.theWorld.rayTraceBlocks(finalRayStart, playerPos, true);
+						if (finalRayHit == null)
+							sharedAirspace += 1.0f;
+						
+						// ---------------------- //
 					}
 					else
 						totalRayDistance += lastHitPos.distanceTo(playerPos);
@@ -309,6 +326,27 @@ public class GeometricAcoustics
 		bounceReflectivityRatio[2] = (float)bounceReflectivityRatio[2] / (float)numRays;
 		bounceReflectivityRatio[3] = (float)bounceReflectivityRatio[3] / (float)numRays;
 		
+		// ----- OCCLUSION ------ //
+		
+		sharedAirspace *= 64.0f;
+		sharedAirspace *= totalRays;
+		
+		float sharedAirspaceWeight0 = MathHelper.clamp_float(sharedAirspace / 20.0f, 0.0f, 1.0f);
+		float sharedAirspaceWeight1 = MathHelper.clamp_float(sharedAirspace / 15.0f, 0.0f, 1.0f);
+		float sharedAirspaceWeight2 = MathHelper.clamp_float(sharedAirspace / 10.0f, 0.0f, 1.0f);
+		float sharedAirspaceWeight3 = MathHelper.clamp_float(sharedAirspace / 10.0f, 0.0f, 1.0f);
+		
+		sendCutoff0 = (float)Math.exp(-occlusionAccumulation * absorptionCoeff * 1.0f) * (1.0f - sharedAirspaceWeight0) + sharedAirspaceWeight0;
+		sendCutoff1 = (float)Math.exp(-occlusionAccumulation * absorptionCoeff * 1.0f) * (1.0f - sharedAirspaceWeight1) + sharedAirspaceWeight1;
+		sendCutoff2 = (float)Math.exp(-occlusionAccumulation * absorptionCoeff * 1.5f) * (1.0f - sharedAirspaceWeight2) + sharedAirspaceWeight2;
+		sendCutoff3 = (float)Math.exp(-occlusionAccumulation * absorptionCoeff * 1.5f) * (1.0f - sharedAirspaceWeight3) + sharedAirspaceWeight3;
+		
+		float averageSharedAirspace = (sharedAirspaceWeight0 + sharedAirspaceWeight1 + sharedAirspaceWeight2 + sharedAirspaceWeight3) * 0.25f;
+		directCutoff = (float)Math.max((float)Math.pow(averageSharedAirspace, 0.5) * 0.2f, directCutoff);
+		directGain = (float)Math.pow(directCutoff, 0.1);
+		
+		// ---------------------- //
+		
 		sendGain1 *= (float)Math.pow(bounceReflectivityRatio[1], 1.0); 
 		sendGain2 *= (float)Math.pow(bounceReflectivityRatio[2], 3.0);
 		sendGain3 *= (float)Math.pow(bounceReflectivityRatio[3], 4.0);
@@ -321,7 +359,7 @@ public class GeometricAcoustics
 		// ---------------------- //
 		
 //		log("Gain: " + sendGain0 + ", " + sendGain1 + ", " + sendGain2 + ", " + sendGain3);
-		setEnvironment(sourceID, sendGain0, sendGain1, sendGain2, sendGain3, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f);
+		setEnvironment(sourceID, sendGain0, sendGain1, sendGain2, sendGain3, sendCutoff0, sendCutoff1, sendCutoff2, sendCutoff3, directCutoff, directGain);
 	}
 	
 	// ------------------------------------------------- //
@@ -437,7 +475,7 @@ public class GeometricAcoustics
 		EFX10.alFilterf(directFilter0, EFX10.AL_LOWPASS_GAINHF, directCutoff);
 		AL10.alSourcei(sourceID, EFX10.AL_DIRECT_FILTER, directFilter0);
 		
-		AL10.alSourcef(sourceID, EFX10.AL_AIR_ABSORPTION_FACTOR, SoundPhysicsCore.Config.airAbsorption);
+		AL10.alSourcef(sourceID, EFX10.AL_AIR_ABSORPTION_FACTOR, GeometricAcousticsCore.Config.airAbsorption);
 	}
 	
 	protected static void setReverbParameters(ReverbParameters r, int auxFXSlot, int reverbSlot)

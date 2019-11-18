@@ -43,6 +43,7 @@ public class GeometricAcousticsCore implements IClassTransformer
 	{
 		//general
 		public static float globalBlockReflectance = 1.0f;
+		public static float globalBlockAbsorption = 1.0f;
 		public static float airAbsorption = 1.0f;
 		
 		//performance
