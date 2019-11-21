@@ -202,6 +202,8 @@ public class GeometricAcoustics
 		directCutoff = (float)Math.exp(-occlusionAccumulation * absorptionCoeff);
 		float directGain = (float)Math.pow(directCutoff, 0.1);
 		
+		log("direct cutoff: " + directCutoff + "  direct gain:" + directGain);
+		
 		// ---------------------- //
 		
 		float sendGain0 = 0.0f;
@@ -357,7 +359,8 @@ public class GeometricAcoustics
 		
 		// ---------------------- //
 		
-//		log("Gain: " + sendGain0 + ", " + sendGain1 + ", " + sendGain2 + ", " + sendGain3);
+		log("Gain: " + sendGain0 + ", " + sendGain1 + ", " + sendGain2 + ", " + sendGain3);
+//		log("Cutoff: " + sendCutoff0 + ", " + sendCutoff1 + ", " + sendCutoff2 + ", " + sendCutoff3 + ", " + directCutoff);
 		setEnvironment(sourceID, sendGain0, sendGain1, sendGain2, sendGain3, sendCutoff0, sendCutoff1, sendCutoff2, sendCutoff3, directCutoff, directGain);
 	}
 	
