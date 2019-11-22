@@ -229,6 +229,8 @@ public class GeometricAcoustics
 		
 		final int numRays = GeometricAcousticsCore.Config.environmentCalculationRays;
 		final int rayBounces = 4;
+		
+		final double reflectionEnergyCurve = 1.0;
 
 		float[] bounceReflectivityRatio = new float[rayBounces];
 		float totalRays = 1.0f / (numRays * rayBounces);
@@ -282,7 +284,7 @@ public class GeometricAcoustics
 					if (newRayHit != null)
 					{	
 						double newRayLength = lastHitPos.distanceTo(newRayHit.hitVec);
-						bounceReflectivityRatio[j] += blockReflectivity;
+						bounceReflectivityRatio[j] += (float)Math.pow(blockReflectivity, reflectionEnergyCurve);
 						totalRayDistance += newRayLength;
 						
 						lastHitPos = newRayHit.hitVec;
@@ -301,7 +303,7 @@ public class GeometricAcoustics
 					else
 						totalRayDistance += lastHitPos.distanceTo(playerPos);
 					
-					float reflectionDelay = (float)totalRayDistance * blockReflectivity;
+					float reflectionDelay = (float)Math.pow(Math.max(totalRayDistance, 0.0), 1.0) * 0.12f * blockReflectivity;
 					float cross0 = 1.0f - MathHelper.clamp_float(reflectionDelay, 0.0f, 1.0f);
 					float cross1 = 1.0f - MathHelper.clamp_float(Math.abs(reflectionDelay - 1.0f), 0.0f, 1.0f);
 					float cross2 = 1.0f - MathHelper.clamp_float(Math.abs(reflectionDelay - 2.0f), 0.0f, 1.0f);
@@ -322,10 +324,10 @@ public class GeometricAcoustics
 			}
 		}
 				
-		bounceReflectivityRatio[0] = (float)bounceReflectivityRatio[0] / (float)numRays;
-		bounceReflectivityRatio[1] = (float)bounceReflectivityRatio[1] / (float)numRays;
-		bounceReflectivityRatio[2] = (float)bounceReflectivityRatio[2] / (float)numRays;
-		bounceReflectivityRatio[3] = (float)bounceReflectivityRatio[3] / (float)numRays;
+		bounceReflectivityRatio[0] = (float)Math.pow(bounceReflectivityRatio[0] / (float)numRays, 1.0 / reflectionEnergyCurve);
+		bounceReflectivityRatio[1] = (float)Math.pow(bounceReflectivityRatio[1] / (float)numRays, 1.0 / reflectionEnergyCurve);
+		bounceReflectivityRatio[2] = (float)Math.pow(bounceReflectivityRatio[2] / (float)numRays, 1.0 / reflectionEnergyCurve);
+		bounceReflectivityRatio[3] = (float)Math.pow(bounceReflectivityRatio[3] / (float)numRays, 1.0 / reflectionEnergyCurve);
 		
 		// ----- OCCLUSION ------ //
 		
@@ -352,15 +354,21 @@ public class GeometricAcoustics
 		sendGain2 *= (float)Math.pow(bounceReflectivityRatio[2], 3.0);
 		sendGain3 *= (float)Math.pow(bounceReflectivityRatio[3], 4.0);
 		
-		sendGain0 = MathHelper.clamp_float(sendGain0, 0.0f, 1.0f);
-		sendGain1 = MathHelper.clamp_float(sendGain1, 0.0f, 1.0f);
-		sendGain2 = MathHelper.clamp_float(sendGain2, 0.0f, 1.0f);
-		sendGain3 = MathHelper.clamp_float(sendGain3, 0.0f, 1.0f);
+		sendGain0 = MathHelper.clamp_float(sendGain0 * 1.00f - 0.00f, 0.0f, 1.0f);
+		sendGain1 = MathHelper.clamp_float(sendGain1 * 1.00f - 0.00f, 0.0f, 1.0f);
+		sendGain2 = MathHelper.clamp_float(sendGain2 * 1.05f - 0.05f, 0.0f, 1.0f);
+		sendGain3 = MathHelper.clamp_float(sendGain3 * 1.05f - 0.05f, 0.0f, 1.0f);
+		
+		//
+		sendGain0 *= (float)Math.pow(sendCutoff0, 0.1);
+		sendGain1 *= (float)Math.pow(sendCutoff1, 0.1);
+		sendGain2 *= (float)Math.pow(sendCutoff2, 0.1);
+		sendGain3 *= (float)Math.pow(sendCutoff3, 0.1);
 		
 		// ---------------------- //
 		
-		log("Gain: " + sendGain0 + ", " + sendGain1 + ", " + sendGain2 + ", " + sendGain3);
-//		log("Cutoff: " + sendCutoff0 + ", " + sendCutoff1 + ", " + sendCutoff2 + ", " + sendCutoff3 + ", " + directCutoff);
+		log("[Gain]: " + sendGain0 + ", " + sendGain1 + ", " + sendGain2 + ", " + sendGain3);
+		log("[Cutoff]: " + sendCutoff0 + ", " + sendCutoff1 + ", " + sendCutoff2 + ", " + sendCutoff3 + ", " + directCutoff);
 		setEnvironment(sourceID, sendGain0, sendGain1, sendGain2, sendGain3, sendCutoff0, sendCutoff1, sendCutoff2, sendCutoff3, directCutoff, directGain);
 	}
 	

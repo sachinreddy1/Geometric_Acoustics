@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="mc"/>
+		<item key="selection" value="directGain"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="directGain"/>
+			<item value="globalReverbGain"/>
+			<item value="ReverbParameters"/>
+			<item value="totalRays"/>
+			<item value="rcpTotalRays"/>
+			<item value="offsetSoundByName"/>
 			<item value="mc"/>
 			<item value="rayDistance"/>
 			<item value="getSoundResource"/>
@@ -17,12 +23,6 @@
 			<item value="histogramData"/>
 			<item value="raySoundTypes"/>
 			<item value="rayDistances"/>
-			<item value="lastSoundResource"/>
-			<item value="color"/>
-			<item value="clear"/>
-			<item value="release"/>
-			<item value="rect"/>
-			<item value="horizontalWidth"/>
 		</list>
 		<list key="replacehistory">
 			<item value="totalRays"/>
