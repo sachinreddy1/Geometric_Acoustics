@@ -140,7 +140,7 @@ public class GeometricAcoustics
 	public static void onPlaySound(float posX, float posY, float posZ, int sourceID)
 	{
 //		log("[SOUND PLAYED]: Source ID: " + sourceID + " | (" + posX + ", " + posY + ", " + posZ + ") | Sound category: " + lastSoundCategory.toString() + " | Sound name: " + lastSoundName);
-		calculateEnvironment(posX, posY, posZ, sourceID);
+		calculateEnvironment_(posX, posY, posZ, sourceID);
 		GAGuiOverlay.updateOverlay(posX, posY, posZ, sourceID, lastSoundCategory, lastSoundName);
 	}
 	
@@ -369,6 +369,232 @@ public class GeometricAcoustics
 		
 		log("[Gain]: " + sendGain0 + ", " + sendGain1 + ", " + sendGain2 + ", " + sendGain3);
 		log("[Cutoff]: " + sendCutoff0 + ", " + sendCutoff1 + ", " + sendCutoff2 + ", " + sendCutoff3 + ", " + directCutoff);
+		setEnvironment(sourceID, sendGain0, sendGain1, sendGain2, sendGain3, sendCutoff0, sendCutoff1, sendCutoff2, sendCutoff3, directCutoff, directGain);
+	}
+	
+	private static void calculateEnvironment_(float posX, float posY, float posZ, int sourceID)
+	{
+		// Main menu or if raining
+		if (posX < 0.01f && posY < 0.01f && posZ < 0.01f || lastSoundName.matches(".*rain.*"))
+		{			
+			setEnvironment(sourceID, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f);
+			return;
+		}
+		
+		if (minecraft.thePlayer == null || minecraft.theWorld == null)
+			return;
+		
+		// ---------------------- //
+		
+		Vec3d soundPos = new Vec3d(posX, posY, posZ);
+		Vec3d playerPos = minecraft.thePlayer.getPositionVector();
+		playerPos = new Vec3d(playerPos.xCoord, playerPos.yCoord + minecraft.thePlayer.getEyeHeight(), playerPos.zCoord);
+		
+		// ----- OCCLUSION ------ //
+		
+		float directCutoff = 1.0f;
+		float absorptionCoeff = GeometricAcousticsCore.Config.globalBlockAbsorption * 3.0f;
+		
+		soundPos = offsetSoundByName(soundPos, playerPos, lastSoundName, lastSoundCategory.getName());
+		float soundDistance = (float)soundPos.distanceTo(playerPos);
+		Vec3d toPlayerVector = playerPos.subtract(soundPos).normalize();
+		
+		// Offset the ray start position towards the player by the diagonal half length of a cube
+		Vec3d rayOrigin = new Vec3d(soundPos.xCoord, soundPos.yCoord, soundPos.zCoord);
+		if (lastSoundName.matches(".*block.*"))
+		{
+			rayOrigin = rayOrigin.add(toPlayerVector.scale(0.867));
+		}
+		
+		float occlusionAccumulation = 0.0f;		
+		for(int i = 0; i < 10; i++) {
+			RayTraceResult rayHit = minecraft.theWorld.rayTraceBlocks(rayOrigin, playerPos, true);
+			
+			if (rayHit != null) {
+				Block blockHit = minecraft.theWorld.getBlockState(rayHit.getBlockPos()).getBlock();
+				float blockOcclusion = 1.0f;
+				
+				if (!blockHit.isOpaqueCube(blockHit.getDefaultState()))
+					blockOcclusion *= 0.15f;
+				
+				occlusionAccumulation += blockOcclusion;
+				
+				rayOrigin = new Vec3d(rayHit.hitVec.xCoord + toPlayerVector.xCoord * 0.1, rayHit.hitVec.yCoord + toPlayerVector.yCoord * 0.1, rayHit.hitVec.zCoord + toPlayerVector.zCoord * 0.1);
+			}
+			else
+				break;
+		}
+		
+		directCutoff = (float)Math.exp(-occlusionAccumulation * absorptionCoeff);
+		float directGain = (float)Math.pow(directCutoff, 0.1);
+				
+		// ---------------------- //
+		
+		float sendGain0 = 0.0f;
+		float sendGain1 = 0.0f;
+		float sendGain2 = 0.0f;
+		float sendGain3 = 0.0f;
+		
+		// ----- OCCLUSION ------ //
+		
+		float sendCutoff0 = 1.0f;
+		float sendCutoff1 = 1.0f;
+		float sendCutoff2 = 1.0f;
+		float sendCutoff3 = 1.0f;
+		
+		float sharedAirspace = 0.0f;
+		
+		// ---------------------- //
+		
+		//Shoot rays around sound's source
+		final float phi = 1.618033988f;
+		final float gAngle = phi * (float)Math.PI * 2.0f;
+		final float maxDistance = 256.0f;
+		
+		final int numRays = GeometricAcousticsCore.Config.environmentCalculationRays;
+		final int rayBounces = 4;
+		
+		final double reflectionEnergyCurve = 1.0;
+
+		float[] bounceReflectivityRatio = new float[rayBounces];
+		float totalRays = 1.0f / (numRays * rayBounces);
+		
+		// ---------------------- //
+		
+		for (int i = 0; i < numRays; i++)
+		{
+			float fi = (float)i;
+			float fiN = (float)fi / (float)numRays;
+			float longitude = gAngle * fi * 1.0f;
+			float latitude = (float)Math.asin(fiN * 2.0f - 1.0f);
+			
+			Vec3d rayDir = new Vec3d(0.0, 0.0, 0.0);
+			{
+				double x = Math.cos(latitude) * Math.cos(longitude);
+				double y = Math.cos(latitude) * Math.sin(longitude);
+				double z = Math.sin(latitude);
+				rayDir = new Vec3d(x, y, z);
+			}
+			
+			Vec3d rayStart = new Vec3d(soundPos.xCoord, soundPos.yCoord, soundPos.zCoord);
+			Vec3d rayEnd = new Vec3d(rayStart.xCoord + rayDir.xCoord * maxDistance, rayStart.yCoord + rayDir.yCoord * maxDistance, rayStart.zCoord + rayDir.zCoord * maxDistance);
+			RayTraceResult rayHit = minecraft.theWorld.rayTraceBlocks(rayStart, rayEnd, true);
+			
+			if (rayHit != null)
+			{
+				double rayLength = soundPos.distanceTo(rayHit.hitVec);
+				
+				// Additional bounces
+				Int3 lastHitBlock = Int3.create(rayHit.getBlockPos().getX(), rayHit.getBlockPos().getY(), rayHit.getBlockPos().getZ());
+				Vec3d lastHitPos = rayHit.hitVec;
+				// For reflecting
+				Vec3d lastHitNormal = getNormalFromFacing(rayHit.sideHit);
+				Vec3d lastRayDir = rayDir;
+				
+				float totalRayDistance = (float)rayLength;
+				
+				//Secondary ray bounces
+				for (int j = 0; j < rayBounces; j++)
+				{
+					Vec3d newRayDir = reflect(lastRayDir, lastHitNormal);
+					Vec3d newRayStart = new Vec3d(lastHitPos.xCoord + lastHitNormal.xCoord * 0.01, lastHitPos.yCoord + lastHitNormal.yCoord * 0.01, lastHitPos.zCoord + lastHitNormal.zCoord * 0.01);
+					Vec3d newRayEnd = new Vec3d(newRayStart.xCoord + newRayDir.xCoord * maxDistance, newRayStart.yCoord + newRayDir.yCoord * maxDistance, newRayStart.zCoord + newRayDir.zCoord * maxDistance);					
+					RayTraceResult newRayHit = minecraft.theWorld.rayTraceBlocks(newRayStart, newRayEnd, true);
+					
+					float blockReflectivity = getBlockReflectivity(lastHitBlock);
+					float energyTowardsPlayer = 0.25f;
+					energyTowardsPlayer *= blockReflectivity * 0.75f + 0.25f;
+							
+					if (newRayHit != null)
+					{	
+						double newRayLength = lastHitPos.distanceTo(newRayHit.hitVec);
+						bounceReflectivityRatio[j] += (float)Math.pow(blockReflectivity, reflectionEnergyCurve);
+						totalRayDistance += newRayLength;
+						
+						lastHitPos = newRayHit.hitVec;
+						lastHitNormal = getNormalFromFacing(newRayHit.sideHit);
+						
+						// ----- OCCLUSION ------ //
+						
+						Vec3d finalHitToPlayer = playerPos.subtract(lastHitPos).normalize();
+						Vec3d finalRayStart = new Vec3d(lastHitPos.xCoord + lastHitNormal.xCoord * 0.01, lastHitPos.yCoord + lastHitNormal.yCoord * 0.01, lastHitPos.zCoord + lastHitNormal.zCoord * 0.01);
+						RayTraceResult finalRayHit = minecraft.theWorld.rayTraceBlocks(finalRayStart, playerPos, true);
+						if (finalRayHit == null)
+							sharedAirspace += 1.0f;
+						
+						// ---------------------- //
+					}
+					else
+						totalRayDistance += lastHitPos.distanceTo(playerPos);
+					
+					float reflectionDelay = (float)Math.pow(Math.max(totalRayDistance, 0.0), 1.0) * 0.12f * blockReflectivity;
+					float cross0 = 1.0f - MathHelper.clamp_float(reflectionDelay, 0.0f, 1.0f);
+					float cross1 = 1.0f - MathHelper.clamp_float(Math.abs(reflectionDelay - 1.0f), 0.0f, 1.0f);
+					float cross2 = 1.0f - MathHelper.clamp_float(Math.abs(reflectionDelay - 2.0f), 0.0f, 1.0f);
+					float cross3 = MathHelper.clamp_float(reflectionDelay - 2.0f, 0.0f, 1.0f);
+										
+					sendGain0 += cross0 * energyTowardsPlayer * 6.4f * totalRays;
+					sendGain1 += cross1 * energyTowardsPlayer * 12.8f * totalRays;
+					sendGain2 += cross2 * energyTowardsPlayer * 12.8f * totalRays;
+					sendGain3 += cross3 * energyTowardsPlayer * 12.8f * totalRays;
+					
+					if (newRayHit == null)
+						break;
+				}
+				
+				if (lastSoundCategory.toString() == "PLAYERS")
+					GAGuiOverlay.histogramData[i] = HistogramPair.create(getSoundResource(lastHitBlock), (int)totalRayDistance);
+				
+			}
+		}
+		
+		log("LENGTH: " + GAGuiOverlay.histogramValues.size());
+				
+		bounceReflectivityRatio[0] = (float)Math.pow(bounceReflectivityRatio[0] / (float)numRays, 1.0 / reflectionEnergyCurve);
+		bounceReflectivityRatio[1] = (float)Math.pow(bounceReflectivityRatio[1] / (float)numRays, 1.0 / reflectionEnergyCurve);
+		bounceReflectivityRatio[2] = (float)Math.pow(bounceReflectivityRatio[2] / (float)numRays, 1.0 / reflectionEnergyCurve);
+		bounceReflectivityRatio[3] = (float)Math.pow(bounceReflectivityRatio[3] / (float)numRays, 1.0 / reflectionEnergyCurve);
+		
+		// ----- OCCLUSION ------ //
+		
+		sharedAirspace *= 64.0f;
+		sharedAirspace *= totalRays;
+		
+		float sharedAirspaceWeight0 = MathHelper.clamp_float(sharedAirspace / 20.0f, 0.0f, 1.0f);
+		float sharedAirspaceWeight1 = MathHelper.clamp_float(sharedAirspace / 15.0f, 0.0f, 1.0f);
+		float sharedAirspaceWeight2 = MathHelper.clamp_float(sharedAirspace / 10.0f, 0.0f, 1.0f);
+		float sharedAirspaceWeight3 = MathHelper.clamp_float(sharedAirspace / 10.0f, 0.0f, 1.0f);
+		
+		sendCutoff0 = (float)Math.exp(-occlusionAccumulation * absorptionCoeff * 1.0f) * (1.0f - sharedAirspaceWeight0) + sharedAirspaceWeight0;
+		sendCutoff1 = (float)Math.exp(-occlusionAccumulation * absorptionCoeff * 1.0f) * (1.0f - sharedAirspaceWeight1) + sharedAirspaceWeight1;
+		sendCutoff2 = (float)Math.exp(-occlusionAccumulation * absorptionCoeff * 1.5f) * (1.0f - sharedAirspaceWeight2) + sharedAirspaceWeight2;
+		sendCutoff3 = (float)Math.exp(-occlusionAccumulation * absorptionCoeff * 1.5f) * (1.0f - sharedAirspaceWeight3) + sharedAirspaceWeight3;
+		
+		float averageSharedAirspace = (sharedAirspaceWeight0 + sharedAirspaceWeight1 + sharedAirspaceWeight2 + sharedAirspaceWeight3) * 0.25f;
+		directCutoff = (float)Math.max((float)Math.pow(averageSharedAirspace, 0.5) * 0.2f, directCutoff);
+		directGain = (float)Math.pow(directCutoff, 0.1);
+		
+		// ---------------------- //
+		
+		sendGain1 *= (float)Math.pow(bounceReflectivityRatio[1], 1.0); 
+		sendGain2 *= (float)Math.pow(bounceReflectivityRatio[2], 3.0);
+		sendGain3 *= (float)Math.pow(bounceReflectivityRatio[3], 4.0);
+		
+		sendGain0 = MathHelper.clamp_float(sendGain0 * 1.00f - 0.00f, 0.0f, 1.0f);
+		sendGain1 = MathHelper.clamp_float(sendGain1 * 1.00f - 0.00f, 0.0f, 1.0f);
+		sendGain2 = MathHelper.clamp_float(sendGain2 * 1.05f - 0.05f, 0.0f, 1.0f);
+		sendGain3 = MathHelper.clamp_float(sendGain3 * 1.05f - 0.05f, 0.0f, 1.0f);
+		
+		//
+		sendGain0 *= (float)Math.pow(sendCutoff0, 0.1);
+		sendGain1 *= (float)Math.pow(sendCutoff1, 0.1);
+		sendGain2 *= (float)Math.pow(sendCutoff2, 0.1);
+		sendGain3 *= (float)Math.pow(sendCutoff3, 0.1);
+		
+		// ---------------------- //
+		
+//		log("[Gain]: " + sendGain0 + ", " + sendGain1 + ", " + sendGain2 + ", " + sendGain3);
+//		log("[Cutoff]: " + sendCutoff0 + ", " + sendCutoff1 + ", " + sendCutoff2 + ", " + sendCutoff3 + ", " + directCutoff);
 		setEnvironment(sourceID, sendGain0, sendGain1, sendGain2, sendGain3, sendCutoff0, sendCutoff1, sendCutoff2, sendCutoff3, directCutoff, directGain);
 	}
 	

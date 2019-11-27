@@ -42,6 +42,7 @@ public class GAGuiOverlay extends Gui
 	static String name_data = "";
 	//
 	public static HistogramPair[] histogramData = new HistogramPair[GeometricAcousticsCore.Config.environmentCalculationRays];
+	public static ArrayList<HistogramTriple> histogramValues = new ArrayList<HistogramTriple>();
 	//
 	public static boolean isDisplaying = false;
 	
@@ -68,14 +69,18 @@ public class GAGuiOverlay extends Gui
     }
 	
 	// ------------------------------------------------- //
+	public static void calculateHistogram() {
+		Compare obj = new Compare(); 
+		histogramValues = obj.countFreqValues(histogramData, histogramData.length);
+        obj.compareTriple(histogramValues);
+	}
 	
 	public void renderHistogram() {
 		ResourceLocation histogramBlock = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/histogram.png");
 		
 		// Sort the Pair array
-		Compare obj = new Compare(); 
-        ArrayList<HistogramTriple> histogramValues = obj.countFreqValues(histogramData, histogramData.length);
-        obj.compareTriple(histogramValues);
+		calculateHistogram();
+        
         int histOffestX = axisWidth / histogramValues.size();
 		
         for (int i = 0; i < histogramValues.size(); i++) {
