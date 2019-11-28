@@ -8,6 +8,7 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="histogramValues"/>
 			<item value="directGain"/>
 			<item value="globalReverbGain"/>
 			<item value="ReverbParameters"/>
@@ -22,7 +23,6 @@
 			<item value="Int3"/>
 			<item value="histogramData"/>
 			<item value="raySoundTypes"/>
-			<item value="rayDistances"/>
 		</list>
 		<list key="replacehistory">
 			<item value="totalRays"/>

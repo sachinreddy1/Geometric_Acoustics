@@ -79,7 +79,7 @@ public class GAGuiOverlay extends Gui
 		ResourceLocation histogramBlock = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/histogram.png");
 		
 		// Sort the Pair array
-		calculateHistogram();
+//		calculateHistogram();
         
         int histOffestX = axisWidth / histogramValues.size();
 		
