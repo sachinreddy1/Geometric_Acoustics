@@ -140,7 +140,7 @@ public class GeometricAcoustics
 	public static void onPlaySound(float posX, float posY, float posZ, int sourceID)
 	{
 //		log("[SOUND PLAYED]: Source ID: " + sourceID + " | (" + posX + ", " + posY + ", " + posZ + ") | Sound category: " + lastSoundCategory.toString() + " | Sound name: " + lastSoundName);
-		calculateEnvironmentConvolution(posX, posY, posZ, sourceID);
+		calculateEnvironment(posX, posY, posZ, sourceID);
 		GAGuiOverlay.updateOverlay(posX, posY, posZ, sourceID, lastSoundCategory, lastSoundName);
 	}
 	
@@ -170,7 +170,6 @@ public class GeometricAcoustics
 		float absorptionCoeff = GeometricAcousticsCore.Config.globalBlockAbsorption * 3.0f;
 		
 		soundPos = offsetSoundByName(soundPos, playerPos, lastSoundName, lastSoundCategory.getName());
-		float soundDistance = (float)soundPos.distanceTo(playerPos);
 		Vec3d toPlayerVector = playerPos.subtract(soundPos).normalize();
 		
 		// Offset the ray start position towards the player by the diagonal half length of a cube
@@ -201,9 +200,7 @@ public class GeometricAcoustics
 		
 		directCutoff = (float)Math.exp(-occlusionAccumulation * absorptionCoeff);
 		float directGain = (float)Math.pow(directCutoff, 0.1);
-		
-		log("direct cutoff: " + directCutoff + "  direct gain:" + directGain);
-		
+				
 		// ---------------------- //
 		
 		float sendGain0 = 0.0f;
@@ -369,129 +366,9 @@ public class GeometricAcoustics
 		sendGain3 *= (float)Math.pow(sendCutoff3, 0.1);
 		
 		// ---------------------- //
+		if (lastSoundCategory.toString() == "PLAYERS")
+			GAGuiOverlay.updateGainCutoff(sendGain0, sendGain1, sendGain2, sendGain3, sendCutoff0, sendCutoff1, sendCutoff2, sendCutoff3, directCutoff, directGain);
 		
-		log("[Gain]: " + sendGain0 + ", " + sendGain1 + ", " + sendGain2 + ", " + sendGain3);
-		log("[Cutoff]: " + sendCutoff0 + ", " + sendCutoff1 + ", " + sendCutoff2 + ", " + sendCutoff3 + ", " + directCutoff);
-		setEnvironment(sourceID, sendGain0, sendGain1, sendGain2, sendGain3, sendCutoff0, sendCutoff1, sendCutoff2, sendCutoff3, directCutoff, directGain);
-	}
-	
-	private static void calculateEnvironmentConvolution(float posX, float posY, float posZ, int sourceID)
-	{
-		// Main menu or if raining
-		if (posX < 0.01f && posY < 0.01f && posZ < 0.01f || lastSoundName.matches(".*rain.*"))
-		{			
-			setEnvironment(sourceID, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f);
-			return;
-		}
-		
-		if (minecraft.thePlayer == null || minecraft.theWorld == null)
-			return;
-		
-		// ---------------------- //
-		
-		Vec3d soundPos = new Vec3d(posX, posY, posZ);
-		Vec3d playerPos = minecraft.thePlayer.getPositionVector();
-		playerPos = new Vec3d(playerPos.xCoord, playerPos.yCoord + minecraft.thePlayer.getEyeHeight(), playerPos.zCoord);
-		
-		// ---------------------- //
-		
-		float sendGain0 = 0.0f;
-		float sendGain1 = 0.0f;
-		float sendGain2 = 0.0f;
-		float sendGain3 = 0.0f;
-				
-		float sendCutoff0 = 1.0f;
-		float sendCutoff1 = 1.0f;
-		float sendCutoff2 = 1.0f;
-		float sendCutoff3 = 1.0f;
-		
-		float directCutoff = 1.0f;
-		float directGain = 1.0f;
-				
-		// ---------------------- //
-		
-		//Shoot rays around sound's source
-		final float phi = 1.618033988f;
-		final float gAngle = phi * (float)Math.PI * 2.0f;
-		final float maxDistance = 256.0f;
-		
-		final int numRays = GeometricAcousticsCore.Config.environmentCalculationRays;
-		final int rayBounces = 4;
-		
-		float[] bounceReflectivityRatio = new float[rayBounces];
-		float totalRays = 1.0f / (numRays * rayBounces);
-		
-		// ---------------------- //
-		
-		for (int i = 0; i < numRays; i++)
-		{
-			float fi = (float)i;
-			float fiN = (float)fi / (float)numRays;
-			float longitude = gAngle * fi * 1.0f;
-			float latitude = (float)Math.asin(fiN * 2.0f - 1.0f);
-			
-			Vec3d rayDir = new Vec3d(0.0, 0.0, 0.0);
-			{
-				double x = Math.cos(latitude) * Math.cos(longitude);
-				double y = Math.cos(latitude) * Math.sin(longitude);
-				double z = Math.sin(latitude);
-				rayDir = new Vec3d(x, y, z);
-			}
-			
-			Vec3d rayStart = new Vec3d(soundPos.xCoord, soundPos.yCoord, soundPos.zCoord);
-			Vec3d rayEnd = new Vec3d(rayStart.xCoord + rayDir.xCoord * maxDistance, rayStart.yCoord + rayDir.yCoord * maxDistance, rayStart.zCoord + rayDir.zCoord * maxDistance);
-			RayTraceResult rayHit = minecraft.theWorld.rayTraceBlocks(rayStart, rayEnd, true);
-			
-			if (rayHit != null)
-			{
-				double rayLength = soundPos.distanceTo(rayHit.hitVec);
-				
-				// Additional bounces
-				Int3 lastHitBlock = Int3.create(rayHit.getBlockPos().getX(), rayHit.getBlockPos().getY(), rayHit.getBlockPos().getZ());
-				Vec3d lastHitPos = rayHit.hitVec;
-				// For reflecting
-				Vec3d lastHitNormal = getNormalFromFacing(rayHit.sideHit);
-				Vec3d lastRayDir = rayDir;
-				
-				float totalRayDistance = (float)rayLength;
-				
-				//Secondary ray bounces
-				for (int j = 0; j < rayBounces; j++)
-				{
-					Vec3d newRayDir = reflect(lastRayDir, lastHitNormal);
-					Vec3d newRayStart = new Vec3d(lastHitPos.xCoord + lastHitNormal.xCoord * 0.01, lastHitPos.yCoord + lastHitNormal.yCoord * 0.01, lastHitPos.zCoord + lastHitNormal.zCoord * 0.01);
-					Vec3d newRayEnd = new Vec3d(newRayStart.xCoord + newRayDir.xCoord * maxDistance, newRayStart.yCoord + newRayDir.yCoord * maxDistance, newRayStart.zCoord + newRayDir.zCoord * maxDistance);					
-					RayTraceResult newRayHit = minecraft.theWorld.rayTraceBlocks(newRayStart, newRayEnd, true);
-												
-					if (newRayHit != null)
-					{	
-						double newRayLength = lastHitPos.distanceTo(newRayHit.hitVec);
-						totalRayDistance += newRayLength;
-						
-						lastHitPos = newRayHit.hitVec;
-						lastHitNormal = getNormalFromFacing(newRayHit.sideHit);
-						
-					}
-					else
-						totalRayDistance += lastHitPos.distanceTo(playerPos);
-					
-					if (newRayHit == null)
-						break;
-				}
-				
-				if (lastSoundCategory.toString() == "PLAYERS")
-					GAGuiOverlay.histogramData[i] = HistogramPair.create(getSoundResource(lastHitBlock), (int)totalRayDistance);
-				
-			}
-		}
-		
-		if (GAGuiOverlay.histogramData[0] != null)
-			GAGuiOverlay.calculateHistogram();
-		
-		log("LENGTH: " + GAGuiOverlay.histogramValues.size());
-		
-//		log("[Gain]: " + sendGain0 + ", " + sendGain1 + ", " + sendGain2 + ", " + sendGain3);
-//		log("[Cutoff]: " + sendCutoff0 + ", " + sendCutoff1 + ", " + sendCutoff2 + ", " + sendCutoff3 + ", " + directCutoff);
 		setEnvironment(sourceID, sendGain0, sendGain1, sendGain2, sendGain3, sendCutoff0, sendCutoff1, sendCutoff2, sendCutoff3, directCutoff, directGain);
 	}
 	

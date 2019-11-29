@@ -40,6 +40,8 @@ public class GAGuiOverlay extends Gui
 	static String coordinates_data = "";
 	static String soundCategory_data = "";
 	static String name_data = "";
+	static String gain_data = "";
+	static String cutoff_data = "";
 	//
 	public static HistogramPair[] histogramData = new HistogramPair[GeometricAcousticsCore.Config.environmentCalculationRays];
 	public static ArrayList<HistogramTriple> histogramValues = new ArrayList<HistogramTriple>();
@@ -77,10 +79,6 @@ public class GAGuiOverlay extends Gui
 	
 	public void renderHistogram() {
 		ResourceLocation histogramBlock = new ResourceLocation(GeometricAcousticsCore.modid, "textures/gui/histogram.png");
-		
-		// Sort the Pair array
-//		calculateHistogram();
-        
         int histOffestX = axisWidth / histogramValues.size();
 		
         for (int i = 0; i < histogramValues.size(); i++) {
@@ -158,6 +156,7 @@ public class GAGuiOverlay extends Gui
 		
     	drawCenteredString(mc.fontRendererObj, guiText, width/2, titlePosition, color);
     	drawString(mc.fontRendererObj, xAxisLabel, horizontalPadding + 20, height - verticalPadding + 16, color);
+    	drawString(mc.fontRendererObj, "(" + Integer.toString(histogramValues.size()) + ")", horizontalPadding + 80, height - verticalPadding + 16, headerColor);
 		GL11.glPushMatrix();
 		{
  			GL11.glTranslatef(horizontalPadding - 12, height - verticalPadding - 20, 0);
@@ -171,23 +170,26 @@ public class GAGuiOverlay extends Gui
 		String lastSound_Label = "Last Sound Source: ";
 		String soundId_Label = "ID: ";
 		String coordinates_Label = "Coordinates: ";
-		String category_Label = "Category: ";
 		String name_Label = "Name: ";
+		String gain_Label = "Gain: ";
+		String cutoff_Label = "Cutoff: ";
 		
     	rightTablePosition = width - 175;
 		rightTableOffset = 10;
 		drawString(mc.fontRendererObj, lastSound_Label, rightTablePosition, titlePosition + 30, headerColor);
 		drawString(mc.fontRendererObj, soundId_Label, rightTablePosition + rightTableOffset, titlePosition + 45, headerColor);
 		drawString(mc.fontRendererObj, coordinates_Label, rightTablePosition + rightTableOffset, titlePosition + 60, headerColor);
-		drawString(mc.fontRendererObj, category_Label, rightTablePosition + rightTableOffset, titlePosition + 87, headerColor);
-		drawString(mc.fontRendererObj, name_Label, rightTablePosition + rightTableOffset, titlePosition + 102, headerColor);
+		drawString(mc.fontRendererObj, name_Label, rightTablePosition + rightTableOffset, titlePosition + 87, headerColor);
+		drawString(mc.fontRendererObj, gain_Label, rightTablePosition + rightTableOffset, titlePosition + 102, headerColor);
+		drawString(mc.fontRendererObj, cutoff_Label, rightTablePosition + rightTableOffset, titlePosition + 129, headerColor);
 	}
 	
 	public void renderSoundData() {
     	drawString(mc.fontRendererObj, id_data, rightTablePosition + rightTableOffset + 17, titlePosition + 45, color);
 		drawString(mc.fontRendererObj, coordinates_data, rightTablePosition + rightTableOffset + 10, titlePosition + 72, color);
-		drawString(mc.fontRendererObj, soundCategory_data, rightTablePosition + rightTableOffset + 55, titlePosition + 87, color);
-		drawString(mc.fontRendererObj, name_data, rightTablePosition + rightTableOffset + 10, titlePosition + 114, color);
+		drawString(mc.fontRendererObj, name_data, rightTablePosition + rightTableOffset + 30, titlePosition + 87, color);
+		drawString(mc.fontRendererObj, gain_data, rightTablePosition + rightTableOffset + 10, titlePosition + 114, color);
+		drawString(mc.fontRendererObj, cutoff_data, rightTablePosition + rightTableOffset + 10, titlePosition + 141, color);
 	}
 	
 	// ------------------------------------------------- //
@@ -200,6 +202,14 @@ public class GAGuiOverlay extends Gui
 		coordinates_data = "(" + (int)posX + ", " + (int)posY + ", " + (int)posZ + ")";
 		soundCategory_data = sc.toString();
 		name_data = name.substring(name.lastIndexOf(".") + 1);
+	}
+	
+	public static void updateGainCutoff(float sendGain0, float sendGain1, float sendGain2, float sendGain3, 
+			float sendCutoff0, float sendCutoff1, float sendCutoff2, float sendCutoff3, 
+			float directCutoff, float directGain) {
+		
+		gain_data = String.format("%.02f", sendGain0) + ", " + String.format("%.02f", sendGain1) + ", " + String.format("%.02f", sendGain2) + ", " + String.format("%.02f", sendGain3) + " (" + String.format("%.02f", directGain) + ")";
+		cutoff_data = String.format("%.02f", sendCutoff0) + ", " + String.format("%.02f", sendCutoff1) + ", " + String.format("%.02f", sendCutoff2) + ", " + String.format("%.02f", sendCutoff3) + " (" + String.format("%.02f", directCutoff) + ")";
 	}
 	
 	// ------------------------------------------------- //

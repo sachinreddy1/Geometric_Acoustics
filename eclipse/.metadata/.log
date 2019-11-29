@@ -2107,3 +2107,13 @@ org.eclipse.core.runtime.CoreException: Cannot determine URI for '/GeometricAcou
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 !SUBENTRY 2 org.eclipse.core.filebuffers 4 0 2019-11-27 20:05:11.186
 !MESSAGE Cannot determine URI for '/GeometricAcoustics-1.11 /src/main/java/com/sachinreddy/GeometricAcoustics/GAGuiOverlay.java'.
+!SESSION 2019-11-28 04:09:10.757 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/sachinreddy/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/sachinreddy/.eclipse_keyring
+
+!ENTRY org.eclipse.egit.core 1 0 2019-11-28 04:09:42.425
+!MESSAGE Using Apache MINA sshd as ssh client.
