@@ -4,10 +4,10 @@ import java.util.ArrayList;
 
 public class GAConvolution {
 	
-	static float[] frequencyFilter = {1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f};
-	static float[] rayLengthFilter = {1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f};
-//	static float[] frequencyFilter = {0.5f, 0.5f, 0.5f, 0.5f, 0.5f, 0.5f, 0.5f, 0.5f};
-//	static float[] rayLengthFilter = {0.1f, 0.1f, 0.1f, 0.1f, 0.1f, 0.1f, 0.1f, 0.1f};
+	static float[] frequencyFilter = {0.5f, 0.5f, 0.5f, 0.5f, 0.5f, 0.5f, 0.5f, 0.5f};
+	static float[] rayLengthFilter = {0.1f, 0.1f, 0.1f, 0.1f, 0.1f, 0.1f, 0.1f, 0.1f};
+	//
+	static int numSections = 4;
 	
 	public static void Convolution(ArrayList<HistogramTriple> histogramValues) {
 		float[] frequencyData = new float[GeometricAcousticsCore.Config.environmentCalculationRays];
@@ -25,15 +25,20 @@ public class GAConvolution {
 			rayLengthData[i] = histogramValues.get(i).rayDistance;
 		}
 		
-		int sectionLength = GeometricAcousticsCore.Config.environmentCalculationRays/4;
-		float[] ret = new float[4];
-		for (int j = 0; j < 4; j++) {
+		// Calculation
+		int sectionLength = GeometricAcousticsCore.Config.environmentCalculationRays/numSections;
+		float[] ret = new float[numSections];
+		for (int j = 0; j < numSections; j++) {
+			float frequencyDataSum = 0.0f;
+			float rayLengthDataSum = 0.0f;
 			for (int i = 0; i < sectionLength; i++) {
-				frequencyData[i + j*sectionLength] = frequencyData[i + j*sectionLength] * frequencyFilter[i];
-				rayLengthData[i + j*sectionLength] = rayLengthData[i + j*sectionLength] * rayLengthFilter[i];
+				frequencyDataSum += frequencyData[i + j*sectionLength] * frequencyFilter[i];
+				rayLengthDataSum += rayLengthData[i + j*sectionLength] * rayLengthFilter[i];
 			}
+			ret[j] = frequencyDataSum + rayLengthDataSum;
 		}
-		System.out.println("[FREQUENCY]: " + java.util.Arrays.toString(frequencyData));
-		System.out.println("[RAY LENGTH]: " + java.util.Arrays.toString(rayLengthData));
+		
+		// Return
+//		System.out.println("[RETURN]: " + java.util.Arrays.toString(ret));
 	}
 }

@@ -198,45 +198,39 @@ Class Start: com.sachinreddy.GeometricAcoustics.GAConfigGUI
 Class End  : com.sachinreddy.GeometricAcoustics.GAConfigGUI
 endProcessing "com/sachinreddy/GeometricAcoustics/GAConfigGUI.java"
 
-startProcessing "com/sachinreddy/GeometricAcoustics/GAConvolution.java" md5: de48693279cb9f2d93a8ec79dc1b79fc
+startProcessing "com/sachinreddy/GeometricAcoustics/GAConvolution.java" md5: f913c6880a5c894e908074d23b3952e1
 @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|8|42|com.sachinreddy.GeometricAcoustics|package|com.sachinreddy.GeometricAcoustics|(file)
 Class Start: com.sachinreddy.GeometricAcoustics.GAConvolution
    @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|87|100|GAConvolution|class|com.sachinreddy.GeometricAcoustics.GAConvolution
    @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|121|136|frequencyFilter|field|com.sachinreddy.GeometricAcoustics.GAConvolution|frequencyFilter|
    @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|205|220|rayLengthFilter|field|com.sachinreddy.GeometricAcoustics.GAConvolution|rayLengthFilter|
+   @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|289|300|numSections|field|com.sachinreddy.GeometricAcoustics.GAConvolution|numSections|
    Method Start: Convolution(Ljava/util/ArrayList;)V
-      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|506|521|histogramValues|param|com.sachinreddy.GeometricAcoustics.GAConvolution|Convolution|(Ljava/util/ArrayList;)V|histogramValues|0
-      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|467|478|Convolution|method|com.sachinreddy.GeometricAcoustics.GAConvolution|Convolution|(Ljava/util/ArrayList;)V
-      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|479|488|ArrayList|class|java.util.ArrayList
-      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|489|504|HistogramTriple|class|com.sachinreddy.GeometricAcoustics.HistogramTriple
-      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|561|590|GeometricAcousticsCore.Config|class|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore.Config
-      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|591|617|environmentCalculationRays|field|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore.Config|environmentCalculationRays
-      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|656|685|GeometricAcousticsCore.Config|class|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore.Config
-      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|686|712|environmentCalculationRays|field|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore.Config|environmentCalculationRays
-      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|764|793|GeometricAcousticsCore.Config|class|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore.Config
-      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|794|820|environmentCalculationRays|field|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore.Config|environmentCalculationRays
-      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|934|949|histogramValues|param|com.sachinreddy.GeometricAcoustics.GAConvolution|Convolution|(Ljava/util/ArrayList;)V|histogramValues|0
-      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|950|954|size|method|java.util.Collection|size|()I
-      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|987|1002|histogramValues|param|com.sachinreddy.GeometricAcoustics.GAConvolution|Convolution|(Ljava/util/ArrayList;)V|histogramValues|0
-      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|1003|1006|get|method|java.util.List|get|(I)Ljava/lang/Object;
-      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|1010|1019|frequency|field|com.sachinreddy.GeometricAcoustics.HistogramTriple|frequency
-      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|1043|1058|histogramValues|param|com.sachinreddy.GeometricAcoustics.GAConvolution|Convolution|(Ljava/util/ArrayList;)V|histogramValues|0
-      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|1059|1062|get|method|java.util.List|get|(I)Ljava/lang/Object;
-      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|1066|1077|rayDistance|field|com.sachinreddy.GeometricAcoustics.HistogramTriple|rayDistance
-      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|1108|1137|GeometricAcousticsCore.Config|class|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore.Config
-      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|1138|1164|environmentCalculationRays|field|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore.Config|environmentCalculationRays
-      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|1353|1368|frequencyFilter|field|com.sachinreddy.GeometricAcoustics.GAConvolution|frequencyFilter
-      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|1451|1466|rayLengthFilter|field|com.sachinreddy.GeometricAcoustics.GAConvolution|rayLengthFilter
-      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|1482|1488|System|class|java.lang.System
-      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|1489|1492|out|field|java.lang.System|out
-      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|1493|1500|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
-      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|1519|1535|java.util.Arrays|class|java.util.Arrays
-      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|1536|1544|toString|method|java.util.Arrays|toString|([F)Ljava/lang/String;
-      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|1564|1570|System|class|java.lang.System
-      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|1571|1574|out|field|java.lang.System|out
-      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|1575|1582|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
-      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|1602|1618|java.util.Arrays|class|java.util.Arrays
-      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|1619|1627|toString|method|java.util.Arrays|toString|([F)Ljava/lang/String;
+      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|367|382|histogramValues|param|com.sachinreddy.GeometricAcoustics.GAConvolution|Convolution|(Ljava/util/ArrayList;)V|histogramValues|0
+      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|328|339|Convolution|method|com.sachinreddy.GeometricAcoustics.GAConvolution|Convolution|(Ljava/util/ArrayList;)V
+      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|340|349|ArrayList|class|java.util.ArrayList
+      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|350|365|HistogramTriple|class|com.sachinreddy.GeometricAcoustics.HistogramTriple
+      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|422|451|GeometricAcousticsCore.Config|class|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore.Config
+      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|452|478|environmentCalculationRays|field|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore.Config|environmentCalculationRays
+      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|517|546|GeometricAcousticsCore.Config|class|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore.Config
+      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|547|573|environmentCalculationRays|field|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore.Config|environmentCalculationRays
+      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|625|654|GeometricAcousticsCore.Config|class|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore.Config
+      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|655|681|environmentCalculationRays|field|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore.Config|environmentCalculationRays
+      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|795|810|histogramValues|param|com.sachinreddy.GeometricAcoustics.GAConvolution|Convolution|(Ljava/util/ArrayList;)V|histogramValues|0
+      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|811|815|size|method|java.util.Collection|size|()I
+      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|848|863|histogramValues|param|com.sachinreddy.GeometricAcoustics.GAConvolution|Convolution|(Ljava/util/ArrayList;)V|histogramValues|0
+      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|864|867|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|871|880|frequency|field|com.sachinreddy.GeometricAcoustics.HistogramTriple|frequency
+      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|904|919|histogramValues|param|com.sachinreddy.GeometricAcoustics.GAConvolution|Convolution|(Ljava/util/ArrayList;)V|histogramValues|0
+      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|920|923|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|927|938|rayDistance|field|com.sachinreddy.GeometricAcoustics.HistogramTriple|rayDistance
+      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|986|1015|GeometricAcousticsCore.Config|class|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore.Config
+      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|1016|1042|environmentCalculationRays|field|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore.Config|environmentCalculationRays
+      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|1043|1054|numSections|field|com.sachinreddy.GeometricAcoustics.GAConvolution|numSections
+      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|1082|1093|numSections|field|com.sachinreddy.GeometricAcoustics.GAConvolution|numSections
+      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|1118|1129|numSections|field|com.sachinreddy.GeometricAcoustics.GAConvolution|numSections
+      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|1312|1327|frequencyFilter|field|com.sachinreddy.GeometricAcoustics.GAConvolution|frequencyFilter
+      @|com/sachinreddy/GeometricAcoustics/GAConvolution.java|1393|1408|rayLengthFilter|field|com.sachinreddy.GeometricAcoustics.GAConvolution|rayLengthFilter
    Method End: Convolution(Ljava/util/ArrayList;)V
 Class End  : com.sachinreddy.GeometricAcoustics.GAConvolution
 endProcessing "com/sachinreddy/GeometricAcoustics/GAConvolution.java"
