@@ -321,8 +321,10 @@ public class GeometricAcoustics
 			}
 		}
 		
-		if (GAGuiOverlay.histogramData[0] != null)
+		if (GAGuiOverlay.histogramData[0] != null) {
 			GAGuiOverlay.calculateHistogram();
+			GAConvolution.Convolution(GAGuiOverlay.histogramValues);
+		}
 				
 		bounceReflectivityRatio[0] = (float)Math.pow(bounceReflectivityRatio[0] / (float)numRays, 1.0 / reflectionEnergyCurve);
 		bounceReflectivityRatio[1] = (float)Math.pow(bounceReflectivityRatio[1] / (float)numRays, 1.0 / reflectionEnergyCurve);
