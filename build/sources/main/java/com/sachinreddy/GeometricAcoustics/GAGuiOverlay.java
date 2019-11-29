@@ -156,7 +156,7 @@ public class GAGuiOverlay extends Gui
 		
     	drawCenteredString(mc.fontRendererObj, guiText, width/2, titlePosition, color);
     	drawString(mc.fontRendererObj, xAxisLabel, horizontalPadding + 20, height - verticalPadding + 16, color);
-    	drawString(mc.fontRendererObj, "(" + Integer.toString(histogramValues.size()) + ")", horizontalPadding + 80, height - verticalPadding + 16, headerColor);
+//    	drawString(mc.fontRendererObj, "(" + Integer.toString(histogramValues.size()) + ")", horizontalPadding + 80, height - verticalPadding + 16, headerColor);
 		GL11.glPushMatrix();
 		{
  			GL11.glTranslatef(horizontalPadding - 12, height - verticalPadding - 20, 0);
