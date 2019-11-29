@@ -4,12 +4,12 @@ import java.util.ArrayList;
 
 public class GAConvolution {
 	
-	static float[] frequencyFilter = {0.5f, 0.5f, 0.5f, 0.5f, 0.5f, 0.5f, 0.5f, 0.5f};
-	static float[] rayLengthFilter = {0.1f, 0.1f, 0.1f, 0.1f, 0.1f, 0.1f, 0.1f, 0.1f};
+	static float[] frequencyFilter = {0.0033f, 0.0033f, 0.0033f, 0.0033f, 0.0033f, 0.0033f, 0.0033f, 0.0033f};
+	static float[] rayLengthFilter = {0.0033f, 0.0033f, 0.0033f, 0.0033f, 0.0033f, 0.0033f, 0.0033f, 0.0033f};
 	//
 	static int numSections = 4;
 	
-	public static void Convolution(ArrayList<HistogramTriple> histogramValues) {
+	public static float[] Convolution(ArrayList<HistogramTriple> histogramValues) {
 		float[] frequencyData = new float[GeometricAcousticsCore.Config.environmentCalculationRays];
 		float[] rayLengthData = new float[GeometricAcousticsCore.Config.environmentCalculationRays];
 		
@@ -39,6 +39,6 @@ public class GAConvolution {
 		}
 		
 		// Return
-//		System.out.println("[RETURN]: " + java.util.Arrays.toString(ret));
+		return ret;
 	}
 }
