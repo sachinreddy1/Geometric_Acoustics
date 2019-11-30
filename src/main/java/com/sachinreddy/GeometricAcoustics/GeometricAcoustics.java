@@ -28,6 +28,9 @@ import org.lwjgl.openal.EFX10;
 
 import paulscode.sound.SoundSystemConfig;
 
+import java.util.Arrays; 
+import java.util.Collections; 
+
 public class GeometricAcoustics 
 {		
 	private static final String logPrefix = "[GEOMETRIC ACOUSTICS]";
@@ -360,7 +363,6 @@ public class GeometricAcoustics
 			sendGain2 = MathHelper.clamp_float(sendGain2 * 1.05f - 0.05f, 0.0f, 1.0f);
 			sendGain3 = MathHelper.clamp_float(sendGain3 * 1.05f - 0.05f, 0.0f, 1.0f);
 			
-			//
 			sendGain0 *= (float)Math.pow(sendCutoff0, 0.1);
 			sendGain1 *= (float)Math.pow(sendCutoff1, 0.1);
 			sendGain2 *= (float)Math.pow(sendCutoff2, 0.1);
@@ -372,11 +374,13 @@ public class GeometricAcoustics
 			float[] convolutionValues = new float[4];
 			if (GAGuiOverlay.histogramData[0] != null)
 				convolutionValues = GAConvolution.Convolution(GAGuiOverlay.histogramValues);
-			
+				
 			sendGain0 = MathHelper.clamp_float(convolutionValues[0], 0.0f, 1.0f);
 			sendGain1 = MathHelper.clamp_float(convolutionValues[1], 0.0f, 1.0f);
 			sendGain2 = MathHelper.clamp_float(convolutionValues[2], 0.0f, 1.0f);
 			sendGain3 = MathHelper.clamp_float(convolutionValues[3], 0.0f, 1.0f);
+			
+//			log("[CONVOLUTION]: " + java.util.Arrays.toString(convolutionValues));
 		}
 		
 		// ---------------------- //
