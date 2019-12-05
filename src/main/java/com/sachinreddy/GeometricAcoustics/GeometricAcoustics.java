@@ -327,7 +327,7 @@ public class GeometricAcoustics
 		if (GAGuiOverlay.histogramData[0] != null)
 			GAGuiOverlay.calculateHistogram();
 		
-		if (!GeometricAcousticsCore.Config.convolution) {
+		if (GeometricAcousticsCore.Config.convolution) {
 			bounceReflectivityRatio[0] = (float)Math.pow(bounceReflectivityRatio[0] / (float)numRays, 1.0 / reflectionEnergyCurve);
 			bounceReflectivityRatio[1] = (float)Math.pow(bounceReflectivityRatio[1] / (float)numRays, 1.0 / reflectionEnergyCurve);
 			bounceReflectivityRatio[2] = (float)Math.pow(bounceReflectivityRatio[2] / (float)numRays, 1.0 / reflectionEnergyCurve);
@@ -374,13 +374,15 @@ public class GeometricAcoustics
 			float[] convolutionValues = new float[4];
 			if (GAGuiOverlay.histogramData[0] != null)
 				convolutionValues = GAConvolution.Convolution(GAGuiOverlay.histogramValues);
-				
+			
+//			bounceReflectivityRatio[1] = (float)Math.pow(bounceReflectivityRatio[1] / (float)numRays, 1.0 / reflectionEnergyCurve);
+//			sendGain1 *= (float)Math.pow(bounceReflectivityRatio[1], 1.0); 
+//			sendGain1 = MathHelper.clamp_float(sendGain1 * 1.00f - 0.00f, 0.0f, 1.0f);
+			
 			sendGain0 = MathHelper.clamp_float(convolutionValues[0], 0.0f, 1.0f);
 			sendGain1 = MathHelper.clamp_float(convolutionValues[1], 0.0f, 1.0f);
 			sendGain2 = MathHelper.clamp_float(convolutionValues[2], 0.0f, 1.0f);
 			sendGain3 = MathHelper.clamp_float(convolutionValues[3], 0.0f, 1.0f);
-			
-//			log("[CONVOLUTION]: " + java.util.Arrays.toString(convolutionValues));
 		}
 		
 		// ---------------------- //

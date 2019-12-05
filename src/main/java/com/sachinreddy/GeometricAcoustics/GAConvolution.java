@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class GAConvolution {
 	
-	static float[] frequencyFilter = {0.0033f, 0.0033f, 0.0033f, 0.0033f, 0.0033f, 0.0033f, 0.0033f, 0.0033f};
+	static float[] filter = {0.0033f, 0.0033f, 0.0033f, 0.0033f, 0.0033f, 0.0033f, 0.0033f, 0.0033f};
 	static float[] rayLengthFilter = {0.0033f, 0.0033f, 0.0033f, 0.0033f, 0.0033f, 0.0033f, 0.0033f, 0.0033f};
 	//
 	static int numSections = 4;
@@ -27,13 +27,25 @@ public class GAConvolution {
 		
 		// Calculation
 		int sectionLength = GeometricAcousticsCore.Config.environmentCalculationRays/numSections;
+//		float[] ret = new float[numSections];
+//		for (int j = 0; j < numSections; j++) {
+//			float frequencyDataSum = 0.0f;
+//			float rayLengthDataSum = 0.0f;
+//			for (int i = 0; i < sectionLength; i++) {
+//				frequencyDataSum += frequencyData[i + j*sectionLength] * filter[i];
+//				rayLengthDataSum += rayLengthData[i + j*sectionLength] * rayLengthFilter[i];
+//			}
+//			ret[j] = frequencyDataSum + rayLengthDataSum;
+//		}
+		
+		// Secondary Calculation
 		float[] ret = new float[numSections];
 		for (int j = 0; j < numSections; j++) {
 			float frequencyDataSum = 0.0f;
 			float rayLengthDataSum = 0.0f;
 			for (int i = 0; i < sectionLength; i++) {
-				frequencyDataSum += frequencyData[i + j*sectionLength] * frequencyFilter[i];
-				rayLengthDataSum += rayLengthData[i + j*sectionLength] * rayLengthFilter[i];
+				frequencyDataSum += frequencyData[i + j*sectionLength] * filter[i] * (j+1)/2;
+				rayLengthDataSum += rayLengthData[i + j*sectionLength] * rayLengthFilter[i] * (j+1)/2;
 			}
 			ret[j] = frequencyDataSum + rayLengthDataSum;
 		}
@@ -41,4 +53,15 @@ public class GAConvolution {
 		// Return
 		return ret;
 	}
+	
+	public static float getMax(float[] arr) {
+		float max = 0.0f;
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] > max) {
+				max = arr[i];
+			}
+		}
+		return max;
+	}
+	
 }
