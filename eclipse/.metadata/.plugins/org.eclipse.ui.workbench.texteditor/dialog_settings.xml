@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="directGain"/>
+		<item key="selection" value="frequencyFilter"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="frequencyFilter"/>
 			<item value="setReverbParameters"/>
 			<item value="histogramValues"/>
 			<item value="directGain"/>
@@ -22,7 +23,6 @@
 			<item value="stdout"/>
 			<item value="pair"/>
 			<item value="Int3"/>
-			<item value="histogramData"/>
 		</list>
 		<list key="replacehistory">
 			<item value="totalRays"/>

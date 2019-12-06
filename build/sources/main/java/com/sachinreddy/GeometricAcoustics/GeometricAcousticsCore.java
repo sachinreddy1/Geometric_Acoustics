@@ -47,7 +47,6 @@ public class GeometricAcousticsCore implements IClassTransformer
 		public static float globalBlockReflectance = 1.0f;
 		public static float globalBlockAbsorption = 1.0f;
 		public static float airAbsorption = 1.0f;
-		public static boolean convolution = true;
 		
 		//performance
 		public static int environmentCalculationRays = 32;
@@ -108,7 +107,6 @@ public class GeometricAcousticsCore implements IClassTransformer
 		Config.globalBlockAbsorption = configFile.getFloat("Global Block Absorption", Configuration.CATEGORY_GENERAL, 1.0f, 0.1f, 4.0f, "The global amount of sound that will be absorbed when traveling through blocks.");
 		Config.globalBlockReflectance = configFile.getFloat("Global Block Reflectance", Configuration.CATEGORY_GENERAL, 1.0f, 0.1f, 4.0f, "The global amount of sound reflectance energy of all blocks. Lower values result in more conservative reverb simulation with shorter reverb tails. Higher values result in more generous reverb simulation with higher reverb tails.");
 		Config.airAbsorption = configFile.getFloat("Air Absorption", Configuration.CATEGORY_GENERAL, 1.0f, 0.0f, 5.0f, "A value controlling the amount that air absorbs high frequencies with distance. A value of 1.0 is physically correct for air with normal humidity and temperature. Higher values mean air will absorb more high frequencies with distance. 0 disables this effect.");
-		Config.convolution = configFile.getBoolean("Convolution", Configuration.CATEGORY_GENERAL, true, "A value controlling the method of calculating gain values.");
 		
 		//performance
 		Config.environmentCalculationRays = configFile.getInt("Environment Evaluation Rays", Config.categoryPerformance, 32, 8, 64, "The number of rays to trace to determine reverberation for each sound source. More rays provides more consistent tracing results but takes more time to calculate. Decrease this value if you experience lag spikes when sounds play." );

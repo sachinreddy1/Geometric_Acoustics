@@ -2117,3 +2117,22 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 
 !ENTRY org.eclipse.egit.core 1 0 2019-11-28 04:09:42.425
 !MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-12-05 12:19:29.721
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2019-12-05 11:20:30.905 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/sachinreddy/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/sachinreddy/.eclipse_keyring
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-12-05 11:20:58.963
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.core 1 0 2019-12-05 11:21:03.680
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.debug.core 4 120 2019-12-05 18:10:52.646
+!MESSAGE Variable references empty selection: ${project_loc}

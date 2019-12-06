@@ -327,63 +327,45 @@ public class GeometricAcoustics
 		if (GAGuiOverlay.histogramData[0] != null)
 			GAGuiOverlay.calculateHistogram();
 		
-		if (GeometricAcousticsCore.Config.convolution) {
-			bounceReflectivityRatio[0] = (float)Math.pow(bounceReflectivityRatio[0] / (float)numRays, 1.0 / reflectionEnergyCurve);
-			bounceReflectivityRatio[1] = (float)Math.pow(bounceReflectivityRatio[1] / (float)numRays, 1.0 / reflectionEnergyCurve);
-			bounceReflectivityRatio[2] = (float)Math.pow(bounceReflectivityRatio[2] / (float)numRays, 1.0 / reflectionEnergyCurve);
-			bounceReflectivityRatio[3] = (float)Math.pow(bounceReflectivityRatio[3] / (float)numRays, 1.0 / reflectionEnergyCurve);
-			
-			// ----- OCCLUSION ------ //
-			
-			sharedAirspace *= 64.0f;
-			sharedAirspace *= totalRays;
-			
-			float sharedAirspaceWeight0 = MathHelper.clamp_float(sharedAirspace / 20.0f, 0.0f, 1.0f);
-			float sharedAirspaceWeight1 = MathHelper.clamp_float(sharedAirspace / 15.0f, 0.0f, 1.0f);
-			float sharedAirspaceWeight2 = MathHelper.clamp_float(sharedAirspace / 10.0f, 0.0f, 1.0f);
-			float sharedAirspaceWeight3 = MathHelper.clamp_float(sharedAirspace / 10.0f, 0.0f, 1.0f);
-			
-			sendCutoff0 = (float)Math.exp(-occlusionAccumulation * absorptionCoeff * 1.0f) * (1.0f - sharedAirspaceWeight0) + sharedAirspaceWeight0;
-			sendCutoff1 = (float)Math.exp(-occlusionAccumulation * absorptionCoeff * 1.0f) * (1.0f - sharedAirspaceWeight1) + sharedAirspaceWeight1;
-			sendCutoff2 = (float)Math.exp(-occlusionAccumulation * absorptionCoeff * 1.5f) * (1.0f - sharedAirspaceWeight2) + sharedAirspaceWeight2;
-			sendCutoff3 = (float)Math.exp(-occlusionAccumulation * absorptionCoeff * 1.5f) * (1.0f - sharedAirspaceWeight3) + sharedAirspaceWeight3;
-			
-			float averageSharedAirspace = (sharedAirspaceWeight0 + sharedAirspaceWeight1 + sharedAirspaceWeight2 + sharedAirspaceWeight3) * 0.25f;
-			directCutoff = (float)Math.max((float)Math.pow(averageSharedAirspace, 0.5) * 0.2f, directCutoff);
-			directGain = (float)Math.pow(directCutoff, 0.1);
-			
-			// ---------------------- //
-			
-			sendGain1 *= (float)Math.pow(bounceReflectivityRatio[1], 1.0); 
-			sendGain2 *= (float)Math.pow(bounceReflectivityRatio[2], 3.0);
-			sendGain3 *= (float)Math.pow(bounceReflectivityRatio[3], 4.0);
-			
-			sendGain0 = MathHelper.clamp_float(sendGain0 * 1.00f - 0.00f, 0.0f, 1.0f);
-			sendGain1 = MathHelper.clamp_float(sendGain1 * 1.00f - 0.00f, 0.0f, 1.0f);
-			sendGain2 = MathHelper.clamp_float(sendGain2 * 1.05f - 0.05f, 0.0f, 1.0f);
-			sendGain3 = MathHelper.clamp_float(sendGain3 * 1.05f - 0.05f, 0.0f, 1.0f);
-			
-			sendGain0 *= (float)Math.pow(sendCutoff0, 0.1);
-			sendGain1 *= (float)Math.pow(sendCutoff1, 0.1);
-			sendGain2 *= (float)Math.pow(sendCutoff2, 0.1);
-			sendGain3 *= (float)Math.pow(sendCutoff3, 0.1);
-		}
+		bounceReflectivityRatio[0] = (float)Math.pow(bounceReflectivityRatio[0] / (float)numRays, 1.0 / reflectionEnergyCurve);
+		bounceReflectivityRatio[1] = (float)Math.pow(bounceReflectivityRatio[1] / (float)numRays, 1.0 / reflectionEnergyCurve);
+		bounceReflectivityRatio[2] = (float)Math.pow(bounceReflectivityRatio[2] / (float)numRays, 1.0 / reflectionEnergyCurve);
+		bounceReflectivityRatio[3] = (float)Math.pow(bounceReflectivityRatio[3] / (float)numRays, 1.0 / reflectionEnergyCurve);
 		
-		// ---- CONVOLUTION ----- //
-		else {
-			float[] convolutionValues = new float[4];
-			if (GAGuiOverlay.histogramData[0] != null)
-				convolutionValues = GAConvolution.Convolution(GAGuiOverlay.histogramValues);
-			
-//			bounceReflectivityRatio[1] = (float)Math.pow(bounceReflectivityRatio[1] / (float)numRays, 1.0 / reflectionEnergyCurve);
-//			sendGain1 *= (float)Math.pow(bounceReflectivityRatio[1], 1.0); 
-//			sendGain1 = MathHelper.clamp_float(sendGain1 * 1.00f - 0.00f, 0.0f, 1.0f);
-			
-			sendGain0 = MathHelper.clamp_float(convolutionValues[0], 0.0f, 1.0f);
-			sendGain1 = MathHelper.clamp_float(convolutionValues[1], 0.0f, 1.0f);
-			sendGain2 = MathHelper.clamp_float(convolutionValues[2], 0.0f, 1.0f);
-			sendGain3 = MathHelper.clamp_float(convolutionValues[3], 0.0f, 1.0f);
-		}
+		// ----- OCCLUSION ------ //
+		
+		sharedAirspace *= 64.0f;
+		sharedAirspace *= totalRays;
+		
+		float sharedAirspaceWeight0 = MathHelper.clamp_float(sharedAirspace / 20.0f, 0.0f, 1.0f);
+		float sharedAirspaceWeight1 = MathHelper.clamp_float(sharedAirspace / 15.0f, 0.0f, 1.0f);
+		float sharedAirspaceWeight2 = MathHelper.clamp_float(sharedAirspace / 10.0f, 0.0f, 1.0f);
+		float sharedAirspaceWeight3 = MathHelper.clamp_float(sharedAirspace / 10.0f, 0.0f, 1.0f);
+		
+		sendCutoff0 = (float)Math.exp(-occlusionAccumulation * absorptionCoeff * 1.0f) * (1.0f - sharedAirspaceWeight0) + sharedAirspaceWeight0;
+		sendCutoff1 = (float)Math.exp(-occlusionAccumulation * absorptionCoeff * 1.0f) * (1.0f - sharedAirspaceWeight1) + sharedAirspaceWeight1;
+		sendCutoff2 = (float)Math.exp(-occlusionAccumulation * absorptionCoeff * 1.5f) * (1.0f - sharedAirspaceWeight2) + sharedAirspaceWeight2;
+		sendCutoff3 = (float)Math.exp(-occlusionAccumulation * absorptionCoeff * 1.5f) * (1.0f - sharedAirspaceWeight3) + sharedAirspaceWeight3;
+		
+		float averageSharedAirspace = (sharedAirspaceWeight0 + sharedAirspaceWeight1 + sharedAirspaceWeight2 + sharedAirspaceWeight3) * 0.25f;
+		directCutoff = (float)Math.max((float)Math.pow(averageSharedAirspace, 0.5) * 0.2f, directCutoff);
+		directGain = (float)Math.pow(directCutoff, 0.1);
+		
+		// ---------------------- //
+		
+		sendGain1 *= (float)Math.pow(bounceReflectivityRatio[1], 1.0); 
+		sendGain2 *= (float)Math.pow(bounceReflectivityRatio[2], 3.0);
+		sendGain3 *= (float)Math.pow(bounceReflectivityRatio[3], 4.0);
+		
+		sendGain0 = MathHelper.clamp_float(sendGain0 * 1.00f - 0.00f, 0.0f, 1.0f);
+		sendGain1 = MathHelper.clamp_float(sendGain1 * 1.00f - 0.00f, 0.0f, 1.0f);
+		sendGain2 = MathHelper.clamp_float(sendGain2 * 1.05f - 0.05f, 0.0f, 1.0f);
+		sendGain3 = MathHelper.clamp_float(sendGain3 * 1.05f - 0.05f, 0.0f, 1.0f);
+		
+		sendGain0 *= (float)Math.pow(sendCutoff0, 0.1);
+		sendGain1 *= (float)Math.pow(sendCutoff1, 0.1);
+		sendGain2 *= (float)Math.pow(sendCutoff2, 0.1);
+		sendGain3 *= (float)Math.pow(sendCutoff3, 0.1);
 		
 		// ---------------------- //
 		
