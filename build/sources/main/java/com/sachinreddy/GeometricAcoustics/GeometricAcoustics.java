@@ -138,6 +138,11 @@ public class GeometricAcoustics
 		lastSoundName = name;
 	}
 	
+	public static void testPatch()
+	{
+		log("Patching test worked.");
+	}
+	
 	// ------------------------------------------------- //
 	
 	public static void onPlaySound(float posX, float posY, float posZ, int sourceID)
@@ -324,7 +329,7 @@ public class GeometricAcoustics
 			}
 		}
 		
-		if (GAGuiOverlay.histogramData[0] != null)
+		if (GAGuiOverlay.histogramData[0] != null && GAGuiOverlay.histogramData.length != 0)
 			GAGuiOverlay.calculateHistogram();
 		
 		bounceReflectivityRatio[0] = (float)Math.pow(bounceReflectivityRatio[0] / (float)numRays, 1.0 / reflectionEnergyCurve);

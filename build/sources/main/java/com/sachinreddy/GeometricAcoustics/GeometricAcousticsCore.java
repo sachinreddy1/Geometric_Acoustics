@@ -125,6 +125,7 @@ public class GeometricAcousticsCore implements IClassTransformer
 	    if(configFile.hasChanged())
 	    {
 	    	configFile.save();
+	    	GAGuiOverlay.histogramData = new HistogramPair[GeometricAcousticsCore.Config.environmentCalculationRays];
 	    	GeometricAcoustics.applyConfigChanges(); 
 	    }
 	}
@@ -291,6 +292,59 @@ public class GeometricAcousticsCore implements IClassTransformer
 					0
 					);
 		}
+		
+		// ------------------------------------------------- //
+		
+		{
+			InsnList toInject = new InsnList();
+			toInject.add(new MethodInsnNode(Opcodes.INVOKESTATIC, "com/sachinreddy/GeometricAcoustics/GeometricAcoustics", "testPatch", "()V"));
+			
+			arg2 = patchMethodInClass(arg0, arg2, 
+					new String[]{"net.minecraft.client.audio.SoundManager$SoundSystemStarterThread", "ccn$a"}, 						//Target Class name
+					new String[]{"<init>", "<init>"}, 																				//Target method name
+					new String[]{"(Lnet/minecraft/client/audio/SoundManager;)V", "(Lccn;)V"},	//Target method signature
+					Opcodes.INVOKESPECIAL,						//Target opcode
+					AbstractInsnNode.METHOD_INSN, 				//Target node type
+					new String[]{"<init>", "<init>"},			//Target node method invocation name
+					null,
+					new InsnList[]{toInject, toInject}, 		//Instructions to inject
+					false, 										//Insert before the target node?
+					0,
+					0,
+					false,
+					0
+					);
+		}
+
+//		{
+//			InsnList toInject = new InsnList();
+//			toInject.add(new VarInsnNode(Opcodes.ALOAD, 1));
+//			toInject.add(new MethodInsnNode(Opcodes.INVOKEINTERFACE, "net/minecraft/client/audio/ISound", "getSoundLocation", "()Lnet/minecraft/util/ResourceLocation;"));
+//			toInject.add(new MethodInsnNode(Opcodes.INVOKEVIRTUAL, "net/minecraft/util/ResourceLocation", "toString", "()Ljava/lang/String;"));
+//			toInject.add(new MethodInsnNode(Opcodes.INVOKESTATIC, "com/sachinreddy/GeometricAcoustics/GeometricAcoustics", "setLastSoundName", "(Ljava/lang/String;)V"));
+//			
+//			InsnList toInjectObf = new InsnList();
+//			toInjectObf.add(new VarInsnNode(Opcodes.ALOAD, 1));
+//			toInjectObf.add(new MethodInsnNode(Opcodes.INVOKEINTERFACE, "cbz", "a", "()Lkq;"));
+//			toInjectObf.add(new MethodInsnNode(Opcodes.INVOKEVIRTUAL, "kq", "toString", "()Ljava/lang/String;"));
+//			toInjectObf.add(new MethodInsnNode(Opcodes.INVOKESTATIC, "com/sachinreddy/GeometricAcoustics/GeometricAcoustics", "setLastSoundName", "(Ljava/lang/String;)V"));
+//			
+//			arg2 = patchMethodInClass(arg0, arg2, 
+//					new String[]{"net.minecraft.client.audio.SoundManager", "ccn"}, 	//Target Class name
+//					new String[]{"playSound", "c"}, 								//Target method name
+//					new String[]{"(Lnet/minecraft/client/audio/ISound;)V", "(Lcbz;)V"},	//Target method signature
+//					Opcodes.INVOKEVIRTUAL,						//Target opcode
+//					AbstractInsnNode.METHOD_INSN, 				//Target node type
+//					new String[]{"setVolume", "setVolume"},		//Target node method invocation name
+//					null,
+//					new InsnList[]{toInject, toInjectObf}, 		//Instructions to inject
+//					false, 										//Insert before the target node?
+//					0,
+//					0,
+//					false,
+//					0
+//					);
+//		}
 		
 		// ------------------------------------------------- //
 		
