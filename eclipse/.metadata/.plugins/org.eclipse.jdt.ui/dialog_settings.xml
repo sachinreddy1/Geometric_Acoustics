@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item key="filters_last_used" value="filter_imports;"/>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item key="group_libraries" value="true"/>
 		<item key="layout" value="1"/>

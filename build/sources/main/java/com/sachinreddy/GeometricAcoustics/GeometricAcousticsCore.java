@@ -295,52 +295,43 @@ public class GeometricAcousticsCore implements IClassTransformer
 		
 		// ------------------------------------------------- //
 		
-		{
-			InsnList toInject = new InsnList();
-			toInject.add(new MethodInsnNode(Opcodes.INVOKESTATIC, "com/sachinreddy/GeometricAcoustics/GeometricAcoustics", "testPatch", "()V"));
-			
-			arg2 = patchMethodInClass(arg0, arg2, 
-					new String[]{"net.minecraft.client.audio.SoundManager$SoundSystemStarterThread", "ccn$a"}, 						//Target Class name
-					new String[]{"<init>", "<init>"}, 																				//Target method name
-					new String[]{"(Lnet/minecraft/client/audio/SoundManager;)V", "(Lccn;)V"},	//Target method signature
-					Opcodes.INVOKESPECIAL,						//Target opcode
-					AbstractInsnNode.METHOD_INSN, 				//Target node type
-					new String[]{"<init>", "<init>"},			//Target node method invocation name
-					null,
-					new InsnList[]{toInject, toInject}, 		//Instructions to inject
-					false, 										//Insert before the target node?
-					0,
-					0,
-					false,
-					0
-					);
-		}
-
 //		{
 //			InsnList toInject = new InsnList();
-//			toInject.add(new VarInsnNode(Opcodes.ALOAD, 1));
-//			toInject.add(new MethodInsnNode(Opcodes.INVOKEINTERFACE, "net/minecraft/client/audio/ISound", "getSoundLocation", "()Lnet/minecraft/util/ResourceLocation;"));
-//			toInject.add(new MethodInsnNode(Opcodes.INVOKEVIRTUAL, "net/minecraft/util/ResourceLocation", "toString", "()Ljava/lang/String;"));
-//			toInject.add(new MethodInsnNode(Opcodes.INVOKESTATIC, "com/sachinreddy/GeometricAcoustics/GeometricAcoustics", "setLastSoundName", "(Ljava/lang/String;)V"));
-//			
-//			InsnList toInjectObf = new InsnList();
-//			toInjectObf.add(new VarInsnNode(Opcodes.ALOAD, 1));
-//			toInjectObf.add(new MethodInsnNode(Opcodes.INVOKEINTERFACE, "cbz", "a", "()Lkq;"));
-//			toInjectObf.add(new MethodInsnNode(Opcodes.INVOKEVIRTUAL, "kq", "toString", "()Ljava/lang/String;"));
-//			toInjectObf.add(new MethodInsnNode(Opcodes.INVOKESTATIC, "com/sachinreddy/GeometricAcoustics/GeometricAcoustics", "setLastSoundName", "(Ljava/lang/String;)V"));
+//			toInject.add(new MethodInsnNode(Opcodes.INVOKESTATIC, "com/sachinreddy/GeometricAcoustics/GeometricAcoustics", "testPatch", "()V"));
 //			
 //			arg2 = patchMethodInClass(arg0, arg2, 
-//					new String[]{"net.minecraft.client.audio.SoundManager", "ccn"}, 	//Target Class name
-//					new String[]{"playSound", "c"}, 								//Target method name
-//					new String[]{"(Lnet/minecraft/client/audio/ISound;)V", "(Lcbz;)V"},	//Target method signature
-//					Opcodes.INVOKEVIRTUAL,						//Target opcode
+//					new String[]{"net.minecraft.client.audio.SoundManager$SoundSystemStarterThread", "ccn$a"}, 						//Target Class name
+//					new String[]{"<init>", "<init>"}, 																				//Target method name
+//					new String[]{"(Lnet/minecraft/client/audio/SoundManager;)V", "(Lccn;)V"},	//Target method signature
+//					Opcodes.INVOKESPECIAL,						//Target opcode
 //					AbstractInsnNode.METHOD_INSN, 				//Target node type
-//					new String[]{"setVolume", "setVolume"},		//Target node method invocation name
+//					new String[]{"<init>", "<init>"},			//Target node method invocation name
 //					null,
-//					new InsnList[]{toInject, toInjectObf}, 		//Instructions to inject
+//					new InsnList[]{toInject, toInject}, 		//Instructions to inject
 //					false, 										//Insert before the target node?
 //					0,
 //					0,
+//					false,
+//					0
+//					);
+//		}
+
+//		{
+//			InsnList toInject = new InsnList();
+//			toInject.add(new MethodInsnNode(Opcodes.INVOKESTATIC, "com/sachinreddy/GeometricAcoustics/GeometricAcoustics", "testPatch", "()V"));
+//			
+//			arg2 = patchMethodInClass(arg0, arg2, 
+//					new String[]{"paulscode.sound.libraries.SourceLWJGLOpenAL"}, 	//Target Class name
+//					new String[]{"play"}, 								//Target method name
+//					new String[]{"(Lpaulscode/sound/Channel;)V"},	//Target method signature
+//					Opcodes.INVOKEVIRTUAL,						//Target opcode
+//					AbstractInsnNode.METHOD_INSN, 				//Target node type
+//					new String[]{"play"},										//Target node method invocation name
+//					null,
+//					new InsnList[]{toInject}, 									//Instructions to inject
+//					false, 										//Insert before the target node?
+//					0,			
+//					0,			
 //					false,
 //					0
 //					);
@@ -351,9 +342,23 @@ public class GeometricAcousticsCore implements IClassTransformer
 		return arg2;
 	}
 	
-	private byte[] patchMethodInClass(String currentClassName, byte[] bytes, String[] targetClassNames, String[] targetMethodNames, String[] targetMethodSignatures, 
-			int targetNodeOpcode, int targetNodeType, String[] targetInvocationMethodNames, String[] targetInvocationMethodSignatures, InsnList[] instructionsToInjects, 
-			boolean insertBefore, int nodesToDeleteBefore, int nodesToDeleteAfter, boolean deleteTargetNode, int targetNodeOffset)
+	private byte[] patchMethodInClass(
+				String currentClassName, 
+				byte[] bytes, 
+				String[] targetClassNames, 
+				String[] targetMethodNames, 
+				String[] targetMethodSignatures, 
+				int targetNodeOpcode, 
+				int targetNodeType, 
+				String[] targetInvocationMethodNames, 
+				String[] targetInvocationMethodSignatures, 
+				InsnList[] instructionsToInjects, 
+				boolean insertBefore, 
+				int nodesToDeleteBefore, 
+				int nodesToDeleteAfter, 
+				boolean deleteTargetNode, 
+				int targetNodeOffset
+			)
 	{
 		String targetClassName = targetClassNames[0];
 		String targetMethodName = targetMethodNames[0];
@@ -381,9 +386,7 @@ public class GeometricAcousticsCore implements IClassTransformer
 		{
 			targetInvocationMethodSignature = targetInvocationMethodSignatures[0];
 			if (obfuscated)
-			{
 				targetInvocationMethodSignature = targetInvocationMethodSignatures.length == 2 ? targetInvocationMethodSignatures[1] : targetInvocationMethodSignatures[0];
-			}
 		}
 		
 		
@@ -391,13 +394,12 @@ public class GeometricAcousticsCore implements IClassTransformer
 		if (!currentClassName.equals(targetClassName))
 			return bytes;
 		
-		log("#################################################################   Patching Class: " + targetClassName);
+		log("[PATCHER]: Patching Class: " + targetClassName);
 		
 		//Setup ASM class manipulation stuff
 		ClassNode classNode = new ClassNode();
 		ClassReader classReader = new ClassReader(bytes);
 		classReader.accept(classNode, 0);
-		
 		
 		//Now we loop over all of the methods declared inside the class until we get to the target method name
 		@SuppressWarnings("unchecked")
@@ -405,13 +407,13 @@ public class GeometricAcousticsCore implements IClassTransformer
 		while(methods.hasNext())
 		{
 			MethodNode m = methods.next();
-			log("********* Method Name: " + m.name + " Desc: " + m.desc);
+			log("[PATCHER]: Method Name: " + m.name + " Desc: " + m.desc);
 			int targetIndex = -1;
 			
 			//Check if this is the method name and the signature matches
 			if (m.name.equals(targetMethodName) && m.desc.equals(targetMethodSignature))
 			{
-				log("*************************************** Inside target method: " + targetMethodName);
+				log("[PATCHER]: Inside target method: " + targetMethodName);
 				
 				AbstractInsnNode currentNode = null;
 				AbstractInsnNode targetNode = null;
@@ -439,7 +441,7 @@ public class GeometricAcousticsCore implements IClassTransformer
 								{
 									if (method.desc.equals(targetInvocationMethodSignature) || targetInvocationMethodSignature == null)
 									{
-										log("Found target method invocation for injection: " + targetInvocationMethodName);
+										log("[PATCHER]: Found target method invocation for injection: " + targetInvocationMethodName);
 										targetNode = currentNode;
 										targetIndex = index;
 									}
@@ -451,7 +453,7 @@ public class GeometricAcousticsCore implements IClassTransformer
 						{
 							if (currentNode.getType() == targetNodeType)
 							{
-								log("Found target node for injection: " + targetNodeOpcode);
+								log("[PATCHER]: Found target node for injection: " + targetNodeOpcode);
 								targetNode = currentNode;
 								targetIndex = index;
 							}
@@ -464,16 +466,12 @@ public class GeometricAcousticsCore implements IClassTransformer
 				if (targetNodeOffset > 0)
 				{
 					for (int i = 0; i < targetNodeOffset; i++)
-					{
 						targetNode = targetNode.getNext();
-					}
 				}
 				else if (targetNodeOffset < 0)
 				{
 					for (int i = 0; i < -targetNodeOffset; i++)
-					{
 						targetNode = targetNode.getPrevious();
-					}
 				}
 				
 				if (targetNode != null)	//If we've found the target, inject the instructions!
@@ -481,18 +479,16 @@ public class GeometricAcousticsCore implements IClassTransformer
 					for (int i = 0; i < nodesToDeleteBefore; i++)
 					{
 						AbstractInsnNode previousNode = targetNode.getPrevious();
-						log("Removing Node " + previousNode.getOpcode());
+						log("[PATCHER]: Removing Node " + previousNode.getOpcode());
 						m.instructions.remove(previousNode);
 					}
 					
 					for (int i = 0; i < nodesToDeleteAfter; i++)
 					{
 						AbstractInsnNode nextNode = targetNode.getNext();
-						log("Removing Node " + nextNode.getOpcode());
+						log("[PATCHER]: Removing Node " + nextNode.getOpcode());
 						m.instructions.remove(nextNode);
 					}
-					
-					
 					
 					if (insertBefore)
 						m.instructions.insertBefore(targetNode, instructionsToInject);
@@ -500,11 +496,9 @@ public class GeometricAcousticsCore implements IClassTransformer
 						m.instructions.insert(targetNode, instructionsToInject);
 					
 					if (deleteTargetNode)
-					{
 						m.instructions.remove(targetNode);
-					}
 					
-					log("Patching complete!----------------------------------------------------------------------------------------");
+					log("[PATCHER]: Patching complete!");
 				}
 				break;
 			}

@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="frequencyFilter"/>
+		<item key="selection" value="Channel"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="frequencyFilter"/>
-			<item value="setReverbParameters"/>
-			<item value="histogramValues"/>
-			<item value="directGain"/>
-			<item value="globalReverbGain"/>
-			<item value="ReverbParameters"/>
-			<item value="totalRays"/>
-			<item value="rcpTotalRays"/>
-			<item value="offsetSoundByName"/>
-			<item value="mc"/>
-			<item value="rayDistance"/>
-			<item value="getSoundResource"/>
-			<item value="stdout"/>
-			<item value="pair"/>
-			<item value="Int3"/>
+			<item value="channel"/>
+			<item value="attach"/>
+			<item value="play("/>
+			<item value="play"/>
+			<item value="EntityPlayer"/>
+			<item value="getSoundLocation"/>
+			<item value="init"/>
+			<item value="setVolume"/>
+			<item value="getClampedVolume"/>
+			<item value="playSound"/>
+			<item value="glob"/>
+			<item value="setListener"/>
+			<item value="addlist"/>
+			<item value="listeners"/>
+			<item value="addListener"/>
 		</list>
 		<list key="replacehistory">
 			<item value="totalRays"/>
@@ -32,8 +32,8 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="1042"/>
-		<item key="DIALOG_Y_ORIGIN" value="492"/>
+		<item key="DIALOG_X_ORIGIN" value="1014"/>
+		<item key="DIALOG_Y_ORIGIN" value="23"/>
 		<item key="DIALOG_WIDTH" value="294"/>
 		<item key="DIALOG_HEIGHT" value="408"/>
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>

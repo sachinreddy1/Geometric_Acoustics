@@ -138,10 +138,10 @@ public class GeometricAcoustics
 		lastSoundName = name;
 	}
 	
-	public static void testPatch()
-	{
-		log("Patching test worked.");
-	}
+//	public static void testPatch()
+//	{
+//		log("Patch test worked.");
+//	}
 	
 	// ------------------------------------------------- //
 	
