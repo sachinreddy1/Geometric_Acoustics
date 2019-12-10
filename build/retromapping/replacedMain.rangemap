@@ -1670,7 +1670,7 @@ Class Start: com.sachinreddy.GeometricAcoustics.GeometricAcoustics
 Class End  : com.sachinreddy.GeometricAcoustics.GeometricAcoustics
 endProcessing "com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java"
 
-startProcessing "com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java" md5: b9850681d352a7d795dfdb148d71ee50
+startProcessing "com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java" md5: 4d06f6b62892c4c208d83e1e4f0d2c8e
 @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|8|42|com.sachinreddy.GeometricAcoustics|package|com.sachinreddy.GeometricAcoustics|(file)
 Class Start: com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore
    @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|1215|1218|Mod|class|net.minecraftforge.fml.common.Mod
@@ -2114,12 +2114,12 @@ Class Start: com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore
       @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|16902|16908|String|class|java.lang.String
       @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|16945|16951|String|class|java.lang.String
       @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|16993|17001|InsnList|class|org.objectweb.asm.tree.InsnList
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|17180|17186|String|class|java.lang.String
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|17205|17221|targetClassNames|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetClassNames|2
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|17228|17234|String|class|java.lang.String
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|17254|17271|targetMethodNames|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetMethodNames|3
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|17278|17284|String|class|java.lang.String
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|17314|17341|targetInvocationMethodNames|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetInvocationMethodNames|7
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|17183|17189|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|17208|17224|targetClassNames|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetClassNames|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|17231|17237|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|17257|17274|targetMethodNames|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetMethodNames|3
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|17281|17287|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|17317|17344|targetInvocationMethodNames|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetInvocationMethodNames|7
       @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|17351|17357|String|class|java.lang.String
       @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|17382|17404|targetMethodSignatures|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetMethodSignatures|4
       @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|17411|17419|InsnList|class|org.objectweb.asm.tree.InsnList
@@ -2149,102 +2149,102 @@ Class Start: com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore
       Field: Array Length, skipping
       @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18118|18139|instructionsToInjects|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|instructionsToInjects|9
       @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18145|18166|instructionsToInjects|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|instructionsToInjects|9
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18208|18214|String|class|java.lang.String
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18261|18293|targetInvocationMethodSignatures|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetInvocationMethodSignatures|8
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18344|18376|targetInvocationMethodSignatures|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetInvocationMethodSignatures|8
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18438|18470|targetInvocationMethodSignatures|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetInvocationMethodSignatures|8
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18243|18249|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18296|18328|targetInvocationMethodSignatures|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetInvocationMethodSignatures|8
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18379|18411|targetInvocationMethodSignatures|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetInvocationMethodSignatures|8
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18473|18505|targetInvocationMethodSignatures|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetInvocationMethodSignatures|8
       Field: Array Length, skipping
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18485|18517|targetInvocationMethodSignatures|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetInvocationMethodSignatures|8
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18523|18555|targetInvocationMethodSignatures|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetInvocationMethodSignatures|8
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18620|18636|currentClassName|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|currentClassName|0
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18637|18643|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18672|18677|bytes|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|bytes|1
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18684|18687|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|log|(Ljava/lang/String;)V
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18782|18791|ClassNode|class|org.objectweb.asm.tree.ClassNode
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18808|18817|ClassNode|class|org.objectweb.asm.tree.ClassNode
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18823|18834|ClassReader|class|org.objectweb.asm.ClassReader
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18853|18864|ClassReader|class|org.objectweb.asm.ClassReader
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18865|18870|bytes|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|bytes|1
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18887|18893|accept|method|org.objectweb.asm.ClassReader|accept|(Lorg/objectweb/asm/ClassVisitor;I)V
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19020|19036|SuppressWarnings|class|java.lang.SuppressWarnings
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19052|19060|Iterator|class|java.util.Iterator
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19061|19071|MethodNode|class|org.objectweb.asm.tree.MethodNode
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19093|19100|methods|field|org.objectweb.asm.tree.ClassNode|methods
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19101|19109|iterator|method|java.lang.Iterable|iterator|()Ljava/util/Iterator;
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19129|19136|hasNext|method|java.util.Iterator|hasNext|()Z
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19147|19157|MethodNode|class|org.objectweb.asm.tree.MethodNode
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19170|19174|next|method|java.util.Iterator|next|()Ljava/lang/Object;
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19181|19184|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|log|(Ljava/lang/String;)V
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19216|19220|name|field|org.objectweb.asm.tree.MethodNode|name
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19237|19241|desc|field|org.objectweb.asm.tree.MethodNode|desc
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19346|19350|name|field|org.objectweb.asm.tree.MethodNode|name
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19351|19357|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19381|19385|desc|field|org.objectweb.asm.tree.MethodNode|desc
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19386|19392|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19426|19429|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|log|(Ljava/lang/String;)V
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19496|19512|AbstractInsnNode|class|org.objectweb.asm.tree.AbstractInsnNode
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19537|19553|AbstractInsnNode|class|org.objectweb.asm.tree.AbstractInsnNode
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19583|19599|SuppressWarnings|class|java.lang.SuppressWarnings
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19617|19625|Iterator|class|java.util.Iterator
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19626|19642|AbstractInsnNode|class|org.objectweb.asm.tree.AbstractInsnNode
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19653|19665|instructions|field|org.objectweb.asm.tree.MethodNode|instructions
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19666|19674|iterator|method|org.objectweb.asm.tree.InsnList|iterator|()Ljava/util/ListIterator;
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19760|19767|hasNext|method|java.util.Iterator|hasNext|()Z
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19815|19819|next|method|java.util.Iterator|next|()Ljava/lang/Object;
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19850|19859|getOpcode|method|org.objectweb.asm.tree.AbstractInsnNode|getOpcode|()I
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19865|19881|targetNodeOpcode|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetNodeOpcode|5
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19900|19914|targetNodeType|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetNodeType|6
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19918|19934|AbstractInsnNode|class|org.objectweb.asm.tree.AbstractInsnNode
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19935|19946|METHOD_INSN|field|org.objectweb.asm.tree.AbstractInsnNode|METHOD_INSN
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|20018|20025|getType|method|org.objectweb.asm.tree.AbstractInsnNode|getType|()I
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|20031|20047|AbstractInsnNode|class|org.objectweb.asm.tree.AbstractInsnNode
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|20048|20059|METHOD_INSN|field|org.objectweb.asm.tree.AbstractInsnNode|METHOD_INSN
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|20078|20092|MethodInsnNode|class|org.objectweb.asm.tree.MethodInsnNode
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|20103|20117|MethodInsnNode|class|org.objectweb.asm.tree.MethodInsnNode
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|20197|20201|name|field|org.objectweb.asm.tree.MethodInsnNode|name
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|20202|20208|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|20268|20272|desc|field|org.objectweb.asm.tree.MethodInsnNode|desc
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|20273|20279|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|20378|20381|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|log|(Ljava/lang/String;)V
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|20630|20637|getType|method|org.objectweb.asm.tree.AbstractInsnNode|getType|()I
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|20643|20657|targetNodeType|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetNodeType|6
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|20676|20679|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|log|(Ljava/lang/String;)V
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|20729|20745|targetNodeOpcode|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetNodeOpcode|5
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|20919|20935|targetNodeOffset|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetNodeOffset|14
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|20972|20988|targetNodeOffset|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetNodeOffset|14
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21025|21032|getNext|method|org.objectweb.asm.tree.AbstractInsnNode|getNext|()Lorg/objectweb/asm/tree/AbstractInsnNode;
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21055|21071|targetNodeOffset|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetNodeOffset|14
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21109|21125|targetNodeOffset|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetNodeOffset|14
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21162|21173|getPrevious|method|org.objectweb.asm.tree.AbstractInsnNode|getPrevious|()Lorg/objectweb/asm/tree/AbstractInsnNode;
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21301|21320|nodesToDeleteBefore|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|nodesToDeleteBefore|11
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21340|21356|AbstractInsnNode|class|org.objectweb.asm.tree.AbstractInsnNode
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21383|21394|getPrevious|method|org.objectweb.asm.tree.AbstractInsnNode|getPrevious|()Lorg/objectweb/asm/tree/AbstractInsnNode;
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21404|21407|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|log|(Ljava/lang/String;)V
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21451|21460|getOpcode|method|org.objectweb.asm.tree.AbstractInsnNode|getOpcode|()I
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21473|21485|instructions|field|org.objectweb.asm.tree.MethodNode|instructions
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21486|21492|remove|method|org.objectweb.asm.tree.InsnList|remove|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21546|21564|nodesToDeleteAfter|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|nodesToDeleteAfter|12
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21584|21600|AbstractInsnNode|class|org.objectweb.asm.tree.AbstractInsnNode
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21623|21630|getNext|method|org.objectweb.asm.tree.AbstractInsnNode|getNext|()Lorg/objectweb/asm/tree/AbstractInsnNode;
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21640|21643|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|log|(Ljava/lang/String;)V
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21683|21692|getOpcode|method|org.objectweb.asm.tree.AbstractInsnNode|getOpcode|()I
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21705|21717|instructions|field|org.objectweb.asm.tree.MethodNode|instructions
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21718|21724|remove|method|org.objectweb.asm.tree.InsnList|remove|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21758|21770|insertBefore|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|insertBefore|10
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21780|21792|instructions|field|org.objectweb.asm.tree.MethodNode|instructions
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21793|21805|insertBefore|method|org.objectweb.asm.tree.InsnList|insertBefore|(Lorg/objectweb/asm/tree/AbstractInsnNode;Lorg/objectweb/asm/tree/InsnList;)V
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21859|21871|instructions|field|org.objectweb.asm.tree.MethodNode|instructions
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21872|21878|insert|method|org.objectweb.asm.tree.InsnList|insert|(Lorg/objectweb/asm/tree/AbstractInsnNode;Lorg/objectweb/asm/tree/InsnList;)V
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21929|21945|deleteTargetNode|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|deleteTargetNode|13
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21955|21967|instructions|field|org.objectweb.asm.tree.MethodNode|instructions
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21968|21974|remove|method|org.objectweb.asm.tree.InsnList|remove|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21999|22002|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|log|(Ljava/lang/String;)V
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|22068|22079|ClassWriter|class|org.objectweb.asm.ClassWriter
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|22093|22104|ClassWriter|class|org.objectweb.asm.ClassWriter
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|22105|22116|ClassWriter|class|org.objectweb.asm.ClassWriter
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|22117|22129|COMPUTE_MAXS|field|org.objectweb.asm.ClassWriter|COMPUTE_MAXS
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|22144|22150|accept|method|org.objectweb.asm.tree.ClassNode|accept|(Lorg/objectweb/asm/ClassVisitor;)V
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|22176|22187|toByteArray|method|org.objectweb.asm.ClassWriter|toByteArray|()[B
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18520|18552|targetInvocationMethodSignatures|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetInvocationMethodSignatures|8
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18558|18590|targetInvocationMethodSignatures|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetInvocationMethodSignatures|8
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18644|18660|currentClassName|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|currentClassName|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18661|18667|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18696|18701|bytes|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|bytes|1
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18708|18711|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|log|(Ljava/lang/String;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18817|18826|ClassNode|class|org.objectweb.asm.tree.ClassNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18843|18852|ClassNode|class|org.objectweb.asm.tree.ClassNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18858|18869|ClassReader|class|org.objectweb.asm.ClassReader
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18888|18899|ClassReader|class|org.objectweb.asm.ClassReader
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18900|18905|bytes|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|bytes|1
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|18922|18928|accept|method|org.objectweb.asm.ClassReader|accept|(Lorg/objectweb/asm/ClassVisitor;I)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19052|19068|SuppressWarnings|class|java.lang.SuppressWarnings
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19084|19092|Iterator|class|java.util.Iterator
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19093|19103|MethodNode|class|org.objectweb.asm.tree.MethodNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19125|19132|methods|field|org.objectweb.asm.tree.ClassNode|methods
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19133|19141|iterator|method|java.lang.Iterable|iterator|()Ljava/util/Iterator;
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19161|19168|hasNext|method|java.util.Iterator|hasNext|()Z
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19179|19189|MethodNode|class|org.objectweb.asm.tree.MethodNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19202|19206|next|method|java.util.Iterator|next|()Ljava/lang/Object;
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19213|19216|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|log|(Ljava/lang/String;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19248|19252|name|field|org.objectweb.asm.tree.MethodNode|name
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19269|19273|desc|field|org.objectweb.asm.tree.MethodNode|desc
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19379|19383|name|field|org.objectweb.asm.tree.MethodNode|name
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19384|19390|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19414|19418|desc|field|org.objectweb.asm.tree.MethodNode|desc
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19419|19425|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19459|19462|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|log|(Ljava/lang/String;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19529|19545|AbstractInsnNode|class|org.objectweb.asm.tree.AbstractInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19570|19586|AbstractInsnNode|class|org.objectweb.asm.tree.AbstractInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19616|19632|SuppressWarnings|class|java.lang.SuppressWarnings
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19650|19658|Iterator|class|java.util.Iterator
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19659|19675|AbstractInsnNode|class|org.objectweb.asm.tree.AbstractInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19686|19698|instructions|field|org.objectweb.asm.tree.MethodNode|instructions
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19699|19707|iterator|method|org.objectweb.asm.tree.InsnList|iterator|()Ljava/util/ListIterator;
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19794|19801|hasNext|method|java.util.Iterator|hasNext|()Z
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19849|19853|next|method|java.util.Iterator|next|()Ljava/lang/Object;
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19884|19893|getOpcode|method|org.objectweb.asm.tree.AbstractInsnNode|getOpcode|()I
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19899|19915|targetNodeOpcode|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetNodeOpcode|5
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19980|19994|targetNodeType|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetNodeType|6
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|19998|20014|AbstractInsnNode|class|org.objectweb.asm.tree.AbstractInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|20015|20026|METHOD_INSN|field|org.objectweb.asm.tree.AbstractInsnNode|METHOD_INSN
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|20060|20067|getType|method|org.objectweb.asm.tree.AbstractInsnNode|getType|()I
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|20073|20089|AbstractInsnNode|class|org.objectweb.asm.tree.AbstractInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|20090|20101|METHOD_INSN|field|org.objectweb.asm.tree.AbstractInsnNode|METHOD_INSN
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|20120|20134|MethodInsnNode|class|org.objectweb.asm.tree.MethodInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|20145|20159|MethodInsnNode|class|org.objectweb.asm.tree.MethodInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|20239|20243|name|field|org.objectweb.asm.tree.MethodInsnNode|name
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|20244|20250|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|20310|20314|desc|field|org.objectweb.asm.tree.MethodInsnNode|desc
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|20315|20321|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|20420|20423|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|log|(Ljava/lang/String;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|20672|20679|getType|method|org.objectweb.asm.tree.AbstractInsnNode|getType|()I
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|20685|20699|targetNodeType|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetNodeType|6
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|20718|20721|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|log|(Ljava/lang/String;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|20771|20787|targetNodeOpcode|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetNodeOpcode|5
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21001|21017|targetNodeOffset|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetNodeOffset|14
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21054|21070|targetNodeOffset|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetNodeOffset|14
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21107|21114|getNext|method|org.objectweb.asm.tree.AbstractInsnNode|getNext|()Lorg/objectweb/asm/tree/AbstractInsnNode;
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21137|21153|targetNodeOffset|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetNodeOffset|14
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21191|21207|targetNodeOffset|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|targetNodeOffset|14
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21244|21255|getPrevious|method|org.objectweb.asm.tree.AbstractInsnNode|getPrevious|()Lorg/objectweb/asm/tree/AbstractInsnNode;
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21399|21418|nodesToDeleteBefore|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|nodesToDeleteBefore|11
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21438|21454|AbstractInsnNode|class|org.objectweb.asm.tree.AbstractInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21481|21492|getPrevious|method|org.objectweb.asm.tree.AbstractInsnNode|getPrevious|()Lorg/objectweb/asm/tree/AbstractInsnNode;
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21502|21505|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|log|(Ljava/lang/String;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21549|21558|getOpcode|method|org.objectweb.asm.tree.AbstractInsnNode|getOpcode|()I
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21571|21583|instructions|field|org.objectweb.asm.tree.MethodNode|instructions
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21584|21590|remove|method|org.objectweb.asm.tree.InsnList|remove|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21644|21662|nodesToDeleteAfter|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|nodesToDeleteAfter|12
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21682|21698|AbstractInsnNode|class|org.objectweb.asm.tree.AbstractInsnNode
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21721|21728|getNext|method|org.objectweb.asm.tree.AbstractInsnNode|getNext|()Lorg/objectweb/asm/tree/AbstractInsnNode;
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21738|21741|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|log|(Ljava/lang/String;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21781|21790|getOpcode|method|org.objectweb.asm.tree.AbstractInsnNode|getOpcode|()I
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21803|21815|instructions|field|org.objectweb.asm.tree.MethodNode|instructions
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21816|21822|remove|method|org.objectweb.asm.tree.InsnList|remove|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21856|21868|insertBefore|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|insertBefore|10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21878|21890|instructions|field|org.objectweb.asm.tree.MethodNode|instructions
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21891|21903|insertBefore|method|org.objectweb.asm.tree.InsnList|insertBefore|(Lorg/objectweb/asm/tree/AbstractInsnNode;Lorg/objectweb/asm/tree/InsnList;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21957|21969|instructions|field|org.objectweb.asm.tree.MethodNode|instructions
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|21970|21976|insert|method|org.objectweb.asm.tree.InsnList|insert|(Lorg/objectweb/asm/tree/AbstractInsnNode;Lorg/objectweb/asm/tree/InsnList;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|22027|22043|deleteTargetNode|param|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|patchMethodInClass|(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B|deleteTargetNode|13
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|22053|22065|instructions|field|org.objectweb.asm.tree.MethodNode|instructions
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|22066|22072|remove|method|org.objectweb.asm.tree.InsnList|remove|(Lorg/objectweb/asm/tree/AbstractInsnNode;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|22097|22100|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore|log|(Ljava/lang/String;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|22166|22177|ClassWriter|class|org.objectweb.asm.ClassWriter
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|22191|22202|ClassWriter|class|org.objectweb.asm.ClassWriter
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|22203|22214|ClassWriter|class|org.objectweb.asm.ClassWriter
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|22215|22227|COMPUTE_MAXS|field|org.objectweb.asm.ClassWriter|COMPUTE_MAXS
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|22242|22248|accept|method|org.objectweb.asm.tree.ClassNode|accept|(Lorg/objectweb/asm/ClassVisitor;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java|22274|22285|toByteArray|method|org.objectweb.asm.ClassWriter|toByteArray|()[B
    Method End: patchMethodInClass(Ljava/lang/String;[B[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;II[Ljava/lang/String;[Ljava/lang/String;[Lorg/objectweb/asm/tree/InsnList;ZIIZI)[B
 Class End  : com.sachinreddy.GeometricAcoustics.GeometricAcousticsCore
 endProcessing "com/sachinreddy/GeometricAcoustics/GeometricAcousticsCore.java"

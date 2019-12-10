@@ -360,10 +360,10 @@ public class GeometricAcousticsCore implements IClassTransformer
 				int targetNodeOffset
 			)
 	{
+		
 		String targetClassName = targetClassNames[0];
 		String targetMethodName = targetMethodNames[0];
 		String targetInvocationMethodName = targetInvocationMethodNames[0];
-		
 		String targetMethodSignature = targetMethodSignatures[0];
 		InsnList instructionsToInject = instructionsToInjects[0];
 		boolean obfuscated = false;
@@ -381,6 +381,8 @@ public class GeometricAcousticsCore implements IClassTransformer
 			}
 		}
 		
+		// ----------------------- //
+		
 		String targetInvocationMethodSignature = null;
 		if (targetInvocationMethodSignatures != null)
 		{
@@ -389,19 +391,21 @@ public class GeometricAcousticsCore implements IClassTransformer
 				targetInvocationMethodSignature = targetInvocationMethodSignatures.length == 2 ? targetInvocationMethodSignatures[1] : targetInvocationMethodSignatures[0];
 		}
 		
+		// ----------------------- //
 		
-		//If this isn't the target class, leave!
 		if (!currentClassName.equals(targetClassName))
 			return bytes;
 		
 		log("[PATCHER]: Patching Class: " + targetClassName);
 		
-		//Setup ASM class manipulation stuff
+		// ----------------------- //
+		
+		// ASM stuff
 		ClassNode classNode = new ClassNode();
 		ClassReader classReader = new ClassReader(bytes);
 		classReader.accept(classNode, 0);
 		
-		//Now we loop over all of the methods declared inside the class until we get to the target method name
+		// We loop over all of the methods declared inside the class until we get to the target method name
 		@SuppressWarnings("unchecked")
 		Iterator<MethodNode> methods = classNode.methods.iterator();
 		while(methods.hasNext())
@@ -410,7 +414,7 @@ public class GeometricAcousticsCore implements IClassTransformer
 			log("[PATCHER]: Method Name: " + m.name + " Desc: " + m.desc);
 			int targetIndex = -1;
 			
-			//Check if this is the method name and the signature matches
+			// Check if this is the method name and the signature matches
 			if (m.name.equals(targetMethodName) && m.desc.equals(targetMethodSignature))
 			{
 				log("[PATCHER]: Inside target method: " + targetMethodName);
@@ -423,7 +427,7 @@ public class GeometricAcousticsCore implements IClassTransformer
 				
 				int index = -1;
 				
-				//Loop over the instruction set
+				// Loop over the instruction set
 				while (iter.hasNext())
 				{
 					index++;
@@ -431,7 +435,8 @@ public class GeometricAcousticsCore implements IClassTransformer
 					
 					if (currentNode.getOpcode() == targetNodeOpcode)
 					{
-						if (targetNodeType == AbstractInsnNode.METHOD_INSN) //If we're looking for a method opcode
+						// If we're looking for a method opcode
+						if (targetNodeType == AbstractInsnNode.METHOD_INSN) 
 						{
 							if (currentNode.getType() == AbstractInsnNode.METHOD_INSN)
 							{
@@ -462,7 +467,9 @@ public class GeometricAcousticsCore implements IClassTransformer
 					}
 				}
 				
-				//Offset the target node by the supplied offset value
+				// ----------------------- //
+				
+				// Offset the target node by the supplied offset value
 				if (targetNodeOffset > 0)
 				{
 					for (int i = 0; i < targetNodeOffset; i++)
@@ -474,7 +481,10 @@ public class GeometricAcousticsCore implements IClassTransformer
 						targetNode = targetNode.getPrevious();
 				}
 				
-				if (targetNode != null)	//If we've found the target, inject the instructions!
+				// ----------------------- //
+				
+				// Inject the instructions
+				if (targetNode != null)
 				{
 					for (int i = 0; i < nodesToDeleteBefore; i++)
 					{
@@ -507,5 +517,6 @@ public class GeometricAcousticsCore implements IClassTransformer
 		ClassWriter writer = new ClassWriter(ClassWriter.COMPUTE_MAXS);
 		classNode.accept(writer);
 		return writer.toByteArray();
+		
 	}
 }
