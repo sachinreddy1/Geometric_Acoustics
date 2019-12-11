@@ -161,7 +161,8 @@ public class GeometricAcousticsCore implements IClassTransformer
 					0,
 					0,
 					false,
-					0
+					0,
+					"initialize"
 					);
 		}
 		
@@ -190,7 +191,8 @@ public class GeometricAcousticsCore implements IClassTransformer
 					0,
 					0,
 					false,
-					0
+					0,
+					"setLastSoundCategory"
 					);
 		}
 		
@@ -221,7 +223,8 @@ public class GeometricAcousticsCore implements IClassTransformer
 					0,
 					0,
 					false,
-					0
+					0,
+					"setLastSoundName"
 					);
 		}
 		
@@ -246,7 +249,8 @@ public class GeometricAcousticsCore implements IClassTransformer
 					0,			//Nodes to delete before the target node (done before injection)
 					0,			//Nodes to delete after the target node (done before injection)
 					false,
-					0
+					0,
+					"globalVolumeMultiplier"
 					);
 		}
 		
@@ -289,7 +293,8 @@ public class GeometricAcousticsCore implements IClassTransformer
 					0,			
 					0,			
 					false,
-					0
+					0,
+					"onPlaySound"
 					);
 		}
 		
@@ -357,7 +362,8 @@ public class GeometricAcousticsCore implements IClassTransformer
 				int nodesToDeleteBefore, 
 				int nodesToDeleteAfter, 
 				boolean deleteTargetNode, 
-				int targetNodeOffset
+				int targetNodeOffset,
+				String currentMethod
 			)
 	{
 		
@@ -396,6 +402,7 @@ public class GeometricAcousticsCore implements IClassTransformer
 		if (!currentClassName.equals(targetClassName))
 			return bytes;
 		
+		log("[PATCHER]: Current Method to Patch: " + currentMethod);
 		log("[PATCHER]: Patching Class: " + targetClassName);
 		
 		// ----------------------- //
@@ -508,7 +515,7 @@ public class GeometricAcousticsCore implements IClassTransformer
 					if (deleteTargetNode)
 						m.instructions.remove(targetNode);
 					
-					log("[PATCHER]: Patching complete!");
+					log("[PATCHER]: Patching complete! --------------------------------");
 				}
 				break;
 			}
