@@ -2146,3 +2146,6 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 
 !ENTRY org.eclipse.egit.core 1 0 2019-12-09 22:24:06.525
 !MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.debug.core 4 120 2019-12-11 11:29:16.590
+!MESSAGE Variable references empty selection: ${project_loc}

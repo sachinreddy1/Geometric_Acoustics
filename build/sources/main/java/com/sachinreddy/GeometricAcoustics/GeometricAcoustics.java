@@ -9,7 +9,7 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
-
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.SoundEvent;
@@ -138,10 +138,10 @@ public class GeometricAcoustics
 		lastSoundName = name;
 	}
 	
-//	public static void testPatch()
-//	{
-//		log("Patch test worked.");
-//	}
+	public static void getListener()
+	{
+		log("Patch test worked.");
+	}
 	
 	// ------------------------------------------------- //
 	
