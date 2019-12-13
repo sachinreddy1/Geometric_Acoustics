@@ -72,6 +72,7 @@ public class GeometricAcoustics
 	{
 		ALCcontext currentContext = ALC10.alcGetCurrentContext();
 		ALCdevice currentDevice = ALC10.alcGetContextsDevice(currentContext);
+		log("ALC_MAX_AUXILIARY_SENDS: " + EFX10.ALC_MAX_AUXILIARY_SENDS);
 		
 		if (ALC10.alcIsExtensionPresent(currentDevice, "ALC_EXT_EFX"))
 			log("EFX Extension recognized.");
@@ -136,11 +137,6 @@ public class GeometricAcoustics
 	public static void setLastSoundName(String name)
 	{
 		lastSoundName = name;
-	}
-	
-	public static void getListener()
-	{
-		log("Patch test worked.");
 	}
 	
 	// ------------------------------------------------- //
@@ -329,7 +325,7 @@ public class GeometricAcoustics
 			}
 		}
 		
-		if (GAGuiOverlay.histogramData[0] != null && GAGuiOverlay.histogramData.length != 0)
+		if (GAGuiOverlay.histogramData[0] != null && GAGuiOverlay.histogramData.length != 0 && lastSoundCategory.toString() == "PLAYERS")
 			GAGuiOverlay.calculateHistogram();
 		
 		bounceReflectivityRatio[0] = (float)Math.pow(bounceReflectivityRatio[0] / (float)numRays, 1.0 / reflectionEnergyCurve);
@@ -516,6 +512,8 @@ public class GeometricAcoustics
 		EFX10.alFilterf(sendFilter3, EFX10.AL_LOWPASS_GAIN, sendGain3);
 		EFX10.alFilterf(sendFilter3, EFX10.AL_LOWPASS_GAINHF, sendCutoff3);
 		AL11.alSource3i(sourceID, EFX10.AL_AUXILIARY_SEND_FILTER, auxFXSlot3, 3, sendFilter3);	
+		
+		// ----------------- //
 		
 		EFX10.alFilterf(directFilter0, EFX10.AL_LOWPASS_GAIN, directGain);
 		EFX10.alFilterf(directFilter0, EFX10.AL_LOWPASS_GAINHF, directCutoff);

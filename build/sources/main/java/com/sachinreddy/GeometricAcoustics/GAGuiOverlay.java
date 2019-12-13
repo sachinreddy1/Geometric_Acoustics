@@ -71,7 +71,7 @@ public class GAGuiOverlay extends Gui
     }
 	
 	// ------------------------------------------------- //
-	public static void calculateHistogram() {
+	public static void calculateHistogram() {		
 		Compare obj = new Compare(); 
 		histogramValues = obj.countFreqValues(histogramData, histogramData.length);
         obj.compareTriple(histogramValues);

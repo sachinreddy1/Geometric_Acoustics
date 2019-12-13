@@ -300,58 +300,6 @@ public class GeometricAcousticsCore implements IClassTransformer
 		
 		// ------------------------------------------------- //
 		
-		{
-			InsnList toInject = new InsnList();
-			toInject.add(new MethodInsnNode(Opcodes.INVOKESTATIC, "com/sachinreddy/GeometricAcoustics/GeometricAcoustics", "getListener", "()V"));
-			
-			arg2 = patchMethodInClass(arg0, arg2, 
-					new String[]{"net.minecraft.client.audio.SoundManager$SoundSystemStarterThread", "ccn$a"}, 						//Target Class name
-					new String[]{"<init>", "<init>"}, 																				//Target method name
-					new String[]{"(Lnet/minecraft/client/audio/SoundManager;)V", "(Lccn;)V"},	//Target method signature
-					Opcodes.INVOKESPECIAL,						//Target opcode
-					AbstractInsnNode.METHOD_INSN, 				//Target node type
-					new String[]{"<init>", "<init>"},			//Target node method invocation name
-					null,
-					new InsnList[]{toInject, toInject}, 		//Instructions to inject
-					false, 										//Insert before the target node?
-					0,
-					0,
-					false,
-					0,
-					"testPatching"
-					);
-		}
-
-		//setListener() in SoundManager.setListener()
-//		{
-//			InsnList toInject = new InsnList();
-//			toInject.add(new VarInsnNode(Opcodes.ALOAD, 7));
-//			toInject.add(new MethodInsnNode(Opcodes.INVOKESTATIC, "com/sachinreddy/GeometricAcoustics/GeometricAcoustics", "getListener", "(Lnet/minecraft/entity/player/EntityPlayer;)V"));
-//			
-//			InsnList toInjectObf = new InsnList();
-//			toInjectObf.add(new VarInsnNode(Opcodes.ALOAD, 7));
-//			toInjectObf.add(new MethodInsnNode(Opcodes.INVOKESTATIC, "com/sachinreddy/GeometricAcoustics/GeometricAcoustics", "getListener", "(Lno;)V"));
-//			
-//			arg2 = patchMethodInClass(arg0, arg2, 
-//					new String[]{"net.minecraft.client.audio.SoundManager", "ccn"}, 	//Target Class name
-//					new String[]{"addListener", "c"}, 								//Target method name
-//					new String[]{"(Lnet/minecraft/client/audio/ISoundEventListener;)V", "(Lcbz;)V"},	//Target method signature
-//					Opcodes.INVOKEINTERFACE,						//Target opcode
-//					AbstractInsnNode.METHOD_INSN, 				//Target node type
-//					new String[]{"add", "add"},		//Target node method invocation name
-//					null,
-//					new InsnList[]{toInject, toInjectObf}, 		//Instructions to inject
-//					false, 										//Insert before the target node?
-//					0,
-//					0,
-//					false,
-//					0,
-//					"setListener"
-//					);
-//		}
-		
-		// ------------------------------------------------- //
-		
 		return arg2;
 	}
 	
