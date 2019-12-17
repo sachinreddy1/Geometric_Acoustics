@@ -542,8 +542,9 @@ public class GeometricAcoustics
 		EFX10.alEffectf(reverbSlot, EFX10.AL_EAXREVERB_LATE_REVERB_DELAY, r.lateReverbDelay);
 		EFX10.alEffectf(reverbSlot, EFX10.AL_EAXREVERB_AIR_ABSORPTION_GAINHF, r.airAbsorptionGainHF);
 		EFX10.alEffectf(reverbSlot, EFX10.AL_EAXREVERB_ROOM_ROLLOFF_FACTOR, r.roomRolloffFactor);
-		
+		//
 		EFX10.alEffect(reverbSlot, EFX10.AL_EAXREVERB_LATE_REVERB_PAN, r.lateReverbPan);
+		EFX10.alEffect(reverbSlot, EFX10.AL_EAXREVERB_REFLECTIONS_PAN, r.reflectionPan);
 
 		//Attach updated effect object
 		EFX10.alAuxiliaryEffectSloti(auxFXSlot, EFX10.AL_EFFECTSLOT_EFFECT, reverbSlot);

@@ -744,7 +744,7 @@ Class Start: com.sachinreddy.GeometricAcoustics.GAGuiOverlay
 Class End  : com.sachinreddy.GeometricAcoustics.GAGuiOverlay
 endProcessing "com/sachinreddy/GeometricAcoustics/GAGuiOverlay.java"
 
-startProcessing "com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java" md5: 2317de12df24db4f0dd6aea4f6303868
+startProcessing "com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java" md5: b94614a450a4a7e950c02774f209b9e1
 Cache Hit!
 @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|8|42|com.sachinreddy.GeometricAcoustics|package|com.sachinreddy.GeometricAcoustics|(file)
 Class Start: com.sachinreddy.GeometricAcoustics.GeometricAcoustics
@@ -1656,29 +1656,36 @@ Class Start: com.sachinreddy.GeometricAcoustics.GeometricAcoustics
       @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22010|22042|AL_EAXREVERB_ROOM_ROLLOFF_FACTOR|field|org.lwjgl.openal.EFX10|AL_EAXREVERB_ROOM_ROLLOFF_FACTOR
       @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22044|22045|r|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|r|0
       @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22046|22063|roomRolloffFactor|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|roomRolloffFactor
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22071|22076|EFX10|class|org.lwjgl.openal.EFX10
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22077|22085|alEffect|method|org.lwjgl.openal.EFX10|alEffect|(IILjava/nio/FloatBuffer;)V
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22086|22096|reverbSlot|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|reverbSlot|2
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22098|22103|EFX10|class|org.lwjgl.openal.EFX10
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22104|22132|AL_EAXREVERB_LATE_REVERB_PAN|field|org.lwjgl.openal.EFX10|AL_EAXREVERB_LATE_REVERB_PAN
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22134|22135|r|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|r|0
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22136|22149|lateReverbPan|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbPan
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22188|22193|EFX10|class|org.lwjgl.openal.EFX10
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22194|22216|alAuxiliaryEffectSloti|method|org.lwjgl.openal.EFX10|alAuxiliaryEffectSloti|(III)V
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22217|22226|auxFXSlot|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|auxFXSlot|1
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22228|22233|EFX10|class|org.lwjgl.openal.EFX10
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22234|22254|AL_EFFECTSLOT_EFFECT|field|org.lwjgl.openal.EFX10|AL_EFFECTSLOT_EFFECT
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22256|22266|reverbSlot|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|reverbSlot|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22073|22078|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22079|22087|alEffect|method|org.lwjgl.openal.EFX10|alEffect|(IILjava/nio/FloatBuffer;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22088|22098|reverbSlot|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|reverbSlot|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22100|22105|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22106|22134|AL_EAXREVERB_LATE_REVERB_PAN|field|org.lwjgl.openal.EFX10|AL_EAXREVERB_LATE_REVERB_PAN
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22136|22137|r|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|r|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22138|22151|lateReverbPan|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbPan
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22156|22161|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22162|22170|alEffect|method|org.lwjgl.openal.EFX10|alEffect|(IILjava/nio/FloatBuffer;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22171|22181|reverbSlot|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|reverbSlot|2
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22183|22188|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22189|22217|AL_EAXREVERB_REFLECTIONS_PAN|field|org.lwjgl.openal.EFX10|AL_EAXREVERB_REFLECTIONS_PAN
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22219|22220|r|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|r|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22221|22234|reflectionPan|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionPan
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22273|22278|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22279|22301|alAuxiliaryEffectSloti|method|org.lwjgl.openal.EFX10|alAuxiliaryEffectSloti|(III)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22302|22311|auxFXSlot|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|auxFXSlot|1
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22313|22318|EFX10|class|org.lwjgl.openal.EFX10
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22319|22339|AL_EFFECTSLOT_EFFECT|field|org.lwjgl.openal.EFX10|AL_EFFECTSLOT_EFFECT
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22341|22351|reverbSlot|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|setReverbParameters|(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V|reverbSlot|2
    Method End: setReverbParameters(Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;II)V
    Method Start: log(Ljava/lang/String;)V
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22367|22374|message|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|log|(Ljava/lang/String;)V|message|0
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22356|22359|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|log|(Ljava/lang/String;)V
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22360|22366|String|class|java.lang.String
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22381|22387|System|class|java.lang.System
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22388|22391|out|field|java.lang.System|out
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22392|22399|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22400|22409|logPrefix|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|logPrefix
-      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22419|22426|message|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|log|(Ljava/lang/String;)V|message|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22452|22459|message|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|log|(Ljava/lang/String;)V|message|0
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22441|22444|log|method|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|log|(Ljava/lang/String;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22445|22451|String|class|java.lang.String
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22466|22472|System|class|java.lang.System
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22473|22476|out|field|java.lang.System|out
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22477|22484|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22485|22494|logPrefix|field|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|logPrefix
+      @|com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java|22504|22511|message|param|com.sachinreddy.GeometricAcoustics.GeometricAcoustics|log|(Ljava/lang/String;)V|message|0
    Method End: log(Ljava/lang/String;)V
 Class End  : com.sachinreddy.GeometricAcoustics.GeometricAcoustics
 endProcessing "com/sachinreddy/GeometricAcoustics/GeometricAcoustics.java"
@@ -2365,7 +2372,7 @@ Class Start: com.sachinreddy.GeometricAcoustics.Int3
 Class End  : com.sachinreddy.GeometricAcoustics.Int3
 endProcessing "com/sachinreddy/GeometricAcoustics/Int3.java"
 
-startProcessing "com/sachinreddy/GeometricAcoustics/ReverbParameters.java" md5: e38f6411cbfff92e97b28f0f4d2a5ca0
+startProcessing "com/sachinreddy/GeometricAcoustics/ReverbParameters.java" md5: 989758e9e05cf11c2eee26a467fcf2ea
 @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|8|42|com.sachinreddy.GeometricAcoustics|package|com.sachinreddy.GeometricAcoustics|(file)
 Class Start: com.sachinreddy.GeometricAcoustics.ReverbParameters
    @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|149|165|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
@@ -2384,101 +2391,128 @@ Class Start: com.sachinreddy.GeometricAcoustics.ReverbParameters
    @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|542|553|FloatBuffer|class|java.nio.FloatBuffer
    @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|542|553|FloatBuffer|class|java.nio.FloatBuffer
    @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|554|567|lateReverbPan|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbPan|
+   @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|577|588|FloatBuffer|class|java.nio.FloatBuffer
+   @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|577|588|FloatBuffer|class|java.nio.FloatBuffer
+   @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|589|602|reflectionPan|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionPan|
    Method Start: getReverb0()Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|586|602|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|603|613|getReverb0|method|com.sachinreddy.GeometricAcoustics.ReverbParameters|getReverb0|()Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;
       @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|621|637|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|646|662|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|670|679|decayTime|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|decayTime
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|693|700|density|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|density
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|713|722|diffusion|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|diffusion
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|735|739|gain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|gain
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|752|758|gainHF|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|gainHF
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|772|784|decayHFRatio|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|decayHFRatio
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|797|812|reflectionsGain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionsGain
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|825|841|reflectionsDelay|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionsDelay
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|856|870|lateReverbGain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbGain
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|884|899|lateReverbDelay|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbDelay
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|914|933|airAbsorptionGainHF|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|airAbsorptionGainHF
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|948|965|roomRolloffFactor|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|roomRolloffFactor
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|982|995|lateReverbPan|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbPan
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|998|1009|BufferUtils|class|org.lwjgl.BufferUtils
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1010|1027|createFloatBuffer|method|org.lwjgl.BufferUtils|createFloatBuffer|(I)Ljava/nio/FloatBuffer;
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1036|1049|lateReverbPan|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbPan
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1050|1053|put|method|java.nio.FloatBuffer|put|([F)Ljava/nio/FloatBuffer;
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1087|1091|flip|method|java.nio.Buffer|flip|()Ljava/nio/Buffer;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|638|648|getReverb0|method|com.sachinreddy.GeometricAcoustics.ReverbParameters|getReverb0|()Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|656|672|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|681|697|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|705|714|decayTime|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|decayTime
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|728|735|density|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|density
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|748|757|diffusion|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|diffusion
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|770|774|gain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|gain
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|787|793|gainHF|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|gainHF
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|807|819|decayHFRatio|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|decayHFRatio
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|832|847|reflectionsGain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionsGain
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|860|876|reflectionsDelay|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionsDelay
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|891|905|lateReverbGain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbGain
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|919|934|lateReverbDelay|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbDelay
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|949|968|airAbsorptionGainHF|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|airAbsorptionGainHF
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|983|1000|roomRolloffFactor|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|roomRolloffFactor
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1019|1032|lateReverbPan|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbPan
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1035|1046|BufferUtils|class|org.lwjgl.BufferUtils
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1047|1064|createFloatBuffer|method|org.lwjgl.BufferUtils|createFloatBuffer|(I)Ljava/nio/FloatBuffer;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1073|1086|lateReverbPan|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbPan
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1087|1090|put|method|java.nio.FloatBuffer|put|([F)Ljava/nio/FloatBuffer;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1123|1127|flip|method|java.nio.Buffer|flip|()Ljava/nio/Buffer;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1135|1148|reflectionPan|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionPan
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1151|1162|BufferUtils|class|org.lwjgl.BufferUtils
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1163|1180|createFloatBuffer|method|org.lwjgl.BufferUtils|createFloatBuffer|(I)Ljava/nio/FloatBuffer;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1189|1202|reflectionPan|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionPan
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1203|1206|put|method|java.nio.FloatBuffer|put|([F)Ljava/nio/FloatBuffer;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1239|1243|flip|method|java.nio.Buffer|flip|()Ljava/nio/Buffer;
    Method End: getReverb0()Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;
    Method Start: getReverb1()Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1127|1143|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1144|1154|getReverb1|method|com.sachinreddy.GeometricAcoustics.ReverbParameters|getReverb1|()Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1162|1178|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1187|1203|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1211|1220|decayTime|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|decayTime
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1234|1241|density|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|density
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1254|1263|diffusion|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|diffusion
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1276|1280|gain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|gain
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1293|1299|gainHF|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|gainHF
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1313|1325|decayHFRatio|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|decayHFRatio
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1338|1353|reflectionsGain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionsGain
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1366|1382|reflectionsDelay|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionsDelay
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1397|1411|lateReverbGain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbGain
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1425|1440|lateReverbDelay|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbDelay
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1455|1474|airAbsorptionGainHF|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|airAbsorptionGainHF
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1489|1506|roomRolloffFactor|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|roomRolloffFactor
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1523|1536|lateReverbPan|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbPan
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1539|1550|BufferUtils|class|org.lwjgl.BufferUtils
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1551|1568|createFloatBuffer|method|org.lwjgl.BufferUtils|createFloatBuffer|(I)Ljava/nio/FloatBuffer;
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1577|1590|lateReverbPan|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbPan
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1591|1594|put|method|java.nio.FloatBuffer|put|([F)Ljava/nio/FloatBuffer;
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1628|1632|flip|method|java.nio.Buffer|flip|()Ljava/nio/Buffer;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1279|1295|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1296|1306|getReverb1|method|com.sachinreddy.GeometricAcoustics.ReverbParameters|getReverb1|()Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1314|1330|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1339|1355|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1363|1372|decayTime|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|decayTime
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1386|1393|density|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|density
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1406|1415|diffusion|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|diffusion
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1428|1432|gain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|gain
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1445|1451|gainHF|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|gainHF
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1465|1477|decayHFRatio|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|decayHFRatio
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1490|1505|reflectionsGain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionsGain
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1518|1534|reflectionsDelay|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionsDelay
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1549|1563|lateReverbGain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbGain
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1577|1592|lateReverbDelay|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbDelay
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1607|1626|airAbsorptionGainHF|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|airAbsorptionGainHF
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1641|1658|roomRolloffFactor|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|roomRolloffFactor
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1677|1690|lateReverbPan|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbPan
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1693|1704|BufferUtils|class|org.lwjgl.BufferUtils
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1705|1722|createFloatBuffer|method|org.lwjgl.BufferUtils|createFloatBuffer|(I)Ljava/nio/FloatBuffer;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1731|1744|lateReverbPan|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbPan
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1745|1748|put|method|java.nio.FloatBuffer|put|([F)Ljava/nio/FloatBuffer;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1782|1786|flip|method|java.nio.Buffer|flip|()Ljava/nio/Buffer;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1794|1807|reflectionPan|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionPan
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1810|1821|BufferUtils|class|org.lwjgl.BufferUtils
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1822|1839|createFloatBuffer|method|org.lwjgl.BufferUtils|createFloatBuffer|(I)Ljava/nio/FloatBuffer;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1848|1861|reflectionPan|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionPan
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1862|1865|put|method|java.nio.FloatBuffer|put|([F)Ljava/nio/FloatBuffer;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1899|1903|flip|method|java.nio.Buffer|flip|()Ljava/nio/Buffer;
    Method End: getReverb1()Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;
    Method Start: getReverb2()Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1668|1684|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1685|1695|getReverb2|method|com.sachinreddy.GeometricAcoustics.ReverbParameters|getReverb2|()Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1703|1719|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1728|1744|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1752|1761|decayTime|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|decayTime
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1775|1782|density|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|density
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1795|1804|diffusion|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|diffusion
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1817|1821|gain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|gain
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1834|1840|gainHF|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|gainHF
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1854|1866|decayHFRatio|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|decayHFRatio
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1879|1894|reflectionsGain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionsGain
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1907|1923|reflectionsDelay|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionsDelay
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1938|1952|lateReverbGain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbGain
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1966|1981|lateReverbDelay|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbDelay
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1996|2015|airAbsorptionGainHF|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|airAbsorptionGainHF
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2030|2047|roomRolloffFactor|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|roomRolloffFactor
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2064|2077|lateReverbPan|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbPan
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2080|2091|BufferUtils|class|org.lwjgl.BufferUtils
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2092|2109|createFloatBuffer|method|org.lwjgl.BufferUtils|createFloatBuffer|(I)Ljava/nio/FloatBuffer;
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2118|2131|lateReverbPan|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbPan
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2132|2135|put|method|java.nio.FloatBuffer|put|([F)Ljava/nio/FloatBuffer;
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2169|2173|flip|method|java.nio.Buffer|flip|()Ljava/nio/Buffer;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1939|1955|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1956|1966|getReverb2|method|com.sachinreddy.GeometricAcoustics.ReverbParameters|getReverb2|()Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1974|1990|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|1999|2015|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2023|2032|decayTime|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|decayTime
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2046|2053|density|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|density
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2066|2075|diffusion|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|diffusion
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2088|2092|gain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|gain
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2105|2111|gainHF|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|gainHF
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2125|2137|decayHFRatio|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|decayHFRatio
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2150|2165|reflectionsGain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionsGain
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2178|2194|reflectionsDelay|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionsDelay
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2209|2223|lateReverbGain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbGain
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2237|2252|lateReverbDelay|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbDelay
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2267|2286|airAbsorptionGainHF|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|airAbsorptionGainHF
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2301|2318|roomRolloffFactor|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|roomRolloffFactor
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2337|2350|lateReverbPan|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbPan
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2353|2364|BufferUtils|class|org.lwjgl.BufferUtils
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2365|2382|createFloatBuffer|method|org.lwjgl.BufferUtils|createFloatBuffer|(I)Ljava/nio/FloatBuffer;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2391|2404|lateReverbPan|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbPan
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2405|2408|put|method|java.nio.FloatBuffer|put|([F)Ljava/nio/FloatBuffer;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2441|2445|flip|method|java.nio.Buffer|flip|()Ljava/nio/Buffer;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2453|2466|reflectionPan|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionPan
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2469|2480|BufferUtils|class|org.lwjgl.BufferUtils
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2481|2498|createFloatBuffer|method|org.lwjgl.BufferUtils|createFloatBuffer|(I)Ljava/nio/FloatBuffer;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2507|2520|reflectionPan|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionPan
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2521|2524|put|method|java.nio.FloatBuffer|put|([F)Ljava/nio/FloatBuffer;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2557|2561|flip|method|java.nio.Buffer|flip|()Ljava/nio/Buffer;
    Method End: getReverb2()Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;
    Method Start: getReverb3()Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2209|2225|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2226|2236|getReverb3|method|com.sachinreddy.GeometricAcoustics.ReverbParameters|getReverb3|()Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2244|2260|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2269|2285|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2293|2302|decayTime|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|decayTime
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2317|2324|density|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|density
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2337|2346|diffusion|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|diffusion
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2359|2363|gain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|gain
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2376|2382|gainHF|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|gainHF
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2396|2408|decayHFRatio|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|decayHFRatio
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2421|2436|reflectionsGain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionsGain
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2449|2465|reflectionsDelay|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionsDelay
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2480|2494|lateReverbGain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbGain
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2508|2523|lateReverbDelay|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbDelay
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2538|2557|airAbsorptionGainHF|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|airAbsorptionGainHF
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2572|2589|roomRolloffFactor|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|roomRolloffFactor
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2606|2619|lateReverbPan|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbPan
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2622|2633|BufferUtils|class|org.lwjgl.BufferUtils
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2634|2651|createFloatBuffer|method|org.lwjgl.BufferUtils|createFloatBuffer|(I)Ljava/nio/FloatBuffer;
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2660|2673|lateReverbPan|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbPan
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2674|2677|put|method|java.nio.FloatBuffer|put|([F)Ljava/nio/FloatBuffer;
-      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2711|2715|flip|method|java.nio.Buffer|flip|()Ljava/nio/Buffer;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2597|2613|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2614|2624|getReverb3|method|com.sachinreddy.GeometricAcoustics.ReverbParameters|getReverb3|()Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2632|2648|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2657|2673|ReverbParameters|class|com.sachinreddy.GeometricAcoustics.ReverbParameters
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2681|2690|decayTime|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|decayTime
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2705|2712|density|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|density
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2725|2734|diffusion|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|diffusion
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2747|2751|gain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|gain
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2764|2770|gainHF|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|gainHF
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2784|2796|decayHFRatio|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|decayHFRatio
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2809|2824|reflectionsGain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionsGain
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2837|2853|reflectionsDelay|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionsDelay
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2868|2882|lateReverbGain|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbGain
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2896|2911|lateReverbDelay|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbDelay
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2926|2945|airAbsorptionGainHF|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|airAbsorptionGainHF
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2960|2977|roomRolloffFactor|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|roomRolloffFactor
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|2996|3009|lateReverbPan|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbPan
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|3012|3023|BufferUtils|class|org.lwjgl.BufferUtils
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|3024|3041|createFloatBuffer|method|org.lwjgl.BufferUtils|createFloatBuffer|(I)Ljava/nio/FloatBuffer;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|3050|3063|lateReverbPan|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|lateReverbPan
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|3064|3067|put|method|java.nio.FloatBuffer|put|([F)Ljava/nio/FloatBuffer;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|3100|3104|flip|method|java.nio.Buffer|flip|()Ljava/nio/Buffer;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|3112|3125|reflectionPan|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionPan
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|3128|3139|BufferUtils|class|org.lwjgl.BufferUtils
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|3140|3157|createFloatBuffer|method|org.lwjgl.BufferUtils|createFloatBuffer|(I)Ljava/nio/FloatBuffer;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|3166|3179|reflectionPan|field|com.sachinreddy.GeometricAcoustics.ReverbParameters|reflectionPan
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|3180|3183|put|method|java.nio.FloatBuffer|put|([F)Ljava/nio/FloatBuffer;
+      @|com/sachinreddy/GeometricAcoustics/ReverbParameters.java|3216|3220|flip|method|java.nio.Buffer|flip|()Ljava/nio/Buffer;
    Method End: getReverb3()Lcom/sachinreddy/GeometricAcoustics/ReverbParameters;
 Class End  : com.sachinreddy.GeometricAcoustics.ReverbParameters
 endProcessing "com/sachinreddy/GeometricAcoustics/ReverbParameters.java"
