@@ -50,6 +50,7 @@ public class GeometricAcousticsCore implements IClassTransformer
 		
 		//performance
 		public static int environmentCalculationRays = 32;
+		public static float stereoMultiplier = 1.35f;
 		
 		//block properties
 		public static float stoneReflectivity = 1.0f;
@@ -110,6 +111,7 @@ public class GeometricAcousticsCore implements IClassTransformer
 		
 		//performance
 		Config.environmentCalculationRays = configFile.getInt("Environment Evaluation Rays", Config.categoryPerformance, 32, 8, 64, "The number of rays to trace to determine reverberation for each sound source. More rays provides more consistent tracing results but takes more time to calculate. Decrease this value if you experience lag spikes when sounds play." );
+		Config.stereoMultiplier = configFile.getFloat("Stereo Multiplier", Config.categoryPerformance, 1.35f, 0f, 5f, "The number used to emphasis the amount of stereo sound present." );
 		
 		//material properties
 		Config.stoneReflectivity = configFile.getFloat("Stone Reflectivity", Config.categoryMaterialProperties, 1.0f, 0.0f, 1.0f, "Sound reflectivity for stone blocks.");

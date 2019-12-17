@@ -20,6 +20,7 @@ import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.Vec3i;
 
+import org.lwjgl.BufferUtils;
 import org.lwjgl.openal.AL10;
 import org.lwjgl.openal.AL11;
 import org.lwjgl.openal.ALC10;
@@ -238,9 +239,13 @@ public class GeometricAcoustics
 		final int rayBounces = 4;
 		
 		final double reflectionEnergyCurve = 1.0;
-
+		
 		float[] bounceReflectivityRatio = new float[rayBounces];
 		float totalRays = 1.0f / (numRays * rayBounces);
+		
+		// ------- STEREO ------- //
+		
+		float[] bounceReflectionPosition = new float[rayBounces];
 		
 		// ---------------------- //
 		
@@ -297,6 +302,10 @@ public class GeometricAcoustics
 						lastHitPos = newRayHit.hitVec;
 						lastHitNormal = getNormalFromFacing(newRayHit.sideHit);
 						
+						// ------- STEREO ------- //
+						
+						bounceReflectionPosition[j] += playerPos.subtract(lastHitPos).normalize().xCoord;
+						
 						// ----- OCCLUSION ------ //
 						
 						Vec3d finalHitToPlayer = playerPos.subtract(lastHitPos).normalize();
@@ -339,6 +348,28 @@ public class GeometricAcoustics
 		bounceReflectivityRatio[2] = (float)Math.pow(bounceReflectivityRatio[2] / (float)numRays, 1.0 / reflectionEnergyCurve);
 		bounceReflectivityRatio[3] = (float)Math.pow(bounceReflectivityRatio[3] / (float)numRays, 1.0 / reflectionEnergyCurve);
 		
+		// ------- STEREO ------- //
+		
+		bounceReflectionPosition[0] = MathHelper.clamp_float((bounceReflectionPosition[0] / (float)numRays) * GeometricAcousticsCore.Config.stereoMultiplier, -0.8f, 0.8f);
+		bounceReflectionPosition[1] = MathHelper.clamp_float((bounceReflectionPosition[1] / (float)numRays) * GeometricAcousticsCore.Config.stereoMultiplier, -0.8f, 0.8f);
+		bounceReflectionPosition[2] = MathHelper.clamp_float((bounceReflectionPosition[2] / (float)numRays) * GeometricAcousticsCore.Config.stereoMultiplier, -0.8f, 0.8f);
+		bounceReflectionPosition[3] = MathHelper.clamp_float((bounceReflectionPosition[3] / (float)numRays) * GeometricAcousticsCore.Config.stereoMultiplier, -0.8f, 0.8f);
+		
+		FloatBuffer panValue0 = BufferUtils.createFloatBuffer(3);
+		FloatBuffer panValue1 = BufferUtils.createFloatBuffer(3);
+		FloatBuffer panValue2 = BufferUtils.createFloatBuffer(3);
+		FloatBuffer panValue3 = BufferUtils.createFloatBuffer(3);
+		
+		panValue0.put(new float[] {bounceReflectionPosition[0], 0f, 0f}).flip();
+		panValue1.put(new float[] {bounceReflectionPosition[1], 0f, 0f}).flip();
+		panValue2.put(new float[] {bounceReflectionPosition[2], 0f, 0f}).flip();
+		panValue3.put(new float[] {bounceReflectionPosition[3], 0f, 0f}).flip();
+		
+		setPanParameters(auxFXSlot0, reverb0, panValue0);
+		setPanParameters(auxFXSlot1, reverb1, panValue1);
+		setPanParameters(auxFXSlot2, reverb2, panValue2);
+		setPanParameters(auxFXSlot3, reverb3, panValue3);
+				
 		// ----- OCCLUSION ------ //
 		
 		sharedAirspace *= 64.0f;
@@ -542,10 +573,16 @@ public class GeometricAcoustics
 		EFX10.alEffectf(reverbSlot, EFX10.AL_EAXREVERB_LATE_REVERB_DELAY, r.lateReverbDelay);
 		EFX10.alEffectf(reverbSlot, EFX10.AL_EAXREVERB_AIR_ABSORPTION_GAINHF, r.airAbsorptionGainHF);
 		EFX10.alEffectf(reverbSlot, EFX10.AL_EAXREVERB_ROOM_ROLLOFF_FACTOR, r.roomRolloffFactor);
-		//
-		EFX10.alEffect(reverbSlot, EFX10.AL_EAXREVERB_LATE_REVERB_PAN, r.lateReverbPan);
-		EFX10.alEffect(reverbSlot, EFX10.AL_EAXREVERB_REFLECTIONS_PAN, r.reflectionPan);
 
+		//Attach updated effect object
+		EFX10.alAuxiliaryEffectSloti(auxFXSlot, EFX10.AL_EFFECTSLOT_EFFECT, reverbSlot);
+	}
+	
+	protected static void setPanParameters(int auxFXSlot, int reverbSlot, FloatBuffer panValue)
+	{
+		EFX10.alEffect(reverbSlot, EFX10.AL_EAXREVERB_LATE_REVERB_PAN, panValue);
+		EFX10.alEffect(reverbSlot, EFX10.AL_EAXREVERB_REFLECTIONS_PAN, panValue);
+		
 		//Attach updated effect object
 		EFX10.alAuxiliaryEffectSloti(auxFXSlot, EFX10.AL_EFFECTSLOT_EFFECT, reverbSlot);
 	}
