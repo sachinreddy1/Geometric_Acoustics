@@ -405,7 +405,7 @@ public class GeometricAcousticsCore implements IClassTransformer
 							if (currentNode.getType() == AbstractInsnNode.METHOD_INSN)
 							{
 								MethodInsnNode method = (MethodInsnNode)currentNode;
-								log("[PATCHER]: Method found: " + method.name);
+//								log("[PATCHER]: Method found: " + method.name);
 								
 								if (method.name.equals(targetInvocationMethodName))
 								{

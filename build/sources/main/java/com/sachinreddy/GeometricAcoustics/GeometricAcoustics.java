@@ -1,6 +1,7 @@
 package com.sachinreddy.GeometricAcoustics;
 
 import java.nio.ByteBuffer;
+import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
 import java.util.ArrayList;
 
@@ -30,6 +31,7 @@ import paulscode.sound.SoundSystemConfig;
 
 import java.util.Arrays; 
 import java.util.Collections; 
+import java.nio.FloatBuffer;
 
 public class GeometricAcoustics 
 {		
@@ -44,6 +46,11 @@ public class GeometricAcoustics
 	private static int reverb1;
 	private static int reverb2;
 	private static int reverb3;
+	//
+	private static int left0;
+	private static int left1;
+	private static int left2;
+	private static int left3;
 	//
 	private static int directFilter0;
 	//
@@ -72,7 +79,6 @@ public class GeometricAcoustics
 	{
 		ALCcontext currentContext = ALC10.alcGetCurrentContext();
 		ALCdevice currentDevice = ALC10.alcGetContextsDevice(currentContext);
-		log("ALC_MAX_AUXILIARY_SENDS: " + EFX10.ALC_MAX_AUXILIARY_SENDS);
 		
 		if (ALC10.alcIsExtensionPresent(currentDevice, "ALC_EXT_EFX"))
 			log("EFX Extension recognized.");
@@ -87,7 +93,7 @@ public class GeometricAcoustics
 		auxFXSlot2 = EFX10.alGenAuxiliaryEffectSlots();
 		EFX10.alAuxiliaryEffectSloti(auxFXSlot2, EFX10.AL_EFFECTSLOT_AUXILIARY_SEND_AUTO, AL10.AL_TRUE);
 		auxFXSlot3 = EFX10.alGenAuxiliaryEffectSlots();
-		EFX10.alAuxiliaryEffectSloti(auxFXSlot3, EFX10.AL_EFFECTSLOT_AUXILIARY_SEND_AUTO, AL10.AL_TRUE);	
+		EFX10.alAuxiliaryEffectSloti(auxFXSlot3, EFX10.AL_EFFECTSLOT_AUXILIARY_SEND_AUTO, AL10.AL_TRUE);
 		
 		// Create effects
 		reverb0 = EFX10.alGenEffects();
@@ -98,7 +104,7 @@ public class GeometricAcoustics
 		EFX10.alEffecti(reverb2, EFX10.AL_EFFECT_TYPE, EFX10.AL_EFFECT_EAXREVERB);
 		reverb3 = EFX10.alGenEffects();
 		EFX10.alEffecti(reverb3, EFX10.AL_EFFECT_TYPE, EFX10.AL_EFFECT_EAXREVERB);
-		
+				
 		//Create filters
 		directFilter0 = EFX10.alGenFilters();
 		EFX10.alFilteri(directFilter0, EFX10.AL_FILTER_TYPE, EFX10.AL_FILTER_LOWPASS);
@@ -515,12 +521,6 @@ public class GeometricAcoustics
 		
 		// ----------------- //
 		
-		EFX10.alFilterf(sendFilter0, EFX10.AL_LOWPASS_GAIN, sendGain0);
-		EFX10.alFilterf(sendFilter0, EFX10.AL_LOWPASS_GAINHF, sendCutoff0);
-		AL11.alSource3i(sourceID, EFX10.AL_AUXILIARY_SEND_FILTER, auxFXSlot0, 4, sendFilter0);	
-		
-		// ----------------- //
-		
 		EFX10.alFilterf(directFilter0, EFX10.AL_LOWPASS_GAIN, directGain);
 		EFX10.alFilterf(directFilter0, EFX10.AL_LOWPASS_GAINHF, directCutoff);
 		AL10.alSourcei(sourceID, EFX10.AL_DIRECT_FILTER, directFilter0);
@@ -543,6 +543,8 @@ public class GeometricAcoustics
 		EFX10.alEffectf(reverbSlot, EFX10.AL_EAXREVERB_AIR_ABSORPTION_GAINHF, r.airAbsorptionGainHF);
 		EFX10.alEffectf(reverbSlot, EFX10.AL_EAXREVERB_ROOM_ROLLOFF_FACTOR, r.roomRolloffFactor);
 		
+		EFX10.alEffect(reverbSlot, EFX10.AL_EAXREVERB_LATE_REVERB_PAN, r.lateReverbPan);
+
 		//Attach updated effect object
 		EFX10.alAuxiliaryEffectSloti(auxFXSlot, EFX10.AL_EFFECTSLOT_EFFECT, reverbSlot);
 	}

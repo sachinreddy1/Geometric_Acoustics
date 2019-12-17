@@ -1,5 +1,7 @@
 package com.sachinreddy.GeometricAcoustics;
 
+import java.nio.FloatBuffer;
+import org.lwjgl.BufferUtils;
 import org.lwjgl.openal.EFX10;
 
 public class ReverbParameters 
@@ -17,6 +19,7 @@ public class ReverbParameters
 	public float lateReverbDelay;
 	public float airAbsorptionGainHF;
 	public float roomRolloffFactor;
+	public FloatBuffer lateReverbPan;
 	
 	public static ReverbParameters getReverb0()
 	{
@@ -33,6 +36,9 @@ public class ReverbParameters
 		r.lateReverbDelay = 0.011f;
 		r.airAbsorptionGainHF = 0.994f;
 		r.roomRolloffFactor = 0.16f;
+		
+		r.lateReverbPan = BufferUtils.createFloatBuffer(3);
+		r.lateReverbPan.put(new float[] {-1.0f, 0.0f, 0.0f}).flip();
 		return r;
 	}
 	
@@ -51,6 +57,9 @@ public class ReverbParameters
 		r.lateReverbDelay = 0.011f;
 		r.airAbsorptionGainHF = 0.994f;
 		r.roomRolloffFactor = 0.15f;
+		
+		r.lateReverbPan = BufferUtils.createFloatBuffer(3);
+		r.lateReverbPan.put(new float[] {-1.0f, 0.0f, 0.0f}).flip();
 		return r;
 	}
 	
@@ -69,6 +78,9 @@ public class ReverbParameters
 		r.lateReverbDelay = 0.021f;
 		r.airAbsorptionGainHF = 0.994f;
 		r.roomRolloffFactor = 0.13f;
+		
+		r.lateReverbPan = BufferUtils.createFloatBuffer(3);
+		r.lateReverbPan.put(new float[] {-1.0f, 0.0f, 0.0f}).flip();
 		return r;
 	}
 	
@@ -87,6 +99,9 @@ public class ReverbParameters
 		r.lateReverbDelay = 0.021f;
 		r.airAbsorptionGainHF = 0.994f;
 		r.roomRolloffFactor = 0.11f;
+		
+		r.lateReverbPan = BufferUtils.createFloatBuffer(3);
+		r.lateReverbPan.put(new float[] {-1.0f, 0.0f, 0.0f}).flip();
 		return r;
 	}
 }
